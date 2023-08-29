@@ -189,11 +189,39 @@
           
           
           
-            <li class="nav-item">
-              <a class="nav-link" href="/about/">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
               </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/about/">
+                    <i class="iconfont icon-user-fill"></i>
+                    <span>简介</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/liuyanban/">
+                    <i class="iconfont icon-wechat-fill"></i>
+                    <span>留言板</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/talking/">
+                    <i class="iconfont icon-user-fill"></i>
+                    <span>碎碎念</span>
+                  </a>
+                
+              </div>
             </li>
           
         
@@ -323,7 +351,7 @@
     Fluid.utils.loadComments('#valine', function() {
       Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
         var options = Object.assign(
-          {"appId":"EbrtQQJ7cRRhPeaconYfnbHx-gzGzoHsz","appKey":"rP2TBFedTpA8xzfF8RuSnTvD","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {"appId":"EbrtQQJ7cRRhPeaconYfnbHx-gzGzoHsz","appKey":"rP2TBFedTpA8xzfF8RuSnTvD","path":"window.location.pathname","placeholder":null,"avatar":"robohash","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
           {
             el: "#valine",
             path: window.location.pathname
@@ -390,7 +418,7 @@
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <i class="iconfont icon-love"></i> <span>By Wenbin</span> <i class="iconfont icon-pen"></i> <link rel="stylesheet" href="/js/zidingyi/dist/APlayer.min.css"> <div id="aplayer"></div> <script type="text/javascript" src="/js/zidingyi/dist/APlayer.min.js"></script> <script type="text/javascript" src="/js/zidingyi/dist/music.js"></script>
+       <span>Copyright © 2023 - 2024 |</span> <span>By Wenbin</span> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <link rel="stylesheet" href="/js/zidingyi/dist/APlayer.min.css"> <div id="aplayer"></div> <script type="text/javascript" src="/js/zidingyi/dist/APlayer.min.js"></script> <script type="text/javascript" src="/js/zidingyi/dist/music.js"></script>
 <meting-js  server="netease"  type="playlist"  id="2415908677" fixed="true"  autoplay="true" loop="all" order="list" preload="auto" list-folded="ture" list-max-height="300px" lrc-type="0"> </meting-js>
 <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
     </div>
