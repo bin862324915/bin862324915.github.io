@@ -168,35 +168,39 @@
           
           
           
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/">
-                <i class="iconfont icon-archive-fill"></i>
-                <span>归档</span>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-note"></i>
+                <span>文章</span>
               </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/">
-                <i class="iconfont icon-category-fill"></i>
-                <span>分类</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/">
-                <i class="iconfont icon-zu"></i>
-                <span>标签</span>
-              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/tags/">
+                    <i class="iconfont icon-zu"></i>
+                    <span>标签</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/">
+                    <i class="iconfont icon-category-fill"></i>
+                    <span>分类</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/archives/">
+                    <i class="iconfont icon-archive-fill"></i>
+                    <span>归档</span>
+                  </a>
+                
+              </div>
             </li>
           
         
@@ -237,6 +241,18 @@
                   </a>
                 
               </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
             </li>
           
         
@@ -513,7 +529,7 @@
     Fluid.utils.loadComments('#valine', function() {
       Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
         var options = Object.assign(
-          {"appId":"nltNbWnKve6Q6oobgbQoGqT4-gzGzoHsz","appKey":"PLMY3oFRTfOUMLpgiB1mJnD7","path":"window.location.pathname","placeholder":null,"avatar":"robohash","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {"appId":"nltNbWnKve6Q6oobgbQoGqT4-gzGzoHsz","appKey":"PLMY3oFRTfOUMLpgiB1mJnD7","path":"window.location.pathname","placeholder":"Say something~","avatar":"robohash","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
           {
             el: "#valine",
             path: window.location.pathname
