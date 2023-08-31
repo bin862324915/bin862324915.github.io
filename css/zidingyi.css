@@ -1,5 +1,53 @@
 
 /* 打字机效果渐变*/
+header {
+cursor: url('/img/shubiao1.png'), default;
+}
+a:hover {
+cursor: url('/img/shubiao2.png'), pointer;
+}
+a:active {
+cursor: url('/img/shubiao1.png'), move;
+}
+
+body {
+cursor: url('/img/shubiao1.png'), default;
+}
+a:hover {
+cursor: url('/img/shubiao2.png'), pointer;
+}
+a:active {
+cursor: url('/img/shubiao1.png'), move;
+}
+
+.footer-inner {
+cursor: url('/img/shubiao1.png'), default;
+}
+a:hover {
+cursor: url('/img/shubiao2.png'), pointer;
+}
+a:active {
+cursor: url('/img/shubiao1.png'), move;
+}
+
+.mask.flex-center {
+cursor: url('/img/shubiao1.png'), default;
+}
+a:hover {
+cursor: url('/img/shubiao2.png'), pointer;
+}
+a:active {
+cursor: url('/img/shubiao1.png'), move;
+}
+a.btn  {
+cursor: url('/img/shubiao2.png'), default;
+}
+a:hover {
+cursor: url('/img/shubiao2.png'), pointer;
+}
+a:active {
+cursor: url('/img/shubiao1.png'), move;
+}
 
 #subtitle {
     background: linear-gradient(-75deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
@@ -27,5 +75,6 @@
     padding: 0.5rem 0.8rem;
     border: 1px solid #eee;
     line-height: 2;
+    border-left: 3px solid #ff2a2a;
     transition: box-shadow 0.3s ease-in-out;
 }
