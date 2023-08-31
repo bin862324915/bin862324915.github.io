@@ -1,43 +1,43 @@
 
 /* 打字机效果渐变*/
 header {
-    cursor: url('/img/shubiao1.png'), default;
+    cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao1.png'), default;
 }
 a:hover {
-    cursor: url('/img/shubiao2.png'), pointer;
+    cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao2.png'), pointer;
 }
 a:active {
-    cursor: url('/img/shubiao1.png'), move;
+    cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao1.png'), move;
 }
 
 body {
-    cursor: url('/img/shubiao1.png'), default;
+    cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao1.png'), default;
 }
 a:hover {
-    cursor: url('/img/shubiao2.png'), pointer;
+    cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao2.png'), pointer;
 }
 a:active {
-    cursor: url('/img/shubiao1.png'), move;
+    cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao1.png'), move;
 }
 
 .footer-inner {
-    cursor: url('/img/shubiao1.png'), default;
+    cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao1.png'), default;
 }
 a:hover {
-    cursor: url('/img/shubiao2.png'), pointer;
+    cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao2.png'), pointer;
 }
 a:active {
-    cursor: url('/img/shubiao1.png'), move;
+    cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao1.png'), move;
 }
 
 .mask.flex-center {
-    cursor: url('/img/shubiao1.png'), default;
+    cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao1.png'), default;
 }
 a:hover {
-    cursor: url('/img/shubiao2.png'), pointer;
+    cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao2.png'), pointer;
 }
 a:active {
-    cursor: url('/img/shubiao1.png'), move;
+    cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao1.png'), move;
 }
 
 #subtitle {
@@ -68,4 +68,5 @@ a:active {
     line-height: 2;
     border-left: 3px solid #ff2a2a;
     transition: box-shadow 0.3s ease-in-out;
+    background-color: rgba(27,31,35,0.05);
 }
