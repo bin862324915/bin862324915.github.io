@@ -21,3 +21,11 @@
 #subtitle:before {
     background-color: rgba(0, 0, 0, 0);
 }
+
+.reprint {
+    margin: 15px 0 0.4rem;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #eee;
+    line-height: 2;
+    transition: box-shadow 0.3s ease-in-out;
+}
