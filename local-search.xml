@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>git 常用指令</title>
+    <link href="/2023/09-01-gitzhiling.html"/>
+    <url>/2023/09-01-gitzhiling.html</url>
+    
+    <content type="html"><![CDATA[<h3 id="git-常用指令"><a href="#git-常用指令" class="headerlink" title="git 常用指令"></a>git 常用指令</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs awk">BASH<br>git add . (暂存更改)<br>git commit -m <span class="hljs-string">&#x27;提交的内容&#x27;</span><br>git pull origin dev （拉远程dev分支）<br>git push （推送到远程）<br><span class="hljs-regexp">//</span> 新建分支<br>git branch xxx (xxx填写你的分支名称)<br><span class="hljs-regexp">//</span> 查看所有分支<br>git branch -a<br><span class="hljs-regexp">//</span> 切换到某一分支<br>git checkout xxx (xxx填写要切换的分支名称）<br><span class="hljs-regexp">//</span> 提交代码到指定分支<br>git push origin xxx （xxx为要提交代码的分支名称）<br><span class="hljs-regexp">//</span> 更新本地分支<br>git fetch<br><span class="hljs-regexp">//</span> 修改分支名<br>$ git branch -m xxx（xxx为修改后的分支名称）<br><span class="hljs-regexp">//</span> 修改分支名后推送分支<br>git push origin xxx(xxx为修改后的分支名称)<br></code></pre></td></tr></table></figure><h3 id="git-分支策略"><a href="#git-分支策略" class="headerlink" title="git 分支策略"></a>git 分支策略</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs awk">TXT<br><span class="hljs-regexp">/* 需求：git将当前分支的修改推到其他分支 */</span><br>git stash <span class="hljs-regexp">//</span> 把暂存区内的修改存储起来<br>git checkout 分支名 <span class="hljs-regexp">//</span> 切换到正确的分支：<br>git stash pop <span class="hljs-regexp">//</span> 将存储的修改取出来，继续进行提交等正常的操作<br></code></pre></td></tr></table></figure><h3 id="git-commit-提交规范"><a href="#git-commit-提交规范" class="headerlink" title="git commit 提交规范"></a>git commit 提交规范</h3><p>Git commit message规范指提交注释时的编写规范，统一方便维护，如下</p><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs avrasm">TXT<br><span class="hljs-symbol">feat:</span>新功能<br><span class="hljs-symbol">fix:</span>修复一个bug<br><span class="hljs-symbol">docs:</span>只改了文档<br><span class="hljs-symbol">style:</span>修改不涉及代码的主要逻辑(如格式化了代码)<br><span class="hljs-symbol">refactor:</span>改动了代码，既不是新功能也不是修复bug<br><span class="hljs-symbol">perf:</span>优化了代码，提升了性能<br><span class="hljs-symbol">test:</span>增加或修改了代码测试<br><span class="hljs-symbol">build:</span>更改了构建流程相关的配置文件和包(如glup, npm)<br><span class="hljs-symbol">ci:</span>更改了CI配置文件或脚本等(如Travis, Circle, BrowserStack, SauceLabs)<br><span class="hljs-symbol">chore:</span>其它不涉及源代码和测试代码的修改<br><span class="hljs-symbol">revert:</span> git revert一次提交 <br></code></pre></td></tr></table></figure><h3 id="要配置-Git-的账号和邮箱，可以按照以下步骤进行操作："><a href="#要配置-Git-的账号和邮箱，可以按照以下步骤进行操作：" class="headerlink" title="要配置 Git 的账号和邮箱，可以按照以下步骤进行操作："></a>要配置 Git 的账号和邮箱，可以按照以下步骤进行操作：</h3><ol><li><p>打开终端或命令行工具，并导航到您的项目的根目录。</p></li><li><p>运行以下命令，将您的用户名配置为全局默认值：</p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs stylus">PLAINTEXT<br>git config <span class="hljs-attr">--global</span> user<span class="hljs-selector-class">.name</span> <span class="hljs-string">&quot;Your Name&quot;</span><br></code></pre></td></tr></table></figure><p>将 “Your Name” 替换为您希望显示的用户名。</p></li><li><p>运行以下命令，将您的邮箱地址配置为全局默认值：</p><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">PLAINTEXT</span><br>git config --global user.email <span class="hljs-string">&quot;your.email<span class="hljs-variable">@example</span>.com&quot;</span><br></code></pre></td></tr></table></figure><p>将 “<a href="mailto:your.email@example.com">your.email@example.com</a>“ 替换为您的有效邮箱地址。</p></li></ol><p>配置完成后，每次提交代码时，Git 将会使用您所配置的用户名和邮箱信息作为提交记录的作者信息。</p><p>请注意，如果您希望仅为当前项目设置特定的用户名和邮箱，而不是全局默认值，可以省略 <code>--global</code> 参数，并在项目目录中运行相应的命令，而非在全局环境中执行。例如：</p><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">PLAINTEXT<br>git config <span class="hljs-keyword">user</span>.name &quot;Your Name&quot;<br>git config <span class="hljs-keyword">user</span>.email &quot;your.email@example.com&quot;<br></code></pre></td></tr></table></figure><p>这样可以在当前项目中覆盖全局默认值。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>编程相关</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>代码</tag>
+      
+      <tag>指令</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>目前可以免费AI绘画的6个宝藏级别的AI网站</title>
     <link href="/2023/09-01-zaixianaiwangzhan.html"/>
     <url>/2023/09-01-zaixianaiwangzhan.html</url>
