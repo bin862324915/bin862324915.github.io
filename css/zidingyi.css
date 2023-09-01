@@ -41,11 +41,11 @@ a:active {
 }
 
 #subtitle {
-    background: linear-gradient(-75deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background: linear-gradient(15deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
     background-size: 400% 400%;
-    -webkit-animation: Gradient 10s ease infinite;
-    -moz-animation: Gradient 10s ease infinite;
-    animation: Gradient 10s ease infinite;
+    -webkit-animation: Gradient 25s ease infinite;
+    -moz-animation: Gradient 25s ease infinite;
+    animation: Gradient 25s ease infinite;
     -o-user-select: none;
     -ms-user-select: none;
     -webkit-user-select: none;
