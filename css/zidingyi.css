@@ -70,3 +70,24 @@ a:active {
     transition: box-shadow 0.3s ease-in-out;
     background-color: rgba(27,31,35,0.05);
 }
+
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(30%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-10%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.index-img, .index-info {
+  animation: 2s slide ease 1;
+}
