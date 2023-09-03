@@ -72,22 +72,6 @@ a:active {
 }
 
 
-
-@keyframes slide {
-  0% {
-    transform: translateX(30%);
-    opacity: 0;
-  }
-  50% {
-    transform: translateX(-10%);
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.index-img, .index-info {
-  animation: 2s slide ease 1;
+.row mx-auto index-card {
+  --data-aos: slide-right;
 }
