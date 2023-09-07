@@ -776,7 +776,7 @@ sup > a::before,
   padding: 3rem 0;
 }
 html {
-  font-size: 16px;
+  font-size: 17px;
   letter-spacing: 0.02em;
 }
 html,
@@ -1719,6 +1719,39 @@ mjx-container svg:focus,
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.common-chip {
+  padding: 10px 10px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.12);
+}
+.common-chip:hover {
+  background: var(--link-hover-bg-color);
+  border: 1px solid var(--link-hover-bg-color);
+  box-shadow: 0 5px 5px rgba(0,0,0,0.25);
+}
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.post-meta > i {
+  margin-right: 0.15rem;
+}
+.post-meta > a:not(.hover-with-bg) {
+  margin-right: 0.15rem;
+}
+.hover-with-bg {
+  display: inline-block;
+  padding: 0.45rem;
+}
+.hover-with-bg:hover {
+  background-color: var(--link-hover-bg-color);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  border-radius: 0.15rem;
 }
 @-moz-keyframes post-prev-anim {
   0% {
