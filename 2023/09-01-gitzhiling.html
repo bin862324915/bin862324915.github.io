@@ -16,12 +16,12 @@
   <meta name="author" content="Wenbin">
   <meta name="keywords" content="">
   
-    <meta name="description" content="git 常用指令12345678910111213141516171819BASHgit add . (暂存更改)git commit -m &amp;#x27;提交的内容&amp;#x27;git pull origin dev （拉远程dev分支）git push （推送到远程）&#x2F;&#x2F; 新建分支git branch xxx (xxx填写你的分支名称)&#x2F;&#x2F; 查看所有分支git branch -a&#x2F;&#x2F; 切换到某一分">
+    <meta name="description" content="git 常用指令BASH git add . (暂存更改) git commit -m &#39;提交的内容&#39; git pull origin dev （拉远程dev分支） git push （推送到远程） &#x2F;&#x2F; 新建分支 git branch xxx (xxx填写你的分支名称) &#x2F;&#x2F; 查看所有分支 git branch -a &#x2F;&amp;#x2F">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git 常用指令">
 <meta property="og:url" content="https://bin862324915.github.io/2023/09-01-gitzhiling.html">
 <meta property="og:site_name" content="Wenbin&#39;s blog">
-<meta property="og:description" content="git 常用指令12345678910111213141516171819BASHgit add . (暂存更改)git commit -m &amp;#x27;提交的内容&amp;#x27;git pull origin dev （拉远程dev分支）git push （推送到远程）&#x2F;&#x2F; 新建分支git branch xxx (xxx填写你的分支名称)&#x2F;&#x2F; 查看所有分支git branch -a&#x2F;&#x2F; 切换到某一分">
+<meta property="og:description" content="git 常用指令BASH git add . (暂存更改) git commit -m &#39;提交的内容&#39; git pull origin dev （拉远程dev分支） git push （推送到远程） &#x2F;&#x2F; 新建分支 git branch xxx (xxx填写你的分支名称) &#x2F;&#x2F; 查看所有分支 git branch -a &#x2F;&amp;#x2F">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s1.ax1x.com/2023/09/03/pPDP3j0.jpg">
 <meta property="article:published_time" content="2023-09-01T11:37:29.000Z">
@@ -65,23 +65,19 @@
 <link  rel="stylesheet" href="/css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
-  
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
-  
-
 
 
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/css/zidingyi.css">
 <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4229952_h8xqfmnm6r7.css">
+<link rel="stylesheet" href="/js/zidingyi/toastr/toastr.min.css">
 
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"bin862324915.github.io","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"♡","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"❡"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":21776611,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"bin862324915.github.io","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"♡","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"❡"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":false,"default":"TEXT"},"copy_btn":false,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":21776611,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -128,8 +124,10 @@
 
 
   
+<link rel="stylesheet" href="/js/zidingyi/code/prism.css"/>
+<script type='text/javascript' src="/js/zidingyi/code/prism.js"></script>
+  <script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" type="application/x-javascript"></script>
 <meta name="generator" content="Hexo 6.3.0"></head>
-
 
 <body>
   <script  src="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/js/aos.js" type="application/x-javascript"></script>
@@ -318,7 +316,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.3k 字
+          1.4k 字
         
       </span>
     
@@ -329,7 +327,7 @@
         
         
         
-          11 分钟
+          12 分钟
         
       </span>
     
@@ -379,30 +377,67 @@
             
               <div class="markdown-body">
                 
-                <h3 id="git-常用指令"><a href="#git-常用指令" class="headerlink" title="git 常用指令"></a>git 常用指令</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs awk">BASH<br>git add . (暂存更改)<br>git commit -m <span class="hljs-string">&#x27;提交的内容&#x27;</span><br>git pull origin dev （拉远程dev分支）<br>git push （推送到远程）<br><span class="hljs-regexp">//</span> 新建分支<br>git branch xxx (xxx填写你的分支名称)<br><span class="hljs-regexp">//</span> 查看所有分支<br>git branch -a<br><span class="hljs-regexp">//</span> 切换到某一分支<br>git checkout xxx (xxx填写要切换的分支名称）<br><span class="hljs-regexp">//</span> 提交代码到指定分支<br>git push origin xxx （xxx为要提交代码的分支名称）<br><span class="hljs-regexp">//</span> 更新本地分支<br>git fetch<br><span class="hljs-regexp">//</span> 修改分支名<br>$ git branch -m xxx（xxx为修改后的分支名称）<br><span class="hljs-regexp">//</span> 修改分支名后推送分支<br>git push origin xxx(xxx为修改后的分支名称)<br></code></pre></td></tr></table></figure>
+                <h3 id="git-常用指令"><a href="#git-常用指令" class="headerlink" title="git 常用指令"></a>git 常用指令</h3><pre class="line-numbers language-none"><code class="language-none">BASH
+git add . (暂存更改)
+git commit -m &#39;提交的内容&#39;
+git pull origin dev （拉远程dev分支）
+git push （推送到远程）
+&#x2F;&#x2F; 新建分支
+git branch xxx (xxx填写你的分支名称)
+&#x2F;&#x2F; 查看所有分支
+git branch -a
+&#x2F;&#x2F; 切换到某一分支
+git checkout xxx (xxx填写要切换的分支名称）
+&#x2F;&#x2F; 提交代码到指定分支
+git push origin xxx （xxx为要提交代码的分支名称）
+&#x2F;&#x2F; 更新本地分支
+git fetch
+&#x2F;&#x2F; 修改分支名
+$ git branch -m xxx（xxx为修改后的分支名称）
+&#x2F;&#x2F; 修改分支名后推送分支
+git push origin xxx(xxx为修改后的分支名称)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="git-分支策略"><a href="#git-分支策略" class="headerlink" title="git 分支策略"></a>git 分支策略</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs awk">TXT<br><span class="hljs-regexp">/* 需求：git将当前分支的修改推到其他分支 */</span><br>git stash 	<span class="hljs-regexp">//</span> 把暂存区内的修改存储起来<br>git checkout 分支名 	<span class="hljs-regexp">//</span> 切换到正确的分支：<br>git stash pop 	<span class="hljs-regexp">//</span> 将存储的修改取出来，继续进行提交等正常的操作<br></code></pre></td></tr></table></figure>
+<h3 id="git-分支策略"><a href="#git-分支策略" class="headerlink" title="git 分支策略"></a>git 分支策略</h3><pre class="line-numbers language-none"><code class="language-none">TXT
+&#x2F;* 需求：git将当前分支的修改推到其他分支 *&#x2F;
+git stash 	&#x2F;&#x2F; 把暂存区内的修改存储起来
+git checkout 分支名 	&#x2F;&#x2F; 切换到正确的分支：
+git stash pop 	&#x2F;&#x2F; 将存储的修改取出来，继续进行提交等正常的操作<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h3 id="git-commit-提交规范"><a href="#git-commit-提交规范" class="headerlink" title="git commit 提交规范"></a>git commit 提交规范</h3><p>Git commit message规范指提交注释时的编写规范，统一方便维护，如下</p>
-<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs avrasm">TXT<br><span class="hljs-symbol">feat:</span>新功能<br><span class="hljs-symbol">fix:</span>修复一个bug<br><span class="hljs-symbol">docs:</span>只改了文档<br><span class="hljs-symbol">style:</span>修改不涉及代码的主要逻辑(如格式化了代码)<br><span class="hljs-symbol">refactor:</span>改动了代码，既不是新功能也不是修复bug<br><span class="hljs-symbol">perf:</span>优化了代码，提升了性能<br><span class="hljs-symbol">test:</span>增加或修改了代码测试<br><span class="hljs-symbol">build:</span>更改了构建流程相关的配置文件和包(如glup, npm)<br><span class="hljs-symbol">ci:</span>更改了CI配置文件或脚本等(如Travis, Circle, BrowserStack, SauceLabs)<br><span class="hljs-symbol">chore:</span>其它不涉及源代码和测试代码的修改<br><span class="hljs-symbol">revert:</span> git revert一次提交 <br></code></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">TXT
+feat:新功能
+fix:修复一个bug
+docs:只改了文档
+style:修改不涉及代码的主要逻辑(如格式化了代码)
+refactor:改动了代码，既不是新功能也不是修复bug
+perf:优化了代码，提升了性能
+test:增加或修改了代码测试
+build:更改了构建流程相关的配置文件和包(如glup, npm)
+ci:更改了CI配置文件或脚本等(如Travis, Circle, BrowserStack, SauceLabs)
+chore:其它不涉及源代码和测试代码的修改
+revert: git revert一次提交 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h3 id="要配置-Git-的账号和邮箱，可以按照以下步骤进行操作："><a href="#要配置-Git-的账号和邮箱，可以按照以下步骤进行操作：" class="headerlink" title="要配置 Git 的账号和邮箱，可以按照以下步骤进行操作："></a>要配置 Git 的账号和邮箱，可以按照以下步骤进行操作：</h3><ol>
 <li><p>打开终端或命令行工具，并导航到您的项目的根目录。</p>
 </li>
 <li><p>运行以下命令，将您的用户名配置为全局默认值：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs stylus">PLAINTEXT<br>git config <span class="hljs-attr">--global</span> user<span class="hljs-selector-class">.name</span> <span class="hljs-string">&quot;Your Name&quot;</span><br></code></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">PLAINTEXT
+git config --global user.name &quot;Your Name&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>将 “Your Name” 替换为您希望显示的用户名。</p>
 </li>
 <li><p>运行以下命令，将您的邮箱地址配置为全局默认值：</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">PLAINTEXT</span><br>git config --global user.email <span class="hljs-string">&quot;your.email<span class="hljs-variable">@example</span>.com&quot;</span><br></code></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">PLAINTEXT
+git config --global user.email &quot;your.email@example.com&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>将 “<a href="mailto:your.email@example.com">your.email@example.com</a>“ 替换为您的有效邮箱地址。</p>
 </li>
 </ol>
 <p>配置完成后，每次提交代码时，Git 将会使用您所配置的用户名和邮箱信息作为提交记录的作者信息。</p>
 <p>请注意，如果您希望仅为当前项目设置特定的用户名和邮箱，而不是全局默认值，可以省略 <code>--global</code> 参数，并在项目目录中运行相应的命令，而非在全局环境中执行。例如：</p>
-<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">PLAINTEXT<br>git config <span class="hljs-keyword">user</span>.name &quot;Your Name&quot;<br>git config <span class="hljs-keyword">user</span>.email &quot;your.email@example.com&quot;<br></code></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">PLAINTEXT
+git config user.name &quot;Your Name&quot;
+git config user.email &quot;your.email@example.com&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <p>这样可以在当前项目中覆盖全局默认值。</p>
 
@@ -583,13 +618,6 @@
 
 
 
-  
-
-
-
-  
-
-
 
   
 
@@ -651,6 +679,43 @@
           delay: 100
       });
     </script>
+  <script>
+      $('.markdown-body').on('copy', function (e) {
+          // IE8 or earlier browser is 'undefined'
+          if (typeof window.getSelection === 'undefined') return;
+  
+          var selection = window.getSelection();
+          // if the selection is short let's not annoy our users.
+          if (('' + selection).length < Number.parseInt('100')) {
+              return;
+          }
+  
+          // create a div outside of the visible area and fill it with the selected text.
+          var bodyElement = document.getElementsByTagName('body')[0];
+          var newdiv = document.createElement('div');
+          newdiv.style.position = 'absolute';
+          newdiv.style.left = '-99999px';
+          bodyElement.appendChild(newdiv);
+          newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+  
+          // we need a <div class="code-wrapper"><pre> tag workaround.
+          // otherwise the text inside "pre" loses all the line breaks!
+          if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+              newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre></div>";
+          }
+  
+          var url = document.location.href;
+          newdiv.innerHTML += '<br />'
+              + '-------------------------------------------------------------------------<br />'
+              + 'from: Wenbin\'s blog<br />'
+              + '文章作者: Wenbin<br />'
+              + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+              + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+  
+          selection.selectAllChildren(newdiv);
+          window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+      });
+  </script>
   
     <div class="footer-content">
        <span>Copyright © 2023 - 2024 |</span> <span>By Wenbin</span> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/js/aplayer/APlayer.min.css"> <div id="aplayer"></div> <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/js/aplayer/APlayer.min.js"></script> <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/js/aplayer/Meting.js"></script> <meting-js  server="netease"  type="playlist"  id="19723756" fixed="true"  autoplay="true" loop="all" order="random" preload="auto" list-folded="ture" list-max-height="300px" lrc-type="0"> </meting-js>
@@ -773,11 +838,6 @@
 </script>
 
 
-  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
-
-  <script>Fluid.plugins.codeWidget();</script>
-
-
   
 <script>
   Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
@@ -838,6 +898,7 @@
 <script src="//cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/js/zidingyi/xiaoxingxing.js"></script>
 <script src="//cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/js/zidingyi/yinghua.js"></script>
 <script src="//cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/js/zidingyi/caidai.js"></script>
+<script src="/js/zidingyi/toastr/toastr.min.js"></script>
 
 
 

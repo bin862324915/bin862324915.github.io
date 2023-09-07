@@ -51,23 +51,19 @@
 <link  rel="stylesheet" href="/css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
-  
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
-  
-
 
 
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/css/zidingyi.css">
 <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4229952_h8xqfmnm6r7.css">
+<link rel="stylesheet" href="/js/zidingyi/toastr/toastr.min.css">
 
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"bin862324915.github.io","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"♡","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"❡"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":21776611,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"bin862324915.github.io","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"♡","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"❡"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":false,"default":"TEXT"},"copy_btn":false,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":21776611,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -114,8 +110,10 @@
 
 
   
+<link rel="stylesheet" href="/js/zidingyi/code/prism.css"/>
+<script type='text/javascript' src="/js/zidingyi/code/prism.js"></script>
+  <script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" type="application/x-javascript"></script>
 <meta name="generator" content="Hexo 6.3.0"></head>
-
 
 <body>
   <script  src="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/js/aos.js" type="application/x-javascript"></script>
@@ -383,6 +381,43 @@
           delay: 100
       });
     </script>
+  <script>
+      $('.markdown-body').on('copy', function (e) {
+          // IE8 or earlier browser is 'undefined'
+          if (typeof window.getSelection === 'undefined') return;
+  
+          var selection = window.getSelection();
+          // if the selection is short let's not annoy our users.
+          if (('' + selection).length < Number.parseInt('100')) {
+              return;
+          }
+  
+          // create a div outside of the visible area and fill it with the selected text.
+          var bodyElement = document.getElementsByTagName('body')[0];
+          var newdiv = document.createElement('div');
+          newdiv.style.position = 'absolute';
+          newdiv.style.left = '-99999px';
+          bodyElement.appendChild(newdiv);
+          newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+  
+          // we need a <div class="code-wrapper"><pre> tag workaround.
+          // otherwise the text inside "pre" loses all the line breaks!
+          if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+              newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre></div>";
+          }
+  
+          var url = document.location.href;
+          newdiv.innerHTML += '<br />'
+              + '-------------------------------------------------------------------------<br />'
+              + 'from: Wenbin\'s blog<br />'
+              + '文章作者: Wenbin<br />'
+              + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+              + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+  
+          selection.selectAllChildren(newdiv);
+          window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+      });
+  </script>
   
     <div class="footer-content">
        <span>Copyright © 2023 - 2024 |</span> <span>By Wenbin</span> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/js/aplayer/APlayer.min.css"> <div id="aplayer"></div> <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/js/aplayer/APlayer.min.js"></script> <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/js/aplayer/Meting.js"></script> <meting-js  server="netease"  type="playlist"  id="19723756" fixed="true"  autoplay="true" loop="all" order="random" preload="auto" list-folded="ture" list-max-height="300px" lrc-type="0"> </meting-js>
@@ -477,6 +512,7 @@
 <script src="//cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/js/zidingyi/xiaoxingxing.js"></script>
 <script src="//cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/js/zidingyi/yinghua.js"></script>
 <script src="//cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/js/zidingyi/caidai.js"></script>
+<script src="/js/zidingyi/toastr/toastr.min.js"></script>
 
 
 
