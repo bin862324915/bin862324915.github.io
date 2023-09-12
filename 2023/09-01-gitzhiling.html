@@ -16,16 +16,16 @@
   <meta name="author" content="Wenbin">
   <meta name="keywords" content="">
   
-    <meta name="description" content="git 常用指令BASH git add . (暂存更改) git commit -m &#39;提交的内容&#39; git pull origin dev （拉远程dev分支） git push （推送到远程） &#x2F;&#x2F; 新建分支 git branch xxx (xxx填写你的分支名称) &#x2F;&#x2F; 查看所有分支 git branch -a &#x2F;&amp;#x2F">
+    <meta name="description" content="git 常用指令BASH git add . (暂存更改) git commit -m &#39;提交的内容&#39; git pull origin dev （拉远程dev分支） git push （推送到远程） &#x2F;&#x2F; 新建分支 git branch xxx (xxx填写你的分支名称) &#x2F;&#x2F; 查看所有分支 git branch -a &#x2F;&#x2F; 切换到某一分支 git checkout xxx (xxx填写要切换的分">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git 常用指令">
 <meta property="og:url" content="https://bin862324915.github.io/2023/09-01-gitzhiling.html">
 <meta property="og:site_name" content="Wenbin&#39;s blog">
-<meta property="og:description" content="git 常用指令BASH git add . (暂存更改) git commit -m &#39;提交的内容&#39; git pull origin dev （拉远程dev分支） git push （推送到远程） &#x2F;&#x2F; 新建分支 git branch xxx (xxx填写你的分支名称) &#x2F;&#x2F; 查看所有分支 git branch -a &#x2F;&amp;#x2F">
+<meta property="og:description" content="git 常用指令BASH git add . (暂存更改) git commit -m &#39;提交的内容&#39; git pull origin dev （拉远程dev分支） git push （推送到远程） &#x2F;&#x2F; 新建分支 git branch xxx (xxx填写你的分支名称) &#x2F;&#x2F; 查看所有分支 git branch -a &#x2F;&#x2F; 切换到某一分支 git checkout xxx (xxx填写要切换的分">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s1.ax1x.com/2023/09/03/pPDP3j0.jpg">
 <meta property="article:published_time" content="2023-09-01T11:37:29.000Z">
-<meta property="article:modified_time" content="2023-09-04T11:31:31.688Z">
+<meta property="article:modified_time" content="2023-09-12T07:32:33.964Z">
 <meta property="article:author" content="Wenbin">
 <meta property="article:tag" content="代码">
 <meta property="article:tag" content="指令">
@@ -316,7 +316,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.4k 字
+          1.2k 字
         
       </span>
     
@@ -327,7 +327,7 @@
         
         
         
-          12 分钟
+          11 分钟
         
       </span>
     
@@ -374,10 +374,10 @@
           <article class="post-content mx-auto">
             <h1 id="seo-header">git 常用指令</h1>
             
-              <p class="note note-info">
+              <p class="note note-warning">
                 
                   
-                    本文最后更新于：2023年9月4日 晚上
+                    本文最后更新于：2023年9月12日 下午
                   
                 
               </p>
@@ -385,34 +385,34 @@
             
               <div class="markdown-body">
                 
-                <h3 id="git-常用指令"><a href="#git-常用指令" class="headerlink" title="git 常用指令"></a>git 常用指令</h3><pre class="line-numbers language-none"><code class="language-none">BASH
+                <h3 id="git-常用指令"><a href="#git-常用指令" class="headerlink" title="git 常用指令"></a>git 常用指令</h3><pre class="line-numbers language-git" data-language="git"><code class="language-git">BASH
 git add . (暂存更改)
-git commit -m &#39;提交的内容&#39;
+git commit -m <span class="token string">'提交的内容'</span>
 git pull origin dev （拉远程dev分支）
 git push （推送到远程）
-&#x2F;&#x2F; 新建分支
+// 新建分支
 git branch xxx (xxx填写你的分支名称)
-&#x2F;&#x2F; 查看所有分支
+// 查看所有分支
 git branch -a
-&#x2F;&#x2F; 切换到某一分支
+// 切换到某一分支
 git checkout xxx (xxx填写要切换的分支名称）
-&#x2F;&#x2F; 提交代码到指定分支
+// 提交代码到指定分支
 git push origin xxx （xxx为要提交代码的分支名称）
-&#x2F;&#x2F; 更新本地分支
+// 更新本地分支
 git fetch
-&#x2F;&#x2F; 修改分支名
-$ git branch -m xxx（xxx为修改后的分支名称）
-&#x2F;&#x2F; 修改分支名后推送分支
+// 修改分支名
+<span class="token command">$ git branch<span class="token parameter"> -m</span> xxx（xxx为修改后的分支名称）</span>
+// 修改分支名后推送分支
 git push origin xxx(xxx为修改后的分支名称)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="git-分支策略"><a href="#git-分支策略" class="headerlink" title="git 分支策略"></a>git 分支策略</h3><pre class="line-numbers language-none"><code class="language-none">TXT
-&#x2F;* 需求：git将当前分支的修改推到其他分支 *&#x2F;
-git stash 	&#x2F;&#x2F; 把暂存区内的修改存储起来
-git checkout 分支名 	&#x2F;&#x2F; 切换到正确的分支：
-git stash pop 	&#x2F;&#x2F; 将存储的修改取出来，继续进行提交等正常的操作<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="git-分支策略"><a href="#git-分支策略" class="headerlink" title="git 分支策略"></a>git 分支策略</h3><pre class="line-numbers language-git" data-language="git"><code class="language-git">TXT
+/* 需求：git将当前分支的修改推到其他分支 */
+git stash 	// 把暂存区内的修改存储起来
+git checkout 分支名 	// 切换到正确的分支：
+git stash pop 	// 将存储的修改取出来，继续进行提交等正常的操作<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h3 id="git-commit-提交规范"><a href="#git-commit-提交规范" class="headerlink" title="git commit 提交规范"></a>git commit 提交规范</h3><p>Git commit message规范指提交注释时的编写规范，统一方便维护，如下</p>
-<pre class="line-numbers language-none"><code class="language-none">TXT
+<pre class="line-numbers language-git" data-language="git"><code class="language-git">TXT
 feat:新功能
 fix:修复一个bug
 docs:只改了文档
@@ -429,23 +429,23 @@ revert: git revert一次提交 <span aria-hidden="true" class="line-numbers-rows
 <li><p>打开终端或命令行工具，并导航到您的项目的根目录。</p>
 </li>
 <li><p>运行以下命令，将您的用户名配置为全局默认值：</p>
-<pre class="line-numbers language-none"><code class="language-none">PLAINTEXT
-git config --global user.name &quot;Your Name&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-git" data-language="git"><code class="language-git">PLAINTEXT
+git config --global user.name <span class="token string">"Your Name"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>将 “Your Name” 替换为您希望显示的用户名。</p>
 </li>
 <li><p>运行以下命令，将您的邮箱地址配置为全局默认值：</p>
-<pre class="line-numbers language-none"><code class="language-none">PLAINTEXT
-git config --global user.email &quot;your.email@example.com&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-git" data-language="git"><code class="language-git">PLAINTEXT
+git config --global user.email <span class="token string">"your.email@example.com"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>将 “<a href="mailto:your.email@example.com">your.email@example.com</a>“ 替换为您的有效邮箱地址。</p>
 </li>
 </ol>
 <p>配置完成后，每次提交代码时，Git 将会使用您所配置的用户名和邮箱信息作为提交记录的作者信息。</p>
 <p>请注意，如果您希望仅为当前项目设置特定的用户名和邮箱，而不是全局默认值，可以省略 <code>--global</code> 参数，并在项目目录中运行相应的命令，而非在全局环境中执行。例如：</p>
-<pre class="line-numbers language-none"><code class="language-none">PLAINTEXT
-git config user.name &quot;Your Name&quot;
-git config user.email &quot;your.email@example.com&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-git" data-language="git"><code class="language-git">PLAINTEXT
+git config user.name <span class="token string">"Your Name"</span>
+git config user.email <span class="token string">"your.email@example.com"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <p>这样可以在当前项目中覆盖全局默认值。</p>
 

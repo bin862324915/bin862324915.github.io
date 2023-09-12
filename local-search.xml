@@ -4,6 +4,222 @@
   
   
   <entry>
+    <title>10-如何让ChatGPT根据不同来源的数据，例如销售数据、客户反馈、财务报告，自动生成报告，并根据不同利益方的需要和偏好进行调整</title>
+    <link href="/2023/09-12-chatgpt010.html"/>
+    <url>/2023/09-12-chatgpt010.html</url>
+    
+    <content type="html"><![CDATA[<h2 id="10-如何让ChatGPT根据不同来源的数据，例如销售数据、客户反馈、财务报告，自动生成报告，并根据不同利益方的需要和偏好进行调整？"><a href="#10-如何让ChatGPT根据不同来源的数据，例如销售数据、客户反馈、财务报告，自动生成报告，并根据不同利益方的需要和偏好进行调整？" class="headerlink" title="10-如何让ChatGPT根据不同来源的数据，例如销售数据、客户反馈、财务报告，自动生成报告，并根据不同利益方的需要和偏好进行调整？"></a><strong>10-如何让ChatGPT根据不同来源的数据，例如销售数据、客户反馈、财务报告，自动生成报告，并根据不同利益方的需要和偏好进行调整？</strong></h2><h3 id="该场景对应的关键词库（24个）"><a href="#该场景对应的关键词库（24个）" class="headerlink" title="该场景对应的关键词库（24个）"></a><strong>该场景对应的关键词库（24个）</strong></h3><p>汇报对象身份（下属、跨部门平级、领导）、销售数据（销售额、销售量、销售渠道）、财务报告（营业收入、净利润、成本费用）、市场分析（市场份额、竞争情况、市场趋势）、客户反馈（客户满意度、客户投诉、客户留存率）、营销效果评估（广告投放效果、促销活动效果、营销策略效果）</p><h3 id="提问模板"><a href="#提问模板" class="headerlink" title="提问模板"></a><strong>提问模板</strong></h3><p>1、请根据已有的不同来源的数据，生成详细的报告，分别汇报给下属、跨部门平级和领导</p><p>2、请根据给出的数据，回答以下问题，并给出结论与图表</p><p>​                ● 最近一个季度的销售趋势如何？导致销售量变化的因素有哪些？</p><p>​                ● 客户反馈如何反映我们的营销策略效果？根据客户反馈，我们可以做出哪些调整？</p><p>​                ● 我们营销活动的投资回报率是多少？如何优化我们的营销支出以在下一个季度获得更好的效果？</p><p>3、请根据数据报表，提炼3个重要结论汇报给领导</p><p><strong>第一步，明确进行数据分析的目标</strong></p><p>确定目标是理解业务、优化业务还是预测未来</p><p><strong>第二步，收集整理与清洗相关数据</strong></p><p>收集整理销售数据、客户反馈、财务报告等方面的数据，可以通过公司的数据库、营销工具、调查问卷等方式收集。完成后做简单的数据清洗。</p><p><strong>第三步，让ChatGPT学习相关数据含义和用法</strong></p><p>将不同来源的数据输入到ChatGPT中进行学习，让ChatGPT能够理解这些数据的含义和用法。这些数据可以包括销售额、销售量、客户满意度、市场份额、竞争情况、营销费用等信息。</p><p><strong>第四步，进行数据分析给出重要结论</strong></p><p>通过ChatGPT生成的结果，分析不同来源的数据，根据以下几个方面得出重要结论</p><p>提高销售额和市场份额的营销策略和活动：例如降低产品价格、提供更好的售后服务、优化产品设计和功能、增加市场推广力度等。</p><p>影响客户满意度和忠诚度的因素：例如产品质量、服务质量、品牌形象、价格竞争力等。</p><p>影响财务报告的因素：例如销售额、毛利率、净利润、营销费用占比等。</p><p><strong>第五步，根据汇报对象身份进行可视化调整</strong></p><p>报告可以包括销售趋势、客户分析、竞争分析、市场细分、营销效果评估等方面的信息。</p><p>针对不同身份的人的营销报告的不同之处：</p><p><strong>下属：对于下属，营销报告需要更加直观和易懂。</strong></p><p>需要突出产品和服务的优势和特点，以及营销策略和活动的效果和影响。同时，需要将报告的重点放在实际操作和执行方面，为下属提供具体的指导和建议，帮助下属更好地完成任务和达成目标。</p><p><strong>跨部门平级：对于跨部门平级，营销报告需要更加全面和详细。</strong></p><p>需要涵盖不同部门和领域的数据和信息，以便平级的同事了解整个公司的营销情况和趋势。同时，需要突出不同部门和领域之间的联系和协作，为跨部门合作提供参考和支持。</p><p><strong>领导：对于领导，营销报告需要更加战略性和全局性。</strong></p><p>需要突出市场和客户的需求和状况，分析企业的竞争优势和挑战，提出未来的发展方向和策略。同时，需要突出财务和经营状况的重要性和影响，为领导的决策提供有力支持和参考。</p><p><strong>注意事项：</strong></p><p>务必注意保护数据的隐私和安全，遵守相关政策。</p><h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a><strong>举例</strong></h3><p><strong>问题输入1：请学习以下一个完整的营销数据报表</strong></p><p><img src="/img/sc/029.png"></p><p><strong>问题输入2：针对下属调整营销报告</strong></p><p><img src="/img/sc/030.png"></p><p><img src="/img/sc/031.png"></p><p><strong>3、针对跨部门平级调整营销报告</strong></p><p><img src="/img/sc/032.png"></p><p><img src="/img/sc/033.png"></p><p><strong>4、针对领导调整营销报告</strong></p><p><img src="/img/sc/034.png"></p><p><img src="/img/sc/035.png"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>ChatGPT</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>ChatGPT</tag>
+      
+      <tag>提问技巧</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>09-如何让ChatGPT自动生成内容，作为客户服务工作人员的回答话术</title>
+    <link href="/2023/09-12-chatgpt009.html"/>
+    <url>/2023/09-12-chatgpt009.html</url>
+    
+    <content type="html"><![CDATA[<h2 id="09-如何让ChatGPT自动生成内容，作为客户服务工作人员的回答话术？"><a href="#09-如何让ChatGPT自动生成内容，作为客户服务工作人员的回答话术？" class="headerlink" title="09-如何让ChatGPT自动生成内容，作为客户服务工作人员的回答话术？"></a><strong>09-如何让ChatGPT自动生成内容，作为客户服务工作人员的回答话术？</strong></h2><h3 id="该场景对应的关键词库（13个）"><a href="#该场景对应的关键词库（13个）" class="headerlink" title="该场景对应的关键词库（13个）"></a><strong>该场景对应的关键词库（13个）</strong></h3><p>产品知识、使用方法、售后服务、售后维修、支付方式、支付流程、产品购买、产品配送、客户投诉、客户建议、政策法规、使用注意事项、客服身份</p><h3 id="提问模板"><a href="#提问模板" class="headerlink" title="提问模板"></a><strong>提问模板</strong></h3><p>1、客服团队一般需要回答几个方面的问题？</p><p>2、知名XX品牌商会覆盖哪15个常见问答场景？</p><p><strong>问题输入1</strong></p><p>你是一个业务一流的客服主管，现在你需要出一个培训客服的QA文档，你所在的团队是知名XX品牌商，需要覆盖客户常见的问答场景，请列举15个例子</p><p><strong>问题输入2：</strong></p><p>很好，针对以上问题，作为优秀的XX服务商，你会如何作答</p><p><strong>第一步，收集并输入已有的客服话术</strong></p><p>这些话术可以来自于客服工作人员的工作经验和客户反馈，也可以从企业内部的数据库、文件和资料中收集。</p><p><strong>第二步，分析客服话术优缺点并迭代话术</strong></p><p>数据需要进行分类、标记和归档，以便ChatGPT能够根据不同的问题和情境进行回答。例如分析话术优缺点。</p><p><strong>第三步，其他类型客户投诉问题的解决方案</strong></p><p>其他类型客户投诉问题的解决方案</p><p>当客户提出问题时，可以将问题输入到ChatGPT中，让其根据客户的问题和情境进行推荐回答。也可以让客服工作人员对ChatGPT生成的回答进行评估和反馈，以便不断改进和优化ChatGPT的模型和算法。</p><h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a><strong>举例</strong></h3><p><strong>问题输入1：学习已有客服话术</strong></p><p><img src="/img/sc/026.png"></p><p><strong>问题输入2：分析话术优缺点并迭代话术</strong></p><p><img src="/img/sc/027.png"></p><p><strong>问题输入3：其他客诉问题的解决方案</strong></p><p><img src="/img/sc/028.png"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>ChatGPT</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>ChatGPT</tag>
+      
+      <tag>提问技巧</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>08-如何让ChatGPT学习企业产品、服务内容、给客户的往期方案，处理所输入的客户需求和参数</title>
+    <link href="/2023/09-12-chatgpt008.html"/>
+    <url>/2023/09-12-chatgpt008.html</url>
+    
+    <content type="html"><![CDATA[<h2 id="08-如何让ChatGPT学习企业产品、服务内容、给客户的往期方案，处理所输入的客户需求和参数，定制化生成适合客户的解决方案"><a href="#08-如何让ChatGPT学习企业产品、服务内容、给客户的往期方案，处理所输入的客户需求和参数，定制化生成适合客户的解决方案" class="headerlink" title="08-如何让ChatGPT学习企业产品、服务内容、给客户的往期方案，处理所输入的客户需求和参数，定制化生成适合客户的解决方案"></a><strong>08-如何让ChatGPT学习企业产品、服务内容、给客户的往期方案，处理所输入的客户需求和参数，定制化生成适合客户的解决方案</strong></h2><h3 id="该场景对应的关键词库（6个）："><a href="#该场景对应的关键词库（6个）：" class="headerlink" title="该场景对应的关键词库（6个）："></a><strong>该场景对应的关键词库（6个）：</strong></h3><p>企业产品和服务内容、客户需求和参数、营销方案和推广策略、数据处理和模型训练、客户满意度和营销效率、往期营销方案</p><h3 id="提问模板"><a href="#提问模板" class="headerlink" title="提问模板"></a><strong>提问模板</strong></h3><p>场景+产品+问题</p><p><strong>模板1：</strong></p><p>场景：</p><p>某家电公司生产的电视机在市场上占有一定份额，但最近收到了部分客户的反馈，称产品质量存在问题，例如屏幕容易出现亮点或暗角等问题。为了维护客户满意度和市场份额，公司需要解决这一问题。</p><p>产品：某家电公司生产的55英寸OLED电视机。</p><p>问题：如何解决客户反馈的产品质量问题，例如屏幕容易出现亮点或暗角等问题？</p><p><strong>模板2：</strong></p><p>场景：某制造业公司生产的机器设备在市场上备受欢迎，但客户反映生产效率较低，同时成本较高。为了提高客户满意度和市场竞争力，公司需要提高生产效率并降低成本。</p><p>产品：某制造业公司生产的自动化机器设备。</p><p>问题：如何提高客户生产效率和降低成本？</p><p><strong>模板3：</strong></p><p>场景：某软件服务公司提供企业级客户定制化的服务和支持解决方案，以满足客户不同需求。一位客户需要特定的服务和支持解决方案，但公司现有方案无法满足客户需求。为了满足客户需求并维护客户满意度，公司需要提供定制化的服务和支持解决方案。</p><p>产品：某软件服务公司提供的企业级客户定制化服务和支持解决方案。</p><p>问题：如何提供定制化的服务和支持解决方案，以满足客户的特定需求？</p><p><strong>第一步，ChatGPT模型训练，建立自己的方案库</strong></p><p>收集企业产品、服务内容和往期方案的信息，包括产品和服务的介绍、特点和优势，以及过去的营销方案、成功案例和客户反馈。可以从企业内部的数据库、文件和资料中收集，也可以从外部的市场和竞争情况中获取。投喂给ChatGPT，让ChatGPT能够学习和掌握企业产品、服务和营销方案的特点和优势，以及客户的需求和参数。</p><p><strong>第二步，收集分析客户需求，列举客户需求和参数</strong></p><p>在模型训练完成后，可以将客户的需求和参数输入到ChatGPT中，让其根据客户的需求和参数进行定制化生成解决方案。这些需求和参数可以包括客户的行业、规模、需求和预算等方面的信息。</p><p><strong>第三步，生成定制解决方案，根据需求微调细节</strong></p><p>基于已经训练好的ChatGPT模型，根据客户的需求和参数，生成解决方案。解决方案可以包括产品和服务的介绍、推荐和定价，以及营销方案和推广策略等方面的信息。方案需要考虑客户的具体需求和预算，以便让客户能够满意地接受解决方案。</p><h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a><strong>举例</strong></h3><p><strong>问题输入：</strong></p><p><strong>1、请你明确理解以下几个词汇：</strong></p><p>​                ● <strong>解决方案</strong></p><p>​                ● <strong>产品和服务的介绍</strong></p><p>​                ● <strong>产品推荐和产品定价</strong></p><p>​                ● <strong>营销方案</strong></p><p>​                ● <strong>推广策略</strong></p><p><img src="/img/sc/023.png"></p><p><strong>问题输入2、请学习以下的一个完整的客户解决方案的示例</strong></p><p><img src="/img/sc/024.png"></p><p><strong>问题输入3、该公司计划推出新产品XXX，请根据已有的解决方案库，输出一份定制化解决方案</strong></p><p><img src="/img/sc/025.png"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>ChatGPT</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>ChatGPT</tag>
+      
+      <tag>提问技巧</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>07-如何让ChatGPT学习销售过往文字稿，并自动分析话术的优缺点然后修改</title>
+    <link href="/2023/09-12-chatgpt007.html"/>
+    <url>/2023/09-12-chatgpt007.html</url>
+    
+    <content type="html"><![CDATA[<h2 id="07-如何让ChatGPT学习销售过往文字稿，并自动分析话术的优缺点，然后修改？"><a href="#07-如何让ChatGPT学习销售过往文字稿，并自动分析话术的优缺点，然后修改？" class="headerlink" title="07-如何让ChatGPT学习销售过往文字稿，并自动分析话术的优缺点，然后修改？"></a><strong>07-如何让ChatGPT学习销售过往文字稿，并自动分析话术的优缺点，然后修改？</strong></h2><h3 id="该场景对应的关键词库（13个）"><a href="#该场景对应的关键词库（13个）" class="headerlink" title="该场景对应的关键词库（13个）"></a><strong>该场景对应的关键词库（13个）</strong></h3><p>产品特点、服务优势、目标客户需求和痛点、行业与市场的趋势变化、竞争对手的优劣势、销售场景的特点和要求、销售环境、销售氛围、时间、地点、客户情感需求、心理转态、个性特点、解决方案</p><h3 id="提问模板"><a href="#提问模板" class="headerlink" title="提问模板"></a><strong>提问模板</strong></h3><p><strong>1、请学习如下信息：</strong></p><p>输入从其他地方收集到的销售话术文档或PDF</p><p><a href="https://www.chatpdf.com/">https://www.chatpdf.com/</a></p><p>你是一个世界一流的销售专家，请分析上述学习内容的优缺点，并迭代一版新的销售话术。</p><p>请从销售专家角度分析这段销售话术的优缺点</p><p>请在此基础上迭代最开始的销售话术并输出新话术</p><p><strong>2、这是已有的销售话术，请学习如下信息：</strong></p><p>建立联系</p><p>引起兴趣</p><p>提供解决方案</p><p>推销</p><p>处理反对建议</p><p>约定下一次行动</p><p><strong>第一步，收集并输入已有的销售话术</strong></p><p>可以从销售人员的工作记录、销售培训材料、竞争对手的销售话术或者行业标准的销售话术中收集到。输入到ChatGPT中进行学习，让ChatGPT能够理解这些话术的含义和用法。</p><p><strong>第二步，分析销售话术优缺点</strong></p><p>通过ChatGPT生成的结果，分析已有销售话术的优缺点。</p><p>了解哪些话术能够引起潜在客户的兴趣，哪些话术能够使客户产生购买欲望，哪些话术可能会引起客户的反感等。</p><p><strong>第三步，迭代一版销售新话术</strong></p><p>根据ChatGPT生成的结果和分析的优缺点，可以针对性地迭代一版新的销售话术。新的销售话术需要更加符合受众的需求和喜好，更加自然和流畅，更加有说服力和影响力。</p><h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a><strong>举例</strong></h3><p><strong>问题输入1：学习现有话术</strong></p><p><img src="/img/sc/020.png"></p><p><strong>问题输入2：分析话术优缺点</strong></p><p><img src="/img/sc/021.png"></p><p><strong>问题输入3：迭代销售新话术</strong></p><p><img src="/img/sc/022.png"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>ChatGPT</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>ChatGPT</tag>
+      
+      <tag>提问技巧</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>06-如何用ChatGPT辅助生成创意营销图片素材</title>
+    <link href="/2023/09-12-chatgpt006.html"/>
+    <url>/2023/09-12-chatgpt006.html</url>
+    
+    <content type="html"><![CDATA[<h2 id="06-如何用ChatGPT辅助生成创意营销图片素材，比如产品图、虚拟主播、产品包装图、终端店铺图？"><a href="#06-如何用ChatGPT辅助生成创意营销图片素材，比如产品图、虚拟主播、产品包装图、终端店铺图？" class="headerlink" title="06&#x2F;如何用ChatGPT辅助生成创意营销图片素材，比如产品图、虚拟主播、产品包装图、终端店铺图？"></a><strong>06&#x2F;如何用ChatGPT辅助生成创意营销图片素材，比如产品图、虚拟主播、产品包装图、终端店铺图？</strong></h2><p><strong>营销素材对应的关键词库（3个）</strong></p><p>元素、风格、AI绘画工具midjourney</p><h3 id="提问模板"><a href="#提问模板" class="headerlink" title="提问模板"></a><strong>提问模板</strong></h3><p>第一步，先预设场景，询问应该包含的关键词范围</p><p>假设你是一位世界一流水平的设计师，你想要使用AI绘画工具midjourney帮忙设计一款XXX，列举该场景需要用到的关键词范畴与示例。</p><p>第二步，按照推荐的关键词填充内容来输入到midjourney中，生成对应的图片。</p><p>按照逗号区隔不同描述词，用谷歌助手翻译成英文描述词，输入到midjourney中。</p><h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a><strong>举例</strong></h3><h4 id="1、产品模特图场景对应的关键词库（10个）"><a href="#1、产品模特图场景对应的关键词库（10个）" class="headerlink" title="1、产品模特图场景对应的关键词库（10个）"></a><strong>1、产品模特图场景对应的关键词库（10个）</strong></h4><p><strong>产品类型、模特类型、模特姿势、背景颜色、背景图案、色彩搭配、绘画风格、表情细节、衣服细节、比例</strong></p><p><strong>产品模特图示范：</strong></p><p><strong>假设你是一位世界一流水平的设计师，你想要使用AI绘画工具midjourney帮忙设计一款产品模特图，产品是咖啡，身穿白色衣服的专业模特站在海洋背景前手持咖啡，明亮色彩，写实风格，面带微笑，8k，9:16画布尺寸。</strong></p><p><strong>Midjourney效果如下：</strong></p><p><img src="/img/sc/015.png"></p><h4 id="2、虚拟主播场景对应的关键词库（8个）："><a href="#2、虚拟主播场景对应的关键词库（8个）：" class="headerlink" title="2、虚拟主播场景对应的关键词库（8个）："></a><strong>2、虚拟主播场景对应的关键词库（8个）：</strong></h4><p><strong>虚拟主播、人设形象、场景主题和风格、主播表情细节、品牌形象、专业程度、高质量、视觉冲击力</strong></p><p><strong>虚拟主播要求示范：</strong></p><p><strong>举一个例子，如果要生成一个以游戏解说为主题的虚拟主播，关键词可以包括：</strong></p><p><strong>主题和风格：游戏解说、游戏攻略、游戏评测等。</strong></p><p><strong>人设和形象：可爱、萌系、游戏风格、卡通形象等。</strong></p><p><strong>假设你是一个策划，你想要使用AI绘画工具midjourney帮忙设计一款软萌可爱的闯关类游戏解说虚拟主播，人设形象是可爱粉色系兔女郎，8k</strong></p><p><strong>Midjourney效果如下：</strong></p><p><img src="/img/sc/016.png"></p><h4 id="3、产品包装图场景对应的关键词库（5个）："><a href="#3、产品包装图场景对应的关键词库（5个）：" class="headerlink" title="3、产品包装图场景对应的关键词库（5个）："></a><strong>3、产品包装图场景对应的关键词库（5个）：</strong></h4><p><strong>产品特点、目标受众、外盒包装、包含元素、设计风格</strong></p><p><strong>产品包装图示范：</strong></p><p><strong>假设你是一位平面设计师，你想要使用AI绘画工具midjourney帮忙设计一款礼品的外盒包装，外盒包装画面是熊猫、竹林、光影，要求是魔幻风格，请列举关键词。</strong></p><p><strong>想象一个礼盒的包装盒，上面有可爱、圆滚滚、温顺、憨态可掬的熊猫，熊猫在一个静谧、神秘的竹林里，竹林里有魔幻、神秘、绚丽的光影，旁边还有蜜蜂、蝴蝶、蜻蜓、小鸟、花朵、小熊等，以突出礼盒中所包含的蜂蜜产品与自然的关联。</strong></p><p><strong>颜色要求选用简约、高级感的色彩，如黑白、金银、米色等，也可以选择少量向阳的色彩进行点缀，但要注意不要过于花哨。</strong></p><p><strong>Midjourney效果如下：</strong></p><p><img src="/img/sc/017.jpg"></p><h4 id="4、终端店铺设计图场景对应的关键词库（9个）"><a href="#4、终端店铺设计图场景对应的关键词库（9个）" class="headerlink" title="4、终端店铺设计图场景对应的关键词库（9个）"></a><strong>4、终端店铺设计图场景对应的关键词库（9个）</strong></h4><p>店铺类型、店铺面积、店铺位置、店铺外观、内部布局、装修风格、颜色搭配、陈列设计、氛围营造</p><p>风格+产品类型+品牌名+店铺+装修风格+设计要点</p><p><strong>终端店铺设计图示范：</strong></p><p><strong>问题输入1：</strong></p><p>假设你是一位平面设计师，你想要使用AI绘画工具midjourney帮忙设计一款终端店铺装修设计图，请列举需要包含的关键词范围。</p><p><img src="/img/sc/018.png"></p><p><strong>问题输入2：谷歌翻译成英文后，输入midjourney</strong></p><p>想象一个现代风的咖啡店店铺，装修设计思路和效果如下：</p><p>主色调：白色</p><p>辅助颜色：黑色</p><p>点缀颜色：木色</p><p>设计要点：方便顾客进出、浏览、购买等方面的体验</p><p><strong>Midjourney效果如下：</strong></p><p><img src="/img/sc/019.png"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>ChatGPT</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>ChatGPT</tag>
+      
+      <tag>提问技巧</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>05-如何用ChatGPT生成创意营销文本素材</title>
+    <link href="/2023/09-12-chatgpt005.html"/>
+    <url>/2023/09-12-chatgpt005.html</url>
+    
+    <content type="html"><![CDATA[<h2 id="05-如何用ChatGPT生成创意营销文本素材？"><a href="#05-如何用ChatGPT生成创意营销文本素材？" class="headerlink" title="05-如何用ChatGPT生成创意营销文本素材？"></a><strong>05-如何用ChatGPT生成创意营销文本素材？</strong></h2><p><strong>该场景对应的关键词库（5个）</strong></p><p>目标受众、品牌定位、产品优势、服务独特性、情感因素；例如：健康食品、女性、美容、养生、健康饮食。</p><h3 id="提问模板"><a href="#提问模板" class="headerlink" title="提问模板"></a><strong>提问模板</strong></h3><p>1、你是世界一流的作家编剧，请告诉我，如何用chatGPT生成创意营销文本素材，并举个例子</p><p>2、请根据“XX、XX、XX、XX、XX”的关键词，生成不小于200字的创意营销文本</p><p>3、请根据以下信息，生成一段150字的创意营销文本</p><p>目标受众：XX-XX岁XX性</p><p>品牌定位：XXX</p><p>产品优势：XXX</p><p>情感因素：XXX</p><h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a><strong>举例</strong></h3><p><strong>1、你是世界一流的作家编剧，请告诉我，如何用chatGPT生成创意营销文本素材，并举个例子</strong></p><p><img src="/img/sc/012.png"></p><p><strong>2、请根据“健康食品、女性、美容、养生、健康饮食”的关键词，生成不小于200字的创意营销文本。</strong></p><p><img src="/img/sc/013.png"></p><p><strong>3、请根据以下信息，生成一段150字的创意营销文本</strong></p><p><strong>目标受众：30-45岁女性</strong></p><p><strong>品牌定位：高端奢华</strong></p><p><strong>产品优势：滋补养生</strong></p><p><strong>情感因素：寻求健康</strong></p><p><img src="/img/sc/014.png"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>ChatGPT</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>ChatGPT</tag>
+      
+      <tag>提问技巧</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>04-如何用ChatGPT协助生产社群的每日新闻资讯</title>
+    <link href="/2023/09-12-chatgpt004.html"/>
+    <url>/2023/09-12-chatgpt004.html</url>
+    
+    <content type="html"><![CDATA[<h2 id="04-如何用ChatGPT协助生产社群的每日新闻资讯？"><a href="#04-如何用ChatGPT协助生产社群的每日新闻资讯？" class="headerlink" title="04-如何用ChatGPT协助生产社群的每日新闻资讯？"></a><strong>04-如何用ChatGPT协助生产社群的每日新闻资讯？</strong></h2><h3 id="该场景对应的关键词库（8个）"><a href="#该场景对应的关键词库（8个）" class="headerlink" title="该场景对应的关键词库（8个）"></a><strong>该场景对应的关键词库（8个）</strong></h3><p>品牌推广、产品信息、行业动态、用户互动、品牌文化、品牌活动、行业知识、兴趣爱好</p><p>例如：新消费、餐饮品类、品牌联名</p><p>注意：受制于ChatGPT语料库的数据包截止时间是2021年9月，所以最好是先喂养信息给到chatGPT，再根据描述引导做精简排序。</p><h3 id="提问模板"><a href="#提问模板" class="headerlink" title="提问模板"></a><strong>提问模板</strong></h3><p>1、请学习如下信息……将你提炼的信息用123排序，注意排版的呼吸感。</p><p>2、请将……提炼整理成30字以内的信息，用于发布在品牌类社群内</p><h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a><strong>举例</strong></h3><p><strong>1、请学习如下信息：输入从其他地方比如竞品社群、行业网站收集到的行业资讯。</strong></p><p><img src="/img/sc/008.png"></p><p><strong>请将你提炼的信息用123排序，注意排版的呼吸感。</strong></p><p><img src="/img/sc/009.png"></p><p><strong>2、请将该文章&#x2F;长文提炼整理成30字以内的信息，用于发布在品牌类社群内。</strong></p><p><img src="/img/sc/010.png"></p><p><strong>3、生成10条新消费领域的行业资讯用于发在微信群中，请用123排序（受语料库的数据包截止时间限制，该方式可能不太适用于需要新资讯的社群）</strong></p><p><img src="/img/sc/011.png"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>ChatGPT</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>ChatGPT</tag>
+      
+      <tag>提问技巧</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>03-如何用ChatGPT协助做内容分发(文本变成直播/音频/视频脚本)</title>
+    <link href="/2023/09-12-chatgpt003.html"/>
+    <url>/2023/09-12-chatgpt003.html</url>
+    
+    <content type="html"><![CDATA[<h2 id="03-如何用ChatGPT协助做内容分发？（文本变成直播-音频-视频脚本）"><a href="#03-如何用ChatGPT协助做内容分发？（文本变成直播-音频-视频脚本）" class="headerlink" title="03&#x2F;如何用ChatGPT协助做内容分发？（文本变成直播&#x2F;音频&#x2F;视频脚本）"></a><strong>03&#x2F;如何用ChatGPT协助做内容分发？（文本变成直播&#x2F;音频&#x2F;视频脚本）</strong></h2><p><strong>该场景对应的关键词库（14个）</strong></p><p>直播博主、直播达人、音频主持人、产品特点、品牌故事、品牌活动、品牌logo、视频主角、画外音解说员、编剧身份、品牌内容分发方向、时长、脚本类型、产品</p><h3 id="提问模板"><a href="#提问模板" class="headerlink" title="提问模板"></a><strong>提问模板</strong></h3><p>1、你是一名优秀的美妆达人，今晚需要直播销售新品XXX，请设计直播脚本，包含产品介绍、品牌故事、用户案例</p><p>2、你是一名世界一流的博客主持人，最近针对XX讨论激烈，请为该主题设计音频脚本，包含开场白、主题介绍、段落划分、对话或采访对象标注、范例或案例、结尾语、广告或赞助商等模块</p><p>3、从品牌内容分发角度考虑，请为智能家居设备XXX设计一个XX时长的产品介绍视频脚本，包含音效、音乐、画面、声音等</p><h3 id="补充信息"><a href="#补充信息" class="headerlink" title="补充信息"></a><strong>补充信息</strong></h3><p>直播脚本、音频脚本、视频脚本都是用于引导主持人或演员表演的文本。它们的区别在于：</p><p>直播脚本：直播脚本需要非常详细的时间表和指示，需要非常紧凑和易于阅读，以便主持人可以在快速变化的情况下快速找到自己的位置和任务。</p><p>音频脚本：用于指导演员在录音棚或其他音频制作环境中进行表演。</p><p>视频脚本：需要记录每个场景的描述和每个角色的动作。</p><h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a><strong>举例</strong></h3><p><strong>1、你是世界一流的编剧，最近针对AIGC讨论的火热，用chaGPT为AIGC助力工作提效写一个3分钟的音频脚本。</strong></p><p><img src="/img/sc/005.png"></p><p><strong>2、从品牌内容分发角度考虑，请为智能家居设备扫地机器人设计一个2分钟时长的产品介绍视频脚本。</strong></p><p><img src="/img/sc/006.png"></p><p><strong>3、你是今晚直播的美妆达人，请为今晚要介绍的新品美妆水设计直播脚本，包含产品介绍、品牌故事、用户案例。</strong></p><p><img src="/img/sc/007.png"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>ChatGPT</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>ChatGPT</tag>
+      
+      <tag>提问技巧</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>02-如何用ChatGPT进行剧本/广告脚本写作</title>
     <link href="/2023/09-10-chatgpt002.html"/>
     <url>/2023/09-10-chatgpt002.html</url>
@@ -116,7 +332,7 @@
     <link href="/2023/09-01-gitzhiling.html"/>
     <url>/2023/09-01-gitzhiling.html</url>
     
-    <content type="html"><![CDATA[<h3 id="git-常用指令"><a href="#git-常用指令" class="headerlink" title="git 常用指令"></a>git 常用指令</h3><pre class="line-numbers language-none"><code class="language-none">BASHgit add . (暂存更改)git commit -m &#39;提交的内容&#39;git pull origin dev （拉远程dev分支）git push （推送到远程）&#x2F;&#x2F; 新建分支git branch xxx (xxx填写你的分支名称)&#x2F;&#x2F; 查看所有分支git branch -a&#x2F;&#x2F; 切换到某一分支git checkout xxx (xxx填写要切换的分支名称）&#x2F;&#x2F; 提交代码到指定分支git push origin xxx （xxx为要提交代码的分支名称）&#x2F;&#x2F; 更新本地分支git fetch&#x2F;&#x2F; 修改分支名$ git branch -m xxx（xxx为修改后的分支名称）&#x2F;&#x2F; 修改分支名后推送分支git push origin xxx(xxx为修改后的分支名称)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="git-分支策略"><a href="#git-分支策略" class="headerlink" title="git 分支策略"></a>git 分支策略</h3><pre class="line-numbers language-none"><code class="language-none">TXT&#x2F;* 需求：git将当前分支的修改推到其他分支 *&#x2F;git stash &#x2F;&#x2F; 把暂存区内的修改存储起来git checkout 分支名 &#x2F;&#x2F; 切换到正确的分支：git stash pop &#x2F;&#x2F; 将存储的修改取出来，继续进行提交等正常的操作<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="git-commit-提交规范"><a href="#git-commit-提交规范" class="headerlink" title="git commit 提交规范"></a>git commit 提交规范</h3><p>Git commit message规范指提交注释时的编写规范，统一方便维护，如下</p><pre class="line-numbers language-none"><code class="language-none">TXTfeat:新功能fix:修复一个bugdocs:只改了文档style:修改不涉及代码的主要逻辑(如格式化了代码)refactor:改动了代码，既不是新功能也不是修复bugperf:优化了代码，提升了性能test:增加或修改了代码测试build:更改了构建流程相关的配置文件和包(如glup, npm)ci:更改了CI配置文件或脚本等(如Travis, Circle, BrowserStack, SauceLabs)chore:其它不涉及源代码和测试代码的修改revert: git revert一次提交 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="要配置-Git-的账号和邮箱，可以按照以下步骤进行操作："><a href="#要配置-Git-的账号和邮箱，可以按照以下步骤进行操作：" class="headerlink" title="要配置 Git 的账号和邮箱，可以按照以下步骤进行操作："></a>要配置 Git 的账号和邮箱，可以按照以下步骤进行操作：</h3><ol><li><p>打开终端或命令行工具，并导航到您的项目的根目录。</p></li><li><p>运行以下命令，将您的用户名配置为全局默认值：</p><pre class="line-numbers language-none"><code class="language-none">PLAINTEXTgit config --global user.name &quot;Your Name&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>将 “Your Name” 替换为您希望显示的用户名。</p></li><li><p>运行以下命令，将您的邮箱地址配置为全局默认值：</p><pre class="line-numbers language-none"><code class="language-none">PLAINTEXTgit config --global user.email &quot;your.email@example.com&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>将 “<a href="mailto:your.email@example.com">your.email@example.com</a>“ 替换为您的有效邮箱地址。</p></li></ol><p>配置完成后，每次提交代码时，Git 将会使用您所配置的用户名和邮箱信息作为提交记录的作者信息。</p><p>请注意，如果您希望仅为当前项目设置特定的用户名和邮箱，而不是全局默认值，可以省略 <code>--global</code> 参数，并在项目目录中运行相应的命令，而非在全局环境中执行。例如：</p><pre class="line-numbers language-none"><code class="language-none">PLAINTEXTgit config user.name &quot;Your Name&quot;git config user.email &quot;your.email@example.com&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>这样可以在当前项目中覆盖全局默认值。</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="git-常用指令"><a href="#git-常用指令" class="headerlink" title="git 常用指令"></a>git 常用指令</h3><pre class="line-numbers language-git" data-language="git"><code class="language-git">BASHgit add . (暂存更改)git commit -m <span class="token string">'提交的内容'</span>git pull origin dev （拉远程dev分支）git push （推送到远程）// 新建分支git branch xxx (xxx填写你的分支名称)// 查看所有分支git branch -a// 切换到某一分支git checkout xxx (xxx填写要切换的分支名称）// 提交代码到指定分支git push origin xxx （xxx为要提交代码的分支名称）// 更新本地分支git fetch// 修改分支名<span class="token command">$ git branch<span class="token parameter"> -m</span> xxx（xxx为修改后的分支名称）</span>// 修改分支名后推送分支git push origin xxx(xxx为修改后的分支名称)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="git-分支策略"><a href="#git-分支策略" class="headerlink" title="git 分支策略"></a>git 分支策略</h3><pre class="line-numbers language-git" data-language="git"><code class="language-git">TXT/* 需求：git将当前分支的修改推到其他分支 */git stash // 把暂存区内的修改存储起来git checkout 分支名 // 切换到正确的分支：git stash pop // 将存储的修改取出来，继续进行提交等正常的操作<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="git-commit-提交规范"><a href="#git-commit-提交规范" class="headerlink" title="git commit 提交规范"></a>git commit 提交规范</h3><p>Git commit message规范指提交注释时的编写规范，统一方便维护，如下</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">TXTfeat:新功能fix:修复一个bugdocs:只改了文档style:修改不涉及代码的主要逻辑(如格式化了代码)refactor:改动了代码，既不是新功能也不是修复bugperf:优化了代码，提升了性能test:增加或修改了代码测试build:更改了构建流程相关的配置文件和包(如glup, npm)ci:更改了CI配置文件或脚本等(如Travis, Circle, BrowserStack, SauceLabs)chore:其它不涉及源代码和测试代码的修改revert: git revert一次提交 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="要配置-Git-的账号和邮箱，可以按照以下步骤进行操作："><a href="#要配置-Git-的账号和邮箱，可以按照以下步骤进行操作：" class="headerlink" title="要配置 Git 的账号和邮箱，可以按照以下步骤进行操作："></a>要配置 Git 的账号和邮箱，可以按照以下步骤进行操作：</h3><ol><li><p>打开终端或命令行工具，并导航到您的项目的根目录。</p></li><li><p>运行以下命令，将您的用户名配置为全局默认值：</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">PLAINTEXTgit config --global user.name <span class="token string">"Your Name"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>将 “Your Name” 替换为您希望显示的用户名。</p></li><li><p>运行以下命令，将您的邮箱地址配置为全局默认值：</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">PLAINTEXTgit config --global user.email <span class="token string">"your.email@example.com"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>将 “<a href="mailto:your.email@example.com">your.email@example.com</a>“ 替换为您的有效邮箱地址。</p></li></ol><p>配置完成后，每次提交代码时，Git 将会使用您所配置的用户名和邮箱信息作为提交记录的作者信息。</p><p>请注意，如果您希望仅为当前项目设置特定的用户名和邮箱，而不是全局默认值，可以省略 <code>--global</code> 参数，并在项目目录中运行相应的命令，而非在全局环境中执行。例如：</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">PLAINTEXTgit config user.name <span class="token string">"Your Name"</span>git config user.email <span class="token string">"your.email@example.com"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>这样可以在当前项目中覆盖全局默认值。</p>]]></content>
     
     
     <categories>

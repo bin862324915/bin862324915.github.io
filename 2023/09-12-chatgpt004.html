@@ -1,0 +1,874 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.ico">
+  <link rel="icon" href="/img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Wenbin">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="04-如何用ChatGPT协助生产社群的每日新闻资讯？该场景对应的关键词库（8个）品牌推广、产品信息、行业动态、用户互动、品牌文化、品牌活动、行业知识、兴趣爱好 例如：新消费、餐饮品类、品牌联名 注意：受制于ChatGPT语料库的数据包截止时间是2021年9月，所以最好是先喂养信息给到chatGPT，再根据描述引导做精简排序。 提问模板1、请学习如下信息……将你提炼的信息用123排序，注意排版的呼">
+<meta property="og:type" content="article">
+<meta property="og:title" content="04-如何用ChatGPT协助生产社群的每日新闻资讯">
+<meta property="og:url" content="https://bin862324915.github.io/2023/09-12-chatgpt004.html">
+<meta property="og:site_name" content="Wenbin&#39;s blog">
+<meta property="og:description" content="04-如何用ChatGPT协助生产社群的每日新闻资讯？该场景对应的关键词库（8个）品牌推广、产品信息、行业动态、用户互动、品牌文化、品牌活动、行业知识、兴趣爱好 例如：新消费、餐饮品类、品牌联名 注意：受制于ChatGPT语料库的数据包截止时间是2021年9月，所以最好是先喂养信息给到chatGPT，再根据描述引导做精简排序。 提问模板1、请学习如下信息……将你提炼的信息用123排序，注意排版的呼">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://bin862324915.github.io/img/sc/chatgpt.jpeg">
+<meta property="article:published_time" content="2023-09-12T06:28:30.000Z">
+<meta property="article:modified_time" content="2023-09-12T06:29:18.516Z">
+<meta property="article:author" content="Wenbin">
+<meta property="article:tag" content="ChatGPT">
+<meta property="article:tag" content="提问技巧">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://bin862324915.github.io/img/sc/chatgpt.jpeg">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/css/aos.css" />
+  
+  <title>04-如何用ChatGPT协助生产社群的每日新闻资讯 - Wenbin&#39;s blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/css/zidingyi.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_4229952_h8xqfmnm6r7.css">
+<link rel="stylesheet" href="/js/zidingyi/toastr/toastr.min.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"bin862324915.github.io","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"♡","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"❡"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":false,"default":"TEXT"},"copy_btn":false,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":21776611,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+    <!-- 51.la Analytics -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript('//js.users.51.la/21776611.js');
+      }
+    </script>
+  
+
+  
+
+  
+
+
+
+  
+<link rel="stylesheet" href="/js/zidingyi/code/prism.css"/>
+<script type='text/javascript' src="/js/zidingyi/code/prism.js"></script>
+  <script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" type="application/x-javascript"></script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <script  src="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/js/aos.js" type="application/x-javascript"></script>
+
+  <header>
+    
+
+<div class="header-inner" style="height: 80vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Wenbin&#39;s blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-note"></i>
+                <span>文章</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/tags/">
+                    <i class="iconfont icon-zu"></i>
+                    <span>标签</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/">
+                    <i class="iconfont icon-category-fill"></i>
+                    <span>分类</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/archives/">
+                    <i class="iconfont icon-archive-fill"></i>
+                    <span>归档</span>
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-yemian2"></i>
+                <span>页面</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/about/">
+                    <i class="iconfont icon-user-fill"></i>
+                    <span>关于</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/liuyanban/">
+                    <i class="iconfont icon-liuyan"></i>
+                    <span>留言板</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/talking/">
+                    <i class="iconfont icon-41shuoshuo"></i>
+                    <span>碎碎念</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/cat/">
+                    <i class="iconfont icon-mao"></i>
+                    <span>抓小喵</span>
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/sc/chatgpt.jpeg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="04-如何用ChatGPT协助生产社群的每日新闻资讯"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-09-12 14:28" pubdate>
+          2023年9月12日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          403 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          4 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class=py-5 id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">04-如何用ChatGPT协助生产社群的每日新闻资讯</h1>
+            
+              <p class="note note-warning">
+                
+                  
+                    本文最后更新于：2023年9月12日 下午
+                  
+                
+              </p>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="04-如何用ChatGPT协助生产社群的每日新闻资讯？"><a href="#04-如何用ChatGPT协助生产社群的每日新闻资讯？" class="headerlink" title="04-如何用ChatGPT协助生产社群的每日新闻资讯？"></a><strong>04-如何用ChatGPT协助生产社群的每日新闻资讯？</strong></h2><h3 id="该场景对应的关键词库（8个）"><a href="#该场景对应的关键词库（8个）" class="headerlink" title="该场景对应的关键词库（8个）"></a><strong>该场景对应的关键词库（8个）</strong></h3><p>品牌推广、产品信息、行业动态、用户互动、品牌文化、品牌活动、行业知识、兴趣爱好</p>
+<p>例如：新消费、餐饮品类、品牌联名</p>
+<p>注意：受制于ChatGPT语料库的数据包截止时间是2021年9月，所以最好是先喂养信息给到chatGPT，再根据描述引导做精简排序。</p>
+<h3 id="提问模板"><a href="#提问模板" class="headerlink" title="提问模板"></a><strong>提问模板</strong></h3><p>1、请学习如下信息……将你提炼的信息用123排序，注意排版的呼吸感。</p>
+<p>2、请将……提炼整理成30字以内的信息，用于发布在品牌类社群内</p>
+<h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a><strong>举例</strong></h3><p><strong>1、请学习如下信息：输入从其他地方比如竞品社群、行业网站收集到的行业资讯。</strong></p>
+<p><img src="/img/sc/008.png" srcset="/img/loading.gif" lazyload></p>
+<p><strong>请将你提炼的信息用123排序，注意排版的呼吸感。</strong></p>
+<p><img src="/img/sc/009.png" srcset="/img/loading.gif" lazyload></p>
+<p><strong>2、请将该文章&#x2F;长文提炼整理成30字以内的信息，用于发布在品牌类社群内。</strong></p>
+<p><img src="/img/sc/010.png" srcset="/img/loading.gif" lazyload></p>
+<p><strong>3、生成10条新消费领域的行业资讯用于发在微信群中，请用123排序（受语料库的数据包截止时间限制，该方式可能不太适用于需要新资讯的社群）</strong></p>
+<p><img src="/img/sc/011.png" srcset="/img/loading.gif" lazyload></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/ChatGPT/" class="hover-with-bg">ChatGPT</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-zu"></i>
+      
+        <a class="hover-with-bg" href="/tags/ChatGPT/" class="print-no-link"> ChatGPT</a>
+      
+        <a class="hover-with-bg" href="/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/" class="print-no-link"> 提问技巧</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+<div class="reprint" id="reprint-statement">
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="iconfont icon-zuozhe">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Wenbin</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="iconfont icon-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href=https://bin862324915.github.io/2023/09-12-chatgpt004.html>https://bin862324915.github.io/2023/09-12-chatgpt004.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="iconfont icon-banquan1">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Wenbin</a>
+                    !
+                </span>
+            </div>
+    </div>
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/09-12-chatgpt005.html" class="common-chip text-ellipsis">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">05-如何用ChatGPT生成创意营销文本素材</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/09-12-chatgpt003.html" class="common-chip text-ellipsis">
+                        <span class="hidden-mobile">03-如何用ChatGPT协助做内容分发(文本变成直播/音频/视频脚本)</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+          </article>
+        </div>
+
+          <div class="py-5" id="board" style="margin-top: 20px;">
+            <!-- Comments -->
+            <div class="post-content mx-auto" id="comments" lazyload aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out">
+              <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; padding-bottom: 10px;">
+                <i class="iconfont icon-comment" aria-hidden="true"></i>
+                <span>评论</span>
+              <hr style="margin-top: 4px;">
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/js/zidingyi/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"nltNbWnKve6Q6oobgbQoGqT4-gzGzoHsz","appKey":"PLMY3oFRTfOUMLpgiB1mJnD7","path":"window.location.pathname","placeholder":"Say something~","avatar":"robohash","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="side-col d-none d-lg-block col-lg-2">
+            
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+  </div>
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+    <script>
+      AOS.init({
+          easing: 'ease-in-out-sine',
+          duration: 700,
+          delay: 100
+      });
+    </script>
+  <script>
+      $('.markdown-body').on('copy', function (e) {
+          // IE8 or earlier browser is 'undefined'
+          if (typeof window.getSelection === 'undefined') return;
+  
+          var selection = window.getSelection();
+          // if the selection is short let's not annoy our users.
+          if (('' + selection).length < Number.parseInt('100')) {
+              return;
+          }
+  
+          // create a div outside of the visible area and fill it with the selected text.
+          var bodyElement = document.getElementsByTagName('body')[0];
+          var newdiv = document.createElement('div');
+          newdiv.style.position = 'absolute';
+          newdiv.style.left = '-99999px';
+          bodyElement.appendChild(newdiv);
+          newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+  
+          // we need a <div class="code-wrapper"><pre> tag workaround.
+          // otherwise the text inside "pre" loses all the line breaks!
+          if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+              newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre></div>";
+          }
+  
+          var url = document.location.href;
+          newdiv.innerHTML += '<br />'
+              + '-------------------------------------------------------------------------<br />'
+              + 'from: Wenbin\'s blog<br />'
+              + '文章作者: Wenbin<br />'
+              + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+              + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+  
+          selection.selectAllChildren(newdiv);
+          window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+      });
+  </script>
+  
+    <div class="footer-content">
+       <span>Copyright © 2023 - 2024 |</span> <span>By Wenbin</span> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/js/aplayer/APlayer.min.css"> <div id="aplayer"></div> <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/js/aplayer/APlayer.min.js"></script> <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/js/aplayer/Meting.js"></script> <meting-js  server="netease"  type="playlist"  id="19723756" fixed="true"  autoplay="true" loop="all" order="random" preload="auto" list-folded="ture" list-max-height="300px" lrc-type="0"> </meting-js>
+<div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/js/duration.js"></script> </div> <div>  <script src="https://cdn.jsdelivr.net/gh/bin862324915/live2d@master/autoload.js"></script> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  
+<script src="//cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/js/zidingyi/xiantiao.js"></script>
+<script src="//cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/js/zidingyi/xiaoxingxing.js"></script>
+<script src="//cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/js/zidingyi/yinghua.js"></script>
+<script src="//cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/js/zidingyi/caidai.js"></script>
+<script src="/js/zidingyi/toastr/toastr.min.js"></script>
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
