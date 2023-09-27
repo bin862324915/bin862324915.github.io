@@ -17,8 +17,8 @@
   <meta name="keywords" content="">
   
     <meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="https://bin862324915.github.io/tags/index.html">
+<meta property="og:title" content="Wenbin&#39;s blog">
+<meta property="og:url" content="https://bin862324915.github.io/page/4/index.html">
 <meta property="og:site_name" content="Wenbin&#39;s blog">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="Wenbin">
@@ -30,7 +30,7 @@
   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/css/aos.css" />
   
-  <title>标签 - Wenbin&#39;s blog</title>
+  <title>Wenbin&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -121,7 +121,7 @@
   <header>
     
 
-<div class="header-inner" style="height: 80vh;">
+<div class="header-inner" style="height: 100vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -279,7 +279,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="标签"></span>
+            <span id="subtitle" data-typed-text="非淡泊无以明志，非宁静无以致远"></span>
           
         </div>
 
@@ -299,16 +299,62 @@
     
       <div class="container nopadding-x-md">
         <div id="board"
-          >
+          style="margin-top: 0">
           
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="text-center tagcloud">
-  <a href="/tags/AI%E7%BB%98%E7%94%BB/" style="font-size: 20px; color: #8ea5dc">AI绘画</a> <a href="/tags/ChatGPT/" style="font-size: 30px; color: #337ab7">ChatGPT</a> <a href="/tags/FFmpeg/" style="font-size: 15px; color: #bbe">FFmpeg</a> <a href="/tags/python/" style="font-size: 15px; color: #bbe">python</a> <a href="/tags/win%E8%B5%84%E6%BA%90/" style="font-size: 20px; color: #8ea5dc">win资源</a> <a href="/tags/%E4%BB%A3%E7%A0%81/" style="font-size: 25px; color: #6090c9">代码</a> <a href="/tags/%E5%9C%A8%E7%BA%BF%E8%B5%84%E6%BA%90/" style="font-size: 15px; color: #bbe">在线资源</a> <a href="/tags/%E5%BD%B1%E9%9F%B3%E5%A4%84%E7%90%86/" style="font-size: 20px; color: #8ea5dc">影音处理</a> <a href="/tags/%E6%8C%87%E4%BB%A4/" style="font-size: 15px; color: #bbe">指令</a> <a href="/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/" style="font-size: 30px; color: #337ab7">提问技巧</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 15px; color: #bbe">测试</a> <a href="/tags/%E6%BF%80%E6%B4%BB%E5%B7%A5%E5%85%B7/" style="font-size: 15px; color: #bbe">激活工具</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 15px; color: #bbe">爬虫</a> <a href="/tags/%E7%BD%91%E9%A1%B5%E7%BE%8E%E5%8C%96/" style="font-size: 20px; color: #8ea5dc">网页美化</a>
-</div>
+
+  <div class="row mx-auto index-card aos-init aos-animate" data-aos="flip-up"">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2023/08-25-hello-world.html" target="_self">
+          <img src="https://z1.ax1x.com/2023/08/30/pPwZmpd.jpg" srcset="/img/loading.gif" lazyload alt="Hello World">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/08-25-hello-world.html" target="_self">
+          Hello World
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt " href="/2023/08-25-hello-world.html" target="_self">
+        <div>
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-25 14:09" pubdate>
+              2023-08-25
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/page/3/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/#board">2</a><a class="page-number" href="/page/3/#board">3</a><span class="page-number current">4</span>
+    </span>
+  </nav>
+
+
 
               </div>
             </div>
@@ -463,7 +509,37 @@
       }
       var text = subtitle.getAttribute('data-typed-text');
       
-        typing(text);
+        jQuery.ajax({
+          type: 'GET',
+          url: 'https://v1.hitokoto.cn/',
+          headers: {},
+          dataType: 'json',
+          success: function(result) {
+            var apiText;
+            if (result) {
+              var keys = 'hitokoto'.split(',');
+              if (result instanceof Array) {
+                result = result[0];
+              }
+              for (const k of keys) {
+                var value = result[k];
+                if (typeof value === 'string') {
+                  apiText = value;
+                  break;
+                } else if (value instanceof Object) {
+                  result = value;
+                }
+              }
+            }
+            apiText ? typing(apiText) : typing(text);
+          },
+          error: function(xhr, status, error) {
+            if (error) {
+              console.error('Failed to request https://v1.hitokoto.cn/:', error);
+            }
+            typing(text);
+          }
+        })
       
     })(window, document);
   </script>
