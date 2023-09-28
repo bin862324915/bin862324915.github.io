@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>python使用pyautogui库模拟鼠标操作实例</title>
+    <link href="/2023/09-28-python002.html"/>
+    <url>/2023/09-28-python002.html</url>
+    
+    <content type="html"><![CDATA[<p><strong>python使用pyautogui库模拟鼠标操作实例</strong></p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> pyautogui<span class="token keyword">import</span> timenum_of_executions <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"请输入需要删除的页数："</span><span class="token punctuation">)</span><span class="token punctuation">)</span>time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>xy<span class="token operator">=</span>pyautogui<span class="token punctuation">.</span>position<span class="token punctuation">(</span><span class="token punctuation">)</span>num_of_iterations <span class="token operator">=</span> <span class="token number">0</span>nnum_of_iterations<span class="token operator">=</span><span class="token number">0</span><span class="token keyword">while</span> nnum_of_iterations <span class="token operator">&lt;</span> num_of_executions<span class="token punctuation">:</span>    num_of_iterations <span class="token operator">+=</span> <span class="token number">1</span>    pyautogui<span class="token punctuation">.</span>moveTo<span class="token punctuation">(</span>xy<span class="token punctuation">)</span>    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>    pyautogui<span class="token punctuation">.</span>moveRel<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">125</span><span class="token punctuation">)</span>    pyautogui<span class="token punctuation">.</span>mouseDown<span class="token punctuation">(</span><span class="token punctuation">)</span>    pyautogui<span class="token punctuation">.</span>mouseUp<span class="token punctuation">(</span><span class="token punctuation">)</span>    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>    pyautogui<span class="token punctuation">.</span>moveTo<span class="token punctuation">(</span><span class="token number">1040</span><span class="token punctuation">,</span> <span class="token number">732</span><span class="token punctuation">)</span>    pyautogui<span class="token punctuation">.</span>mouseDown<span class="token punctuation">(</span><span class="token punctuation">)</span>    pyautogui<span class="token punctuation">.</span>mouseUp<span class="token punctuation">(</span><span class="token punctuation">)</span>    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>    <span class="token keyword">if</span> num_of_iterations <span class="token operator">==</span> <span class="token number">20</span><span class="token punctuation">:</span>        pyautogui<span class="token punctuation">.</span>moveTo<span class="token punctuation">(</span><span class="token number">860</span><span class="token punctuation">,</span> <span class="token number">690</span><span class="token punctuation">)</span>        pyautogui<span class="token punctuation">.</span>mouseDown<span class="token punctuation">(</span><span class="token punctuation">)</span>        pyautogui<span class="token punctuation">.</span>mouseUp<span class="token punctuation">(</span><span class="token punctuation">)</span>        time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>        nnum_of_iterations<span class="token operator">+=</span><span class="token number">1</span>        <span class="token comment"># 重置循环计数器</span>        num_of_iterations <span class="token operator">=</span> <span class="token number">0</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>python</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>代码</tag>
+      
+      <tag>python</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>设置关于页头像图片鼠标悬停360°旋转效果</title>
     <link href="/2023/09-27-css002.html"/>
     <url>/2023/09-27-css002.html</url>
@@ -659,16 +686,16 @@
     
     <categories>
       
-      <category>代码相关</category>
+      <category>python</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>python</tag>
+      <tag>代码</tag>
       
-      <tag>爬虫</tag>
+      <tag>python</tag>
       
     </tags>
     

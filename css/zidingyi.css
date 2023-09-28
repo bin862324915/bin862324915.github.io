@@ -68,3 +68,42 @@ a:active {
     transition: box-shadow 0.3s ease-in-out;
     background-color: rgba(27,31,35,0.05);
 }
+
+@-webkit-keyframes bounce {
+
+  0%,
+  100% {
+    -webkit-transform: scale(0.0);
+  }
+
+  50% {
+    -webkit-transform: scale(1.0);
+  }
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  }
+
+  50% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+@keyframes slow-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sakura-svg {
+animation: slow-rotate 5s linear infinite;
+} 
