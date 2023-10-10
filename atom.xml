@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Wenbin&#39;s blog</title>
+  
+  
+  <link href="https://bin862324915.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://bin862324915.github.io/"/>
+  <updated>2023-09-28T07:48:38.212Z</updated>
+  <id>https://bin862324915.github.io/</id>
+  
+  <author>
+    <name>Wenbin</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python使用pyautogui库模拟鼠标操作实例</title>
+    <link href="https://bin862324915.github.io/2023/09-28-python002.html"/>
+    <id>https://bin862324915.github.io/2023/09-28-python002.html</id>
+    <published>2023-09-28T07:14:11.000Z</published>
+    <updated>2023-09-28T07:48:38.212Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;python使用pyautogui库模拟鼠标操作实例&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-python&quot; data-language=&quot;python&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="python" scheme="https://bin862324915.github.io/categories/python/"/>
+    
+    
+    <category term="代码" scheme="https://bin862324915.github.io/tags/%E4%BB%A3%E7%A0%81/"/>
+    
+    <category term="python" scheme="https://bin862324915.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>设置关于页头像图片鼠标悬停360°旋转效果</title>
+    <link href="https://bin862324915.github.io/2023/09-27-css002.html"/>
+    <id>https://bin862324915.github.io/2023/09-27-css002.html</id>
+    <published>2023-09-27T03:53:47.000Z</published>
+    <updated>2023-09-27T03:55:31.613Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;设置关于页头像图片鼠标悬停360°旋转效果&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;将以下代码复制替换fluid主题about.styl文件内容&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="CSS" scheme="https://bin862324915.github.io/categories/CSS/"/>
+    
+    
+    <category term="网页美化" scheme="https://bin862324915.github.io/tags/%E7%BD%91%E9%A1%B5%E7%BE%8E%E5%8C%96/"/>
+    
+    <category term="代码" scheme="https://bin862324915.github.io/tags/%E4%BB%A3%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>设置打字机文字为颜色渐变效果</title>
+    <link href="https://bin862324915.github.io/2023/09-27-css001.html"/>
+    <id>https://bin862324915.github.io/2023/09-27-css001.html</id>
+    <published>2023-09-27T03:33:47.000Z</published>
+    <updated>2023-09-27T03:46:11.809Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;设置打字机文字为颜色渐变效果&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-css&quot; data-language=&quot;css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="CSS" scheme="https://bin862324915.github.io/categories/CSS/"/>
+    
+    
+    <category term="网页美化" scheme="https://bin862324915.github.io/tags/%E7%BD%91%E9%A1%B5%E7%BE%8E%E5%8C%96/"/>
+    
+    <category term="代码" scheme="https://bin862324915.github.io/tags/%E4%BB%A3%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>视频转换工具 HD Video Converter Factory Pro</title>
+    <link href="https://bin862324915.github.io/2023/09-25-hdvideo.html"/>
+    <id>https://bin862324915.github.io/2023/09-25-hdvideo.html</id>
+    <published>2023-09-25T03:44:09.000Z</published>
+    <updated>2023-09-25T05:42:34.641Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;之前给大伙分享了很多视频格式转换的工具，比如格式工厂和万能视频转换器。&lt;/p&gt;
+&lt;p&gt;不过今天小编要分享的这款软件不仅可以转换视频格式，还可以将标清视频转换成高清视频。&lt;/p&gt;
+&lt;p&gt;这款软件是国外开发的，&lt;strong&gt;被誉为转换速度最快的高清视频转换软件。&lt;/stron</summary>
+        
+      
+    
+    
+    
+    <category term="win资源" scheme="https://bin862324915.github.io/categories/win%E8%B5%84%E6%BA%90/"/>
+    
+    
+    <category term="影音处理" scheme="https://bin862324915.github.io/tags/%E5%BD%B1%E9%9F%B3%E5%A4%84%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>激活工具 KMS Activator v30.4.0</title>
+    <link href="https://bin862324915.github.io/2023/09-22-heukms.html"/>
+    <id>https://bin862324915.github.io/2023/09-22-heukms.html</id>
+    <published>2023-09-22T05:27:17.000Z</published>
+    <updated>2023-09-25T03:38:07.676Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;HEU KMS Activator v30.4.0&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;HEU KMS</summary>
+        
+      
+    
+    
+    
+    <category term="win资源" scheme="https://bin862324915.github.io/categories/win%E8%B5%84%E6%BA%90/"/>
+    
+    
+    <category term="win资源" scheme="https://bin862324915.github.io/tags/win%E8%B5%84%E6%BA%90/"/>
+    
+    <category term="激活工具" scheme="https://bin862324915.github.io/tags/%E6%BF%80%E6%B4%BB%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>20-如何用ChatGPT做营销方案和选题计划</title>
+    <link href="https://bin862324915.github.io/2023/09-15-chatgpt020.html"/>
+    <id>https://bin862324915.github.io/2023/09-15-chatgpt020.html</id>
+    <published>2023-09-15T06:55:33.000Z</published>
+    <updated>2023-09-15T07:05:29.089Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;20-如何用ChatGPT做内容营销方案和选题计划，同时生产和优化内容？&quot;&gt;&lt;a href=&quot;#20-如何用ChatGPT做内容营销方案和选题计划，同时生产和优化内容？&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/categories/ChatGPT/"/>
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/tags/ChatGPT/"/>
+    
+    <category term="提问技巧" scheme="https://bin862324915.github.io/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>19-如何用ChatGPT协助搭建品牌视觉体系</title>
+    <link href="https://bin862324915.github.io/2023/09-15-chatgpt019.html"/>
+    <id>https://bin862324915.github.io/2023/09-15-chatgpt019.html</id>
+    <published>2023-09-15T06:45:33.000Z</published>
+    <updated>2023-09-15T06:55:54.064Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;19-如何用ChatGPT协助搭建品牌视觉体系（VI）？&quot;&gt;&lt;a href=&quot;#19-如何用ChatGPT协助搭建品牌视觉体系（VI）？&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/categories/ChatGPT/"/>
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/tags/ChatGPT/"/>
+    
+    <category term="提问技巧" scheme="https://bin862324915.github.io/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>18-如何用ChatGPT做新品上市推广方案策划</title>
+    <link href="https://bin862324915.github.io/2023/09-15-chatgpt018.html"/>
+    <id>https://bin862324915.github.io/2023/09-15-chatgpt018.html</id>
+    <published>2023-09-15T06:39:33.000Z</published>
+    <updated>2023-09-15T06:56:01.505Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;18-如何用ChatGPT做新品上市推广方案策划？&quot;&gt;&lt;a href=&quot;#18-如何用ChatGPT做新品上市推广方案策划？&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/categories/ChatGPT/"/>
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/tags/ChatGPT/"/>
+    
+    <category term="提问技巧" scheme="https://bin862324915.github.io/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>17-如何用ChatGP从品牌角度对产品提出升级建议</title>
+    <link href="https://bin862324915.github.io/2023/09-15-chatgpt017.html"/>
+    <id>https://bin862324915.github.io/2023/09-15-chatgpt017.html</id>
+    <published>2023-09-15T06:33:33.000Z</published>
+    <updated>2023-09-15T07:05:12.783Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;17-如何用ChatGP协助你，从品牌角度对产品提出升级建议？&quot;&gt;&lt;a href=&quot;#17-如何用ChatGP协助你，从品牌角度对产品提出升级建议？&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/categories/ChatGPT/"/>
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/tags/ChatGPT/"/>
+    
+    <category term="提问技巧" scheme="https://bin862324915.github.io/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>16-如何用ChatGPT做品牌联名方案策划</title>
+    <link href="https://bin862324915.github.io/2023/09-15-chatgpt016.html"/>
+    <id>https://bin862324915.github.io/2023/09-15-chatgpt016.html</id>
+    <published>2023-09-15T06:26:33.000Z</published>
+    <updated>2023-09-15T06:56:18.301Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;16-如何用ChatGPT做品牌联名方案策划？&quot;&gt;&lt;a href=&quot;#16-如何用ChatGPT做品牌联名方案策划？&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/categories/ChatGPT/"/>
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/tags/ChatGPT/"/>
+    
+    <category term="提问技巧" scheme="https://bin862324915.github.io/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>15-如何用ChatGPT搭建品牌文本体系</title>
+    <link href="https://bin862324915.github.io/2023/09-15-chatgpt015.html"/>
+    <id>https://bin862324915.github.io/2023/09-15-chatgpt015.html</id>
+    <published>2023-09-15T06:18:33.000Z</published>
+    <updated>2023-09-15T06:56:29.271Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;15-如何用ChatGPT搭建品牌文本体系？（品牌名-slogan-品牌故事）&quot;&gt;&lt;a href=&quot;#15-如何用ChatGPT搭建品牌文本体系？（品牌名-slogan-品牌故事）&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/categories/ChatGPT/"/>
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/tags/ChatGPT/"/>
+    
+    <category term="提问技巧" scheme="https://bin862324915.github.io/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>14-如何用ChatGPT写专业方向的科普内容</title>
+    <link href="https://bin862324915.github.io/2023/09-15-chatgpt014.html"/>
+    <id>https://bin862324915.github.io/2023/09-15-chatgpt014.html</id>
+    <published>2023-09-15T06:14:33.000Z</published>
+    <updated>2023-09-15T06:56:40.648Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;14-如何用ChatGPT写专业方向的科普内容？&quot;&gt;&lt;a href=&quot;#14-如何用ChatGPT写专业方向的科普内容？&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/categories/ChatGPT/"/>
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/tags/ChatGPT/"/>
+    
+    <category term="提问技巧" scheme="https://bin862324915.github.io/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>13-如何用ChatGPT做一门课</title>
+    <link href="https://bin862324915.github.io/2023/09-15-chatgpt013.html"/>
+    <id>https://bin862324915.github.io/2023/09-15-chatgpt013.html</id>
+    <published>2023-09-15T06:09:33.000Z</published>
+    <updated>2023-09-15T06:56:51.506Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;13-如何用ChatGPT做一门课？（包含大纲、脚本、PPT文本）&quot;&gt;&lt;a href=&quot;#13-如何用ChatGPT做一门课？（包含大纲、脚本、PPT文本）&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/categories/ChatGPT/"/>
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/tags/ChatGPT/"/>
+    
+    <category term="提问技巧" scheme="https://bin862324915.github.io/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>12-如何用ChatGPT做团队绩效管理</title>
+    <link href="https://bin862324915.github.io/2023/09-15-chatgpt012.html"/>
+    <id>https://bin862324915.github.io/2023/09-15-chatgpt012.html</id>
+    <published>2023-09-15T06:06:33.000Z</published>
+    <updated>2023-09-15T06:56:59.796Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;12-如何用ChatGPT做团队绩效管理？（根据员工的个人优势、不足、目标来生成更具体的绩效反馈）&quot;&gt;&lt;a href=&quot;#12-如何用ChatGPT做团队绩效管理？（根据员工的个人优势、不足、目标来生成更具体的绩效反馈）&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/categories/ChatGPT/"/>
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/tags/ChatGPT/"/>
+    
+    <category term="提问技巧" scheme="https://bin862324915.github.io/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>11-如何用ChatGPT做项目管理</title>
+    <link href="https://bin862324915.github.io/2023/09-15-chatgpt011.html"/>
+    <id>https://bin862324915.github.io/2023/09-15-chatgpt011.html</id>
+    <published>2023-09-15T06:01:33.000Z</published>
+    <updated>2023-09-15T06:07:27.055Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;11-如何用ChatGPT做项目管理？&quot;&gt;&lt;a href=&quot;#11-如何用ChatGPT做项目管理？&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/categories/ChatGPT/"/>
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/tags/ChatGPT/"/>
+    
+    <category term="提问技巧" scheme="https://bin862324915.github.io/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>10-如何让ChatGPT根据不同来源的数据进行调整</title>
+    <link href="https://bin862324915.github.io/2023/09-12-chatgpt010.html"/>
+    <id>https://bin862324915.github.io/2023/09-12-chatgpt010.html</id>
+    <published>2023-09-12T07:27:43.000Z</published>
+    <updated>2023-09-15T07:01:01.868Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;10-如何让ChatGPT根据不同来源的数据，例如销售数据、客户反馈、财务报告，自动生成报告，并根据不同利益方的需要和偏好进行调整？&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/categories/ChatGPT/"/>
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/tags/ChatGPT/"/>
+    
+    <category term="提问技巧" scheme="https://bin862324915.github.io/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>09-如何让ChatGPT作为客户服务回答话术</title>
+    <link href="https://bin862324915.github.io/2023/09-12-chatgpt009.html"/>
+    <id>https://bin862324915.github.io/2023/09-12-chatgpt009.html</id>
+    <published>2023-09-12T07:07:43.000Z</published>
+    <updated>2023-09-15T07:04:04.035Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;09-如何让ChatGPT自动生成内容，作为客户服务工作人员的回答话术？&quot;&gt;&lt;a href=&quot;#09-如何让ChatGPT自动生成内容，作为客户服务工作人员的回答话术？&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/categories/ChatGPT/"/>
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/tags/ChatGPT/"/>
+    
+    <category term="提问技巧" scheme="https://bin862324915.github.io/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>08-如何让ChatGPT学习产品、服务内容、方案</title>
+    <link href="https://bin862324915.github.io/2023/09-12-chatgpt008.html"/>
+    <id>https://bin862324915.github.io/2023/09-12-chatgpt008.html</id>
+    <published>2023-09-12T06:57:43.000Z</published>
+    <updated>2023-09-15T07:03:11.921Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;08-如何让ChatGPT学习企业产品、服务内容、给客户的往期方案，处理所输入的客户需求和参数，定制化生成适合客户的解决方案&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/categories/ChatGPT/"/>
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/tags/ChatGPT/"/>
+    
+    <category term="提问技巧" scheme="https://bin862324915.github.io/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>07-如何让ChatGPT学习销售过往文字稿分析话术</title>
+    <link href="https://bin862324915.github.io/2023/09-12-chatgpt007.html"/>
+    <id>https://bin862324915.github.io/2023/09-12-chatgpt007.html</id>
+    <published>2023-09-12T06:47:43.000Z</published>
+    <updated>2023-09-15T07:02:36.176Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;07-如何让ChatGPT学习销售过往文字稿，并自动分析话术的优缺点，然后修改？&quot;&gt;&lt;a href=&quot;#07-如何让ChatGPT学习销售过往文字稿，并自动分析话术的优缺点，然后修改？&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/categories/ChatGPT/"/>
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/tags/ChatGPT/"/>
+    
+    <category term="提问技巧" scheme="https://bin862324915.github.io/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>06-如何用ChatGPT辅助生成创意营销图片素材</title>
+    <link href="https://bin862324915.github.io/2023/09-12-chatgpt006.html"/>
+    <id>https://bin862324915.github.io/2023/09-12-chatgpt006.html</id>
+    <published>2023-09-12T06:37:43.000Z</published>
+    <updated>2023-09-12T06:48:16.223Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;06-如何用ChatGPT辅助生成创意营销图片素材，比如产品图、虚拟主播、产品包装图、终端店铺图？&quot;&gt;&lt;a href=&quot;#06-如何用ChatGPT辅助生成创意营销图片素材，比如产品图、虚拟主播、产品包装图、终端店铺图？&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/categories/ChatGPT/"/>
+    
+    
+    <category term="ChatGPT" scheme="https://bin862324915.github.io/tags/ChatGPT/"/>
+    
+    <category term="提问技巧" scheme="https://bin862324915.github.io/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+</feed>
