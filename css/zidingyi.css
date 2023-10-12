@@ -9,6 +9,8 @@ a:active {
 }
 
 body {
+    background-attachment: fixed;
+    background-size: cover;  
     cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao1.png'), default;
 }
 a:hover {
@@ -161,8 +163,10 @@ animation: slow-rotate 5s linear infinite;
     color: #999999;
 }
 
+
+/* valine美化 */
 #veditor {
-    background-image: url(https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp);
+    background-image: url(https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn/blob/main/img/bg-valine.gif);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -187,13 +191,14 @@ img.vimg:hover {
      -ms-transform: rotate(360deg);
 }
 
+/* 滑动条样式 */
 ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+    width: 6px;
+    height: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #e58a8a;
+    background-color: #07c9ed;
     background-image: -webkit-linear-gradient( 45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
     border-radius: 2em;
 }
@@ -204,5 +209,5 @@ img.vimg:hover {
 
 ::-moz-selection {
     color: #fff;
-    background-color: #e58a8a;
+    background-color: #07c9ed;
 }
