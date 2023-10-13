@@ -6,7 +6,7 @@
   <link href="https://bin862324915.github.io/atom.xml" rel="self"/>
   
   <link href="https://bin862324915.github.io/"/>
-  <updated>2023-10-12T08:34:11.018Z</updated>
+  <updated>2023-10-13T15:41:09.250Z</updated>
   <id>https://bin862324915.github.io/</id>
   
   <author>
@@ -15,6 +15,92 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>fluid主题给文章页增加打赏功能</title>
+    <link href="https://bin862324915.github.io/2023/10-13-wzdsgn.html"/>
+    <id>https://bin862324915.github.io/2023/10-13-wzdsgn.html</id>
+    <published>2023-10-13T13:52:36.000Z</published>
+    <updated>2023-10-13T15:41:09.250Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;fluid主题给文章页增加打赏功能&lt;/p&gt;
+&lt;h4 id=&quot;修改主题布局&quot;&gt;&lt;a href=&quot;#修改主题布局&quot; class=&quot;headerlink&quot; title=&quot;修改主题布局&quot;&gt;&lt;/a&gt;修改主题布局&lt;/h4&gt;&lt;p&gt;修改 找到主题布局文件</summary>
+        
+      
+    
+    
+    
+    <category term="hexo" scheme="https://bin862324915.github.io/categories/hexo/"/>
+    
+    
+    <category term="网页美化" scheme="https://bin862324915.github.io/tags/%E7%BD%91%E9%A1%B5%E7%BE%8E%E5%8C%96/"/>
+    
+    <category term="fluid主题" scheme="https://bin862324915.github.io/tags/fluid%E4%B8%BB%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>fluid主题设置网页随机背景图片</title>
+    <link href="https://bin862324915.github.io/2023/10-13-szsjbjtp.html"/>
+    <id>https://bin862324915.github.io/2023/10-13-szsjbjtp.html</id>
+    <published>2023-10-13T13:08:52.000Z</published>
+    <updated>2023-10-13T15:41:14.963Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;fluid主题设置网页随机背景图片&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;通过引入外部js文件的方式，添加以下js脚本&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-javascript&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="hexo" scheme="https://bin862324915.github.io/categories/hexo/"/>
+    
+    
+    <category term="网页美化" scheme="https://bin862324915.github.io/tags/%E7%BD%91%E9%A1%B5%E7%BE%8E%E5%8C%96/"/>
+    
+    <category term="fluid主题" scheme="https://bin862324915.github.io/tags/fluid%E4%B8%BB%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>fluid主题给网页底部添加随机一言</title>
+    <link href="https://bin862324915.github.io/2023/10-13-tjyy.html"/>
+    <id>https://bin862324915.github.io/2023/10-13-tjyy.html</id>
+    <published>2023-10-13T12:38:13.000Z</published>
+    <updated>2023-10-13T15:41:19.443Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;fluid主题给网页底部添加随机一言&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在fluid主题配置文件footer位置添加一个div&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="hexo" scheme="https://bin862324915.github.io/categories/hexo/"/>
+    
+    
+    <category term="网页美化" scheme="https://bin862324915.github.io/tags/%E7%BD%91%E9%A1%B5%E7%BE%8E%E5%8C%96/"/>
+    
+    <category term="fluid主题" scheme="https://bin862324915.github.io/tags/fluid%E4%B8%BB%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>python使用pyautogui库模拟鼠标操作实例</title>
@@ -49,7 +135,7 @@
     <link href="https://bin862324915.github.io/2023/09-27-css002.html"/>
     <id>https://bin862324915.github.io/2023/09-27-css002.html</id>
     <published>2023-09-27T03:53:47.000Z</published>
-    <updated>2023-10-12T08:33:18.381Z</updated>
+    <updated>2023-10-13T13:03:49.122Z</updated>
     
     
       
@@ -64,12 +150,12 @@
     
     
     
-    <category term="CSS" scheme="https://bin862324915.github.io/categories/CSS/"/>
+    <category term="hexo" scheme="https://bin862324915.github.io/categories/hexo/"/>
     
     
     <category term="网页美化" scheme="https://bin862324915.github.io/tags/%E7%BD%91%E9%A1%B5%E7%BE%8E%E5%8C%96/"/>
     
-    <category term="代码" scheme="https://bin862324915.github.io/tags/%E4%BB%A3%E7%A0%81/"/>
+    <category term="fluid主题" scheme="https://bin862324915.github.io/tags/fluid%E4%B8%BB%E9%A2%98/"/>
     
   </entry>
   
@@ -78,7 +164,7 @@
     <link href="https://bin862324915.github.io/2023/09-27-css001.html"/>
     <id>https://bin862324915.github.io/2023/09-27-css001.html</id>
     <published>2023-09-27T03:33:47.000Z</published>
-    <updated>2023-10-12T08:33:12.226Z</updated>
+    <updated>2023-10-13T13:03:38.931Z</updated>
     
     
       
@@ -92,12 +178,12 @@
     
     
     
-    <category term="CSS" scheme="https://bin862324915.github.io/categories/CSS/"/>
+    <category term="hexo" scheme="https://bin862324915.github.io/categories/hexo/"/>
     
     
     <category term="网页美化" scheme="https://bin862324915.github.io/tags/%E7%BD%91%E9%A1%B5%E7%BE%8E%E5%8C%96/"/>
     
-    <category term="代码" scheme="https://bin862324915.github.io/tags/%E4%BB%A3%E7%A0%81/"/>
+    <category term="fluid主题" scheme="https://bin862324915.github.io/tags/fluid%E4%B8%BB%E9%A2%98/"/>
     
   </entry>
   
@@ -466,87 +552,6 @@
         
         
     <summary type="html">&lt;h2 id=&quot;09-如何让ChatGPT自动生成内容，作为客户服务工作人员的回答话术？&quot;&gt;&lt;a href=&quot;#09-如何让ChatGPT自动生成内容，作为客户服务工作人员的回答话术？&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="ChatGPT" scheme="https://bin862324915.github.io/categories/ChatGPT/"/>
-    
-    
-    <category term="ChatGPT" scheme="https://bin862324915.github.io/tags/ChatGPT/"/>
-    
-    <category term="提问技巧" scheme="https://bin862324915.github.io/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>08-如何让ChatGPT学习产品、服务内容、方案</title>
-    <link href="https://bin862324915.github.io/2023/09-12-chatgpt008.html"/>
-    <id>https://bin862324915.github.io/2023/09-12-chatgpt008.html</id>
-    <published>2023-09-12T06:57:43.000Z</published>
-    <updated>2023-10-12T08:31:27.444Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;08-如何让ChatGPT学习企业产品、服务内容、给客户的往期方案，处理所输入的客户需求和参数，定制化生成适合客户的解决方案&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="ChatGPT" scheme="https://bin862324915.github.io/categories/ChatGPT/"/>
-    
-    
-    <category term="ChatGPT" scheme="https://bin862324915.github.io/tags/ChatGPT/"/>
-    
-    <category term="提问技巧" scheme="https://bin862324915.github.io/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>07-如何让ChatGPT学习销售过往文字稿分析话术</title>
-    <link href="https://bin862324915.github.io/2023/09-12-chatgpt007.html"/>
-    <id>https://bin862324915.github.io/2023/09-12-chatgpt007.html</id>
-    <published>2023-09-12T06:47:43.000Z</published>
-    <updated>2023-10-12T08:31:19.291Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;07-如何让ChatGPT学习销售过往文字稿，并自动分析话术的优缺点，然后修改？&quot;&gt;&lt;a href=&quot;#07-如何让ChatGPT学习销售过往文字稿，并自动分析话术的优缺点，然后修改？&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="ChatGPT" scheme="https://bin862324915.github.io/categories/ChatGPT/"/>
-    
-    
-    <category term="ChatGPT" scheme="https://bin862324915.github.io/tags/ChatGPT/"/>
-    
-    <category term="提问技巧" scheme="https://bin862324915.github.io/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>06-如何用ChatGPT辅助生成创意营销图片素材</title>
-    <link href="https://bin862324915.github.io/2023/09-12-chatgpt006.html"/>
-    <id>https://bin862324915.github.io/2023/09-12-chatgpt006.html</id>
-    <published>2023-09-12T06:37:43.000Z</published>
-    <updated>2023-10-12T08:31:13.724Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;06-如何用ChatGPT辅助生成创意营销图片素材，比如产品图、虚拟主播、产品包装图、终端店铺图？&quot;&gt;&lt;a href=&quot;#06-如何用ChatGPT辅助生成创意营销图片素材，比如产品图、虚拟主播、产品包装图、终端店铺图？&quot; class=&quot;headerlink&quot;</summary>
         
       
     

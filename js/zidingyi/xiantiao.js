@@ -35,7 +35,7 @@
                 x = w[v];
                 if (i !== x && null !== x.x && null !== x.y) {
                     B = i.x - x.x, z = i.y - x.y, y = B * B + z * z;
-                    y < x.max && (x === f && y >= x.max / 2 && (i.x -= 0.03 * B, i.y -= 0.03 * z), A = (x.max - y) / x.max, e.beginPath(), e.lineWidth = A / 2, e.strokeStyle = "rgba(" + s.c + "," + (A + 0.2) + ")", e.moveTo(i.x, i.y), e.lineTo(x.x, x.y), e.stroke())
+                    y < x.max && (x === f && y >= x.max / 2 && (i.x -= 0.03 * B, i.y -= 0.03 * z), A = (x.max - y) / x.max, e.beginPath(), e.lineWidth = A / 2, e.strokeStyle = "rgba(238,238,0,1)", e.moveTo(i.x, i.y), e.lineTo(x.x, x.y), e.stroke())
                 }
             }
             w.splice(w.indexOf(i), 1)

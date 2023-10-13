@@ -41,11 +41,11 @@ a:active {
 }
 
 #subtitle {
-    background: linear-gradient(125deg, #C6FF1A, #FFFF66, #4D70FF, #4DFF4D);
+    background: linear-gradient(-135deg, #C6FF1A, #FFFF66, #4D70FF, #4DFF4D);
     background-size: 400% 400%;
-    -webkit-animation: Gradient 25s ease infinite;
-    -moz-animation: Gradient 25s ease infinite;
-    animation: Gradient 25s ease infinite;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
     -o-user-select: none;
     -ms-user-select: none;
     -webkit-user-select: none;
@@ -59,6 +59,31 @@ a:active {
 
 #subtitle:before {
     background-color: rgba(0, 0, 0, 0);
+}
+
+.typed-cursor {
+  color: #fc9d9a;
+}
+
+
+
+@keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+#hitokoto {
+  width: 200px;
+  height: auto;
+  background: linear-gradient(45deg, #C6FF1A, #FFFF66, #FF00FF, #00FF00, #00FF00);
+  background-size: 200% 200%;
+  animation: gradientAnimation 5s ease infinite;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip:text;
+}
+footer .iconfont {
+    color: #FFC1C1;
 }
 
 .reprint {
@@ -166,7 +191,7 @@ animation: slow-rotate 5s linear infinite;
 
 /* valine美化 */
 #veditor {
-    background-image: url(https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn/blob/main/img/bg-valine.gif);
+    background-image: url(https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/img/bg-valine.gif);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
