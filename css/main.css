@@ -433,7 +433,7 @@ sup > a::before,
   .navbar .dropdown-collapse,
   .top-nav-collapse,
   .navbar-col-show {
-    background: rgba(47,65,84,0.4);
+    background: rgba(47,65,84,0.8);
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
   }
@@ -864,7 +864,7 @@ i.iconfont {
   --button-hover-bg-color: #f2f3f5;
   --highlight-bg-color: #f6f8fa;
   --inlinecode-bg-color: rgba(175,184,193,0.2);
-  --talking-bg-color: rgba(249, 250, 251, 0.8);
+  --talking-bg-color: rgba(249, 250, 251, 0.7);
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -890,7 +890,7 @@ i.iconfont {
     --button-hover-bg-color: #46647e;
     --highlight-bg-color: #2d333b;
     --inlinecode-bg-color: rgba(99,110,123,0.4);
-    --talking-bg-color: rgba(55, 65, 81, 0.8);
+    --talking-bg-color: rgba(55, 65, 81, 0.7);
   }
   :root:not([data-user-color-scheme]) img {
     -webkit-filter: brightness(0.9);
@@ -901,7 +901,7 @@ i.iconfont {
     :root:not([data-user-color-scheme]) .navbar .dropdown-collapse,
     :root:not([data-user-color-scheme]) .top-nav-collapse,
     :root:not([data-user-color-scheme]) .navbar-col-show {
-      background: rgba(31,49,68,0.4);
+      background: rgba(31,49,68,0.8);
       -webkit-backdrop-filter: blur(3px);
       backdrop-filter: blur(3px);
     }
@@ -943,7 +943,7 @@ i.iconfont {
     --button-hover-bg-color: #46647e;
     --highlight-bg-color: #2d333b;
     --inlinecode-bg-color: rgba(99,110,123,0.4);
-    --talking-bg-color: rgba(55, 65, 81, 0.8);
+    --talking-bg-color: rgba(55, 65, 81, 0.7);
   }
   [data-user-color-scheme="dark"] img {
     -webkit-filter: brightness(0.9);
@@ -954,7 +954,7 @@ i.iconfont {
     [data-user-color-scheme="dark"] .navbar .dropdown-collapse,
     [data-user-color-scheme="dark"] .top-nav-collapse,
     [data-user-color-scheme="dark"] .navbar-col-show {
-      background: rgba(31,49,68,0.4);
+      background: rgba(31,49,68,0.8);
       -webkit-backdrop-filter: blur(3px);
       backdrop-filter: blur(3px);
     }

@@ -20,7 +20,7 @@
     <meta property="og:type" content="website">
 <meta property="og:title" content="分类 - ChatGPT">
 <meta property="og:url" content="https://bin862324915.github.io/categories/ChatGPT/index.html">
-<meta property="og:site_name" content="Wenbin blog">
+<meta property="og:site_name" content="Wenbin&#39;s blog">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="Wenbin">
 <meta name="twitter:card" content="summary_large_image">
@@ -31,7 +31,7 @@
   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/css/aos.css" />
   
-  <title>分类 - ChatGPT - Wenbin blog</title>
+  <title>分类 - ChatGPT - Wenbin&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -114,11 +114,24 @@
 <link rel="stylesheet" href="/js/zidingyi/code/prism.css"/>
 <script type='text/javascript' src="/js/zidingyi/code/prism.js"></script>
   <script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" type="application/x-javascript"></script>
-<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Wenbin blog" type="application/atom+xml">
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Wenbin's blog" type="application/atom+xml">
 </head>
 
 <body>
-  <script  src="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/js/aos.js" type="application/x-javascript"></script>
+  <script  src="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/js/aos.js" type="application/x-javascript"></script><div>
+	<div class='real_mask' style="
+		background-color: rgba(0,0,0,0.4);
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		z-index: -777;
+	"></div>
+	<div id="banner_video_insert">
+	</div>	
+	<div id='vvd_banner_img'>
+	</div>
+</div>
+<div id="banner"></div>
 
   <header>
     
@@ -127,7 +140,7 @@
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <strong>Wenbin blog</strong>
+      <strong>Wenbin&#39;s blog</strong>
     </a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
@@ -307,6 +320,70 @@
 
 </div>
 
+
+	<div class="banner" id='banner' >
+
+		<div class="full-bg-img" >
+
+			
+				<script>
+					var ua = navigator.userAgent;
+					var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+						isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+						isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+						isMobile = isIphone || isAndroid;
+
+					function set_video_attr(id){
+
+						var height = document.body.clientHeight
+						var width = document.body.clientWidth
+						var video_item = document.getElementById(id);
+
+						if (height / width < 0.56){
+							video_item.setAttribute('width', '100%');
+							video_item.setAttribute('height', 'auto');
+						} else {
+							video_item.setAttribute('height', '100%');
+							video_item.setAttribute('width', 'auto');
+						}
+					}
+
+					$.getJSON('https://www.zywvvd.com/vvd_js/video_url.json', function(data){
+						if (true){
+							var video_list_length = data.length
+							var seed = Math.random()
+							index = Math.floor(seed * video_list_length)
+							
+							video_url = data[index][0]
+							pre_show_image_url = data[index][1]
+							
+							banner_obj = document.getElementById("banner")
+							banner_obj.style.cssText = "background: url('" + pre_show_image_url + "') no-repeat; background-size: cover;"
+
+							vvd_banner_obj = document.getElementById("vvd_banner_img")
+
+							vvd_banner_content = "<img id='banner_img_item' src='" + pre_show_image_url + "' style='height: 100%; position: fixed; z-index: -999'>"
+							vvd_banner_obj.innerHTML = vvd_banner_content
+							set_video_attr('banner_img_item')
+
+							if (!isMobile) {
+								video_html_res = "<video id='video_item' style='position: fixed; z-index: -888;'  muted='muted' src=" + video_url + " autoplay='autoplay' loop='loop'></video>"
+								document.getElementById("banner_video_insert").innerHTML = video_html_res;
+								set_video_attr('video_item')
+							}
+						}
+					});
+
+					if (!isMobile){
+						window.onresize = function(){
+							set_video_attr('video_item')
+							}
+						}
+				</script>
+			
+			</div>
+		</div>
+    </div>
   </header>
 
   <main>
@@ -582,7 +659,6 @@
 <script src="/js/zidingyi/xiantiao.js"></script>
 <script src="//cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/js/zidingyi/xiaoxingxing.js"></script>
 <script src="//cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/js/zidingyi/yinghua.js"></script>
-<script src="//cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/js/zidingyi/caidai.js"></script>
 <script src="/js/zidingyi/toastr/toastr.min.js"></script>
 <script src="/js/zidingyi/zdy.js"></script>
 
