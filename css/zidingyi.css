@@ -89,11 +89,12 @@ footer .iconfont {
 .reprint {
     margin: 15px 0 0.4rem;
     padding: 0.5rem 0.8rem;
-    border: 1px solid #eee;
+    border: 1px solid #29d9;
     line-height: 2;
-    border-left: 3px solid #ff2a2a;
+    /* border-left: 2px solid #977275; */
     transition: box-shadow 0.3s ease-in-out;
     background-color: rgba(27,31,35,0.05);
+    border-radius: 5px;
 }
 
 @-webkit-keyframes bounce {
@@ -254,8 +255,8 @@ img.vimg:hover {
 
 /* 滑动条样式 */
 ::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -271,4 +272,37 @@ img.vimg:hover {
 ::-moz-selection {
     color: #fff;
     background-color: #07c9ed;
+}
+
+/* 列表样式 */
+.list-group-item-action {
+    border-radius: 10px;
+}
+
+.list-group-item-action:hover {
+    border-radius: 10px;
+    background-color: #cde3ae6e;
+}
+
+.pagination .page-number {
+  border-radius: 10px;
+}
+
+.pagination .page-number:hover,
+.pagination .current {
+  border-radius: 10px;
+}
+
+.list-group-item+.list-group-item {
+    border-top-width: 10px;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }

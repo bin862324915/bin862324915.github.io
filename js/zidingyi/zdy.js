@@ -10,12 +10,12 @@ if(rewardBtn){
 	}
 }
 
-// 浏览器搞笑标题
+// 浏览器标题
 var OriginTitle = document.title;
 var titleTime;
 document.addEventListener('visibilitychange', function() {
 	if (document.hidden) {
-		$('[rel="icon"]').attr('href', "/funny.ico");
+		$('[rel="icon"]').attr('href', "/img/favicon.ico");
 		document.title = '╭(°A°`)╮ 页面崩溃啦 ~';
 		clearTimeout(titleTime);
 	} else {
@@ -28,25 +28,25 @@ document.addEventListener('visibilitychange', function() {
 });
 
 // 背景图
-var backgroundImageUrls = [
-  "url('https://z1.ax1x.com/2023/10/11/pPzRbo4.jpg')",
-  "url('https://z1.ax1x.com/2023/09/12/pP216Vx.jpg')",
-  "url('https://z1.ax1x.com/2023/10/12/piSvJts.png')",
-  "url('https://z1.ax1x.com/2023/10/12/piSv10g.jpg')",
-  "url('https://z1.ax1x.com/2023/10/12/piSv37Q.jpg')",
-  "url('https://z1.ax1x.com/2023/10/12/piSvlnS.jpg')",
-  "url('https://z1.ax1x.com/2023/10/12/piSvMX8.jpg')",
-  "url('https://z1.ax1x.com/2023/10/12/piSvGkj.png')",
-  "url('https://z1.ax1x.com/2023/10/12/piSvu1P.jpg')",
-  "url('https://z1.ax1x.com/2023/10/12/piSvefI.jpg')",
-  "url('https://z1.ax1x.com/2023/10/12/piSvnpt.jpg')",
-  "url('https://z1.ax1x.com/2023/10/12/piSvK6f.jpg')",
-  "url('https://z1.ax1x.com/2023/09/12/pP21sq1.jpg')"
-];
+//var backgroundImageUrls = [
+//  "url('https://z1.ax1x.com/2023/10/11/pPzRbo4.jpg')",
+//  "url('https://z1.ax1x.com/2023/09/12/pP216Vx.jpg')",
+//  "url('https://z1.ax1x.com/2023/10/12/piSvJts.png')",
+//  "url('https://z1.ax1x.com/2023/10/12/piSv10g.jpg')",
+//  "url('https://z1.ax1x.com/2023/10/12/piSv37Q.jpg')",
+//  "url('https://z1.ax1x.com/2023/10/12/piSvlnS.jpg')",
+//  "url('https://z1.ax1x.com/2023/10/12/piSvMX8.jpg')",
+//  "url('https://z1.ax1x.com/2023/10/12/piSvGkj.png')",
+//  "url('https://z1.ax1x.com/2023/10/12/piSvu1P.jpg')",
+//  "url('https://z1.ax1x.com/2023/10/12/piSvefI.jpg')",
+//  "url('https://z1.ax1x.com/2023/10/12/piSvnpt.jpg')",
+//  "url('https://z1.ax1x.com/2023/10/12/piSvK6f.jpg')",
+//  "url('https://z1.ax1x.com/2023/09/12/pP21sq1.jpg')"
+//];
 
-var randomIndex = Math.floor(Math.random() * backgroundImageUrls.length);
-var bodyElement = document.querySelector("body");
-bodyElement.style.backgroundImage = backgroundImageUrls[randomIndex];
+//var randomIndex = Math.floor(Math.random() * backgroundImageUrls.length);
+//var bodyElement = document.querySelector("body");
+//bodyElement.style.backgroundImage = backgroundImageUrls[randomIndex];
 
 // 底部一言
 function hitokoto(o) {
@@ -68,3 +68,13 @@ function getHitokoto() {
 $(document).ready((function() {
     getHitokoto()
 }))
+
+var elements = document.querySelectorAll('.index-card');
+
+for (var i = 0; i < elements.length; i++) {
+    if (i % 2 === 1) {
+        elements[i].setAttribute('data-aos', 'fade-right');
+    } else {
+        elements[i].setAttribute('data-aos', 'fade-left');
+    }
+}
