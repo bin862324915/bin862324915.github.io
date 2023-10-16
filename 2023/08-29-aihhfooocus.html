@@ -70,7 +70,7 @@
 
   
 <link rel="stylesheet" href="/css/zidingyi.css">
-<link rel="stylesheet" href="//at.alicdn.com/t/c/font_4229952_izjb8kck2nn.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_4229952_xx10uk3drgk.css">
 <link rel="stylesheet" href="/js/zidingyi/toastr/toastr.min.css">
 
 
@@ -186,7 +186,7 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="iconfont icon-note"></i>
+                <i class="iconfont icon-jurassic_book"></i>
                 <span>文章</span>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -251,7 +251,7 @@
                   
                   
                   <a class="dropdown-item" href="/talking/">
-                    <i class="iconfont icon-41shuoshuo"></i>
+                    <i class="iconfont icon-liuyanguanli"></i>
                     <span>碎碎念</span>
                   </a>
                 
@@ -451,6 +451,7 @@
   <main>
     
       
+
 <div class="container-fluid nopadding-x">
   <div class="row nomargin-x">
     <div class="side-col d-none d-lg-block col-lg-2">
@@ -460,7 +461,7 @@
 
     <div class="col-lg-8 nopadding-x-md">
       <div class="container nopadding-x-md" id="board-ctn">
-        <div id="board">
+        <div class=py-5 id="board">
           <article class="post-content mx-auto">
             <h1 id="seo-header">免费畅玩AI绘图！fooocus（附安装包）</h1>
             
@@ -524,9 +525,8 @@
               </div>
             
             <hr/>
-
-<!-- 添加打赏模块 -->
-  <div class="reward-container">
+	<!-- 添加打赏模块 -->
+	<div class="reward-container">
 	
 		<button id="rewardBtn" class="reward-btn">
 			 
@@ -545,9 +545,8 @@
            	</div>
 		</div>
 	
-</div>
-<!-- 打赏模块 -->
-
+	</div>
+			
             <div>
               <div class="post-metas my-3">
   
@@ -650,49 +649,31 @@
                   </article>
                 </div>
               
-            </div>
-<div class="post_share" style="width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                  <div class="post_share" style="width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
     <div id="article-share">
 
         
             <link  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/overtrue/share.js@1.0.2/dist/css/share.min.css" type="text/css"/>
             <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
             <script  src="https://cdn.jsdelivr.net/gh/overtrue/share.js@1.0.2/dist/js/share.min.js" type="application/x-javascript"></script>
+        
 
+        
 
+    </div>
+</div>
+            </div>
           </article>
         </div>
-      </div>
-    </div>
-
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-  <aside class="sidebar" style="margin-left: -1rem">
-    <div id="toc">
-  <p class="toc-header">
-    <i class="iconfont icon-list"></i>
-    <span>目录</span>
-  </p>
-  <div class="toc-body" id="toc-body"></div>
-</div>
 
 
-
-  </aside>
-
-
-        </div>
-
-      
-        <div class="container nopadding-md" id="board-ctn" data-aos="fade-up">
           <div class="py-5" id="board" style="margin-top: 20px;">
             <!-- Comments -->
-<article class="post-content mx-auto" id="comments" lazyload>
+            <div class="post-content mx-auto" id="comments" lazyload aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out">
               <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; padding-bottom: 10px;">
                 <i class="iconfont icon-pinglun" aria-hidden="true"></i>
                 <span>评论</span>
-              </div>
-              <hr>
+              <hr style="margin-top: 4px;">
             
   
   
@@ -725,14 +706,28 @@
   
 
 
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="side-col d-none d-lg-block col-lg-2">
+            
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
 
-            </article>
-          </div>
-        </div>
 
-    
 
-            <!-- Comments -->
+  </aside>
+
+
+  </div>
 
 
 
@@ -759,9 +754,7 @@
     
 
     
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
+      <a class="iconfont icon-retop" id="scroll-top-button" aria-label="TOP" href="#" role="button"></a>
     
 
     

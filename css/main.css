@@ -663,10 +663,9 @@ sup > a::before,
   position: fixed;
   z-index: 99;
   background: var(--board-bg-color);
-  transition: background-color 0.2s ease-in-out, bottom 0.3s ease;
   border-radius: 4px;
-  min-width: 40px;
-  min-height: 40px;
+  min-width: 25px;
+  min-height: 25px;
   bottom: -60px;
   outline: none;
   display: flex;
@@ -675,19 +674,9 @@ sup > a::before,
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 #scroll-top-button i {
-  font-size: 32px;
+  font-size: 16px;
   margin: auto;
   color: var(--sec-text-color);
-}
-#scroll-top-button:hover i,
-#scroll-top-button:active i {
-  animation-name: scroll-top;
-  animation-duration: 1s;
-  animation-delay: 0.1s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
-  animation-direction: alternate;
 }
 #local-search-result .search-list-title {
   border-left: 3px solid #0d47a1;

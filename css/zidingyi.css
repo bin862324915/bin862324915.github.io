@@ -236,10 +236,17 @@ animation: slow-rotate 5s linear infinite;
     resize: vertical
 }
 
-#veditor:focus{
+#artitalk_main .shuoshuo_text:focus {
     background-position-y: 200px;
     transition: all 0.2s ease-in-out 0s;
 }
+
+#veditor:focus  {
+    background-position-y: 200px;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+
 
 img.vimg {
      transition: all 1s

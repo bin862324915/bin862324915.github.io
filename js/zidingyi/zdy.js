@@ -78,3 +78,13 @@ for (var i = 0; i < elements.length; i++) {
         elements[i].setAttribute('data-aos', 'fade-left');
     }
 }
+
+//top
+let scrollButton = document.getElementById('scroll-top-button');
+let scrollPercentage = 0;
+
+window.addEventListener('scroll', function() {
+  scrollPercentage = (window.scrollY / (document.body.scrollHeight - document.documentElement.clientHeight)) * 100;
+  
+scrollButton.textContent = '' + Math.round(scrollPercentage) + '%';
+});
