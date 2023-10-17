@@ -313,3 +313,17 @@ img.vimg:hover {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+
+.bing-tk {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+
+.bing {
+  width: calc(33.33% - 10px);
+  margin-right: -25px;
+  margin-left: -25px;
+}
+
