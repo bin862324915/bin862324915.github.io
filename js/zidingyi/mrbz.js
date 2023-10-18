@@ -14,8 +14,8 @@ query.find().then((tukuRecords) => {
     const formattedDate = formatDate(createdAt);
     const imgurl = record.get('imgurl');
     const htmlContent = `
-      <img src="${slturl}" style="border-radius: 8px;">
-      <p style="text-align: center;padding-top: 5px;">${formattedDate} | <a href="${imgurl}" target="_blank">下载原图</a></p>
+      <img onload="imgloading(this)" src="${slturl}" style="border-radius: 8px;">
+      <p style="text-align: center;padding-top: 5px;">${formattedDate} | <a href="${imgurl}" target="_blank">获取原图</a></p>
     `;
     const newDiv = document.createElement('div');
     newDiv.className = 'bing';
