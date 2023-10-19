@@ -318,12 +318,23 @@ img.vimg:hover {
   display: flex;
   flex-wrap: wrap;
   padding-top: 10px;
-  justify-content: space-between;
+  justify-content: flex-start;
+  overflow: visible;
+  margin-right: -190px;
 }
 
 .bing {
-  width: calc(33.33% - 10px);
-  margin-right: -25px;
-  margin-left: -25px;
+  width: calc(33.33% - 0px);
+  padding: 0px 8px 5px 0px;
+  margin-left: -30px;
 }
+
+.bing p {
+  margin-left: 45px; 
+}
+
+.bing img {
+  width: 300px; 
+}
+
 
