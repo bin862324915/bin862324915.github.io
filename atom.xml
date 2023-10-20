@@ -6,7 +6,7 @@
   <link href="https://bin862324915.github.io/atom.xml" rel="self"/>
   
   <link href="https://bin862324915.github.io/"/>
-  <updated>2023-10-13T15:41:09.250Z</updated>
+  <updated>2023-10-20T10:58:00.808Z</updated>
   <id>https://bin862324915.github.io/</id>
   
   <author>
@@ -17,11 +17,98 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>python爬取元气桌面动态壁纸实例</title>
+    <link href="https://bin862324915.github.io/2023/10-20-python004.html"/>
+    <id>https://bin862324915.github.io/2023/10-20-python004.html</id>
+    <published>2023-10-20T10:41:32.000Z</published>
+    <updated>2023-10-20T10:58:00.808Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;python爬取元气桌面动态壁纸实例&quot;&gt;&lt;a href=&quot;#python爬取元气桌面动态壁纸实例&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="python" scheme="https://bin862324915.github.io/categories/python/"/>
+    
+    
+    <category term="代码" scheme="https://bin862324915.github.io/tags/%E4%BB%A3%E7%A0%81/"/>
+    
+    <category term="python" scheme="https://bin862324915.github.io/tags/python/"/>
+    
+    <category term="爬虫" scheme="https://bin862324915.github.io/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python爬取元气桌面壁纸实例</title>
+    <link href="https://bin862324915.github.io/2023/10-20-python003.html"/>
+    <id>https://bin862324915.github.io/2023/10-20-python003.html</id>
+    <published>2023-10-20T10:29:56.000Z</published>
+    <updated>2023-10-20T10:48:56.560Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;python爬取元气桌面壁纸实例&quot;&gt;&lt;a href=&quot;#python爬取元气桌面壁纸实例&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="python" scheme="https://bin862324915.github.io/categories/python/"/>
+    
+    
+    <category term="代码" scheme="https://bin862324915.github.io/tags/%E4%BB%A3%E7%A0%81/"/>
+    
+    <category term="python" scheme="https://bin862324915.github.io/tags/python/"/>
+    
+    <category term="爬虫" scheme="https://bin862324915.github.io/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo每日自动获取必应壁纸</title>
+    <link href="https://bin862324915.github.io/2023/10-20-biying.html"/>
+    <id>https://bin862324915.github.io/2023/10-20-biying.html</id>
+    <published>2023-10-20T10:03:58.000Z</published>
+    <updated>2023-10-20T10:25:49.469Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;hexo每日每日自动获取必应壁纸&quot;&gt;&lt;a href=&quot;#hexo每日每日自动获取必应壁纸&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="hexo" scheme="https://bin862324915.github.io/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="https://bin862324915.github.io/tags/hexo/"/>
+    
+    <category term="网页美化" scheme="https://bin862324915.github.io/tags/%E7%BD%91%E9%A1%B5%E7%BE%8E%E5%8C%96/"/>
+    
+    <category term="fluid主题" scheme="https://bin862324915.github.io/tags/fluid%E4%B8%BB%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
     <title>fluid主题给文章页增加打赏功能</title>
     <link href="https://bin862324915.github.io/2023/10-13-wzdsgn.html"/>
     <id>https://bin862324915.github.io/2023/10-13-wzdsgn.html</id>
     <published>2023-10-13T13:52:36.000Z</published>
-    <updated>2023-10-13T15:41:09.250Z</updated>
+    <updated>2023-10-20T10:20:51.222Z</updated>
     
     
       
@@ -471,87 +558,6 @@
         
         
     <summary type="html">&lt;h2 id=&quot;12-如何用ChatGPT做团队绩效管理？（根据员工的个人优势、不足、目标来生成更具体的绩效反馈）&quot;&gt;&lt;a href=&quot;#12-如何用ChatGPT做团队绩效管理？（根据员工的个人优势、不足、目标来生成更具体的绩效反馈）&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="ChatGPT" scheme="https://bin862324915.github.io/categories/ChatGPT/"/>
-    
-    
-    <category term="ChatGPT" scheme="https://bin862324915.github.io/tags/ChatGPT/"/>
-    
-    <category term="提问技巧" scheme="https://bin862324915.github.io/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>11-如何用ChatGPT做项目管理</title>
-    <link href="https://bin862324915.github.io/2023/09-15-chatgpt011.html"/>
-    <id>https://bin862324915.github.io/2023/09-15-chatgpt011.html</id>
-    <published>2023-09-15T06:01:33.000Z</published>
-    <updated>2023-10-12T08:31:46.277Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;11-如何用ChatGPT做项目管理？&quot;&gt;&lt;a href=&quot;#11-如何用ChatGPT做项目管理？&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="ChatGPT" scheme="https://bin862324915.github.io/categories/ChatGPT/"/>
-    
-    
-    <category term="ChatGPT" scheme="https://bin862324915.github.io/tags/ChatGPT/"/>
-    
-    <category term="提问技巧" scheme="https://bin862324915.github.io/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>10-如何让ChatGPT根据不同来源的数据进行调整</title>
-    <link href="https://bin862324915.github.io/2023/09-12-chatgpt010.html"/>
-    <id>https://bin862324915.github.io/2023/09-12-chatgpt010.html</id>
-    <published>2023-09-12T07:27:43.000Z</published>
-    <updated>2023-10-12T08:31:39.726Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;10-如何让ChatGPT根据不同来源的数据，例如销售数据、客户反馈、财务报告，自动生成报告，并根据不同利益方的需要和偏好进行调整？&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="ChatGPT" scheme="https://bin862324915.github.io/categories/ChatGPT/"/>
-    
-    
-    <category term="ChatGPT" scheme="https://bin862324915.github.io/tags/ChatGPT/"/>
-    
-    <category term="提问技巧" scheme="https://bin862324915.github.io/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>09-如何让ChatGPT作为客户服务回答话术</title>
-    <link href="https://bin862324915.github.io/2023/09-12-chatgpt009.html"/>
-    <id>https://bin862324915.github.io/2023/09-12-chatgpt009.html</id>
-    <published>2023-09-12T07:07:43.000Z</published>
-    <updated>2023-10-12T08:31:33.692Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;09-如何让ChatGPT自动生成内容，作为客户服务工作人员的回答话术？&quot;&gt;&lt;a href=&quot;#09-如何让ChatGPT自动生成内容，作为客户服务工作人员的回答话术？&quot; class=&quot;headerlink&quot;</summary>
         
       
     
