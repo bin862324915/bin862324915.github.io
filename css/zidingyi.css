@@ -347,5 +347,6 @@ img.vimg:hover {
     color: #121212;
     border-radius: 10px;
     background-color: #69e96596;
+    border: none;
 }
 
