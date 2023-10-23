@@ -3,6 +3,13 @@
       appKey: 'cY0YqjpaGxRvGE4o2Mf21Zbq',
       serverURL: 'https://1ao7imck.lc-cn-n1-shared.com',
 });
+window.addEventListener('load', function() {
+  var colaElement = document.querySelector('.cola');
+  if (colaElement) {
+    colaElement.style.display = 'none';
+  }
+});
+
 var ryg = document.getElementById('ryg');
 var maskreng = document.getElementById('maskreng');
 function showRyg() {

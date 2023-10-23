@@ -6,7 +6,7 @@
   <link href="https://bin862324915.github.io/atom.xml" rel="self"/>
   
   <link href="https://bin862324915.github.io/"/>
-  <updated>2023-10-20T10:58:00.808Z</updated>
+  <updated>2023-10-23T07:56:43.387Z</updated>
   <id>https://bin862324915.github.io/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo基于leancloud创建漂流瓶应用</title>
+    <link href="https://bin862324915.github.io/2023/10-23-plp.html"/>
+    <id>https://bin862324915.github.io/2023/10-23-plp.html</id>
+    <published>2023-10-23T07:23:05.000Z</published>
+    <updated>2023-10-23T07:56:43.387Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;hexo基于leancloud创建漂流瓶应用&quot;&gt;&lt;a href=&quot;#hexo基于leancloud创建漂流瓶应用&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="hexo" scheme="https://bin862324915.github.io/categories/hexo/"/>
+    
+    <category term="个人项目" scheme="https://bin862324915.github.io/categories/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+    <category term="hexo" scheme="https://bin862324915.github.io/tags/hexo/"/>
+    
+    <category term="网页应用" scheme="https://bin862324915.github.io/tags/%E7%BD%91%E9%A1%B5%E5%BA%94%E7%94%A8/"/>
+    
+    <category term="html" scheme="https://bin862324915.github.io/tags/html/"/>
+    
+    <category term="个人项目" scheme="https://bin862324915.github.io/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>python爬取元气桌面动态壁纸实例</title>
@@ -531,33 +564,6 @@
         
         
     <summary type="html">&lt;h2 id=&quot;13-如何用ChatGPT做一门课？（包含大纲、脚本、PPT文本）&quot;&gt;&lt;a href=&quot;#13-如何用ChatGPT做一门课？（包含大纲、脚本、PPT文本）&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="ChatGPT" scheme="https://bin862324915.github.io/categories/ChatGPT/"/>
-    
-    
-    <category term="ChatGPT" scheme="https://bin862324915.github.io/tags/ChatGPT/"/>
-    
-    <category term="提问技巧" scheme="https://bin862324915.github.io/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>12-如何用ChatGPT做团队绩效管理</title>
-    <link href="https://bin862324915.github.io/2023/09-15-chatgpt012.html"/>
-    <id>https://bin862324915.github.io/2023/09-15-chatgpt012.html</id>
-    <published>2023-09-15T06:06:33.000Z</published>
-    <updated>2023-10-12T08:31:53.157Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;12-如何用ChatGPT做团队绩效管理？（根据员工的个人优势、不足、目标来生成更具体的绩效反馈）&quot;&gt;&lt;a href=&quot;#12-如何用ChatGPT做团队绩效管理？（根据员工的个人优势、不足、目标来生成更具体的绩效反馈）&quot; class=&quot;headerlink&quot;</summary>
         
       
     
