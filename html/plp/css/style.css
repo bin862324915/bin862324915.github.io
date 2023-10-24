@@ -184,23 +184,23 @@ button{
   cursor: pointer;
 }
 
-#tj {
+#qx {
   background-color: #4ac39bb3;
   color: #ffffff;
 }
 
-#tj:hover {
+#qx:hover {
     background-color: #12e39e;
     color: #121212;
 }
 
-#qx {
+#tj {
   background-color: #4f15597d;
   color: #ffffff;
   margin-left: 40px;
 }
 
-#qx:hover {
+#tj:hover {
   background-color: #d836f3;
   color: #00070c;
 }
@@ -229,6 +229,7 @@ button{
   color: #666;
   padding-left: 10px;
   margin-top: 20px;
+  text-decoration: underline;
 }
 
 
