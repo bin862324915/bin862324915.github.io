@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.15.2/dist/av-min.js"></script>
 <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
+<audio id="background-music" autoplay loop>
+  <source src="http://music.163.com/song/media/outer/url?id=468800.mp3" type="audio/mpeg">
+</audio>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="icon" href="img/favicon.png">
 <meta name="description" content="漂流瓶">
@@ -81,6 +84,21 @@
 <img class="img" src="img/pz2.png" img>
 </div>
 </div>
+<input id="checkbox" type="checkbox">
+    <label class="Switch" for="checkbox">
+    </label>
+
 <script src="js/app.js"></script>
+<script>
+var audio = document.getElementById("background-music");
+var checkbox = document.getElementById("checkbox");
+checkbox.addEventListener("click", function() {
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
+});
+</script>
 </body>
 </html>
