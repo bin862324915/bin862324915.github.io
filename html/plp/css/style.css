@@ -2,7 +2,7 @@ html,body {
   height: 100%;
   margin: 0;
   padding: 0;
-  //background-image: url(../img/body.jpg);
+  background-color: rgba(255,255,255,0);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
