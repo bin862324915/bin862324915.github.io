@@ -373,6 +373,7 @@ button{
 	z-index:99;
 	cursor:pointer;
 	display:flex;
+	opacity: 0.5;
 	align-items:center;
 	justify-content:center;
 	box-shadow:2px 0 5px rgba(0,0,0,.274)inset,-2px 0 5px rgba(255,255,255,.411)inset;
@@ -381,6 +382,11 @@ button{
 	right:2%;
 	transform:translate(-50%,-50%)
 }
+
+.Switch:hover {
+	opacity: 1;
+}
+
 .Switch::before {
 	content:"";
 	background-color:#bdb7bb;

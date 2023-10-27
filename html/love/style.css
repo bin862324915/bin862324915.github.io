@@ -7,7 +7,7 @@ html,body {
 	margin:0;
 	padding:0;
 	overflow:hidden;
-	z-index:-999
+	background-color: rgba(255,255,255,0);
 }
 #loading {
 	position:fixed;
@@ -349,6 +349,7 @@ html,body {
 	z-index:99;
 	cursor:pointer;
 	display:flex;
+	opacity: 0.5;
 	align-items:center;
 	justify-content:center;
 	box-shadow:2px 0 5px rgba(0,0,0,.274)inset,-2px 0 5px rgba(255,255,255,.411)inset;
@@ -357,6 +358,11 @@ html,body {
 	right:2%;
 	transform:translate(-50%,-50%)
 }
+
+.Switch:hover {
+	opacity: 1;
+}
+
 .Switch::before {
 	content:"";
 	background-color:#f6a8e0;
