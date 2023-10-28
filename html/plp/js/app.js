@@ -14,22 +14,22 @@ window.addEventListener('load', function() {
 var ryg = document.getElementById('ryg');
 var maskreng = document.getElementById('maskreng');
 function showRyg() {
-  ryg.style.display = 'block';
-  maskreng.style.display = 'block';
+  $("#ryg").fadeIn("slow");
+  $("#maskreng").fadeIn("slow");
 }
 function hideRyg() {
-  ryg.style.display = 'none';
-  maskreng.style.display = 'none';
+  $("#ryg").fadeOut("slow");
+  $("#maskreng").fadeOut("slow");
 }
 var ryg = document.getElementById('ryg');
 var mask = document.getElementById('masklao');
 function showLao() {
-  ryg.style.display = 'block';
-  masklao.style.display = 'block';
+  $("#ryg").fadeIn("slow");
+  $("#masklao").fadeIn("slow");
 }
 function hideLao() {
-  ryg.style.display = 'none';
-  masklao.style.display = 'none';
+  $("#ryg").fadeOut("slow");
+  $("#masklao").fadeOut("slow");
 }
 const nameInput = document.querySelector('.name');
 const zhengwenInput = document.querySelector('.zhengwen');
@@ -58,7 +58,7 @@ tjButton.addEventListener('click', () => {
   const data = zhengwenInput.value;
   if (!name.trim() || !data.trim()) {
     modalText.textContent = '昵称和内容都要填写哦';
-    modal.style.display = 'block';
+    $("#modal").fadeIn("slow");
     return;
   }
   const PLP = AV.Object.extend('plp');

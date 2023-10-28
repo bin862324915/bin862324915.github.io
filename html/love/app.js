@@ -39,16 +39,16 @@ tjButton.addEventListener('click', () => {
       younameInput.value = '';
       zhengwenInput.value = '';
       modalText.textContent = '已发表，刷新网页查看哦(｡♥ᴗ♥｡) ';
-      modal.style.display = 'block';
+      $("#modal").fadeIn("slow");
       return;
     }).catch(() => {
     modalText.textContent = '出错啦！请重试哦(✖人✖)';
-    modal.style.display = 'block';
+      $("#modal").fadeIn("slow");
     return;
     });
   } else {
     modalText.textContent = '信息都填写了嘛？( • ̀ω•́ )✧';
-    modal.style.display = 'block';
+      $("#modal").fadeIn("slow");
     return;
   }
 });
@@ -56,10 +56,14 @@ const fbygBlock = document.getElementById('fbyg');
 const maskbiaoBlock = document.getElementById('maskbiao');
 const bbkBlock = document.getElementById('bbk');
 const qxan = document.getElementById('qx');
+
+
+
 fbygBlock.addEventListener('click', () => {
-  maskbiaoBlock.style.display = 'block';
-  bbkBlock.style.display = 'block';
+  $("#maskbiao").fadeIn("slow");
+  $("#bbk").fadeIn("slow");
 });
+
 
 function bbknone() {
   const input1 = document.getElementById('mynamein');
@@ -68,8 +72,7 @@ function bbknone() {
   input1.value = '';
   input2.value = '';
   input3.value = '';
-  maskbiaoBlock.style.display = 'none';
-  bbkBlock.style.display = 'none';
+  $("#maskbiao").fadeOut("slow");
 }
 
 qxan.addEventListener('click', () => {
@@ -179,7 +182,7 @@ function getRandomBackgroundColor() {
   const r = Math.floor(Math.random() * 256);
   const g = Math.floor(Math.random() * 256);
   const b = Math.floor(Math.random() * 256);
-  const alpha = 0.9;
+  const alpha = 1;
 
   return `rgba(${r},${g},${b},${alpha})`;
 }
@@ -189,4 +192,21 @@ function limitCharacters(textarea, maxCharacters) {
   if (text.length > maxCharacters) {
     textarea.value = text.substring(0, maxCharacters);
   }
+}
+document.onkeydown = function (event) {
+  if (event.keyCode === 123) {
+    showMessage("别F12啦，关心一下身边的女孩子吧( • ̀ω•́ )✧");
+    event.preventDefault();
+    event.stopPropagation();
+  }
+};
+
+function showMessage(message) {
+  var messageBox = document.getElementById("messageBox");
+  var messageContent = document.getElementById("messageContent");
+  messageContent.innerHTML = message;
+    $("#messageBox").fadeIn("slow");
+  setTimeout(function() {
+    $("#messageBox").fadeOut("slow");
+  }, 2000);
 }
