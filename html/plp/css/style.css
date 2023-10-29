@@ -18,7 +18,7 @@ video {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      z-index: -1;
+      z-index: -66;
     }
 
 button{
@@ -370,7 +370,7 @@ button{
 	height:60px;
 	background-color:#fff;
 	border-radius:15px;
-	z-index:99;
+	z-index:66;
 	cursor:pointer;
 	display:flex;
 	opacity: 0.5;
@@ -414,3 +414,6 @@ button{
 	background-color:#bdb7bb
 }
 
+#checkbox {
+    display: none;
+}
