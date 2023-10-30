@@ -13,7 +13,8 @@ let allRecordsLoaded = false;
 
 if (allRecordsLoaded) {
   loadMoreButton.disabled = true;
-  loadMoreButton.textContent = '没有更多啦';
+  document.getElementById("jiazaiButton").innerHTML="<center>已经到底啦~</center>";
+  document.getElementById("jiazaiButton").style.opacity = "0.5";
 }
 const loadMoreButton = document.querySelector('#loadMoreButton');
 
@@ -47,7 +48,8 @@ function loadMoreRecords() {
       } else {
         allRecordsLoaded = true;
         document.querySelector('#loadMoreButton').disabled = true;
-        document.querySelector('#loadMoreButton').textContent = '没有更多啦';
+        document.getElementById("jiazaiButton").innerHTML="<center>已经到底了啦~</center>";
+        document.getElementById("jiazaiButton").style.opacity = "0.5";
       }
     }).catch((error) => {
       console.error('Error fetching tuku records:', error);
