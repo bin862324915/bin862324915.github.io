@@ -36,7 +36,7 @@
     }
 
     function l() {
-        this.character = "*", this.lifeSpan = 120, this.initialStyles = {
+        this.character = "❤", this.lifeSpan = 100, this.initialStyles = {
             position: "fixed",
             top: "0",
             display: "block",
@@ -51,7 +51,7 @@
             }, this.position = {
                 x: t - 10,
                 y: i - 20
-            }, this.initialStyles.color = n, console.log(n), this.element = document.createElement("span"), this.element.innerHTML = this.character, c(this.element, this.initialStyles), this.update(), document.body.appendChild(this.element)
+            }, this.initialStyles.color = n, this.element = document.createElement("span"), this.element.innerHTML = this.character, c(this.element, this.initialStyles), this.update(), document.body.appendChild(this.element)
         }, this.update = function() {
             this.position.x += this.velocity.x, this.position.y += this.velocity.y, this.lifeSpan--, this.element.style.transform = "translate3d(" + this.position.x + "px," + this.position.y + "px,0) scale(" + this.lifeSpan / 120 + ")"
         }, this.die = function() {
