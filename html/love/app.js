@@ -275,7 +275,7 @@ function showMessage(message) {
     function c(t, i) {
         for (var n in i) t.style[n] = i[n]
     }
-    var r = ["#D61C59", "#E7D84B", "#1cd6cb",  "#e7bbd9","#1B8798"],
+    var r = ["#D61C59", "#E7D84B", "#1cd6cb", "#e7bbd9", "#1B8798"],
         d = window.innerWidth,
         u = (window.innerHeight, {
             x: d / 2,
