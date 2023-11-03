@@ -339,13 +339,15 @@ img.vimg:hover {
 
 #loadMoreButton {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,.24),0 8px 16px 0 rgba(0,0,0,.19);
-    color: #ffffff;
-    background-color: #374151b3;
+    color: var(--post-text-color);
+    background-color: var(--talking-bg-color);
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 8px 16px;
 }
 #loadMoreButton:hover {
+    background-image: linear-gradient(to right,#2ed8c0 0,#149a24 100%);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,.24),0 8px 16px 0 rgba(0,0,0,.19);
-    color: #121212;
-    background-color: #69e96596;
+    color: #fff;
 }
