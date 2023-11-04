@@ -831,6 +831,168 @@ label {
 i.iconfont {
   font-size: 1em;
   line-height: 1;
+  display: inline-block !important;
+}
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  overflow-y: auto;
+  width: 300px;
+  height: 100%;
+  color: #3c4858;
+  background-color: var(--board-bg-color);
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in;
+  -webkit-box-shadow: 0.25rem 0px 0.25rem 0px rgba(110,151,63,0.431);
+  box-shadow: 0.25rem 0px 0.25rem 0px rgba(110,151,63,0.431);
+  font-family: 'LXGW WenKai Screen';
+}
+#sidebar::-webkit-scrollbar {
+  display: none;
+}
+.sidebar-hide {
+  margin-left: -300px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.sidebar-button {
+  position: fixed;
+  z-index: 3;
+/* 按钮背景 */
+  padding: 0.5rem 0.7rem 0.5rem 0.3rem;
+  margin: 2rem 0 2rem 0;
+  border-radius: 0 3rem 3rem 0;
+  background-color: rgba(255,255,255,0.4);
+/* padding 1rem */
+  bottom: 100px;
+  color: var(--text-color);
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: var(--board-bg-color);
+}
+.sidebar-button:hover {
+  color: var(--link-hover-color);
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.sidebar-button i {
+  transform: rotate(180deg);
+}
+.sidebar-button-shift {
+  left: 0;
+  color: var(--text-color);
+  text-shadow: 0.1rem 0.1rem 0.5rem #3e3e3e;
+  background-color: var(--board-bg-color);
+}
+.sidebar-button-shift i {
+  transform: rotate(0deg);
+}
+.sidebar-overlay {
+  display: none;
+  width: 100%;
+  height: 180px;
+  background-color: #fe91b4;
+  position: absolute;
+}
+.sidebar-intrude {
+  margin: 60px auto 0 auto;
+  z-index: 3;
+}
+.sidebar-avatar {
+  position: relative;
+  border: 5px solid #ffffff;
+  border-radius: 300px;
+  width: 128px;
+  height: 128px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background-color: #88acdb;
+  -webkit-transition: all 0.2s ease-in;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  text-align: center;
+}
+.sidebar-avatar img {
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+}
+.sidebar-about a {
+  color: var(--text-color);
+}
+.sidebar-about a:hover {
+  color: #8cc34b;
+}
+.sidebar-author {
+  margin: 0.67em 0;
+  font-size: 30px;
+  transition: 0.3s;
+  color: var(--post-heading-color);
+}
+.sidebar-subtitle {
+  color: var(--post-text-color);
+  bottom: 10px;
+  position: relative;
+}
+.sidebar-label-left {
+  height: 100%;
+  padding: 0 7px 0 7px;
+  background-color: var(--talking-bg-color);
+  float: left;
+  border-radius: 10px;
+}
+.sidebar-friend {
+  margin: 40px auto;
+  padding: 0;
+}
+.sidebar-friend-title {
+  max-width: 120px;
+  margin: 20px auto;
+  padding: 0;
+  line-height: 2rem;
+  color: var(--post-text-color);
+  background-color: var(--talking-bg-color);
+  text-align: center;
+  border-radius: 10px;
+}
+.sidebar-friend a,
+a:hover {
+  -webkit-transition: 0.1s !important;
+  -o-transition: 0.1s !important;
+  transition: 0.1s !important;
+}
+.sidebar-friend a {
+  color: var(--text-color);
+}
+.sidebar-friend a:hover {
+  color: var(--link-hover-color);
+}
+.sidebar-friend li {
+  width: calc(100% - 5rem);
+  margin: 0 auto;
+  background: none;
+  border-bottom: 1px dashed #bdbdbd;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: var(--text-color);
+}
+.sidebar-friend li:hover {
+  background-color: #cde3ae6e;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.sidebar-friend i.icon-double-quotes-l {
+  color: #bfbfbf;
 }
 :root {
   --color-mode: "light";
