@@ -149,6 +149,16 @@ document.getElementById('qx').addEventListener('click', function() {
           }
         });
     });
+  console.log(`
+                    _     _         _     _             
+                   | |   (_)       | |   | |            
+__      _____ _ __ | |__  _ _ __   | |__ | | ___   __ _ 
+\\ \\ /\\ / / _ \\ '_ \\| '_ \\| | '_ \\  | '_ \\| |/ _ \\ / _\` |
+ \\ V  V /  __/ | | | |_) | | | | | | |_) | | (_) | (_| |
+  \\_/\\_/ \\___|_| |_|_.__/|_|_| |_| |_.__/|_|\\___/ \\__, |
+                                                   __/ |
+                                                  |___/
+`);
     buttonDiu.addEventListener('click', function() {
       hideLao();
 });

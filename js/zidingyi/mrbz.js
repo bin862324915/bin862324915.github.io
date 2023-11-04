@@ -58,7 +58,16 @@ function loadMoreRecords() {
 }
 
 loadMoreRecords();
-
+  console.log(`
+                    _     _         _     _             
+                   | |   (_)       | |   | |            
+__      _____ _ __ | |__  _ _ __   | |__ | | ___   __ _ 
+\\ \\ /\\ / / _ \\ '_ \\| '_ \\| | '_ \\  | '_ \\| |/ _ \\ / _\` |
+ \\ V  V /  __/ | | | |_) | | | | | | |_) | | (_) | (_| |
+  \\_/\\_/ \\___|_| |_|_.__/|_|_| |_| |_.__/|_|\\___/ \\__, |
+                                                   __/ |
+                                                  |___/
+`);
 function formatDate(date) {
   const year = date.getFullYear();
   const month = String(date.getMonth() + 1).padStart(2, '0');
