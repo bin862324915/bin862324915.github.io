@@ -358,3 +358,14 @@ img.vimg:hover {
 .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
   left: 0px !important;
 }
+
+.sidebar-avatar img {
+  transition: transform 1s;
+}
+
+.sidebar-avatar img:hover {
+  transform: rotate(360deg);
+}
+i.iconfont.icon-heart-01 {
+    color: pink;
+}

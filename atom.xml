@@ -6,7 +6,7 @@
   <link href="https://www.zzzwb.com/atom.xml" rel="self"/>
   
   <link href="https://www.zzzwb.com/"/>
-  <updated>2023-11-03T16:06:20.383Z</updated>
+  <updated>2023-11-05T11:29:16.407Z</updated>
   <id>https://www.zzzwb.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>fluid主题添加侧边栏</title>
+    <link href="https://www.zzzwb.com/2023/11-05-tjcbl.html"/>
+    <id>https://www.zzzwb.com/2023/11-05-tjcbl.html</id>
+    <published>2023-11-05T09:47:51.000Z</published>
+    <updated>2023-11-05T11:29:16.407Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;fluid主题添加侧边栏&quot;&gt;&lt;a href=&quot;#fluid主题添加侧边栏&quot; class=&quot;headerlink&quot; title=&quot;fluid主题添加侧边栏&quot;&gt;&lt;/a&gt;fluid主题添加侧边栏&lt;/h1&gt;&lt;p&gt;今天逛网页的时候偶然发现一个使用fluid主题的博主&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="hexo" scheme="https://www.zzzwb.com/categories/hexo/"/>
+    
+    
+    <category term="网页美化" scheme="https://www.zzzwb.com/tags/%E7%BD%91%E9%A1%B5%E7%BE%8E%E5%8C%96/"/>
+    
+    <category term="fluid主题" scheme="https://www.zzzwb.com/tags/fluid%E4%B8%BB%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo基于leancloud创建表白墙的应用</title>
@@ -547,33 +574,6 @@
         
         
     <summary type="html">&lt;h2 id=&quot;15-如何用ChatGPT搭建品牌文本体系？（品牌名-slogan-品牌故事）&quot;&gt;&lt;a href=&quot;#15-如何用ChatGPT搭建品牌文本体系？（品牌名-slogan-品牌故事）&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="ChatGPT" scheme="https://www.zzzwb.com/categories/ChatGPT/"/>
-    
-    
-    <category term="ChatGPT" scheme="https://www.zzzwb.com/tags/ChatGPT/"/>
-    
-    <category term="提问技巧" scheme="https://www.zzzwb.com/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>14-如何用ChatGPT写专业方向的科普内容</title>
-    <link href="https://www.zzzwb.com/2023/09-15-chatgpt014.html"/>
-    <id>https://www.zzzwb.com/2023/09-15-chatgpt014.html</id>
-    <published>2023-09-15T06:14:33.000Z</published>
-    <updated>2023-11-03T16:03:12.949Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;14-如何用ChatGPT写专业方向的科普内容？&quot;&gt;&lt;a href=&quot;#14-如何用ChatGPT写专业方向的科普内容？&quot; class=&quot;headerlink&quot;</summary>
         
       
     
