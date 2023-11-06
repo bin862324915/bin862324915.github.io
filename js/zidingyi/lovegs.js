@@ -1,4 +1,3 @@
-//小星星
 (function() {
     function t() {
         i(), a()
@@ -36,13 +35,13 @@
     }
 
     function l() {
-        this.character = "❤", this.lifeSpan = 100, this.initialStyles = {
+        this.character = "❤", this.lifeSpan = 120, this.initialStyles = {
             position: "fixed",
             top: "0",
             display: "block",
             pointerEvents: "none",
             "z-index": "10000000",
-            fontSize: "20px",
+            fontSize: "12px",
             "will-change": "transform"
         }, this.init = function(t, i, n) {
             this.velocity = {
@@ -53,7 +52,7 @@
                 y: i - 20
             }, this.initialStyles.color = n, this.element = document.createElement("span"), this.element.innerHTML = this.character, c(this.element, this.initialStyles), this.update(), document.body.appendChild(this.element)
         }, this.update = function() {
-            this.position.x += this.velocity.x, this.position.y += this.velocity.y, this.lifeSpan--, this.element.style.transform = "translate3d(" + this.position.x + "px," + this.position.y + "px,0) scale(" + this.lifeSpan / 100 + ")"
+            this.position.x += this.velocity.x, this.position.y += this.velocity.y, this.lifeSpan--, this.element.style.transform = "translate3d(" + this.position.x + "px," + this.position.y + "px,0) scale(" + this.lifeSpan / 120 + ")"
         }, this.die = function() {
             this.element.parentNode.removeChild(this.element)
         }
@@ -62,7 +61,7 @@
     function c(t, i) {
         for (var n in i) t.style[n] = i[n]
     }
-    var r = ["#D61C59", "#E7D84B", "#1B8798"],
+    var r = ["#D61C59", "#E7D84B", "#1cd6cb", "#e7bbd9", "#1B8798"],
         d = window.innerWidth,
         u = (window.innerHeight, {
             x: d / 2,

@@ -1,43 +1,28 @@
 header {
     cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao1.png'), default;
 }
-a:hover {
-    cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao2.png'), pointer;
-}
-a:active {
-    cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao1.png'), move;
-}
 
 body {
+    margin: 0;
+    padding:0;
     background-attachment: fixed;
     background-size: cover;  
     cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao1.png'), default;
-}
-a:hover {
-    cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao2.png'), pointer;
-}
-a:active {
-    cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao1.png'), move;
-}
-
-.footer-inner {
-    cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao1.png'), default;
-}
-a:hover {
-    cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao2.png'), pointer;
-}
-a:active {
-    cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao1.png'), move;
 }
 
 .mask.flex-center {
     cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao1.png'), default;
 }
+
 a:hover {
     cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao2.png'), pointer;
 }
 a:active {
     cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao1.png'), move;
+}
+
+.scroll-down-bar {
+    cursor: url('https://cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/img/shubiao2.png'), pointer;
 }
 
 #subtitle {
@@ -368,4 +353,22 @@ img.vimg:hover {
 }
 i.iconfont.icon-heart-01 {
     color: pink;
+}
+
+.index-img img {
+  transition: 0.4s;
+  transform-origin: center;
+}
+.index-img img:hover {
+  transform: scale(1.03);
+}
+.col-md-4 {
+  overflow: hidden;
+}
+
+.navbar .nav-item .nav-link:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+.common-chip:hover {
+    border: 0px solid var(--link-hover-bg-color)!important;
 }

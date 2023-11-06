@@ -255,7 +255,7 @@ function showMessage(message) {
             display: "block",
             pointerEvents: "none",
             "z-index": "10000000",
-            fontSize: "16px",
+            fontSize: "14px",
             "will-change": "transform"
         }, this.init = function(t, i, n) {
             this.velocity = {
