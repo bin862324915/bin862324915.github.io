@@ -986,13 +986,14 @@ a:hover {
   color: var(--text-color);
 }
 .sidebar-friend li:hover {
-  background-color: #cde3ae6e;
+  background-color: rgba(0,0,0,0.1);
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  color: #03a9f4;
 }
 .sidebar-friend i.icon-double-quotes-l {
-  color: #bfbfbf;
+  color: var(--text-color);
 }
 :root {
   --color-mode: "light";

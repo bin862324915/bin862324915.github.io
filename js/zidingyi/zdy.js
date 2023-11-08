@@ -88,3 +88,14 @@ window.addEventListener('scroll', function() {
   
 scrollButton.textContent = '' + Math.round(scrollPercentage) + '%';
 });
+
+window.onload = function() {
+ var vnumElement = document.querySelector('.vnum');
+  if (vnumElement && getComputedStyle(vnumElement).display !== 'none') {
+    var vnum = vnumElement.textContent;
+    var plnumElement = document.querySelector('#plnum');
+    plnumElement.textContent = vnum;
+    var pltj = document.getElementById('pltj');
+    pltj.style.display = 'inline';
+    }
+};

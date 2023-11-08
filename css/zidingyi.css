@@ -273,7 +273,7 @@ img.vimg:hover {
 
 .list-group-item-action:hover {
     border-radius: 10px;
-    background-color: #cde3ae6e;
+    background-color: rgba(0,0,0,0.1);
 }
 
 .pagination .page-number {
@@ -347,6 +347,13 @@ img.vimg:hover {
 .sidebar-avatar img {
   transition: transform 1s;
 }
+.sidebar-about .iconfont {
+  transition: transform 0.5s;
+}
+.sidebar-about .iconfont:hover {
+  transform: rotate(360deg);
+  transition: transform 0.5s;
+}
 
 .sidebar-avatar img:hover {
   transform: rotate(360deg);
@@ -360,15 +367,54 @@ i.iconfont.icon-heart-01 {
   transform-origin: center;
 }
 .index-img img:hover {
-  transform: scale(1.03);
+  transform: scale(0.98);
+}
+.index-header {
+  transition: 0.4s;
+}
+.index-header:hover {
+  transition: 0.4s;
+  transform: translateX(5px);
 }
 .col-md-4 {
   overflow: hidden;
 }
 
 .navbar .nav-item .nav-link:hover {
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.1);
 }
 .common-chip:hover {
     border: 0px solid var(--link-hover-bg-color)!important;
+}
+#plnum {
+    margin-left: 0.4rem;
+}
+.typed-cursor.typed-cursor--blink {
+  animation: typedjsBlink 0.9s infinite!important;
+  -webkit-animation: typedjsBlink 0.9s infinite!important;
+}
+
+.markdown-body h1:hover,
+.markdown-body h2:hover,
+.markdown-body h3:hover,
+.markdown-body h4:hover,
+.markdown-body h5:hover,
+.markdown-body h6:hover {
+  padding-left: 10px;
+}
+.markdown-body > h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  transition: 0.5s;
+  padding-left: 0px;
+}
+.sidebar-friend li {
+  transition: 0.5s;
+}
+.sidebar-friend li:hover {
+  transition: 0.5s;
+  transform: translateX(5px);
 }

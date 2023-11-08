@@ -70,7 +70,7 @@
 
   
 <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/js/zidingyi/toastr/toastr.min.css">
-<link rel="stylesheet" href="//at.alicdn.com/t/c/font_4229952_e0ojxwbq0kt.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_4229952_h0hnfi883no.css">
 <link rel="stylesheet" href="/css/zidingyi.css">
 
 
@@ -78,7 +78,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"www.zzzwb.com","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":100,"cursorChar":"♡","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"❡"},"progressbar":{"enable":true,"height_px":3,"color":"#91d64f","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":false,"default":"TEXT"},"copy_btn":false,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":21776611,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"www.zzzwb.com","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":100,"cursorChar":"♡","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#91d64f","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":false,"default":"TEXT"},"copy_btn":false,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":21776611,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -235,7 +235,7 @@
                   
                   
                   <a class="dropdown-item" href="/about/">
-                    <i class="iconfont icon-user-fill"></i>
+                    <i class="iconfont icon-geren1"></i>
                     <span>关于</span>
                   </a>
                 
@@ -253,6 +253,38 @@
                   <a class="dropdown-item" href="/talking/">
                     <i class="iconfont icon-liuyanguanli"></i>
                     <span>碎碎念</span>
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-app"></i>
+                <span>应用</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://img.zzzwb.com/">
+                    <i class="iconfont icon-shangchuantupian"></i>
+                    <span>图床</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/bing/">
+                    <i class="iconfont icon-tupianbizhi"></i>
+                    <span>壁纸</span>
                   </a>
                 
                   
@@ -296,18 +328,6 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/bing/">
-                <i class="iconfont icon-tupianbizhi"></i>
-                <span>壁纸</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
               <a class="nav-link" href="/links/">
                 <i class="iconfont icon-link-fill"></i>
                 <span>友链</span>
@@ -326,7 +346,7 @@
         
           <li class="nav-item" id="color-toggle-btn">
             <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
-              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+              <i class="iconfont icon-yueliang" id="color-toggle-icon"></i>
             </a>
           </li>
         
@@ -395,6 +415,8 @@
           <i class="iconfont icon-eye" aria-hidden="true"></i>
           <span id="busuanzi_value_page_pv"></span> 次
         </span>
+        <span id="pltj" style="display: none">
+          <i class="iconfont icon-pinglun" style="margin-left: 0.4rem;"></i><span id="plnum">0</span></span>
         
       
     
@@ -717,7 +739,7 @@ git config user.email <span class="token string">"your.email@example.com"</span>
 
           <div class="py-5" id="board" style="margin-top: 20px;">
             <!-- Comments -->
-            <div class="post-content mx-auto" id="comments" lazyload aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out">
+            <div class="post-content mx-auto" id="comments" aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out">
               <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; padding-bottom: 10px;">
                 <i class="iconfont icon-pinglun" aria-hidden="true"></i>
                 <span>评论</span>
@@ -725,7 +747,7 @@ git config user.email <span class="token string">"your.email@example.com"</span>
             
   
   
-    <article id="comments" lazyload>
+    <article id="comments">
       
   <div id="valine"></div>
   <script type="text/javascript">
@@ -954,7 +976,7 @@ git config user.email <span class="token string">"your.email@example.com"</span>
   </script>
   
     <div class="footer-content">
-       <span>Copyright © 2022 - 2023 |</span> <span>By Wenbin</span> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/js/aplayer/APlayer.min.css"> <div id="aplayer"></div> <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/js/aplayer/APlayer.min.js"></script> <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/js/aplayer/Meting.js"></script> <meting-js  server="netease"  type="playlist"  id="571137142" fixed="true"  autoplay="true" loop="all" order="random" preload="auto" list-folded="ture" list-max-height="300px" lrc-type="0"> </meting-js>
+       <span>Copyright © 2022 - 2023 |</span> <span>By Wenbin</span> <i class="iconfont icon-heart-01"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/js/aplayer/APlayer.min.css"> <div id="aplayer"></div> <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/js/aplayer/APlayer.min.js"></script> <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/js/aplayer/Meting.js"></script> <meting-js  server="netease"  type="playlist"  id="571137142" fixed="true"  autoplay="true" loop="all" order="random" preload="auto" list-folded="ture" list-max-height="300px" lrc-type="0"> </meting-js>
 <div class="footer-hitokoto"><a id="hitokotoa" href="#" target="_blank" rel="nofollow noopener noreferrer"><span id="hitokoto"></span></a></div> <script src="https://cdn.jsdelivr.net/gh/bin862324915/live2d@master/autoload.js"></script> 
     </div>
   
@@ -1132,8 +1154,8 @@ git config user.email <span class="token string">"your.email@example.com"</span>
   
 <script src="//cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/js/zidingyi/toastr/toastr.min.js"></script>
 <script src="//cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/js/zidingyi/xiantiao.js"></script>
-<script src="//cdn.jsdelivr.net/gh/bin862324915/bin862324915.github.io@master/js/zidingyi/zdy.js"></script>
 <script src="//cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/js/lovegs.js"></script>
+<script src="/js/zidingyi/zdy.js"></script>
 
 
 
