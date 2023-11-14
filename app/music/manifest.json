@@ -8,12 +8,12 @@
   "start_url": "/",
   "icons": [
       {
-        "src": "/img/icon300.png",
+        "src": "./img/icon300.png",
         "sizes": "192x192",
         "type": "image/png"
       },
       {
-        "src": "/img/iconmax.png",
+        "src": "./img/iconmax.png",
         "sizes": "500x500",
         "type": "image/png"
       }

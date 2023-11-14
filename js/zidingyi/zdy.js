@@ -20,7 +20,7 @@ document.addEventListener('visibilitychange', function() {
 		clearTimeout(titleTime);
 	} else {
 		$('[rel="icon"]').attr('href', "/img/favicon.ico");
-		document.title = '你终于回来啦(≖ᴗ≖)✧';
+		document.title = '你回来啦(≖ᴗ≖)✧';
 		titleTime = setTimeout(function() {
 			document.title = OriginTitle;
 		}, 2000);
