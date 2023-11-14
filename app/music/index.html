@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/APlayer.min.css">
+  <link rel="stylesheet" type="text/css" href="./main.css">
+  <link rel="icon" type="image/x-icon" href="./img/icon.png">
+  <link rel="apple-touch-icon" href="./img/iconmax.png">
+  <meta name="apple-mobile-web-app-title" content="Z音乐馆">
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="./img/iconmax.png">
+  <meta name="description" content="Wenbin的音乐馆">
+<meta property="og:image" content="./img/iconmax.png">
+  <link rel="manifest" href="./manifest.json"> 
+  <title>音乐馆 - Wenbin's blog</title>
+</head>
+<body>
+    <div class="nav_menu w">
+        <div class="menu_item">
+            <div class="home">首页</div>
+            <div class="web_home"><a href="/" target="_blank">首页</a></div>
+
+        </div>
+        <div class="menu_item">
+            <div class="home">文章</div>
+            <div class="web_home"><a href="/archives/" target="_blank">文章</a></div>
+        </div>
+        <div class="menu_item">
+            <div class="home">表白墙</div>
+            <div class="web_home"><a href="/app/love/" target="_blank">表白墙</a></div>
+        </div>
+        <div class="menu_item">
+            <div class="home">漂流瓶</div>
+            <div class="web_home"><a href="/app/plp/" target="_blank">漂流瓶</a></div>
+        </div>
+        <div class="menu_item">
+            <div class="home">关于</div>
+            <div class="web_home"><a href="/about/" target="_blank">关于</a></div>
+        </div>
+        <div class="menu_item">
+            <div class="home">订阅</div>
+            <div class="web_home"><a href="/atom.xml" target="_blank">订阅</a></div>
+        </div>
+    </div>
+
+<div id="music_bg"></div>
+<div id="heoMusic-page">
+</div>
+<script>
+  var userId = "571137142";
+  var userServer = "netease";
+  var userType = "playlist";
+</script>
+<script src="./js/APlayer.min.js"></script>
+<script src="./js/Meting2.min.js"></script>
+<script async data-pjax src="./js/main.js"></script>
+</body>
+</html>

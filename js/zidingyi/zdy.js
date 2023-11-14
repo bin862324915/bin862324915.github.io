@@ -16,11 +16,11 @@ var titleTime;
 document.addEventListener('visibilitychange', function() {
 	if (document.hidden) {
 		$('[rel="icon"]').attr('href', "/img/favicon.ico");
-		document.title = '╭(°A°`)╮ 页面崩溃啦 ~';
+		document.title = '不要走！再看看嘛(o°ω°o)';
 		clearTimeout(titleTime);
 	} else {
 		$('[rel="icon"]').attr('href', "/img/favicon.ico");
-		document.title = '(ฅ>ω<*ฅ) 噫又好啦 ~' + OriginTitle;
+		document.title = '你终于回来啦(≖ᴗ≖)✧';
 		titleTime = setTimeout(function() {
 			document.title = OriginTitle;
 		}, 2000);
@@ -88,14 +88,13 @@ window.addEventListener('scroll', function() {
   
 scrollButton.textContent = '' + Math.round(scrollPercentage) + '%';
 });
-
-window.onload = function() {
- var vnumElement = document.querySelector('.vnum');
-  if (vnumElement && getComputedStyle(vnumElement).display !== 'none') {
-    var vnum = vnumElement.textContent;
-    var plnumElement = document.querySelector('#plnum');
-    plnumElement.textContent = vnum;
-    var pltj = document.getElementById('pltj');
-    pltj.style.display = 'inline';
-    }
-};
+console.log(`
+                    _     _         _     _             
+                   | |   (_)       | |   | |            
+__      _____ _ __ | |__  _ _ __   | |__ | | ___   __ _ 
+\\ \\ /\\ / / _ \\ '_ \\| '_ \\| | '_ \\  | '_ \\| |/ _ \\ / _\` |
+ \\ V  V /  __/ | | | |_) | | | | | | |_) | | (_) | (_| |
+  \\_/\\_/ \\___|_| |_|_.__/|_|_| |_| |_.__/|_|\\___/ \\__, |
+                                                   __/ |
+                                                  |___/
+`);

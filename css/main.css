@@ -846,9 +846,10 @@ i.iconfont {
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in;
-  -webkit-box-shadow: 0.25rem 0px 0.25rem 0px rgba(110,151,63,0.431);
-  box-shadow: 0.25rem 0px 0.25rem 0px rgba(110,151,63,0.431);
+  -webkit-box-shadow: 0.25rem 0px 0.25rem 0px #000;
+  box-shadow: 0.25rem 0px 0.25rem 0px #000;
   font-family: 'LXGW WenKai Screen';
+  transition: all 1s cubic-bezier(1, -0.29, 0.54, 1.11);
 }
 #sidebar::-webkit-scrollbar {
   display: none;
@@ -1010,8 +1011,8 @@ a:hover {
   --navbar-bg-color: #2f4154;
   --navbar-text-color: #fff;
   --subtitle-color: #fff;
-  --scrollbar-color: #c4c6c9;
-  --scrollbar-hover-color: #90c740;
+  --scrollbar-color: #444f5e;
+  --scrollbar-hover-color: #252d38;
   --button-bg-color: transparent;
   --button-hover-bg-color: #f2f3f5;
   --highlight-bg-color: #f6f8fa;
@@ -1037,7 +1038,7 @@ a:hover {
     --navbar-text-color: #d0d0d0;
     --subtitle-color: #d0d0d0;
     --scrollbar-color: #687582;
-    --scrollbar-hover-color: #90c740;
+    --scrollbar-hover-color: #d0d0d0;
     --button-bg-color: transparent;
     --button-hover-bg-color: #46647e;
     --highlight-bg-color: #2d333b;
@@ -1090,7 +1091,7 @@ a:hover {
     --navbar-text-color: #d0d0d0;
     --subtitle-color: #d0d0d0;
     --scrollbar-color: #687582;
-    --scrollbar-hover-color: #90c740;
+    --scrollbar-hover-color: #d0d0d0;
     --button-bg-color: transparent;
     --button-hover-bg-color: #46647e;
     --highlight-bg-color: #2d333b;

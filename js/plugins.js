@@ -35,6 +35,10 @@ Fluid.plugins = {
 
     jQuery(selector || '.markdown-body :not(a) > img, .markdown-body > img').each(function() {
       var $image = jQuery(this);
+        if ($image.closest('.no-fancybox').length > 0) {
+            return;
+        }
+
       var imageUrl = $image.attr('data-src') || $image.attr('src') || '';
       if (CONFIG.image_zoom.img_url_replace) {
         var rep = CONFIG.image_zoom.img_url_replace;
