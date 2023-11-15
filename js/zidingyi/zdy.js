@@ -51,7 +51,7 @@ document.addEventListener('visibilitychange', function() {
 // 底部一言
 function hitokoto(o) {
     $("#hitokoto").stop().fadeOut((function() {
-        $("#hitokoto").html(o.hitokoto), document.getElementById("hitokotoa").href = "https://hitokoto.cn/?uuid=" + o.uuid, $("#hitokoto").stop().fadeIn()
+        $("#hitokoto").html(o.hitokoto), $("#hitokoto").stop().fadeIn()
     }))
 }
 
@@ -68,6 +68,7 @@ function getHitokoto() {
 $(document).ready((function() {
     getHitokoto()
 }))
+
 
 var elements = document.querySelectorAll('.index-card');
 
