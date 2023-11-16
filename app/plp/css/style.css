@@ -129,16 +129,17 @@ button{
 
 .link {
     text-align: center;
-    width: 180px;
+    width: 310px;
     border-radius: 5px;
     margin: 0 auto;
+    padding: 5px;
     background-color: #bdbec7ab;
 
 }
 
 .ding-link:hover {
-    color: #fcfffe;
-    background-color: #0000008c;
+    color: #000000;
+    background-color: rgb(0 0 0 / 20%);
 }
 
 .mui-bar-tab .mui-tab-item {

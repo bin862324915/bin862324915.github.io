@@ -134,13 +134,13 @@ html,body {
 	position:relative
 }
 .dingbu {
-	display:flex;
-	margin:auto;
-	z-index:99;
-	position:fixed;
-	top:2.5%;
-	left:50%;
-	transform:translate(-50%,-50%)
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 50%;
+    z-index:10;
+    width: max-content;
+    transform: translateX(-50%);
 }
 .dibu {
 	width:100%;
