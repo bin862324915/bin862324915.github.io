@@ -4,6 +4,20 @@ AV.init({
   serverURL: 'https://1ao7imck.lc-cn-n1-shared.com',
 });
 
+const colors = ["#c362c3", "#7070cf", "#57bdbd", "#70c370", "#c5c55e", "#c7a15b", "#b36868", "#d99edd", "#6388d3", "#468dad", "#aa6dc9", "#bb775e", "#a18299", "#07969a", "#d36a68", "#a2ad47", "#a467c9", "#c76259", "#cda562", "#8faddf"];
+let currentIndex = 0;
+/*颜色选项
+function getRandomBackgroundColor() {
+    const randomIndex = Math.floor(Math.random() * colors.length);
+    return colors[randomIndex];
+}
+*/
+function getRandomBackgroundColor() {
+    const currentColor = colors[currentIndex];
+    currentIndex = (currentIndex + 1) % colors.length;
+    return currentColor;
+}
+
 const mynameInput = document.getElementById('mynamein');
 const younameInput = document.getElementById('younamein');
 const zhengwenInput = document.getElementById('zhengwenin');
@@ -112,11 +126,12 @@ const processLeanCloudData = new Promise((resolve, reject) => {
   <p id="shijian">${formattedDate}</p>
 `;
 
-	const randomColor = getRandomBackgroundColor();
-	son.style.backgroundColor = randomColor;
-	son.style.left = `${randomX}px`;
-	son.style.top = `${randomY}px`;
-	zhutiBlock.appendChild(son);
+const randomColor = getRandomBackgroundColor();
+son.style.backgroundColor = randomColor;
+son.style.left = `${randomX}px`;
+son.style.top = `${randomY}px`;
+zhutiBlock.appendChild(son);
+
     });
     resolve();
   });
@@ -140,6 +155,7 @@ __      _____ _ __ | |__  _ _ __   | |__ | | ___   __ _
                                                   |___/
 `);
 });
+
 
 
 function dragFn(dragObj, parent) {
@@ -178,14 +194,6 @@ function dragFn(dragObj, parent) {
   });
 }
 
-function getRandomBackgroundColor() {
-  const r = Math.floor(Math.random() * 256);
-  const g = Math.floor(Math.random() * 256);
-  const b = Math.floor(Math.random() * 256);
-  const alpha = 1;
-
-  return `rgba(${r},${g},${b},${alpha})`;
-}
 
 function limitCharacters(textarea, maxCharacters) {
   const text = textarea.value;
