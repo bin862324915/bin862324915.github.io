@@ -6,7 +6,7 @@
   <link href="https://www.zzzwb.com/atom.xml" rel="self"/>
   
   <link href="https://www.zzzwb.com/"/>
-  <updated>2023-11-05T11:29:16.407Z</updated>
+  <updated>2023-11-18T11:06:15.672Z</updated>
   <id>https://www.zzzwb.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python爬取网易云音乐歌单ID</title>
+    <link href="https://www.zzzwb.com/2023/11-18-wyygd.html"/>
+    <id>https://www.zzzwb.com/2023/11-18-wyygd.html</id>
+    <published>2023-11-18T10:39:16.000Z</published>
+    <updated>2023-11-18T11:06:15.672Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;python爬取网易云音乐歌单ID&quot;&gt;&lt;a href=&quot;#python爬取网易云音乐歌单ID&quot; class=&quot;headerlink&quot; title=&quot;python爬取网易云音乐歌单ID&quot;&gt;&lt;/a&gt;python爬取网易云音乐歌单ID&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="python" scheme="https://www.zzzwb.com/categories/python/"/>
+    
+    
+    <category term="python" scheme="https://www.zzzwb.com/tags/python/"/>
+    
+    <category term="爬虫" scheme="https://www.zzzwb.com/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
   
   <entry>
     <title>fluid主题添加侧边栏</title>
@@ -379,7 +406,7 @@
     <link href="https://www.zzzwb.com/2023/09-25-hdvideo.html"/>
     <id>https://www.zzzwb.com/2023/09-25-hdvideo.html</id>
     <published>2023-09-25T03:44:09.000Z</published>
-    <updated>2023-11-03T16:05:25.890Z</updated>
+    <updated>2023-11-17T16:22:19.940Z</updated>
     
     
       
@@ -394,7 +421,7 @@
     
     
     
-    <category term="win资源" scheme="https://www.zzzwb.com/categories/win%E8%B5%84%E6%BA%90/"/>
+    <category term="Win资源" scheme="https://www.zzzwb.com/categories/Win%E8%B5%84%E6%BA%90/"/>
     
     
     <category term="影音处理" scheme="https://www.zzzwb.com/tags/%E5%BD%B1%E9%9F%B3%E5%A4%84%E7%90%86/"/>
@@ -406,7 +433,7 @@
     <link href="https://www.zzzwb.com/2023/09-22-heukms.html"/>
     <id>https://www.zzzwb.com/2023/09-22-heukms.html</id>
     <published>2023-09-22T05:27:17.000Z</published>
-    <updated>2023-11-03T15:59:18.390Z</updated>
+    <updated>2023-11-17T16:22:33.359Z</updated>
     
     
       
@@ -420,7 +447,7 @@
     
     
     
-    <category term="win资源" scheme="https://www.zzzwb.com/categories/win%E8%B5%84%E6%BA%90/"/>
+    <category term="Win资源" scheme="https://www.zzzwb.com/categories/Win%E8%B5%84%E6%BA%90/"/>
     
     
     <category term="win资源" scheme="https://www.zzzwb.com/tags/win%E8%B5%84%E6%BA%90/"/>
@@ -550,33 +577,6 @@
         
         
     <summary type="html">&lt;h2 id=&quot;16-如何用ChatGPT做品牌联名方案策划？&quot;&gt;&lt;a href=&quot;#16-如何用ChatGPT做品牌联名方案策划？&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="ChatGPT" scheme="https://www.zzzwb.com/categories/ChatGPT/"/>
-    
-    
-    <category term="ChatGPT" scheme="https://www.zzzwb.com/tags/ChatGPT/"/>
-    
-    <category term="提问技巧" scheme="https://www.zzzwb.com/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>15-如何用ChatGPT搭建品牌文本体系</title>
-    <link href="https://www.zzzwb.com/2023/09-15-chatgpt015.html"/>
-    <id>https://www.zzzwb.com/2023/09-15-chatgpt015.html</id>
-    <published>2023-09-15T06:18:33.000Z</published>
-    <updated>2023-11-03T16:03:17.851Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;15-如何用ChatGPT搭建品牌文本体系？（品牌名-slogan-品牌故事）&quot;&gt;&lt;a href=&quot;#15-如何用ChatGPT搭建品牌文本体系？（品牌名-slogan-品牌故事）&quot; class=&quot;headerlink&quot;</summary>
         
       
     

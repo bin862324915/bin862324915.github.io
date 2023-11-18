@@ -17,15 +17,15 @@
   <meta name="author" content="Wenbin">
   <meta name="keywords" content="前端技术，python，人工智能，个人博客">
   
-    <meta name="description" content="以下图片均来自必应搜索当日背景壁纸，每日自动获取更新        加载更多...             function imgloading(oImg) {         var n &#x3D; 0;         var timer &#x3D; setInterval(function () {             n++;             oImg.style.opacity &#x3D; n">
+    <meta name="description" content="以下图片均来自必应搜索当日背景壁纸，每日自动获取更新        加载更多...         function imgloading(oImg) {     if (oImg &amp;&amp; oImg.style) {         var n &#x3D; 0;         var timer &#x3D; setInterval(function () {             n++;">
 <meta property="og:type" content="website">
 <meta property="og:title" content="必应每日壁纸">
 <meta property="og:url" content="https://www.zzzwb.com/bing/index.html">
 <meta property="og:site_name" content="Wenbin&#39;s blog">
-<meta property="og:description" content="以下图片均来自必应搜索当日背景壁纸，每日自动获取更新        加载更多...             function imgloading(oImg) {         var n &#x3D; 0;         var timer &#x3D; setInterval(function () {             n++;             oImg.style.opacity &#x3D; n">
+<meta property="og:description" content="以下图片均来自必应搜索当日背景壁纸，每日自动获取更新        加载更多...         function imgloading(oImg) {     if (oImg &amp;&amp; oImg.style) {         var n &#x3D; 0;         var timer &#x3D; setInterval(function () {             n++;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-10-17T07:41:54.000Z">
-<meta property="article:modified_time" content="2023-11-04T04:42:41.155Z">
+<meta property="article:modified_time" content="2023-11-18T07:16:07.403Z">
 <meta property="article:author" content="Wenbin">
 <meta property="article:tag" content="前端技术，python，人工智能，个人博客">
 <meta name="twitter:card" content="summary_large_image">
@@ -469,7 +469,8 @@
   <script src="https://unpkg.com/leancloud-storage@4.15.2/dist/av-min.js"></script>
   <script src="/js/zidingyi/mrbz.js"></script>
 <script>
-    function imgloading(oImg) {
+function imgloading(oImg) {
+    if (oImg && oImg.style) {
         var n = 0;
         var timer = setInterval(function () {
             n++;
@@ -477,9 +478,9 @@
             if (n * n >= 50) {
                 clearInterval(timer);
             }
-            ;
         }, 100);
-    };
+    }
+}
 </script>
 
 

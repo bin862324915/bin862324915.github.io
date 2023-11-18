@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>python爬取网易云音乐歌单ID</title>
+    <link href="/2023/11-18-wyygd.html"/>
+    <url>/2023/11-18-wyygd.html</url>
+    
+    <content type="html"><![CDATA[<h1 id="python爬取网易云音乐歌单ID"><a href="#python爬取网易云音乐歌单ID" class="headerlink" title="python爬取网易云音乐歌单ID"></a>python爬取网易云音乐歌单ID</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>前几天建了个在线听音乐的<a href="https://music.zzzwb.com/">音乐馆</a>页面，这几天使用了一下，感觉每次听都要自己在网址栏添加歌单的参数信息，而且歌单ID这一串数字也不容易记住，觉得比较麻烦。索性就直接添加了一个随机切换歌单的按钮，这样只要点击一下按钮就可以随机切换歌单了。本文记录如何使用python获取网易云歌单ID。</p><h2 id="歌单ID来源"><a href="#歌单ID来源" class="headerlink" title="歌单ID来源"></a>歌单ID来源</h2><p>aplayer播放器目前支持服务商，例如<code>netease</code>（网易云音乐）,<code>tencent</code>（腾讯）,<code>kugou</code>（酷狗）,<code>xiami</code>（小米音乐）,<code>baidu</code>（百度音乐）</p><p>因为我自己比较常听的是网易云，所以这次就先搞个网易云的歌单，废话不多说，开搞！！！</p><h2 id="编写代码"><a href="#编写代码" class="headerlink" title="编写代码"></a>编写代码</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> requests<span class="token keyword">from</span> lxml <span class="token keyword">import</span> html<span class="token comment"># 定义请求头</span>headers <span class="token operator">=</span> <span class="token punctuation">&#123;</span>    <span class="token string">'User-Agent'</span><span class="token punctuation">:</span> <span class="token string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'</span><span class="token punctuation">&#125;</span><span class="token comment"># 获取的页数，这里看了一下网易云的页数是20页，所以直接循环爬取20页的全部歌单ID</span><span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">:</span>    <span class="token comment"># 构建请求链接，因为每页是35个歌单，所以这里是累加后乘以35</span>    url <span class="token operator">=</span> <span class="token string-interpolation"><span class="token string">f'https://music.163.com/discover/playlist/?order=hot&amp;cat=%E5%85%A8%E9%83%A8&amp;limit=35&amp;offset=</span><span class="token interpolation"><span class="token punctuation">&#123;</span>i <span class="token operator">*</span> <span class="token number">35</span><span class="token punctuation">&#125;</span></span><span class="token string">'</span></span>    <span class="token comment"># 发送请求</span>    response <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">,</span> headers<span class="token operator">=</span>headers<span class="token punctuation">)</span>        <span class="token comment"># 使用lxml解析HTML</span>    tree <span class="token operator">=</span> html<span class="token punctuation">.</span>fromstring<span class="token punctuation">(</span>response<span class="token punctuation">.</span>text<span class="token punctuation">)</span>    <span class="token comment"># 使用XPath提取标题和链接</span>    titles <span class="token operator">=</span> tree<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'//body/div[3]/div/ul/li/div/a/@title'</span><span class="token punctuation">)</span>    hrefs <span class="token operator">=</span> tree<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'//body/div[3]/div/ul/li/div/a/@href'</span><span class="token punctuation">)</span>    <span class="token comment"># 将结果保存到文件</span>    <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'data.txt'</span><span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> <span class="token builtin">file</span><span class="token punctuation">:</span>        <span class="token keyword">for</span> title<span class="token punctuation">,</span> href <span class="token keyword">in</span> <span class="token builtin">zip</span><span class="token punctuation">(</span>titles<span class="token punctuation">,</span> hrefs<span class="token punctuation">)</span><span class="token punctuation">:</span>            <span class="token builtin">file</span><span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'name: </span><span class="token interpolation"><span class="token punctuation">&#123;</span>title<span class="token punctuation">&#125;</span></span><span class="token string">\n'</span></span><span class="token punctuation">)</span>            <span class="token builtin">file</span><span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'id: </span><span class="token interpolation"><span class="token punctuation">&#123;</span>href<span class="token punctuation">&#125;</span></span><span class="token string">\n\n'</span></span><span class="token punctuation">)</span>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'第</span><span class="token interpolation"><span class="token punctuation">&#123;</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">&#125;</span></span><span class="token string">页提取完成'</span></span><span class="token punctuation">)</span>    <span class="token comment"># 更新下一页的offset</span>    offset <span class="token operator">=</span> <span class="token punctuation">(</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">35</span>    url <span class="token operator">=</span> <span class="token string-interpolation"><span class="token string">f'https://music.163.com/#/discover/playlist/?order=hot&amp;cat=%E5%85%A8%E9%83%A8&amp;limit=35&amp;offset=</span><span class="token interpolation"><span class="token punctuation">&#123;</span>offset<span class="token punctuation">&#125;</span></span><span class="token string">'</span></span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'全部提取完成'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>运行完代码后将会在当前运行目录生成一个data.txt的文档，歌单的名字以及歌单的ID就保存在这个文档里了</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>python</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>python</tag>
+      
+      <tag>爬虫</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>fluid主题添加侧边栏</title>
     <link href="/2023/11-05-tjcbl.html"/>
     <url>/2023/11-05-tjcbl.html</url>
@@ -359,7 +386,7 @@
     
     <categories>
       
-      <category>win资源</category>
+      <category>Win资源</category>
       
     </categories>
     
@@ -384,7 +411,7 @@
     
     <categories>
       
-      <category>win资源</category>
+      <category>Win资源</category>
       
     </categories>
     
@@ -1061,7 +1088,7 @@
     
     <categories>
       
-      <category>win资源</category>
+      <category>Win资源</category>
       
     </categories>
     

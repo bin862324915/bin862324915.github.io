@@ -36,7 +36,7 @@ function loadMoreRecords() {
           const formattedDate = formatDate(sj);
           const imgurl = record.get('imgurl');
           const htmlContent = `
-            <img onload="imgloading(this)" src="${slturl}" style="border-radius: 8px;">
+            <img class="olmg" onload="imgloading(this)" src="${slturl}" style="border-radius: 8px;">
             <p style="padding-top: 5px;">${formattedDate} | <a href="${imgurl}" target="_blank">获取原图</a></p>
           `;
           const newDiv = document.createElement('div');
