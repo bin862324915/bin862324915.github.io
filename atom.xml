@@ -6,7 +6,7 @@
   <link href="https://www.zzzwb.com/atom.xml" rel="self"/>
   
   <link href="https://www.zzzwb.com/"/>
-  <updated>2023-11-18T11:06:15.672Z</updated>
+  <updated>2023-11-20T07:29:20.625Z</updated>
   <id>https://www.zzzwb.com/</id>
   
   <author>
@@ -21,14 +21,14 @@
     <link href="https://www.zzzwb.com/2023/11-18-wyygd.html"/>
     <id>https://www.zzzwb.com/2023/11-18-wyygd.html</id>
     <published>2023-11-18T10:39:16.000Z</published>
-    <updated>2023-11-18T11:06:15.672Z</updated>
+    <updated>2023-11-20T07:29:20.625Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;python爬取网易云音乐歌单ID&quot;&gt;&lt;a href=&quot;#python爬取网易云音乐歌单ID&quot; class=&quot;headerlink&quot; title=&quot;python爬取网易云音乐歌单ID&quot;&gt;&lt;/a&gt;python爬取网易云音乐歌单ID&lt;/h1&gt;&lt;h2</summary>
+    <summary type="html">&lt;h2 id=&quot;python爬取网易云音乐歌单ID&quot;&gt;&lt;a href=&quot;#python爬取网易云音乐歌单ID&quot; class=&quot;headerlink&quot; title=&quot;python爬取网易云音乐歌单ID&quot;&gt;&lt;/a&gt;python爬取网易云音乐歌单ID&lt;/h2&gt;&lt;h3</summary>
         
       
     
@@ -292,7 +292,7 @@
     <link href="https://www.zzzwb.com/2023/10-13-tjyy.html"/>
     <id>https://www.zzzwb.com/2023/10-13-tjyy.html</id>
     <published>2023-10-13T12:38:13.000Z</published>
-    <updated>2023-11-18T11:16:36.217Z</updated>
+    <updated>2023-11-20T06:48:19.470Z</updated>
     
     
       
@@ -301,7 +301,7 @@
         
     <summary type="html">&lt;p&gt;&lt;strong&gt;fluid主题给网页底部添加随机一言&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;在fluid主题配置文件footer位置添加一个div&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-css&quot;</summary>
+&lt;pre class=&quot;line-numbers language-markup&quot;</summary>
         
       
     
