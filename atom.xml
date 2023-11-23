@@ -6,7 +6,7 @@
   <link href="https://www.zzzwb.com/atom.xml" rel="self"/>
   
   <link href="https://www.zzzwb.com/"/>
-  <updated>2023-11-20T07:29:20.625Z</updated>
+  <updated>2023-11-23T08:04:55.795Z</updated>
   <id>https://www.zzzwb.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>fluid主题归档页添加git贪吃蛇动画</title>
+    <link href="https://www.zzzwb.com/2023/11-23-snake.html"/>
+    <id>https://www.zzzwb.com/2023/11-23-snake.html</id>
+    <published>2023-11-23T06:44:22.000Z</published>
+    <updated>2023-11-23T08:04:55.795Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;fluid主题归档页添加git贪吃蛇动画&quot;&gt;&lt;a href=&quot;#fluid主题归档页添加git贪吃蛇动画&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="hexo" scheme="https://www.zzzwb.com/categories/hexo/"/>
+    
+    <category term="github" scheme="https://www.zzzwb.com/categories/github/"/>
+    
+    
+    <category term="fluid主题" scheme="https://www.zzzwb.com/tags/fluid%E4%B8%BB%E9%A2%98/"/>
+    
+    <category term="github" scheme="https://www.zzzwb.com/tags/github/"/>
+    
+  </entry>
   
   <entry>
     <title>python爬取网易云音乐歌单ID</title>
@@ -552,33 +581,6 @@
         
         
     <summary type="html">&lt;h2 id=&quot;17-如何用ChatGP协助你，从品牌角度对产品提出升级建议？&quot;&gt;&lt;a href=&quot;#17-如何用ChatGP协助你，从品牌角度对产品提出升级建议？&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="ChatGPT" scheme="https://www.zzzwb.com/categories/ChatGPT/"/>
-    
-    
-    <category term="ChatGPT" scheme="https://www.zzzwb.com/tags/ChatGPT/"/>
-    
-    <category term="提问技巧" scheme="https://www.zzzwb.com/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>16-如何用ChatGPT做品牌联名方案策划</title>
-    <link href="https://www.zzzwb.com/2023/09-15-chatgpt016.html"/>
-    <id>https://www.zzzwb.com/2023/09-15-chatgpt016.html</id>
-    <published>2023-09-15T06:26:33.000Z</published>
-    <updated>2023-11-03T16:03:24.811Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;16-如何用ChatGPT做品牌联名方案策划？&quot;&gt;&lt;a href=&quot;#16-如何用ChatGPT做品牌联名方案策划？&quot; class=&quot;headerlink&quot;</summary>
         
       
     

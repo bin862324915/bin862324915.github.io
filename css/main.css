@@ -835,8 +835,8 @@ i.iconfont {
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in;
-  -webkit-box-shadow: 0.25rem 0px 0.25rem 0px #000;
-  box-shadow: 0.25rem 0px 0.25rem 0px #000;
+  -webkit-box-shadow: 0.1rem 0px 0.1rem 0px rgba(0,0,0,0.3);
+  box-shadow: 0.1rem 0px 0.1rem 0px rgba(0,0,0,0.3);
   font-family: 'LXGW WenKai Screen';
   transition: all 1s cubic-bezier(1, -0.29, 0.54, 1.11);
 }
