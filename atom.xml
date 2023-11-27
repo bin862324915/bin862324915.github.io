@@ -6,7 +6,7 @@
   <link href="https://www.zzzwb.com/atom.xml" rel="self"/>
   
   <link href="https://www.zzzwb.com/"/>
-  <updated>2023-11-23T08:04:55.795Z</updated>
+  <updated>2023-11-27T07:42:08.469Z</updated>
   <id>https://www.zzzwb.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS实现图片光影滑过实例</title>
+    <link href="https://www.zzzwb.com/2023/11-27-css003.html"/>
+    <id>https://www.zzzwb.com/2023/11-27-css003.html</id>
+    <published>2023-11-27T07:02:42.000Z</published>
+    <updated>2023-11-27T07:42:08.469Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;CSS实现图片光影滑过实例&quot;&gt;&lt;a href=&quot;#CSS实现图片光影滑过实例&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="css" scheme="https://www.zzzwb.com/categories/css/"/>
+    
+    
+    <category term="网页美化" scheme="https://www.zzzwb.com/tags/%E7%BD%91%E9%A1%B5%E7%BE%8E%E5%8C%96/"/>
+    
+    <category term="css动画" scheme="https://www.zzzwb.com/tags/css%E5%8A%A8%E7%94%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>fluid主题归档页添加git贪吃蛇动画</title>
@@ -554,33 +581,6 @@
         
         
     <summary type="html">&lt;h2 id=&quot;18-如何用ChatGPT做新品上市推广方案策划？&quot;&gt;&lt;a href=&quot;#18-如何用ChatGPT做新品上市推广方案策划？&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="ChatGPT" scheme="https://www.zzzwb.com/categories/ChatGPT/"/>
-    
-    
-    <category term="ChatGPT" scheme="https://www.zzzwb.com/tags/ChatGPT/"/>
-    
-    <category term="提问技巧" scheme="https://www.zzzwb.com/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>17-如何用ChatGP从品牌角度对产品提出升级建议</title>
-    <link href="https://www.zzzwb.com/2023/09-15-chatgpt017.html"/>
-    <id>https://www.zzzwb.com/2023/09-15-chatgpt017.html</id>
-    <published>2023-09-15T06:33:33.000Z</published>
-    <updated>2023-11-03T16:03:29.738Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;17-如何用ChatGP协助你，从品牌角度对产品提出升级建议？&quot;&gt;&lt;a href=&quot;#17-如何用ChatGP协助你，从品牌角度对产品提出升级建议？&quot; class=&quot;headerlink&quot;</summary>
         
       
     
