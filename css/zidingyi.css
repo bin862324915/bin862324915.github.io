@@ -34,6 +34,9 @@ button[class] {
 svg,span.vat,span.vnick {
 	cursor: url(/img/Hand2.cur),auto !important;
 }
+#pubShuo,#switchUser,#uploadSource,#hideuser,#tui {
+	cursor: url(/img/Hand2.cur),auto !important;
+}
 
 .aplayer-list-author,
 .aplayer-list-title,

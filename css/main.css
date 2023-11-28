@@ -2140,15 +2140,7 @@ input[type=checkbox] {
   transition: all 1s;
 }
 .img-fluid:hover {
-  background-color: #b9e769;
-  -webkit-box-shadow: 10px 10px 99px 6px #b9e769;
-  -moz-box-shadow: 10px 10px 99px 6px #b9e769;
-  box-shadow: 10px 10px 99px 6px #b9e769;
   transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
 }
 .about-info > div {
   margin-bottom: 0.5rem;
