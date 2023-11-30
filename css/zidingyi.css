@@ -188,9 +188,9 @@ body {
     background-color: rgba(0, 0, 0, 0);
 }
 
-.typed-cursor {
+/*.typed-cursor {
   color: #fc9d9a;
-}
+}*/
 
 @keyframes gradientAnimation {
       0% { background-position: 0% 50%; }
@@ -207,9 +207,9 @@ body {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip:text;
 }
-footer .iconfont {
+/*footer .iconfont {
     color: #FFC1C1;
-}
+}*/
 
 .reprint {
     margin: 15px 0 0.4rem;
@@ -523,7 +523,8 @@ html::-webkit-scrollbar-corner {
   transform: rotate(360deg);
 }
 i.iconfont.icon-heart-01 {
-    color: pink;
+    /*color: pink;*/
+    animation: heartbeat-animate 1.2s ease-in-out infinite;
 }
 
 .index-img img {
@@ -584,4 +585,21 @@ i.iconfont.icon-heart-01 {
 }
 #scroll-top-button {
     padding: 2px;
+}
+@keyframes heartbeat-animate {
+    0%,100% {
+        transform: scale(1)
+    }
+
+    10%,30% {
+        transform: scale(.88)
+    }
+
+    20%,40%,60%,80% {
+        transform: scale(1.08)
+    }
+
+    50%,70% {
+        transform: scale(1.08)
+    }
 }
