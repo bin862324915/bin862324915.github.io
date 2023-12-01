@@ -586,6 +586,15 @@ i.iconfont.icon-heart-01 {
 #scroll-top-button {
     padding: 2px;
 }
+
+#waifu-tips {
+    background-color: var(--board-bg-color)!important;
+}
+/*show snow*/
+.hp_special_experience .hol_frames_cont .snow .snow_slice {
+    position: fixed!important;
+    z-index: 2;
+}
 @keyframes heartbeat-animate {
     0%,100% {
         transform: scale(1)
