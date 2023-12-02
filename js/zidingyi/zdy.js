@@ -99,3 +99,76 @@ __      _____ _ __ | |__  _ _ __   | |__ | | ___   __ _
                                                    __/ |
                                                   |___/
 `);
+
+  // snow
+  function snow() {
+    var snowContainer = document.getElementById('snow_container');
+    var snowButtonIcon = document.querySelector('#snowButton i');
+    if (snowContainer && snowContainer.children.length === 0) {
+        snowContainer.classList.add('show');
+        snowContainer.innerHTML = `
+            <div class="snow_slice snow_1">
+                <div class="snow_drifter drift_1"></div>
+            </div>
+            <div class="snow_slice snow_2">
+                <div class="snow_drifter drift_2"></div>
+            </div>
+            <div class="snow_slice snow_3">
+                <div class="snow_drifter drift_3"></div>
+            </div>
+            <div class="snow_slice snow_4">
+                <div class="snow_drifter drift_4"></div>
+            </div>
+        `;
+    if (snowButtonIcon) {
+            snowButtonIcon.classList.add('on-kg');
+        }
+    } else if (snowContainer) {
+        snowContainer.innerHTML = '';
+        snowContainer.classList.remove('show');
+     if (snowButtonIcon) {
+            snowButtonIcon.classList.remove('on-kg');
+        }
+    }
+  }
+  var snowButton = document.getElementById('snowButton');
+  snowButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    snow();
+  });
+
+  function frost() {
+    var frostElement = document.getElementById('frost');
+    var frostButtonElement = document.getElementById('frostButton');
+    if (frostElement && frostButtonElement) {
+      frostElement.classList.toggle('show');
+      if (frostElement.classList.contains('show')) {
+        frostButtonElement.querySelector('i').classList.add('on-kg');
+      } else {
+        frostButtonElement.querySelector('i').classList.remove('on-kg');
+      }
+    }
+  }
+
+  function lights() {
+    var frostElement = document.getElementById('lights');
+    var lightsButtonElement = document.getElementById('lightsButton');
+    if (frostElement && lightsButtonElement) {
+      frostElement.classList.toggle('show');
+      if (frostElement.classList.contains('show')) {
+        lightsButtonElement.querySelector('i').classList.add('on-kg');
+      } else {
+        lightsButtonElement.querySelector('i').classList.remove('on-kg');
+      }
+    }
+  }
+  var frostButton = document.getElementById('frostButton');
+  frostButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    frost();
+  });
+  var lightsButton = document.getElementById('lightsButton');
+  lightsButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    lights();
+  });

@@ -70,7 +70,7 @@
   
 <link rel="stylesheet" href="//cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css">
 <link rel="stylesheet" href="//unpkg.com/wenbin-blog@1.0.0/js/zidingyi/code/prism.css">
-<link rel="stylesheet" href="//at.alicdn.com/t/c/font_4229952_v3uh1xqqd5o.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_4229952_wamnhrogmyn.css">
 <link rel="stylesheet" href="//cdn.staticfile.org/aos/2.3.4/aos.css">
 <link rel="stylesheet" href="/css/zidingyi.css">
 
@@ -134,18 +134,18 @@
     <!--snow-->
     <div v-if="snowAndbing" class="hp_special_experience">
         <div class="hol_frames_cont">
-            <!--<div class="frame fader frost show">
+            <div class="frame fader frost" id="frost">
                 <div class="frame_sprite frame_left"></div>
                 <div class="frame_sprite frame_right"></div>
                 <div class="frame_sprite frame_top"></div>
                 <div class="frame_sprite frame_bottom"></div>
             </div>
-            <div class="frame fader lights">
+            <div class="frame fader lights" id="lights">
                 <div class="frame_sprite frame_left"></div>
                 <div class="frame_sprite frame_right"></div>
                 <div class="frame_sprite frame_top"></div>
                 <div class="frame_sprite frame_bottom"></div>
-            </div>--!>
+            </div>
             <div id="snow_container" class="fader snow show">
                 <div class="snow_slice snow_1">
                     <div class="snow_drifter drift_1"></div>
@@ -162,7 +162,7 @@
             </div>
         </div>
     </div>
-  <script  src="https://cdn.staticfile.org/aos/2.3.4/aos.js" type="application/x-javascript"></script><div>
+  <script  src="https://cdn.staticfile.org/aos/2.3.4/aos.js" type="application/x-javascript"></script><div id="shipinbg">
 	<div class='real_mask' style="
 		background-color: rgba(0,0,0,0.35);
 		width: 100%;
@@ -818,7 +818,7 @@ window.onload = function() {
       var pltj = document.getElementById('pltj');
       pltj.style.display = 'inline';
     }
-  }, 500);
+  }, 100);
 };
 </script>
  <div class="side-col d-none d-lg-block col-lg-2">
@@ -928,6 +928,22 @@ window.onload = function() {
         </a>
         &nbsp;&nbsp;
       
+<br>
+      <p class="h6 sidebar-friend-title">
+        <span class="sidebar-label-left"><i class="iconfont icon-caozuo-kaiguan"></i></span>
+        <span class="sidebar-label">功能开关</span>
+      </p>
+        <a href="javascript:;" class="h4" id="snowButton">
+          <i class="iconfont icon-xiaxue-xuehua on-kg" title="下雪"></i>
+        </a>
+        &nbsp;&nbsp;
+        <a href="javascript:;" class="h4" id="frostButton">
+          <i class="iconfont icon-bingdong" title="冰冻"></i>
+        </a>
+        &nbsp;&nbsp;
+        <a href="javascript:;" class="h4" id="lightsButton">
+          <i class="iconfont icon-dengpao" title="灯饰"></i>
+        </a>
     </div>
     <div class="sidebar-friend">
       <p class="h6 sidebar-friend-title">

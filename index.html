@@ -59,7 +59,7 @@
   
 <link rel="stylesheet" href="//cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css">
 <link rel="stylesheet" href="//unpkg.com/wenbin-blog@1.0.0/js/zidingyi/code/prism.css">
-<link rel="stylesheet" href="//at.alicdn.com/t/c/font_4229952_v3uh1xqqd5o.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_4229952_wamnhrogmyn.css">
 <link rel="stylesheet" href="//cdn.staticfile.org/aos/2.3.4/aos.css">
 <link rel="stylesheet" href="/css/zidingyi.css">
 
@@ -123,18 +123,18 @@
     <!--snow-->
     <div v-if="snowAndbing" class="hp_special_experience">
         <div class="hol_frames_cont">
-            <!--<div class="frame fader frost show">
+            <div class="frame fader frost" id="frost">
                 <div class="frame_sprite frame_left"></div>
                 <div class="frame_sprite frame_right"></div>
                 <div class="frame_sprite frame_top"></div>
                 <div class="frame_sprite frame_bottom"></div>
             </div>
-            <div class="frame fader lights">
+            <div class="frame fader lights" id="lights">
                 <div class="frame_sprite frame_left"></div>
                 <div class="frame_sprite frame_right"></div>
                 <div class="frame_sprite frame_top"></div>
                 <div class="frame_sprite frame_bottom"></div>
-            </div>--!>
+            </div>
             <div id="snow_container" class="fader snow show">
                 <div class="snow_slice snow_1">
                     <div class="snow_drifter drift_1"></div>
@@ -151,7 +151,7 @@
             </div>
         </div>
     </div>
-  <script  src="https://cdn.staticfile.org/aos/2.3.4/aos.js" type="application/x-javascript"></script><div>
+  <script  src="https://cdn.staticfile.org/aos/2.3.4/aos.js" type="application/x-javascript"></script><div id="shipinbg">
 	<div class='real_mask' style="
 		background-color: rgba(0,0,0,0.35);
 		width: 100%;
@@ -948,7 +948,7 @@
     
       <div class="col-12 col-md-4 m-auto index-img">
         <a href="/2023/10-20-python004.html" target="_blank">
-          <img src="https://img-baofun.zhhainiao.com/pcwallpaper_ugc/static/53f31f4f8ca1bb064ea18a398db64db9.jpg?x-oss-process=image%2fresize%2cm_lfit%2cw_3840%2ch_2160" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload alt="python爬取元气桌面动态壁纸实例">
+          <img src="https://imgsrc.baidu.com/forum/pic/item/d4628535e5dde7115048f5c0e1efce1b9d16616a.jpg" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload alt="python爬取元气桌面动态壁纸实例">
         </a>
       </div>
     
@@ -1019,7 +1019,7 @@
     
       <div class="col-12 col-md-4 m-auto index-img">
         <a href="/2023/10-20-python003.html" target="_blank">
-          <img src="https://img-baofun.zhhainiao.com/pcwallpaper_ugc/static/ec61d1aba1464bcfcdc34e5949c76dd5.jpeg" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload alt="python爬取元气桌面壁纸实例">
+          <img src="https://imgsrc.baidu.com/forum/pic/item/d000baa1cd11728bbab53a148efcc3cec3fd2c68.jpg" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload alt="python爬取元气桌面壁纸实例">
         </a>
       </div>
     
@@ -1311,6 +1311,22 @@
         </a>
         &nbsp;&nbsp;
       
+<br>
+      <p class="h6 sidebar-friend-title">
+        <span class="sidebar-label-left"><i class="iconfont icon-caozuo-kaiguan"></i></span>
+        <span class="sidebar-label">功能开关</span>
+      </p>
+        <a href="javascript:;" class="h4" id="snowButton">
+          <i class="iconfont icon-xiaxue-xuehua on-kg" title="下雪"></i>
+        </a>
+        &nbsp;&nbsp;
+        <a href="javascript:;" class="h4" id="frostButton">
+          <i class="iconfont icon-bingdong" title="冰冻"></i>
+        </a>
+        &nbsp;&nbsp;
+        <a href="javascript:;" class="h4" id="lightsButton">
+          <i class="iconfont icon-dengpao" title="灯饰"></i>
+        </a>
     </div>
     <div class="sidebar-friend">
       <p class="h6 sidebar-friend-title">

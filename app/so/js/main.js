@@ -84,15 +84,14 @@ function time() {
 }
 
 //获取天气
-//每日限量 1000 次
-//请前往 https://staging.caiyunapp.com/api/weather_intro.html 申请（免费）
-fetch('https://api.caiyunapp.com/v2.5/TAkhjf8d1nlSlspN/121.6544,25.1552/weather.json')
+fetch('https://api.oioweb.cn/api/weather/GetWeather')
     .then(response => response.json())
     .then(data => {
-        //$('#wea_text').html(data.wea + '&nbsp;' + data.tem_night + '℃' + '&nbsp;~&nbsp;' + data.tem_day + '℃')
-        $('#wea_text').text(data.wea)
-        $('#tem1').text(data.tem1)
-        $('#tem2').text(data.tem2)
+        $('#weizhi').text(data.result.city.city_name)
+        $('#wea_text').text(data.result.condition.condition)
+        $('#tem1').text(data.result.condition.temp)
+        $('#tem2').text(data.result.condition.windDir)
+        $('#tem3').text(data.result.condition.windLevel + ' 级')
     })
     .catch(console.error)
     
