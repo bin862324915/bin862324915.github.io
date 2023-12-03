@@ -150,7 +150,7 @@ color: rgb(244,167,89);
 var styleContent = `
 color: rgb(30,152,255);
 `
-var title1 = 'Snavigation'
+var title1 = '搜索导航'
 var title2 = `
                     _     _         _     _             
                    | |   (_)       | |   | |            

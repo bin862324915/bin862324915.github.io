@@ -1125,7 +1125,7 @@ $(document).ready(function () {
     $("#my_data_out").click(function () {
         var cookies = Cookies.get();
         var json = JSON.stringify(cookies);
-        download("Snavigation-back-up-" + $.now() + ".json", json);
+        download("搜索导航-back-up-" + $.now() + ".json", json);
         iziToast.show({
             timeout: 2000,
             message: '已导出备份文件至下载目录'
