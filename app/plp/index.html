@@ -9,7 +9,7 @@
 <meta property="og:image" content="https://imgsrc.baidu.com/forum/pic/item/95eef01f3a292df5ba886e21fa315c6034a873bf.jpg">
 <meta name="author" content="Wenbin">
   <script src="https://unpkg.com/leancloud-storage@4.15.2/dist/av-min.js"></script>
-  <script src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/jquery/3.6.4/jquery.min.js"></script>
 <link rel="stylesheet" href="https://lib.baomitu.com/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" />
 <audio id="background-music" autoplay loop>
   <source src="https://music.163.com/song/media/outer/url?id=468800.mp3" type="audio/mpeg">
@@ -73,7 +73,7 @@
 							pre_show_image_url = "https://imgsrc.baidu.com/forum/pic/item/d8f9d72a6059252d2e103931729b033b5bb5b984.jpg"
 							
 							banner_obj = document.getElementById("banner")
-							banner_obj.style.cssText = "background: url('" + pre_show_image_url + "') no-repeat; background-size: cover;"
+							banner_obj.style.cssText = "background: url('" + pre_show_image_url + "') no-repeat;"
 
 							vvd_banner_obj = document.getElementById("vvd_banner_img")
 
@@ -90,9 +90,13 @@
 					});
 
 					if (!isMobile){
-						window.onresize = function(){
-							set_video_attr('video_item')
-							}
+						$(document).ready(function () {
+							window.onresize = function () {
+								set_video_attr('video_item')
+								set_video_attr('banner_img_item')
+								}
+							});
+
 						}
 				</script>
 			

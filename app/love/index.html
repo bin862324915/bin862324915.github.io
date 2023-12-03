@@ -13,7 +13,7 @@
   <source src="https://music.zzzwb.com/list/%E5%91%8A%E7%99%BD%E6%B0%94%E7%90%83%E9%92%A2%E7%90%B4%E7%89%88.mp3" type="audio/mpeg">
 </audio>
 <script src="https://unpkg.com/leancloud-storage@4.15.2/dist/av-min.js"></script>
-<script src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/3.6.4/jquery.min.js"></script>
   <title>表白墙 - Wenbin&#39;s blog</title>
 </head>
 <body>
@@ -75,7 +75,7 @@
 							pre_show_image_url = data[index][1]
 							
 							banner_obj = document.getElementById("banner")
-							banner_obj.style.cssText = "background: url('" + pre_show_image_url + "') no-repeat; background-size: cover;"
+							banner_obj.style.cssText = "background: url('" + pre_show_image_url + "') no-repeat;"
 
 							vvd_banner_obj = document.getElementById("vvd_banner_img")
 
@@ -92,9 +92,13 @@
 					});
 
 					if (!isMobile){
-						window.onresize = function(){
-							set_video_attr('video_item')
-							}
+						$(document).ready(function () {
+							window.onresize = function () {
+								set_video_attr('video_item')
+								set_video_attr('banner_img_item')
+								}
+							});
+
 						}
 				</script>
 			

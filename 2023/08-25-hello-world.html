@@ -486,7 +486,6 @@
 						isMobile = isIphone || isAndroid;
 
 					function set_video_attr(id){
-						console.log('Setting Video Attribute for ' + id);
 						var height = window.innerHeight
 						var width = window.innerWidth
 						var video_item = document.getElementById(id);
@@ -528,7 +527,6 @@
 					if (!isMobile){
 						$(document).ready(function () {
 							window.onresize = function () {
-								console.log('Window Resized!');
 								set_video_attr('video_item')
 								set_video_attr('banner_img_item')
 								}
