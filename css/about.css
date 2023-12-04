@@ -402,6 +402,14 @@ kbd {
     color: rgb(255, 255, 255);
 }
 
+@media (max-width: 1199.98px) {
+.dy-list {
+    display: flex;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+}
 @-webkit-keyframes spin {
     from {
         -webkit-transform: rotateY(0);

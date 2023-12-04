@@ -867,6 +867,7 @@ i.iconfont {
 }
 .sidebar-button:hover {
   color: var(--link-hover-color);
+  opacity: 1;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
