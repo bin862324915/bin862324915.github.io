@@ -101,10 +101,17 @@ __      _____ _ __ | |__  _ _ __   | |__ | | ___   __ _
 `);
 
   // snow
-  function snow() {
+function snow() {
     var snowContainer = document.getElementById('snow_container');
     var snowButtonIcon = document.querySelector('#snowButton i');
-    if (snowContainer && snowContainer.children.length === 0) {
+
+    // 读取用户的选择，如果为 true，直接执行 snow 函数
+    var isSnowEnabled = localStorage.getItem('isSnowEnabled') === 'true';
+    if (isSnowEnabled) {
+        activateSnow();
+    }
+
+    function activateSnow() {
         snowContainer.classList.add('show');
         snowContainer.innerHTML = `
             <div class="snow_slice snow_1">
@@ -120,22 +127,45 @@ __      _____ _ __ | |__  _ _ __   | |__ | | ___   __ _
                 <div class="snow_drifter drift_4"></div>
             </div>
         `;
-    if (snowButtonIcon) {
+
+        if (snowButtonIcon) {
             snowButtonIcon.classList.add('on-kg');
         }
-    } else if (snowContainer) {
+    }
+
+    function deactivateSnow() {
         snowContainer.innerHTML = '';
         snowContainer.classList.remove('show');
-     if (snowButtonIcon) {
+
+        if (snowButtonIcon) {
             snowButtonIcon.classList.remove('on-kg');
         }
     }
-  }
-  var snowButton = document.getElementById('snowButton');
-  snowButton.addEventListener('click', function(event) {
-    event.preventDefault();
+
+    var snowButton = document.getElementById('snowButton');
+    snowButton.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // 切换用户的选择
+        isSnowEnabled = !isSnowEnabled;
+
+        // 保存用户的选择
+        localStorage.setItem('isSnowEnabled', isSnowEnabled);
+
+        // 根据用户的选择执行 snow 函数或者取消 snow 函数
+        if (isSnowEnabled) {
+            activateSnow();
+        } else {
+            deactivateSnow();
+        }
+    });
+}
+
+// 页面加载时初始化 snow 函数
+document.addEventListener('DOMContentLoaded', function () {
     snow();
-  });
+});
+
 
   function frost() {
     var frostElement = document.getElementById('frost');
