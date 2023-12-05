@@ -104,8 +104,6 @@ __      _____ _ __ | |__  _ _ __   | |__ | | ___   __ _
 function snow() {
     var snowContainer = document.getElementById('snow_container');
     var snowButtonIcon = document.querySelector('#snowButton i');
-
-    // 读取用户的选择，如果为 true，直接执行 snow 函数
     var isSnowEnabled = localStorage.getItem('isSnowEnabled') === 'true';
     if (isSnowEnabled) {
         activateSnow();
@@ -145,14 +143,8 @@ function snow() {
     var snowButton = document.getElementById('snowButton');
     snowButton.addEventListener('click', function (event) {
         event.preventDefault();
-
-        // 切换用户的选择
         isSnowEnabled = !isSnowEnabled;
-
-        // 保存用户的选择
         localStorage.setItem('isSnowEnabled', isSnowEnabled);
-
-        // 根据用户的选择执行 snow 函数或者取消 snow 函数
         if (isSnowEnabled) {
             activateSnow();
         } else {
@@ -161,7 +153,6 @@ function snow() {
     });
 }
 
-// 页面加载时初始化 snow 函数
 document.addEventListener('DOMContentLoaded', function () {
     snow();
 });
