@@ -519,11 +519,11 @@ img.vimg:hover {
   transition: transform 1s;
 }
 
-.sidebar-about .iconfont {
+.sidebar-about a .iconfont {
   transition: transform 0.5s;
 }
-.sidebar-about .iconfont:hover {
-  transform: scale(1.3);
+.sidebar-about a .iconfont:hover {
+  transform: scale(1.4);
   transition: transform 0.5s;
 }
 .on-kg {
