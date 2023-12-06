@@ -407,72 +407,6 @@
 
 </div>
 
-
-	<div class="banner" id='banner' >
-
-		<div class="full-bg-img" >
-
-			
-				<script>
-					var ua = navigator.userAgent;
-					var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
-						isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
-						isAndroid = ua.match(/(Android)\s+([\d.]+)/),
-						isMobile = isIphone || isAndroid;
-
-					function set_video_attr(id){
-						var height = window.innerHeight
-						var width = window.innerWidth
-						var video_item = document.getElementById(id);
-
-						if (height / width < 0.56){
-							video_item.setAttribute('width', '100%');
-							video_item.setAttribute('height', 'auto');
-						} else {
-							video_item.setAttribute('height', '100%');
-							video_item.setAttribute('width', 'auto');
-						}
-					}
-
-					$.getJSON('https://www.zywvvd.com/vvd_js/video_url.json', function(data){
-						if (true){
-							var video_list_length = data.length
-							var seed = Math.random()
-							index = Math.floor(seed * video_list_length)
-
-							video_url = data[index][0]
-							pre_show_image_url = data[index][1]
-
-							banner_obj = document.getElementById("banner")
-							banner_obj.style.cssText = "background: url('" + pre_show_image_url + "') no-repeat;"
-
-							vvd_banner_obj = document.getElementById("vvd_banner_img")
-							vvd_banner_content = "<img id='banner_img_item' src='" + pre_show_image_url + "'style='position: fixed; z-index: -999'>"
-							vvd_banner_obj.innerHTML = vvd_banner_content 
-
-							if (!isMobile) {
-								video_html_res = "<video id='video_item' style='position: fixed; z-index: -888;'  muted='muted' src=" + video_url + " autoplay='autoplay' loop='loop'></video>"
-								document.getElementById("banner_video_insert").innerHTML = video_html_res;
-								set_video_attr('video_item')
-								set_video_attr('banner_img_item')
-							}
-						}
-					});
-
-					if (!isMobile){
-						$(document).ready(function () {
-							window.onresize = function () {
-								set_video_attr('video_item')
-								set_video_attr('banner_img_item')
-								}
-							});
-
-						}
-				</script>
-			
-			</div>
-		</div>
-    </div>
   </header>
 
   <main>
@@ -486,10 +420,49 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="text-center tagcloud">
-  <a href="/tags/AI%E7%BB%98%E7%94%BB/" style="font-size: 17.5px; color: #a4b0e5">AI绘画</a> <a href="/tags/ChatGPT/" style="font-size: 30px; color: #337ab7">ChatGPT</a> <a href="/tags/FFmpeg/" style="font-size: 15px; color: #bbe">FFmpeg</a> <a href="/tags/Windows%E8%B5%84%E6%BA%90/" style="font-size: 20px; color: #8ea5dc">Windows资源</a> <a href="/tags/css%E5%8A%A8%E7%94%BB/" style="font-size: 15px; color: #bbe">css动画</a> <a href="/tags/fluid%E4%B8%BB%E9%A2%98/" style="font-size: 27.5px; color: #4a85c0">fluid主题</a> <a href="/tags/github/" style="font-size: 15px; color: #bbe">github</a> <a href="/tags/hexo/" style="font-size: 20px; color: #8ea5dc">hexo</a> <a href="/tags/html/" style="font-size: 20px; color: #8ea5dc">html</a> <a href="/tags/python/" style="font-size: 25px; color: #6090c9">python</a> <a href="/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/" style="font-size: 20px; color: #8ea5dc">个人项目</a> <a href="/tags/%E4%BB%A3%E7%A0%81/" style="font-size: 25px; color: #6090c9">代码</a> <a href="/tags/%E5%9C%A8%E7%BA%BF%E8%B5%84%E6%BA%90/" style="font-size: 15px; color: #bbe">在线资源</a> <a href="/tags/%E5%BD%B1%E9%9F%B3%E5%A4%84%E7%90%86/" style="font-size: 17.5px; color: #a4b0e5">影音处理</a> <a href="/tags/%E6%8C%87%E4%BB%A4/" style="font-size: 15px; color: #bbe">指令</a> <a href="/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/" style="font-size: 30px; color: #337ab7">提问技巧</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 15px; color: #bbe">测试</a> <a href="/tags/%E6%BF%80%E6%B4%BB%E5%B7%A5%E5%85%B7/" style="font-size: 15px; color: #bbe">激活工具</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 22.5px; color: #779bd3">爬虫</a> <a href="/tags/%E7%BD%91%E9%A1%B5%E5%BA%94%E7%94%A8/" style="font-size: 20px; color: #8ea5dc">网页应用</a> <a href="/tags/%E7%BD%91%E9%A1%B5%E7%BE%8E%E5%8C%96/" style="font-size: 27.5px; color: #4a85c0">网页美化</a>
+<style>
+.tagbgcolor a {
+    margin: 0.5rem;
+    border-radius: 0.9rem;
+    transition: all 0.5s!important;
+    color: #fff;
+    box-shadow: 4px 8px 10px var(--body-bg-color);
+    font-family: sans-serif;
+}
+.tagbgcolor a:hover {
+    transform: scale(1.15);
+    color: #fff!important;
+}
+</style>
+<div class="text-center tagcloud tagbgcolor">
+  <a href="/tags/AI%E7%BB%98%E7%94%BB/" style="font-size: 19.17px;">AI绘画</a> <a href="/tags/ChatGPT/" style="font-size: 30px;">ChatGPT</a> <a href="/tags/FFmpeg/" style="font-size: 17px;">FFmpeg</a> <a href="/tags/Windows%E8%B5%84%E6%BA%90/" style="font-size: 21.33px;">Windows资源</a> <a href="/tags/css%E5%8A%A8%E7%94%BB/" style="font-size: 17px;">css动画</a> <a href="/tags/fluid%E4%B8%BB%E9%A2%98/" style="font-size: 27.83px;">fluid主题</a> <a href="/tags/github/" style="font-size: 17px;">github</a> <a href="/tags/hexo/" style="font-size: 21.33px;">hexo</a> <a href="/tags/html/" style="font-size: 21.33px;">html</a> <a href="/tags/python/" style="font-size: 25.67px;">python</a> <a href="/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/" style="font-size: 21.33px;">个人项目</a> <a href="/tags/%E4%BB%A3%E7%A0%81/" style="font-size: 25.67px;">代码</a> <a href="/tags/%E5%9C%A8%E7%BA%BF%E8%B5%84%E6%BA%90/" style="font-size: 17px;">在线资源</a> <a href="/tags/%E5%BD%B1%E9%9F%B3%E5%A4%84%E7%90%86/" style="font-size: 19.17px;">影音处理</a> <a href="/tags/%E6%8C%87%E4%BB%A4/" style="font-size: 17px;">指令</a> <a href="/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/" style="font-size: 30px;">提问技巧</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 17px;">测试</a> <a href="/tags/%E6%BF%80%E6%B4%BB%E5%B7%A5%E5%85%B7/" style="font-size: 17px;">激活工具</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 23.5px;">爬虫</a> <a href="/tags/%E7%BD%91%E9%A1%B5%E5%BA%94%E7%94%A8/" style="font-size: 21.33px;">网页应用</a> <a href="/tags/%E7%BD%91%E9%A1%B5%E7%BE%8E%E5%8C%96/" style="font-size: 27.83px;">网页美化</a>
 </div>
+<script>
+var tagCloudLinks = document.querySelectorAll('.tagbgcolor a');
+var colors = [
+    "#c362c3", "#7070cf", "#57bdbd", "#70c370", "#c5c55e",
+    "#c7a15b", "#b36868", "#d99edd", "#6388d3", "#468dad",
+    "#aa6dc9", "#bb775e", "#a18299", "#07969a", "#d36a68",
+    "#a2ad47", "#a467c9", "#c76259", "#cda562", "#8faddf"
+];
 
+/*
+function getRandomColor() {
+    const randomIndex = Math.floor(Math.random() * colors.length);
+    return colors[randomIndex];
+}
+*/
+let currentIndex = 0;
+function getRandomColor() {
+    const currentColor = colors[currentIndex];
+    currentIndex = (currentIndex + 1) % colors.length;
+    return currentColor;
+}
+tagCloudLinks.forEach(function (link) {
+    var randomColor = colors[Math.floor(Math.random() * colors.length)];
+    link.style.backgroundColor = getRandomColor();
+});
+</script>
               </div>
             </div>
           </div>
@@ -804,6 +777,65 @@
 
 
   
+
+			
+				<script>
+					var ua = navigator.userAgent;
+					var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+						isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+						isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+						isMobile = isIphone || isAndroid;
+
+					function set_video_attr(id){
+						var height = window.innerHeight
+						var width = window.innerWidth
+						var video_item = document.getElementById(id);
+
+						if (height / width < 0.56){
+							video_item.setAttribute('width', '100%');
+							video_item.setAttribute('height', 'auto');
+						} else {
+							video_item.setAttribute('height', '100%');
+							video_item.setAttribute('width', 'auto');
+						}
+					}
+
+					$.getJSON('https://www.zywvvd.com/vvd_js/video_url.json', function(data){
+						if (true){
+							var video_list_length = data.length
+							var seed = Math.random()
+							index = Math.floor(seed * video_list_length)
+
+							video_url = data[index][0]
+							pre_show_image_url = data[index][1]
+
+							banner_obj = document.getElementById("banner")
+							banner_obj.style.cssText = "background: url('" + pre_show_image_url + "') no-repeat;"
+
+							vvd_banner_obj = document.getElementById("vvd_banner_img")
+							vvd_banner_content = "<img id='banner_img_item' src='" + pre_show_image_url + "'style='position: fixed; z-index: -999'>"
+							vvd_banner_obj.innerHTML = vvd_banner_content 
+
+							if (!isMobile) {
+								video_html_res = "<video id='video_item' style='position: fixed; z-index: -888;'  muted='muted' src=" + video_url + " autoplay='autoplay' loop='loop'></video>"
+								document.getElementById("banner_video_insert").innerHTML = video_html_res;
+								set_video_attr('video_item')
+								set_video_attr('banner_img_item')
+							}
+						}
+					});
+
+					if (!isMobile){
+						$(document).ready(function () {
+							window.onresize = function () {
+								set_video_attr('video_item')
+								set_video_attr('banner_img_item')
+								}
+							});
+
+						}
+				</script>
+			
   <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4fb4d125f41349409e8a8d12bc055e6d"}'></script><!-- End Cloudflare Web Analytics -->
 
   <noscript>

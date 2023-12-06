@@ -104,7 +104,8 @@ __      _____ _ __ | |__  _ _ __   | |__ | | ___   __ _
 function snow() {
     var snowContainer = document.getElementById('snow_container');
     var snowButtonIcon = document.querySelector('#snowButton i');
-    var isSnowEnabled = localStorage.getItem('isSnowEnabled') === 'true';
+    var isSnowEnabled = localStorage.getItem('isSnowEnabled') !== 'false';
+
     if (isSnowEnabled) {
         activateSnow();
     }
@@ -152,11 +153,9 @@ function snow() {
         }
     });
 }
-
 document.addEventListener('DOMContentLoaded', function () {
     snow();
 });
-
 
   function frost() {
     var frostElement = document.getElementById('frost');
