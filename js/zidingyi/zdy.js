@@ -9,6 +9,42 @@ if(rewardBtn){
 		}, 10);
 	}
 }
+//copy
+      $('.markdown-body').on('copy', function (e) {
+          // IE8 or earlier browser is 'undefined'
+          if (typeof window.getSelection === 'undefined') return;
+  
+          var selection = window.getSelection();
+          // if the selection is short let's not annoy our users.
+          if (('' + selection).length < Number.parseInt('100')) {
+              return;
+          }
+  
+          // create a div outside of the visible area and fill it with the selected text.
+          var bodyElement = document.getElementsByTagName('body')[0];
+          var newdiv = document.createElement('div');
+          newdiv.style.position = 'absolute';
+          newdiv.style.left = '-99999px';
+          bodyElement.appendChild(newdiv);
+          newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+  
+          // we need a <div class="code-wrapper"><pre> tag workaround.
+          // otherwise the text inside "pre" loses all the line breaks!
+          if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+              newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre></div>";
+          }
+  
+          var url = document.location.href;
+          newdiv.innerHTML += '<br />'
+              + '-------------------------------------------------------------------------<br />'
+              + 'from: Wenbin\'s blog<br />'
+              + '文章作者: Wenbin<br />'
+              + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+              + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+  
+          selection.selectAllChildren(newdiv);
+          window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+});
 
 // 浏览器标题
 var OriginTitle = document.title;
@@ -169,6 +205,11 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   }
+  var frostButton = document.getElementById('frostButton');
+  frostButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    frost();
+  });
 
   function lights() {
     var frostElement = document.getElementById('lights');
@@ -182,13 +223,69 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   }
-  var frostButton = document.getElementById('frostButton');
-  frostButton.addEventListener('click', function(event) {
-    event.preventDefault();
-    frost();
-  });
+
   var lightsButton = document.getElementById('lightsButton');
   lightsButton.addEventListener('click', function(event) {
     event.preventDefault();
     lights();
   });
+
+var toggleButton = document.getElementById('toggleButton');
+var jsFiles = [
+    'https://cdn.staticfile.org/meting/2.0.1/Meting.min.js',
+    'https://unpkg.com/wenbin-blog@1.1.0/js/live2d/autoload.js',
+    'https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js',
+    'https://unpkg.com/wenbin-blog@1.0.0/js/zidingyi/xiantiao.js'
+];
+var loadJsFiles = localStorage.getItem('loadJsFiles') !== 'false';
+
+function updateJsFiles() {
+    if (loadJsFiles) {
+        toggleButton.querySelector('i').classList.remove('on-kg');
+        jsFiles.forEach(function (url) {
+            loadScript(url);
+        });
+    } else {
+        toggleButton.querySelector('i').classList.add('on-kg');
+        jsFiles.forEach(function (url) {
+            var scripts = document.querySelectorAll('[src="' + url + '"]');
+            scripts.forEach(function (script) {
+                script.remove();
+            });
+        });
+
+        removeElement('meting-js');
+        removeElement('canvas');
+        removeElement('.aplayer');
+        removeElement('.hp_special_experience');
+        removeElement('#videobg');
+        removeElement('#color-toggle-btn');
+        removeElement('#waifu');
+
+    var htmlTag = document.documentElement;
+    htmlTag.setAttribute('data-user-color-scheme', loadJsFiles ? 'light' : 'dark');
+}
+}
+
+function removeElement(tagName) {
+    var elements = document.querySelectorAll(tagName);
+    elements.forEach(function (element) {
+        element.remove();
+    });
+}
+
+toggleButton.addEventListener('click', function () {
+    loadJsFiles = !loadJsFiles;
+    localStorage.setItem('loadJsFiles', loadJsFiles);
+    updateJsFiles();
+    location.reload(true);
+});
+
+updateJsFiles();
+
+function loadScript(url, callback) {
+    var script = document.createElement('script');
+    script.src = url;
+    script.onload = callback;
+    document.body.appendChild(script);
+}

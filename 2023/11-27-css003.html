@@ -27,7 +27,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://imgsrc.baidu.com/forum/pic/item/8c1001e93901213f547e30e912e736d12f2e95b2.jpg">
 <meta property="article:published_time" content="2023-11-27T07:02:42.000Z">
-<meta property="article:modified_time" content="2023-11-27T07:42:08.469Z">
+<meta property="article:modified_time" content="2023-12-06T14:04:34.499Z">
 <meta property="article:author" content="Wenbin">
 <meta property="article:tag" content="网页美化">
 <meta property="article:tag" content="css动画">
@@ -70,7 +70,7 @@
   
 <link rel="stylesheet" href="//cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css">
 <link rel="stylesheet" href="//unpkg.com/wenbin-blog@1.0.0/js/zidingyi/code/prism.css">
-<link rel="stylesheet" href="//at.alicdn.com/t/c/font_4229952_riz99ypjyqg.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_4229952_nb6fw239pj.css">
 <link rel="stylesheet" href="//cdn.staticfile.org/aos/2.3.4/aos.css">
 <link rel="stylesheet" href="/css/zidingyi.css">
 
@@ -127,12 +127,12 @@
 
   
   <script  src="https://cdn.staticfile.org/aos/2.3.4/aos.js" type="application/x-javascript"></script>
-  <script  src="https://cdn.staticfile.org/jquery/3.6.4/jquery.min.js" type="application/x-javascript"></script>
+  <script  src="https://cdn.staticfile.org/jquery/3.7.1/jquery.min.js" type="application/x-javascript"></script>
 <meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Wenbin's blog" type="application/atom+xml">
 </head>
 
 <body>
-  <div>
+  <div id="videobg">
 <div class='real_mask' style="
 		background-color: rgba(0,0,0,0.35);
 		width: 100%;
@@ -432,7 +432,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-a-tongjishuju"></i>
         
-          1.9k 字
+          2k 字
         
       </span>
     
@@ -495,7 +495,7 @@
               <p class="note note-warning">
                 
                   
-                    本文最后更新于：2023年11月27日 下午
+                    本文最后更新于：2023年12月6日 晚上
                   
                 
               </p>
@@ -560,19 +560,22 @@
 <h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>1、用 CSS3 伪元素<code> :bfore</code> 或 <code>:after</code> 添加一扫光层；<br>2、用 <code>transform:rotate(-45deg)</code> 旋转 45 度；<br>3、<code>@ keyframes</code> 规则来控制扫光效果的起始位置和结束位置；<br>4、用 CSS 控制位置和动画时间等。</p>
 <h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><style>
     .ilogo {
-        position: relative;
-        float: left;
-        margin: 18px 0 0 5px;
-        overflow: hidden;
-        transition-duration: 5s;/**动画时间**/
-        background-color: #4bb0cb;
+    position: relative;
+    float: left;
+    margin: 18px 0 0 5px;
+    transition-duration: 5s;
+    height: 300px;
+    width: 500px;
+    background-color: #0d1619;
+    background-image: url(https://imgsrc.baidu.com/forum/pic/item/30adcbef76094b364e8163dbe5cc7cd98d109df1.jpg);
+    overflow: hidden;
     }
     .ilogo:before {
         content: "";
         z-index: 1;
         position: absolute;
         width: 1000px;
-        height: 80px; /**光标的宽度，可根据实际调整**/
+        height: 80px;
         background-image: linear-gradient(to bottom,transparent,rgba(255,255,255,.4),transparent);
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
@@ -581,7 +584,7 @@
         transform: rotate(-45deg);
         -webkit-animation: searchLights 1s ease-in 1s infinite;
         -o-animation: searchLights 1s ease-in 1s infinite;
-        animation: searchLights 1s ease-in 1s infinite; /**第一个数字参数控制扫光速度，数字越大越慢**/
+        animation: searchLights 1s ease-in 1s infinite;
     }
     @keyframes searchLights {
         0% {
@@ -595,7 +598,7 @@
     }
 </style>
 
-<p>纯CSS实现图片光影效果，效果如下<br>    <div class="ilogo no-fancybox"><br>            <img src="https://imgsrc.baidu.com/forum/pic/item/30adcbef76094b364e8163dbe5cc7cd98d109df1.jpg" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload></p>
+<p>纯CSS实现图片光影效果，效果如下<br>    <div class="ilogo no-fancybox"></p>
 </div>
 
                 
@@ -915,13 +918,17 @@ window.onload = function() {
         <a href="javascript:;" class="h4" id="snowButton">
           <i class="iconfont icon-xiaxue-xuehua" title="下雪"></i>
         </a>
-        &nbsp;&nbsp;
+        &nbsp;
         <a href="javascript:;" class="h4" id="frostButton">
           <i class="iconfont icon-bingdong" title="冰冻"></i>
         </a>
-        &nbsp;&nbsp;
+        &nbsp;
         <a href="javascript:;" class="h4" id="lightsButton">
           <i class="iconfont icon-dengpao" title="灯饰"></i>
+        </a>
+        &nbsp;
+        <a href="javascript:;" class="h4" id="toggleButton">
+          <i class="iconfont icon-yuedu" title="阅读模式"></i>
         </a>
     </div>
     <div class="sidebar-friend">
@@ -977,43 +984,6 @@ window.onload = function() {
           delay: 100
       });
     </script>
-  <script>
-      $('.markdown-body').on('copy', function (e) {
-          // IE8 or earlier browser is 'undefined'
-          if (typeof window.getSelection === 'undefined') return;
-  
-          var selection = window.getSelection();
-          // if the selection is short let's not annoy our users.
-          if (('' + selection).length < Number.parseInt('100')) {
-              return;
-          }
-  
-          // create a div outside of the visible area and fill it with the selected text.
-          var bodyElement = document.getElementsByTagName('body')[0];
-          var newdiv = document.createElement('div');
-          newdiv.style.position = 'absolute';
-          newdiv.style.left = '-99999px';
-          bodyElement.appendChild(newdiv);
-          newdiv.appendChild(selection.getRangeAt(0).cloneContents());
-  
-          // we need a <div class="code-wrapper"><pre> tag workaround.
-          // otherwise the text inside "pre" loses all the line breaks!
-          if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
-              newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre></div>";
-          }
-  
-          var url = document.location.href;
-          newdiv.innerHTML += '<br />'
-              + '-------------------------------------------------------------------------<br />'
-              + 'from: Wenbin\'s blog<br />'
-              + '文章作者: Wenbin<br />'
-              + '文章链接: <a href="' + url + '">' + url + '</a><br />'
-              + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
-  
-          selection.selectAllChildren(newdiv);
-          window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
-      });
-  </script>
   
     <div class="footer-content">
        <span>Copyright © 2022<script> document.write(" - " + (new Date()).getFullYear()) </script> |</span> <span>By <a href="/about/">Wenbin</a></span> <i class="iconfont icon-heart-01"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <meting-js server="netease" type="playlist" id="571137142" autoplay="true" fixed="true" loop="all" order="random"></meting-js> <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> </div> <div>  <div class="footer-hitokoto"><a href="javascript:;"><span id="hitokoto"></span></a></div> 
@@ -1049,6 +1019,7 @@ window.onload = function() {
 </div>
 
   </footer>
+
     <!--snow-->
     <div v-if="snowAndbing" class="hp_special_experience">
         <div class="hol_frames_cont">
@@ -1094,7 +1065,7 @@ window.onload = function() {
   </script>
 
 
-<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/jquery/3.6.4/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
 <script  src="/js/events.js" ></script>
 <script  src="/js/plugins.js" ></script>
@@ -1222,11 +1193,8 @@ window.onload = function() {
 
   
 <script src="//unpkg.com/wenbin-blog@1.0.0/js/zidingyi/code/prism.js"></script>
-<script src="//unpkg.com/wenbin-blog@1.0.0/js/zidingyi/xiantiao.js"></script>
 <script src="//unpkg.com/wenbin-blog@1.0.0/js/zidingyi/duration.js"></script>
-<script src="//unpkg.com/wenbin-blog@1.1.0/js/live2d/autoload.js"></script>
 <script src="//cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js"></script>
-<script src="//cdn.staticfile.org/meting/2.0.1/Meting.min.js"></script>
 <script src="/js/zidingyi/zdy.js"></script>
 
 

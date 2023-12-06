@@ -159,14 +159,17 @@ html::-webkit-scrollbar-corner {
 	font-weight: bolder;
 }
 
-/*网页背景图片
+
 body {
-    background-image: url(https://imgsrc.baidu.com/forum/pic/item/e4dde71190ef76c691b8c11ddb16fdfaaf516799.jpg);
+    background-color: var(--navbar-bg-color);
+}
+/*
+body {
+    background-image: url(https://imgsrc.baidu.com/forum/pic/item/4d086e061d950a7b2d5dd7f24cd162d9f2d3c998.gif);
     background-size: cover;
     background-attachment: fixed;
 }
 */
-
 #subtitle {
     user-select: none;
 }
@@ -521,6 +524,7 @@ img.vimg:hover {
 
 .sidebar-about a .iconfont {
   transition: transform 0.5s;
+  padding: 0 0.1rem 0.1rem 0.1rem;
 }
 .sidebar-about a .iconfont:hover {
   transform: scale(1.4);
