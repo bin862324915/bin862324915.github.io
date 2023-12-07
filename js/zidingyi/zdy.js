@@ -230,8 +230,20 @@ document.addEventListener('DOMContentLoaded', function () {
     lights();
   });
 
+/*read过渡*/
+function getreadbook() {
+    var readbookValue = localStorage.getItem('readbook');
+    var loadingBox = document.getElementById('loading-box');
+    if (readbookValue === 'true') {
+        loadingBox.classList.add('loaded');
+        localStorage.setItem('readbook', 'false');
+    } else {
+        loadingBox.innerHTML = '';
+    }
+}
+document.addEventListener('DOMContentLoaded', getreadbook);
+
 /*read*/
-var readloading = document.getElementById('loading-box');
 var toggleButton = document.getElementById('toggleButton');
 var jsFiles = [
     'https://cdn.staticfile.org/meting/2.0.1/Meting.min.js',
@@ -243,13 +255,11 @@ var loadJsFiles = localStorage.getItem('loadJsFiles') !== 'false';
 
 function updateJsFiles() {
     if (loadJsFiles) {
-        readloading.innerHTML = '';
         toggleButton.querySelector('i').classList.remove('on-kg');
         jsFiles.forEach(function (url) {
             loadScript(url, 'zdy-js');
         });
     } else {
-        readloading.classList.add('loaded');
         toggleButton.querySelector('i').classList.add('on-kg');
 
         jsFiles.forEach(function (url) {
@@ -285,6 +295,7 @@ function removeElement(tagName) {
 function toggleJsFiles() {
     loadJsFiles = !loadJsFiles;
     localStorage.setItem('loadJsFiles', loadJsFiles);
+    localStorage.setItem('readbook', 'true');
     updateJsFiles();
     location.reload(true);
 }

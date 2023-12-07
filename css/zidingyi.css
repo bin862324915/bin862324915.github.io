@@ -633,13 +633,12 @@ i.iconfont.icon-heart-01 {
 .loading-left-bg,
 .loading-right-bg {
     position: fixed;
-    z-index: 999998;
+    z-index: 99999999999998;
     width: 50%;
     height: 100%;
-    transition: all 1.5s cubic-bezier(0.42, 0, 0, 1.01);
-    background-color: rgb(24 28 39 / 80%);
-    backdrop-filter: blur(10px);
-
+    transition: all 2s cubic-bezier(0.42, 0, 0, 1.01);
+    background-color: rgb(24 28 39);
+    backdrop-filter: blur(1px);
 }
 
 #loading-box .loading-right-bg {
