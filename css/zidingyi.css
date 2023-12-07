@@ -540,9 +540,10 @@ img.vimg:hover {
   transform: rotate(360deg);
 }
 /*头像呼吸光环*/
-.img-fluid {
+.img-fluid, .sidebar-avatar img {
     animation: light 4s ease-in-out infinite;
     transition: 0.5s;
+    border-radius: 50%;
 }
 
 @keyframes light {

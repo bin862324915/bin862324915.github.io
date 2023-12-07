@@ -230,6 +230,7 @@ document.addEventListener('DOMContentLoaded', function () {
     lights();
   });
 
+/*read*/
 var toggleButton = document.getElementById('toggleButton');
 var jsFiles = [
     'https://cdn.staticfile.org/meting/2.0.1/Meting.min.js',
@@ -243,30 +244,33 @@ function updateJsFiles() {
     if (loadJsFiles) {
         toggleButton.querySelector('i').classList.remove('on-kg');
         jsFiles.forEach(function (url) {
-            loadScript(url);
+            loadScript(url, 'zdy-js');
         });
     } else {
         toggleButton.querySelector('i').classList.add('on-kg');
         jsFiles.forEach(function (url) {
-            var scripts = document.querySelectorAll('[src="' + url + '"]');
-            scripts.forEach(function (script) {
-                script.remove();
-            });
+            removeScript(url);
         });
 
         removeElement('meting-js');
         removeElement('canvas');
         removeElement('.aplayer');
         removeElement('.hp_special_experience');
-        removeElement('#videobg');
         removeElement('#color-toggle-btn');
         removeElement('#waifu');
 
-    var htmlTag = document.documentElement;
-    htmlTag.setAttribute('data-user-color-scheme', loadJsFiles ? 'light' : 'dark');
+        var videoBg = document.getElementById('videobg');
+        var htmlTag = document.documentElement;
+        htmlTag.setAttribute('data-user-color-scheme', loadJsFiles ? 'light' : 'dark');
+        videoBg.style.display = 'none';
+    }
 }
+function removeScript(url) {
+    var scripts = document.querySelectorAll('[src="' + url + '"]');
+    scripts.forEach(function (script) {
+        script.remove();
+    });
 }
-
 function removeElement(tagName) {
     var elements = document.querySelectorAll(tagName);
     elements.forEach(function (element) {
@@ -274,18 +278,24 @@ function removeElement(tagName) {
     });
 }
 
-toggleButton.addEventListener('click', function () {
+function toggleJsFiles() {
     loadJsFiles = !loadJsFiles;
     localStorage.setItem('loadJsFiles', loadJsFiles);
     updateJsFiles();
     location.reload(true);
-});
+}
 
-updateJsFiles();
-
-function loadScript(url, callback) {
+function loadScript(url, targetTagName) {
     var script = document.createElement('script');
     script.src = url;
-    script.onload = callback;
-    document.body.appendChild(script);
+    var targetTag = document.querySelector(targetTagName);
+
+    if (targetTag) {
+        targetTag.appendChild(script);
+    } else {
+        document.body.appendChild(script);
+    }
 }
+
+toggleButton.addEventListener('click', toggleJsFiles);
+updateJsFiles();

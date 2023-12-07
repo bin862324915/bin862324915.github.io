@@ -897,13 +897,11 @@ i.iconfont {
 }
 .sidebar-avatar {
   position: relative;
-  border: 5px solid #ffffff;
   border-radius: 300px;
   width: 128px;
   height: 128px;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
   background-color: #88acdb;
   -webkit-transition: all 0.2s ease-in;
   display: -webkit-box;
