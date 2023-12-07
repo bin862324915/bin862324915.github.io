@@ -231,6 +231,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 /*read*/
+var readloading = document.getElementById('loading-box');
 var toggleButton = document.getElementById('toggleButton');
 var jsFiles = [
     'https://cdn.staticfile.org/meting/2.0.1/Meting.min.js',
@@ -242,12 +243,15 @@ var loadJsFiles = localStorage.getItem('loadJsFiles') !== 'false';
 
 function updateJsFiles() {
     if (loadJsFiles) {
+        readloading.innerHTML = '';
         toggleButton.querySelector('i').classList.remove('on-kg');
         jsFiles.forEach(function (url) {
             loadScript(url, 'zdy-js');
         });
     } else {
+        readloading.classList.add('loaded');
         toggleButton.querySelector('i').classList.add('on-kg');
+
         jsFiles.forEach(function (url) {
             removeScript(url);
         });

@@ -542,7 +542,7 @@ img.vimg:hover {
 /*头像呼吸光环*/
 .img-fluid, .sidebar-avatar img {
     animation: light 4s ease-in-out infinite;
-    transition: 0.5s;
+    transition: all 1s;
     border-radius: 50%;
 }
 
@@ -627,6 +627,29 @@ i.iconfont.icon-heart-01 {
 }
 #scroll-top-button {
     padding: 2px;
+}
+
+/*read*/
+.loading-left-bg,
+.loading-right-bg {
+    position: fixed;
+    z-index: 999998;
+    width: 50%;
+    height: 100%;
+    transition: all 1.5s cubic-bezier(0.42, 0, 0, 1.01);
+    background-color: rgb(24 28 39 / 80%);
+    backdrop-filter: blur(10px);
+
+}
+
+#loading-box .loading-right-bg {
+    right: 0;
+}
+div.loaded div.loading-right-bg {
+    transform: translate(100%, 0);
+}
+div.loaded div.loading-left-bg {
+    transform: translate(-100%, 0);
 }
 
 /*snow*/

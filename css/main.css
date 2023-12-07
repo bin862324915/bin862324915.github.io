@@ -903,7 +903,8 @@ i.iconfont {
   margin: 0 auto;
   position: relative;
   background-color: #88acdb;
-  -webkit-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
   display: -webkit-box;
   -webkit-box-pack: center;
   -webkit-box-align: center;

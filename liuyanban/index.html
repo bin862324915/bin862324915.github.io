@@ -125,6 +125,10 @@
 </head>
 
 <body>
+<div id="loading-box" class="">
+        <div class="loading-left-bg"></div>
+        <div class="loading-right-bg"></div>
+</div>
   <div id="videobg">
 <div class='real_mask' style="
 		background-color: rgba(0,0,0,0.35);
@@ -512,7 +516,7 @@ h1 {margin-bottom:20px; text-align:center;font-size:48px; text-shadow:0 1px 0 #e
   <div id="valine"></div>
   <script type="text/javascript">
     Fluid.utils.loadComments('#valine', function() {
-      Fluid.utils.createScript('https://unpkg.com/wenbin-blog@1.0.0/js/zidingyi/valine/Valine.min.js', function() {
+      Fluid.utils.createScript('https://unpkg.com/wenbin-blog@1.1.1/js/zidingyi/valine/Valine.min.js', function() {
         var options = Object.assign(
           {"appId":"nltNbWnKve6Q6oobgbQoGqT4-gzGzoHsz","appKey":"PLMY3oFRTfOUMLpgiB1mJnD7","path":"window.location.pathname","placeholder":"填写QQ可以显示QQ头像，填写邮箱可在有回复时收到邮件通知哦(^_−)☆","avatar":"robohash","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":true,"master":"bdd3df7bdecb551764c19044ec8e6ffe","tagMeta":["博主","小伙伴","访客"],"friends":["b037d68520b5d3ed810a3dea024e812b","0a94a6c5b2d8b7a5586939356100c778"]},
           {
@@ -844,7 +848,7 @@ function set_video_attr(id) {
   }
 }
 
-$.getJSON("https://www.zywvvd.com/vvd_js/video_url.json", function (data) {
+$.getJSON("https://unpkg.com/wenbin-blog@1.1.1/js/zidingyi/json/video.json", function (data) {
   if (true) {
     var video_list_length = data.length;
     var seed = Math.random();

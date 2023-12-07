@@ -27,7 +27,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://imgsrc.baidu.com/forum/pic/item/6159252dd42a2834f6e4483e1db5c9ea15cebf41.jpg">
 <meta property="article:published_time" content="2023-11-10T06:45:33.000Z">
-<meta property="article:modified_time" content="2023-12-05T06:52:43.434Z">
+<meta property="article:modified_time" content="2023-12-07T03:26:23.842Z">
 <meta property="article:author" content="Wenbin">
 <meta property="article:tag" content="ChatGPT">
 <meta property="article:tag" content="提问技巧">
@@ -132,6 +132,10 @@
 </head>
 
 <body>
+<div id="loading-box" class="">
+        <div class="loading-left-bg"></div>
+        <div class="loading-right-bg"></div>
+</div>
   <div id="videobg">
 <div class='real_mask' style="
 		background-color: rgba(0,0,0,0.35);
@@ -495,7 +499,7 @@
               <p class="note note-warning">
                 
                   
-                    本文最后更新于：2023年12月5日 下午
+                    本文最后更新于：2023年12月7日 上午
                   
                 
               </p>
@@ -691,7 +695,7 @@
   <div id="valine"></div>
   <script type="text/javascript">
     Fluid.utils.loadComments('#valine', function() {
-      Fluid.utils.createScript('https://unpkg.com/wenbin-blog@1.0.0/js/zidingyi/valine/Valine.min.js', function() {
+      Fluid.utils.createScript('https://unpkg.com/wenbin-blog@1.1.1/js/zidingyi/valine/Valine.min.js', function() {
         var options = Object.assign(
           {"appId":"nltNbWnKve6Q6oobgbQoGqT4-gzGzoHsz","appKey":"PLMY3oFRTfOUMLpgiB1mJnD7","path":"window.location.pathname","placeholder":"填写QQ可以显示QQ头像，填写邮箱可在有回复时收到邮件通知哦(^_−)☆","avatar":"robohash","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":true,"master":"bdd3df7bdecb551764c19044ec8e6ffe","tagMeta":["博主","小伙伴","访客"],"friends":["b037d68520b5d3ed810a3dea024e812b","0a94a6c5b2d8b7a5586939356100c778"]},
           {
@@ -1165,7 +1169,7 @@ function set_video_attr(id) {
   }
 }
 
-$.getJSON("https://www.zywvvd.com/vvd_js/video_url.json", function (data) {
+$.getJSON("https://unpkg.com/wenbin-blog@1.1.1/js/zidingyi/json/video.json", function (data) {
   if (true) {
     var video_list_length = data.length;
     var seed = Math.random();
