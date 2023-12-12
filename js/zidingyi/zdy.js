@@ -247,9 +247,9 @@ document.addEventListener('DOMContentLoaded', getreadbook);
 var toggleButton = document.getElementById('toggleButton');
 var jsFiles = [
     'https://cdn.staticfile.org/meting/2.0.1/Meting.min.js',
-    'https://unpkg.com/wenbin-blog@1.1.0/js/live2d/autoload.js',
+    'https://cdn.zzzwb.com/js/live2d/autoload.js',
     'https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js',
-    'https://unpkg.com/wenbin-blog@1.0.0/js/zidingyi/xiantiao.js'
+    'https://cdn.zzzwb.com/js/zidingyi/xiantiao.js'
 ];
 var loadJsFiles = localStorage.getItem('loadJsFiles') !== 'false';
 

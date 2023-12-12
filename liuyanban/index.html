@@ -62,8 +62,8 @@
 
   
 <link rel="stylesheet" href="//cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css">
-<link rel="stylesheet" href="//unpkg.com/wenbin-blog@1.0.0/js/zidingyi/code/prism.css">
-<link rel="stylesheet" href="//at.alicdn.com/t/c/font_4229952_ibvwo7hv1cq.css">
+<link rel="stylesheet" href="//cdn.zzzwb.com/js/zidingyi/code/prism.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_4229952_lct2ey5aa6.css">
 <link rel="stylesheet" href="//cdn.staticfile.org/aos/2.3.4/aos.css">
 <link rel="stylesheet" href="/css/zidingyi.css">
 
@@ -327,6 +327,14 @@
                   
                   
                   
+                  <a class="dropdown-item" href="/app/so/">
+                    <i class="iconfont icon-sousuodaohang"></i>
+                    <span>搜索导航</span>
+                  </a>
+                
+                  
+                  
+                  
                   <a class="dropdown-item" target="_blank" rel="noopener" href="https://status.zzzwb.com/">
                     <i class="iconfont icon-shexiangtou"></i>
                     <span>服务监控</span>
@@ -516,7 +524,7 @@ h1 {margin-bottom:20px; text-align:center;font-size:48px; text-shadow:0 1px 0 #e
   <div id="valine"></div>
   <script type="text/javascript">
     Fluid.utils.loadComments('#valine', function() {
-      Fluid.utils.createScript('https://unpkg.com/wenbin-blog@1.1.1/js/zidingyi/valine/Valine.min.js', function() {
+      Fluid.utils.createScript('https://cdn.zzzwb.com/js/zidingyi/valine/Valine.min.js', function() {
         var options = Object.assign(
           {"appId":"nltNbWnKve6Q6oobgbQoGqT4-gzGzoHsz","appKey":"PLMY3oFRTfOUMLpgiB1mJnD7","path":"window.location.pathname","placeholder":"填写QQ可以显示QQ头像，填写邮箱可在有回复时收到邮件通知哦(^_−)☆","avatar":"robohash","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":true,"master":"bdd3df7bdecb551764c19044ec8e6ffe","tagMeta":["博主","小伙伴","访客"],"friends":["b037d68520b5d3ed810a3dea024e812b","0a94a6c5b2d8b7a5586939356100c778"]},
           {
@@ -812,8 +820,8 @@ h1 {margin-bottom:20px; text-align:center;font-size:48px; text-shadow:0 1px 0 #e
 
 
   
-<script src="//unpkg.com/wenbin-blog@1.0.0/js/zidingyi/code/prism.js"></script>
-<script src="//unpkg.com/wenbin-blog@1.0.0/js/zidingyi/duration.js"></script>
+<script src="//cdn.zzzwb.com/js/zidingyi/code/prism.js"></script>
+<script src="//cdn.zzzwb.com/js/zidingyi/duration.js"></script>
 <script src="//cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js"></script>
 <script src="/js/zidingyi/zdy.js"></script>
 
@@ -848,7 +856,7 @@ function set_video_attr(id) {
   }
 }
 
-$.getJSON("https://unpkg.com/wenbin-blog@1.1.1/js/zidingyi/json/video.json", function (data) {
+$.getJSON("https://cdn.zzzwb.com/js/zidingyi/json/video.json", function (data) {
   if (true) {
     var video_list_length = data.length;
     var seed = Math.random();
