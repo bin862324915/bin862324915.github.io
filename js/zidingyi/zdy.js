@@ -1,51 +1,3 @@
-const rewardBtn = document.getElementById('rewardBtn');
-const rewardImgContainer = document.getElementById('rewardImgContainer');
-
-if(rewardBtn){
-	rewardBtn.onclick = () => {
-		rewardImgContainer.style.display = (rewardImgContainer.style.display === 'none' || rewardImgContainer.style.display === '') ? 'inline-flex' : 'none'
-		setTimeout(() => {
-			rewardImgContainer.style.opacity = (rewardImgContainer.style.opacity === '0' || rewardImgContainer.style.opacity === '') ? '1' : '0'
-		}, 10);
-	}
-}
-//copy
-      $('.markdown-body').on('copy', function (e) {
-          // IE8 or earlier browser is 'undefined'
-          if (typeof window.getSelection === 'undefined') return;
-  
-          var selection = window.getSelection();
-          // if the selection is short let's not annoy our users.
-          if (('' + selection).length < Number.parseInt('100')) {
-              return;
-          }
-  
-          // create a div outside of the visible area and fill it with the selected text.
-          var bodyElement = document.getElementsByTagName('body')[0];
-          var newdiv = document.createElement('div');
-          newdiv.style.position = 'absolute';
-          newdiv.style.left = '-99999px';
-          bodyElement.appendChild(newdiv);
-          newdiv.appendChild(selection.getRangeAt(0).cloneContents());
-  
-          // we need a <div class="code-wrapper"><pre> tag workaround.
-          // otherwise the text inside "pre" loses all the line breaks!
-          if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
-              newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre></div>";
-          }
-  
-          var url = document.location.href;
-          newdiv.innerHTML += '<br />'
-              + '-------------------------------------------------------------------------<br />'
-              + 'from: Wenbin\'s blog<br />'
-              + '文章作者: Wenbin<br />'
-              + '文章链接: <a href="' + url + '">' + url + '</a><br />'
-              + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
-  
-          selection.selectAllChildren(newdiv);
-          window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
-});
-
 // 浏览器标题
 var OriginTitle = document.title;
 var titleTime;
@@ -104,17 +56,6 @@ function getHitokoto() {
 $(document).ready((function() {
     getHitokoto()
 }))
-
-
-var elements = document.querySelectorAll('.index-card');
-
-for (var i = 0; i < elements.length; i++) {
-    if (i % 2 === 1) {
-        elements[i].setAttribute('data-aos', 'fade-right');
-    } else {
-        elements[i].setAttribute('data-aos', 'fade-left');
-    }
-}
 
 //top
 let scrollButton = document.getElementById('scroll-top-button');
@@ -314,3 +255,36 @@ function loadScript(url, targetTagName) {
 
 toggleButton.addEventListener('click', toggleJsFiles);
 updateJsFiles();
+
+//网站运行统计
+!(function() {
+  /** 计时起始时间 **/
+  var start = new Date("2023/08/25 00:00:00");
+
+  function update() {
+    var now = new Date();
+    now.setTime(now.getTime()+250);
+    days = (now - start) / 1000 / 60 / 60 / 24;
+    dnum = Math.floor(days);
+    hours = (now - start) / 1000 / 60 / 60 - (24 * dnum);
+    hnum = Math.floor(hours);
+    if(String(hnum).length === 1 ){
+      hnum = "0" + hnum;
+    }
+    minutes = (now - start) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+    mnum = Math.floor(minutes);
+    if(String(mnum).length === 1 ){
+      mnum = "0" + mnum;
+    }
+    seconds = (now - start) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+    snum = Math.round(seconds);
+    if(String(snum).length === 1 ){
+      snum = "0" + snum;
+    }
+    document.getElementById("timeDate").innerHTML = "本站安全运行&nbsp"+dnum+"&nbsp天";
+    document.getElementById("times").innerHTML = hnum + "&nbsp小时&nbsp" + mnum + "&nbsp分&nbsp" + snum + "&nbsp秒";
+  }
+
+  update();
+  setInterval(update, 1000);
+})();

@@ -71,7 +71,7 @@
 
   
 <link rel="stylesheet" href="//cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css">
-<link rel="stylesheet" href="//cdn.zzzwb.com/js/zidingyi/code/prism.css">
+<link rel="stylesheet" href="/js/zidingyi/code/prism.css">
 <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4229952_lct2ey5aa6.css">
 <link rel="stylesheet" href="//cdn.staticfile.org/aos/2.3.4/aos.css">
 <link rel="stylesheet" href="/css/zidingyi.css">
@@ -129,7 +129,7 @@
 
   
   <script  src="https://cdn.staticfile.org/aos/2.3.4/aos.js" type="application/x-javascript"></script>
-  <script  src="https://cdn.staticfile.org/jquery/3.5.1/jquery.min.js" type="application/x-javascript"></script>
+  <script  src="https://cdn.staticfile.org/jquery/3.7.1/jquery.min.js" type="application/x-javascript"></script>
 <meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Wenbin's blog" type="application/atom+xml">
 </head>
 
@@ -1455,9 +1455,9 @@ __      _____ _ __ | |__  _ _ __   | |__ | | ___   __ _
 
                   <div class="post_share" style="text-align: center; margin-top: 1rem;">
     <div id="article-share">
-            <link  rel="stylesheet" href="https://cdn.zzzwb.com/js/zidingyi/share/share.min.css" type="text/css"/>
+            <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/wenbin-blog@1.1.1/js/zidingyi/share/share.min.css" type="text/css"/>
             <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-            <script  src="https://cdn.zzzwb.com/js/zidingyi/share/share.min.js" type="application/x-javascript"></script>
+            <script  src="https://cdn.jsdelivr.net/npm/wenbin-blog@1.1.1/js/zidingyi/share/share.min.js" type="application/x-javascript"></script>
     </div>
 </div>
 
@@ -1507,7 +1507,7 @@ __      _____ _ __ | |__  _ _ __   | |__ | | ___   __ _
   <div id="valine"></div>
   <script type="text/javascript">
     Fluid.utils.loadComments('#valine', function() {
-      Fluid.utils.createScript('https://cdn.zzzwb.com/js/zidingyi/valine/Valine.min.js', function() {
+      Fluid.utils.createScript('/js/zidingyi/valine/Valine.min.js', function() {
         var options = Object.assign(
           {"appId":"nltNbWnKve6Q6oobgbQoGqT4-gzGzoHsz","appKey":"PLMY3oFRTfOUMLpgiB1mJnD7","path":"window.location.pathname","placeholder":"填写QQ可以显示QQ头像，填写邮箱可在有回复时收到邮件通知哦(^_−)☆","avatar":"robohash","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":true,"master":"bdd3df7bdecb551764c19044ec8e6ffe","tagMeta":["博主","小伙伴","访客"],"friends":["b037d68520b5d3ed810a3dea024e812b","0a94a6c5b2d8b7a5586939356100c778"]},
           {
@@ -1537,6 +1537,55 @@ __      _____ _ __ | |__  _ _ __   | |__ | | ___   __ _
   </div>
  </div>
 <script>
+const rewardBtn = document.getElementById('rewardBtn');
+const rewardImgContainer = document.getElementById('rewardImgContainer');
+
+if(rewardBtn){
+	rewardBtn.onclick = () => {
+		rewardImgContainer.style.display = (rewardImgContainer.style.display === 'none' || rewardImgContainer.style.display === '') ? 'inline-flex' : 'none'
+		setTimeout(() => {
+			rewardImgContainer.style.opacity = (rewardImgContainer.style.opacity === '0' || rewardImgContainer.style.opacity === '') ? '1' : '0'
+		}, 10);
+	}
+}
+
+//copy
+      $('.markdown-body').on('copy', function (e) {
+          // IE8 or earlier browser is 'undefined'
+          if (typeof window.getSelection === 'undefined') return;
+  
+          var selection = window.getSelection();
+          // if the selection is short let's not annoy our users.
+          if (('' + selection).length < Number.parseInt('100')) {
+              return;
+          }
+  
+          // create a div outside of the visible area and fill it with the selected text.
+          var bodyElement = document.getElementsByTagName('body')[0];
+          var newdiv = document.createElement('div');
+          newdiv.style.position = 'absolute';
+          newdiv.style.left = '-99999px';
+          bodyElement.appendChild(newdiv);
+          newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+  
+          // we need a <div class="code-wrapper"><pre> tag workaround.
+          // otherwise the text inside "pre" loses all the line breaks!
+          if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+              newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre></div>";
+          }
+  
+          var url = document.location.href;
+          newdiv.innerHTML += '<br />'
+              + '-------------------------------------------------------------------------<br />'
+              + 'from: Wenbin\'s blog<br />'
+              + '文章作者: Wenbin<br />'
+              + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+              + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+  
+          selection.selectAllChildren(newdiv);
+          window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+});
+
 window.onload = function() {
   setTimeout(function() {
     var vcountElement = document.querySelector('.vcount');
@@ -1945,9 +1994,8 @@ window.onload = function() {
 
 
   
-<script src="//cdn.zzzwb.com/js/zidingyi/code/prism.js"></script>
-<script src="//cdn.zzzwb.com/js/zidingyi/duration.js"></script>
 <script src="//cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js"></script>
+<script src="/js/zidingyi/code/prism.js"></script>
 <script src="/js/zidingyi/zdy.js"></script>
 
 
@@ -1981,7 +2029,7 @@ function set_video_attr(id) {
   }
 }
 
-$.getJSON("https://cdn.zzzwb.com/js/zidingyi/json/video.json", function (data) {
+$.getJSON("/js/zidingyi/json/video.json", function (data) {
   if (true) {
     var video_list_length = data.length;
     var seed = Math.random();
