@@ -360,7 +360,6 @@ animation: slow-rotate 5s linear infinite;
 }
 .v[data-class=v] .vcards .vcard .vh .vmeta .vat:hover {
     color: #2bd9d3;
-    font-size: 0.7125rem;
     padding: 0px 0.8rem;
     border-width: 1px;
     border-style: solid;
