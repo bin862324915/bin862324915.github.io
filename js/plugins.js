@@ -179,5 +179,5 @@ var hideSidebar = function(){
 }
 $("#toggle-sidebar").on("click",toggleSidebar);
 $("header").on("click",hideSidebar);
-$("#mainContent").on("click",hideSidebar);
-$("#footerContent").on("click",hideSidebar);
+$("main").on("click",hideSidebar);
+$(".footer-inner").on("click",hideSidebar);
