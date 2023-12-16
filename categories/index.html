@@ -987,6 +987,48 @@
     
     <div class="category row nomargin-x">
       <a class="category-item collapsed
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="ios"
+        id="heading-9e304d4e8df1b74cfa009913198428ab" role="tab" data-toggle="collapse" href="#collapse-9e304d4e8df1b74cfa009913198428ab"
+        aria-expanded="false"
+      >
+        ios
+        <span class="list-group-count"></span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+        <a href="/categories/ios/" class="category-count col-2 col-md-1 col-xm-1">
+          <i class="iconfont icon-articles"></i>
+          <span>1</span>
+        </a>
+      
+      <div class="category-collapse collapse " id="collapse-9e304d4e8df1b74cfa009913198428ab"
+           role="tabpanel" aria-labelledby="heading-9e304d4e8df1b74cfa009913198428ab">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/2023/12-16-ios-bymrbz.html" title="ios快捷指令每日自动更换壁纸为必应图片"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">ios快捷指令每日自动更换壁纸为必应图片</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
+    
+    
+    
+    <div class="category row nomargin-x">
+      <a class="category-item collapsed
           list-group-item category-item-action col-10 col-md-11 col-xm-11" title="github"
         id="heading-bf215181b5140522137b3d4f6b73544a" role="tab" data-toggle="collapse" href="#collapse-bf215181b5140522137b3d4f6b73544a"
         aria-expanded="false"
@@ -1421,18 +1463,18 @@ $.getJSON("https://cloud.zzzwb.com:60443/blog/js/zidingyi/json/video.json", func
     index = Math.floor(seed * video_list_length);
 
     video_url = data[index][0];
-    pre_show_image_url = data[index][1];
+//    pre_show_image_url = data[index][1];
 
-    banner_obj = document.getElementById("bannerimg");
-    banner_obj.style.cssText =
-      "background: url('" + pre_show_image_url + "') no-repeat;";
+//    banner_obj = document.getElementById("bannerimg");
+//    banner_obj.style.cssText =
+//      "background: url('" + pre_show_image_url + "') no-repeat;";
 
-    vvd_banner_obj = document.getElementById("vvd_banner_img");
-    vvd_banner_content =
-      "<img id='banner_img_item' src='" +
-      pre_show_image_url +
-      "'style='position: fixed; z-index: -999'>";
-    vvd_banner_obj.innerHTML = vvd_banner_content;
+//    vvd_banner_obj = document.getElementById("vvd_banner_img");
+//    vvd_banner_content =
+//      "<img id='banner_img_item' src='" +
+//      pre_show_image_url +
+//      "'style='position: fixed; z-index: -999'>";
+//    vvd_banner_obj.innerHTML = vvd_banner_content;
 
     if (!isMobile) {
       video_html_res =
@@ -1441,7 +1483,7 @@ $.getJSON("https://cloud.zzzwb.com:60443/blog/js/zidingyi/json/video.json", func
         " autoplay='autoplay' loop='loop'></video>";
       document.getElementById("banner_video_insert").innerHTML = video_html_res;
       set_video_attr("video_item");
-      set_video_attr("banner_img_item");
+//      set_video_attr("banner_img_item");
     }
   }
 });
@@ -1450,7 +1492,7 @@ if (!isMobile) {
   document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("resize", function () {
       set_video_attr("video_item");
-      set_video_attr("banner_img_item");
+//      set_video_attr("banner_img_item");
     });
   });
 }

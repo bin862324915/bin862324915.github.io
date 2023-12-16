@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>ios快捷指令每日自动更换壁纸为必应图片</title>
+    <link href="/2023/12-16-ios-bymrbz.html"/>
+    <url>/2023/12-16-ios-bymrbz.html</url>
+    
+    <content type="html"><![CDATA[<h2 id="ios快捷指令每日自动更换壁纸为必应图片"><a href="#ios快捷指令每日自动更换壁纸为必应图片" class="headerlink" title="ios快捷指令每日自动更换壁纸为必应图片"></a>ios快捷指令每日自动更换壁纸为必应图片</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>这个快捷指令适合以下人群</p><p>1.之前的壁纸看腻了，想换个壁纸</p><p>2.想实现自动更换换壁纸又不希望专门下载一个壁纸APP</p><p>3.想换壁纸但又不知道换哪个壁纸好</p><h3 id="设置快捷指令"><a href="#设置快捷指令" class="headerlink" title="设置快捷指令"></a>设置快捷指令</h3><p>首先，<a href="https://www.icloud.com/shortcuts/869221a632f34a4da7c589ddab41772b">点击这里</a>获取快捷指令，然后按照以下步骤设置以实现每日自动更换壁纸的效果</p><p>1.点击上面链接后将跳转到获取快捷指令网页，然后点击<code>获取捷径</code></p><p><img src="https://imgsrc.baidu.com/forum/pic/item/ae51f3deb48f8c54af94e2187c292df5e0fe7f45.jpg"></p><p>2.点击获取捷径后会跳转到快捷指令的配置设置页面</p><p><img src="https://imgsrc.baidu.com/forum/pic/item/810a19d8bc3eb1356585908ce01ea8d3fd1f4442.jpg"></p><p>3.点击设置快捷指令后设置第一个配置项，这个配置项是设置你想将获取到的必应图片设置为哪个专注模式的壁纸，默认是第一个专注模式，你可以点击<code>墙纸1</code>选择更换。</p><p><img src="https://imgsrc.baidu.com/forum/pic/item/9825bc315c6034a81a569fb68d13495409237654.jpg"></p><p>4.设置是否需要显示通知的配置项，默认是将壁纸更换之后显示通知，也就是说，每当这个快捷指令执行更换新的壁纸后都会显示通知，如果不需要通知，点击文本框，改为<code>否</code>即可,然后点击<code>添加快捷指令</code></p><p><img src="https://imgsrc.baidu.com/forum/pic/item/54fbb2fb43166d22afd932a3002309f79052d25f.jpg"></p><p>5.打开快捷指令APP，在所有快捷指令中找到刚刚添加的<code>必应每日壁纸</code>，点击运行一次，注意，首次运行会弹出需要允许相关权限的窗口，全部允许即可，运行完成后你的壁纸就已经设置为必应当日的图片啦，可以返回桌面查看</p><p><img src="https://imgsrc.baidu.com/forum/pic/item/4b90f603738da97796b1a11cf651f8198618e36f.jpg"></p><h3 id="添加自动化"><a href="#添加自动化" class="headerlink" title="添加自动化"></a>添加自动化</h3><p>1.打开快捷指令APP，点击自动化，点击右上角的+号，添加新的自动化</p><p><img src="https://imgsrc.baidu.com/forum/pic/item/d50735fae6cd7b8912fd1db4492442a7d9330e77.jpg"></p><p>2.选择特定时间，然后你可以根据自己的需求选择设置执行快捷指令的时间，也可以按照如下图所示，设置每日自动更新壁纸</p><p><img src="https://imgsrc.baidu.com/forum/pic/item/1f178a82b9014a905ab1618aef773912b31bee7e.jpg"></p><p>3.设置好执行时间后点击下一步，点击<code>添加操作</code>，在搜索框输入快捷指令搜索，然后选择<code>运行快捷指令</code></p><p><img src="https://imgsrc.baidu.com/forum/pic/item/f703738da977391203ada256be198618367ae27a.jpg"></p><p>4.然后选取运行的快捷指令为<code>必应每日壁纸</code>，点击下一步</p><p><img src="https://imgsrc.baidu.com/forum/pic/item/b3b7d0a20cf431add12d640e0d36acaf2edd980d.jpg"></p><p>5.关闭运行前询问，如果不关闭的话，每次运行前都会先询问你要不要执行。这就没有达到自动化更换壁纸的目的了，所以需要关闭掉，然后点击完成，至此，全部的设置都已经配置好，后续就会在你设置的时间内自动执行更换壁纸了</p><p><img src="https://imgsrc.baidu.com/forum/pic/item/94cad1c8a786c9171cf9750e8f3d70cf3bc7570a.jpg"></p><p>本次记录到此结束</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>ios</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>快捷指令</tag>
+      
+      <tag>ios</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>CSS实现图片光影滑过实例</title>
     <link href="/2023/11-27-css003.html"/>
     <url>/2023/11-27-css003.html</url>

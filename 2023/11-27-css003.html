@@ -733,6 +733,12 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2023/12-16-ios-bymrbz.html" class="common-chip text-ellipsis">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">ios快捷指令每日自动更换壁纸为必应图片</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
@@ -1297,18 +1303,18 @@ $.getJSON("https://cloud.zzzwb.com:60443/blog/js/zidingyi/json/video.json", func
     index = Math.floor(seed * video_list_length);
 
     video_url = data[index][0];
-    pre_show_image_url = data[index][1];
+//    pre_show_image_url = data[index][1];
 
-    banner_obj = document.getElementById("bannerimg");
-    banner_obj.style.cssText =
-      "background: url('" + pre_show_image_url + "') no-repeat;";
+//    banner_obj = document.getElementById("bannerimg");
+//    banner_obj.style.cssText =
+//      "background: url('" + pre_show_image_url + "') no-repeat;";
 
-    vvd_banner_obj = document.getElementById("vvd_banner_img");
-    vvd_banner_content =
-      "<img id='banner_img_item' src='" +
-      pre_show_image_url +
-      "'style='position: fixed; z-index: -999'>";
-    vvd_banner_obj.innerHTML = vvd_banner_content;
+//    vvd_banner_obj = document.getElementById("vvd_banner_img");
+//    vvd_banner_content =
+//      "<img id='banner_img_item' src='" +
+//      pre_show_image_url +
+//      "'style='position: fixed; z-index: -999'>";
+//    vvd_banner_obj.innerHTML = vvd_banner_content;
 
     if (!isMobile) {
       video_html_res =
@@ -1317,7 +1323,7 @@ $.getJSON("https://cloud.zzzwb.com:60443/blog/js/zidingyi/json/video.json", func
         " autoplay='autoplay' loop='loop'></video>";
       document.getElementById("banner_video_insert").innerHTML = video_html_res;
       set_video_attr("video_item");
-      set_video_attr("banner_img_item");
+//      set_video_attr("banner_img_item");
     }
   }
 });
@@ -1326,7 +1332,7 @@ if (!isMobile) {
   document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("resize", function () {
       set_video_attr("video_item");
-      set_video_attr("banner_img_item");
+//      set_video_attr("banner_img_item");
     });
   });
 }
