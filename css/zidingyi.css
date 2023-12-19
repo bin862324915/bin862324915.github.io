@@ -350,7 +350,24 @@ animation: slow-rotate 5s linear infinite;
     transition: all 0.3s ease 0s;
 }
 
+/* twikoo评论 */
+.tk-footer {
+  display: none;
+}
+.el-textarea__inner {
+    min-height: 125px !important;
+}
+.tk-avatar-img {
+    vertical-align: unset;
+}
+.twikoo .el-textarea__inner:focus {
+    background-position-y: -200px;
+    transition: all 1s ease-in-out 0s;
+}
 /* 隐藏valine评论的系统信息 */
+#pltj {
+    display: none !important;
+}
 .v[data-class=v] .txt-right {
   text-align: right;
   display: none;

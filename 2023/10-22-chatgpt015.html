@@ -701,31 +701,31 @@
           <div class="py-5" id="board" style="margin-top: 20px;">
             <!-- Comments -->
             <div class="post-content mx-auto" id="comments">
-              <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; padding-bottom: 10px;">
-                <i class="iconfont icon-pinglun" aria-hidden="true"></i>
-                <span>评论</span>
+              <div class="comment_headling" style="font-size: 17px; font-weight: 700; position: relative; padding-left: 20px; padding-bottom: 10px;">
             
   
   
     <article id="comments">
       
-  <div id="valine"></div>
+  <div id="twikoo"></div>
   <script type="text/javascript">
-    Fluid.utils.loadComments('#valine', function() {
-      Fluid.utils.createScript('https://cloud.zzzwb.com:60443/blog/js/zidingyi/valine/Valine.min.js', function() {
+    Fluid.utils.loadComments('#comments', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/twikoo/1.6.27/twikoo.min.js', function() {
         var options = Object.assign(
-          {"appId":"nltNbWnKve6Q6oobgbQoGqT4-gzGzoHsz","appKey":"PLMY3oFRTfOUMLpgiB1mJnD7","path":"window.location.pathname","placeholder":"填写QQ可以显示QQ头像，填写邮箱可在有回复时收到邮件通知哦(^_−)☆","avatar":"robohash","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":true,"master":"bdd3df7bdecb551764c19044ec8e6ffe","tagMeta":["博主","小伙伴","访客"],"friends":["b037d68520b5d3ed810a3dea024e812b","0a94a6c5b2d8b7a5586939356100c778"]},
+          {"envId":"https://twikoojs.zzzwb.com/","region":null,"path":"window.location.pathname"},
           {
-            el: "#valine",
-            path: window.location.pathname
+            el: '#twikoo',
+            path: 'window.location.pathname',
+            onCommentLoaded: function() {
+              Fluid.utils.listenDOMLoaded(function() {
+                var imgSelector = '#twikoo .tk-content img:not(.tk-owo-emotion)';
+                Fluid.plugins.imageCaption(imgSelector);
+                Fluid.plugins.fancyBox(imgSelector);
+              });
+            }
           }
         )
-        new Valine(options);
-        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
-          var imgSelector = '#valine .vcontent img:not(.vemoji)';
-          Fluid.plugins.imageCaption(imgSelector);
-          Fluid.plugins.fancyBox(imgSelector);
-        })
+        twikoo.init(options)
       });
     });
   </script>
@@ -790,23 +790,6 @@ if(rewardBtn){
           selection.selectAllChildren(newdiv);
           window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
 });
-
-window.onload = function() {
-  setTimeout(function() {
-    var vcountElement = document.querySelector('.vcount');
-    if (vcountElement && getComputedStyle(vcountElement).display === 'block') {
-      var vnumElement = document.querySelector('.vnum');
-      var vnum = vnumElement.textContent;
-      var plnumElement = document.querySelector('#plnum');
-      plnumElement.textContent = vnum;
-      var pltj = document.getElementById('pltj');
-      pltj.style.display = 'inline';
-    } else {
-      var pltj = document.getElementById('pltj');
-      pltj.style.display = 'inline';
-    }
-  }, 500);
-};
 </script>
  <div class="side-col d-none d-lg-block col-lg-2">
             

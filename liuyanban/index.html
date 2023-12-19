@@ -27,7 +27,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://imgsrc.baidu.com/forum/pic/item/9213b07eca806538f1b3b426d1dda144ad3482ae.jpg">
 <meta property="article:published_time" content="2023-08-29T08:08:54.000Z">
-<meta property="article:modified_time" content="2023-12-04T17:25:03.087Z">
+<meta property="article:modified_time" content="2023-12-18T11:49:31.661Z">
 <meta property="article:author" content="Wenbin">
 <meta property="article:tag" content="前端技术，python，人工智能，个人博客">
 <meta name="twitter:card" content="summary_large_image">
@@ -521,23 +521,25 @@ h1 {margin-bottom:20px; text-align:center;font-size:48px; text-shadow:0 1px 0 #e
   
     <article id="comments">
       
-  <div id="valine"></div>
+  <div id="twikoo"></div>
   <script type="text/javascript">
-    Fluid.utils.loadComments('#valine', function() {
-      Fluid.utils.createScript('https://cloud.zzzwb.com:60443/blog/js/zidingyi/valine/Valine.min.js', function() {
+    Fluid.utils.loadComments('#comments', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/twikoo/1.6.27/twikoo.min.js', function() {
         var options = Object.assign(
-          {"appId":"nltNbWnKve6Q6oobgbQoGqT4-gzGzoHsz","appKey":"PLMY3oFRTfOUMLpgiB1mJnD7","path":"window.location.pathname","placeholder":"填写QQ可以显示QQ头像，填写邮箱可在有回复时收到邮件通知哦(^_−)☆","avatar":"robohash","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":true,"master":"bdd3df7bdecb551764c19044ec8e6ffe","tagMeta":["博主","小伙伴","访客"],"friends":["b037d68520b5d3ed810a3dea024e812b","0a94a6c5b2d8b7a5586939356100c778"]},
+          {"envId":"https://twikoojs.zzzwb.com/","region":null,"path":"window.location.pathname"},
           {
-            el: "#valine",
-            path: window.location.pathname
+            el: '#twikoo',
+            path: 'window.location.pathname',
+            onCommentLoaded: function() {
+              Fluid.utils.listenDOMLoaded(function() {
+                var imgSelector = '#twikoo .tk-content img:not(.tk-owo-emotion)';
+                Fluid.plugins.imageCaption(imgSelector);
+                Fluid.plugins.fancyBox(imgSelector);
+              });
+            }
           }
         )
-        new Valine(options);
-        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
-          var imgSelector = '#valine .vcontent img:not(.vemoji)';
-          Fluid.plugins.imageCaption(imgSelector);
-          Fluid.plugins.fancyBox(imgSelector);
-        })
+        twikoo.init(options)
       });
     });
   </script>
