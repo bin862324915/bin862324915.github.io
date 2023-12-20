@@ -357,13 +357,28 @@ animation: slow-rotate 5s linear infinite;
 .el-textarea__inner {
     min-height: 125px !important;
 }
+.tk-avatar.tk-has-avatar {
+    background-color: rgba(144,147,153,0) !important;
+}
+
 .tk-avatar-img {
     vertical-align: unset;
+    border-radius: 50%;
 }
+
+.tk-avatar.tk-clickable {
+    cursor: url(/img/Hand2.cur),auto !important;
+}
+.tk-icon.__comment {
+    margin-bottom: 0.3em;
+}
+
 .twikoo .el-textarea__inner:focus {
     background-position-y: -200px;
     transition: all 1s ease-in-out 0s;
 }
+
+
 /* 隐藏valine评论的系统信息 */
 #pltj {
     display: none !important;
