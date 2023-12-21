@@ -641,12 +641,12 @@ CSS<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span>
 	
 	<div id="rewardImgContainer" class="reward-img-container">
          	<div class="singleImgContainer">
-            	<img id="wechatImg" class="reward-img" src="/img/wechatpay.jpg" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload alt="微信二维码">
+            	<img id="wechatImg" class="reward-img" src="https://imgsrc.baidu.com/forum/pic/item/6609c93d70cf3bc7a372c6db9700baa1cd112a92.jpg" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload alt="微信二维码">
                 <p class="wechatPay">微信支付</p>
             </div>
 
             <div class="singleImgContainer">
-               	<img id="alipayImg" class="reward-img" src="/img/alipay.png" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload alt="支付宝二维码">
+               	<img id="alipayImg" class="reward-img" src="https://imgsrc.baidu.com/forum/pic/item/5366d0160924ab18cc60ea0073fae6cd7b890b96.png" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload alt="支付宝二维码">
                 <p class="aliPay">支付宝支付</p>
            	</div>
 	</div>
@@ -802,6 +802,15 @@ CSS<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span>
                 var imgSelector = '#twikoo .tk-content img:not(.tk-owo-emotion)';
                 Fluid.plugins.imageCaption(imgSelector);
                 Fluid.plugins.fancyBox(imgSelector);
+                var pltjElement = document.getElementById('pltj');
+                if (pltjElement) {
+                  var plnum = e.comments[0].children[0].firstElementChild.childNodes[0].nextElementSibling.childNodes[0].__vue__._data.count;
+                  var plnumtElement = document.querySelector('#plnum');
+                  plnumtElement.textContent = plnum;
+                  pltjElement.style.display = 'inline';
+                } else {
+                  return;
+}
               });
             }
           }
@@ -834,6 +843,7 @@ if(rewardBtn){
 		}, 10);
 	}
 }
+
 
 //copy
       $('.markdown-body').on('copy', function (e) {

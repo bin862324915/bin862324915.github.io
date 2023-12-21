@@ -515,6 +515,15 @@
                 var imgSelector = '#twikoo .tk-content img:not(.tk-owo-emotion)';
                 Fluid.plugins.imageCaption(imgSelector);
                 Fluid.plugins.fancyBox(imgSelector);
+                var pltjElement = document.getElementById('pltj');
+                if (pltjElement) {
+                  var plnum = e.comments[0].children[0].firstElementChild.childNodes[0].nextElementSibling.childNodes[0].__vue__._data.count;
+                  var plnumtElement = document.querySelector('#plnum');
+                  plnumtElement.textContent = plnum;
+                  pltjElement.style.display = 'inline';
+                } else {
+                  return;
+}
               });
             }
           }

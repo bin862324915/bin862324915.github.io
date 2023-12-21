@@ -380,9 +380,6 @@ animation: slow-rotate 5s linear infinite;
 
 
 /* 隐藏valine评论的系统信息 */
-#pltj {
-    display: none !important;
-}
 .v[data-class=v] .txt-right {
   text-align: right;
   display: none;
