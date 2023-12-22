@@ -226,11 +226,11 @@ body {
 }
 */
 
-/*底部icon颜色
+/*底部icon颜色*/
 footer .iconfont {
-    color: #FFC1C1;
+    color: pink;
 }
-*/
+
 
 .reprint {
     margin: 15px 0 0.4rem;
@@ -563,7 +563,9 @@ img.vimg:hover {
     color: #fff;
     border-radius: 4px;
 }
-
+.on-kg:before {
+    color: #89ff00;
+}
 .sidebar-avatar img:hover {
   transform: rotate(360deg);
 }
@@ -588,7 +590,7 @@ img.vimg:hover {
     }
 
     75% {
-        box-shadow: 0 0 20px #ffffff;
+        box-shadow: 0 0 20px #ffe500;
     }
 
     100% {
