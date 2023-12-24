@@ -857,7 +857,6 @@ i.iconfont {
   border-radius: 0 3rem 3rem 0;
   background-color: rgba(255,255,255,0.4);
 /* padding 1rem */
-  bottom: 100px;
   color: var(--text-color);
   cursor: url("/img/Hand2.cur"), auto;
   -webkit-transition: all 0.2s ease-in-out;

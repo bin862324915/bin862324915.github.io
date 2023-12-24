@@ -541,9 +541,9 @@ img.vimg:hover {
 
 /*侧边栏*/
 .sidebar-button {
-    bottom: 25%;
+    top: 70%;
     z-index: 10;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .sidebar-avatar img {
