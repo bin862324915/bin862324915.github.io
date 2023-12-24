@@ -13,7 +13,7 @@ let allRecordsLoaded = false;
 
 if (allRecordsLoaded) {
   loadMoreButton.disabled = true;
-  document.getElementById("jiazaiButton").innerHTML="<center>已经到底啦~</center>";
+  document.getElementById("jiazaiButton").innerHTML="<center>已经到底哦</center>";
   document.getElementById("jiazaiButton").style.opacity = "0.5";
 }
 const loadMoreButton = document.querySelector('#loadMoreButton');
