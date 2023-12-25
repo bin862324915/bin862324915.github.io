@@ -48,7 +48,7 @@ function loadMoreRecords() {
       } else {
         allRecordsLoaded = true;
         document.querySelector('#loadMoreButton').disabled = true;
-        document.getElementById("jiazaiButton").innerHTML="<center>已经到底了啦~</center>";
+        document.getElementById("jiazaiButton").innerHTML="<center>已经到底了哦</center>";
         document.getElementById("jiazaiButton").style.opacity = "0.5";
       }
     }).catch((error) => {
