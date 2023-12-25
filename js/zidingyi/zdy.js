@@ -1,20 +1,20 @@
 // 浏览器标题
-var OriginTitle = document.title;
-var titleTime;
-document.addEventListener('visibilitychange', function() {
-	if (document.hidden) {
-		$('[rel="icon"]').attr('href', "/img/favicon.ico");
-		document.title = '不要走！再看看嘛(o°ω°o)';
-		clearTimeout(titleTime);
-	} else {
-		$('[rel="icon"]').attr('href', "/img/favicon.ico");
-		document.title = '你回来啦(≖ᴗ≖)✧';
-		titleTime = setTimeout(function() {
-			document.title = OriginTitle;
-		}, 2000);
-	}
-});
-
+//var OriginTitle = document.title;
+//var titleTime;
+//document.addEventListener('visibilitychange', function() {
+//	if (document.hidden) {
+//		$('[rel="icon"]').attr('href', "/img/favicon.ico");
+//		document.title = '不要走！再看看嘛(o°ω°o)';
+//		clearTimeout(titleTime);
+//	} else {
+//		$('[rel="icon"]').attr('href', "/img/favicon.ico");
+//		document.title = '你回来啦(≖ᴗ≖)✧';
+//		titleTime = setTimeout(function() {
+//			document.title = OriginTitle;
+//		}, 2000);
+//	}
+//});
+//
 // 背景图
 //var backgroundImageUrls = [
 //  "url('https://z1.ax1x.com/2023/10/11/pPzRbo4.jpg')",
