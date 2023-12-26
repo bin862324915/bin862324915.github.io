@@ -454,6 +454,14 @@ img.vimg:hover {
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 0%), 0 2px 10px 0 rgb(0 0 0 / 0%) !important;
     -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 0%), 0 2px 10px 0 rgb(0 0 0 / 0%) !important;
 }
+.navbar .dropdown-item {
+  transition: transform .4s;
+}
+.navbar .dropdown-item:hover {
+  transform: translateX(5px);
+  transition: transform .4s !important;
+  background-color: rgba(0,0,0,0)!important;
+}
 
 /* 列表样式 */
 .list-group-item-action {
