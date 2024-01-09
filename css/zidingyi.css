@@ -184,16 +184,18 @@ body {
     background-attachment: fixed;
 }
 */
+/*
 #subtitle {
     font-family: 'Long Cang',cursive;
     user-select: none;
 }
-/*打字机
-#subtitle {
-    background: linear-gradient(45deg, #009688, yellowgreen, pink, #03a9f4, #9c27b0, #8bc34a);
-    background-size: 400% 400%;
-    -webkit-animation: huerotate 5s infinite;
-    -moz-animation: huerotate 5s infinite;
+*/
+/*打字机*/
+.subtitle-ys {
+    background: linear-gradient(45deg, #00ffe7, #abff00, #ffe500, #00fdff, #e8ff00, #FF5722);
+    background-size: 200% 200%;
+    -webkit-animation: gradientAnimation 5s ease infinite;
+    -moz-animation: gradientAnimation 5s ease infinite;
     animation: gradientAnimation 5s ease infinite;
     -o-user-select: none;
     -ms-user-select: none;
@@ -203,13 +205,11 @@ body {
     font-family: 'Long Cang',cursive;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
-#subtitle:before {
+.subtitle-ys:before {
     background-color: rgba(0, 0, 0, 0);
 }
-*/
+
 @keyframes huerotate {
     100% {
         filter: hue-rotate(360deg);
@@ -239,7 +239,7 @@ body {
 #hitokoto {
   width: 200px;
   height: auto;
-  background: linear-gradient(45deg, #009688, yellowgreen, pink, #03a9f4, #9c27b0, #8bc34a);
+  background: linear-gradient(45deg, #00ffe7, #abff00, #ffe500, #00fdff, #e8ff00, #FF5722);
   background-size: 200% 200%;
   animation: gradientAnimation 5s ease infinite;
   -webkit-text-fill-color: transparent;
