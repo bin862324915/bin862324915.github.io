@@ -6,7 +6,7 @@
   <link href="https://www.zzzwb.com/atom.xml" rel="self"/>
   
   <link href="https://www.zzzwb.com/"/>
-  <updated>2024-01-18T05:47:19.594Z</updated>
+  <updated>2024-01-18T06:13:39.403Z</updated>
   <id>https://www.zzzwb.com/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>JS获取随机颜色的三种方法</title>
     <link href="https://www.zzzwb.com/2023/12-26-jshqysdff.html"/>
     <id>https://www.zzzwb.com/2023/12-26-jshqysdff.html</id>
-    <published>2023-12-26T05:24:10.000Z</published>
-    <updated>2024-01-18T05:47:19.594Z</updated>
+    <published>2023-12-26T05:25:10.000Z</published>
+    <updated>2024-01-18T06:13:39.403Z</updated>
     
     
     <summary type="html">使用for循环6次，模拟生成6位16进制颜色码 Math.random() * 16 生成一个0到15之间的随机浮点数，然后使用按位或操作符(|)与0进行运算，将其转换为整数 toString(16)将这个整数转换成16进制字符串</summary>
