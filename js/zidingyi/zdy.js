@@ -77,7 +77,7 @@ __      _____ _ __ | |__  _ _ __   | |__ | | ___   __ _
                                                   |___/
 `);
 
-  // snow
+// snow
 function snow() {
     var snowContainer = document.getElementById('snow_container');
     var snowButtonIcon = document.querySelector('#snowButton i');
