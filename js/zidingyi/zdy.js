@@ -77,11 +77,11 @@ __      _____ _ __ | |__  _ _ __   | |__ | | ___   __ _
                                                   |___/
 `);
 
-// snow
+  // snow
 function snow() {
     var snowContainer = document.getElementById('snow_container');
     var snowButtonIcon = document.querySelector('#snowButton i');
-    var isSnowEnabled = localStorage.getItem('isSnowEnabled') === 'true';
+    var isSnowEnabled = localStorage.getItem('isSnowEnabled') !== 'false';
 
     if (isSnowEnabled) {
         activateSnow();
@@ -188,9 +188,9 @@ document.addEventListener('DOMContentLoaded', getreadbook);
 var toggleButton = document.getElementById('toggleButton');
 var jsFiles = [
     'https:////lib.baomitu.com/meting/2.0.1/Meting.min.js',
-    'https://cdn.zzzwb.com/js/live2d/autoload.js',
+    'https://cloud.zzzwb.com:60443/blog/js/zidingyi/live2d/autoload.js',
     'https://lib.baomitu.com/aplayer/1.10.1/APlayer.min.js',
-    'https://cdn.zzzwb.com/js/zidingyi/xiantiao.js'
+    'https://cloud.zzzwb.com:60443/blog/js/zidingyi/xiantiao.js'
 ];
 var loadJsFiles = localStorage.getItem('loadJsFiles') !== 'false';
 

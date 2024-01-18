@@ -6,7 +6,7 @@
   <link href="https://www.zzzwb.com/atom.xml" rel="self"/>
   
   <link href="https://www.zzzwb.com/"/>
-  <updated>2023-12-24T07:56:10.300Z</updated>
+  <updated>2024-01-18T05:47:19.594Z</updated>
   <id>https://www.zzzwb.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS获取随机颜色的三种方法</title>
+    <link href="https://www.zzzwb.com/2023/12-26-jshqysdff.html"/>
+    <id>https://www.zzzwb.com/2023/12-26-jshqysdff.html</id>
+    <published>2023-12-26T05:24:10.000Z</published>
+    <updated>2024-01-18T05:47:19.594Z</updated>
+    
+    
+    <summary type="html">使用for循环6次，模拟生成6位16进制颜色码 Math.random() * 16 生成一个0到15之间的随机浮点数，然后使用按位或操作符(|)与0进行运算，将其转换为整数 toString(16)将这个整数转换成16进制字符串</summary>
+    
+    
+    
+    <category term="JavaScript" scheme="https://www.zzzwb.com/categories/JavaScript/"/>
+    
+    
+    <category term="JavaScript" scheme="https://www.zzzwb.com/tags/JavaScript/"/>
+    
+    <category term="js技巧" scheme="https://www.zzzwb.com/tags/js%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
   
   <entry>
     <title>网易云音乐|2023年度听歌报告来啦！</title>
@@ -548,33 +569,6 @@
     <category term="html" scheme="https://www.zzzwb.com/tags/html/"/>
     
     <category term="个人项目" scheme="https://www.zzzwb.com/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>13-如何用ChatGPT做一门课</title>
-    <link href="https://www.zzzwb.com/2023/10-20-chatgpt013.html"/>
-    <id>https://www.zzzwb.com/2023/10-20-chatgpt013.html</id>
-    <published>2023-10-20T06:09:33.000Z</published>
-    <updated>2023-12-07T03:26:23.842Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;13-如何用ChatGPT做一门课？（包含大纲、脚本、PPT文本）&quot;&gt;&lt;a href=&quot;#13-如何用ChatGPT做一门课？（包含大纲、脚本、PPT文本）&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="ChatGPT" scheme="https://www.zzzwb.com/categories/ChatGPT/"/>
-    
-    
-    <category term="ChatGPT" scheme="https://www.zzzwb.com/tags/ChatGPT/"/>
-    
-    <category term="提问技巧" scheme="https://www.zzzwb.com/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
     
   </entry>
   
