@@ -595,33 +595,6 @@
   
   
   <entry>
-    <title>fluid主题设置网页随机背景图片</title>
-    <link href="/2023/10-19-szsjbjtp.html"/>
-    <url>/2023/10-19-szsjbjtp.html</url>
-    
-    <content type="html"><![CDATA[<p><strong>fluid主题设置网页随机背景图片</strong></p><p>通过引入外部js文件的方式，添加以下js脚本</p><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">var</span> backgroundImageUrls <span class="token operator">=</span> <span class="token punctuation">[</span>  <span class="token string">"url('/2023/10/11/1.jpg')"</span><span class="token punctuation">,</span>  <span class="token string">"url('/2023/09/12/2.jpg')"</span><span class="token punctuation">,</span>  <span class="token string">"url('/2023/09/12/3.jpg')"</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">var</span> randomIndex <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> backgroundImageUrls<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">var</span> bodyElement <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"body"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>bodyElement<span class="token punctuation">.</span>style<span class="token punctuation">.</span>backgroundImage <span class="token operator">=</span> backgroundImageUrls<span class="token punctuation">[</span>randomIndex<span class="token punctuation">]</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>请将backgroundImageUrls当中的数组图片地址替换为自己的图片地址</p><p>可以根据自己的需求将更多的图片地址添加到backgroundImageUrls数组当中</p><p>这个代码默认body已经添加了其他必要的属性如background-attachment</p><p>否则可能不会正常加载图片</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span> <span class="token punctuation">&#123;</span>    <span class="token property">background-attachment</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span>    <span class="token property">background-size</span><span class="token punctuation">:</span> cover<span class="token punctuation">;</span>  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>如果没有，请自行添加css样式。</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>hexo</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>网页美化</tag>
-      
-      <tag>fluid主题</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>12-如何用ChatGPT做团队绩效管理</title>
     <link href="/2023/10-18-chatgpt012.html"/>
     <url>/2023/10-18-chatgpt012.html</url>
@@ -649,25 +622,25 @@
   
   
   <entry>
-    <title>11-如何用ChatGPT做项目管理</title>
-    <link href="/2023/10-16-chatgpt011.html"/>
-    <url>/2023/10-16-chatgpt011.html</url>
+    <title>fluid主题设置网页随机背景图片</title>
+    <link href="/2023/10-17-szsjbjtp.html"/>
+    <url>/2023/10-17-szsjbjtp.html</url>
     
-    <content type="html"><![CDATA[<h2 id="11-如何用ChatGPT做项目管理？"><a href="#11-如何用ChatGPT做项目管理？" class="headerlink" title="11-如何用ChatGPT做项目管理？"></a><strong>11-如何用ChatGPT做项目管理？</strong></h2><p>ChatGPT可以通过创建和维护跨团队项目协作计划，让员工更容易理解他们的角色和职责。这个协作计划里面会包括每个团队或个人要执行的具体任务，每个任务最后期限和任何事情之间的依赖关系。</p><h3 id="该场景对应的关键词库：（24个）"><a href="#该场景对应的关键词库：（24个）" class="headerlink" title="该场景对应的关键词库：（24个）"></a><strong>该场景对应的关键词库：（24个）</strong></h3><p>项目管理、项目协作计划、跨团队协作、任务分配、任务执行、任务最后期限、依赖关系、角色定义、职责明确、团队合作、协作平台、跟进进度、项目进度、里程碑、风险管理、问题解决、沟通协调、时间管理、成本管理、质量管理、数据分析、性能考核、效率提升、团队培训</p><h3 id="提问模板："><a href="#提问模板：" class="headerlink" title="提问模板："></a><strong>提问模板：</strong></h3><p>1、假设我们要为一家新开业的咖啡馆设计一个品牌营销项目管理文档，你会怎么做？</p><p>2、团队中包含ABCD4个人，请明确每个人负责的事情和DDL以及彼此之间的协作衔接依赖关系</p><p>3、请根据项目情况和人员分工输出一个项目协作计划文档，包含任务截止时间与任务依赖关系</p><p><strong>第一步，收集项目信息：</strong></p><p>首先需要收集项目的目标、范围、时间、成本、质量等方面的信息。这些信息可以通过项目管理工具、会议记录、邮件等方式收集。</p><p><strong>第二步，输入数据到ChatGPT中：</strong></p><p>将项目的目标、范围、时间、成本、质量等方面的信息输入到ChatGPT中进行学习，让ChatGPT能够理解这些数据的含义和用法。</p><p><strong>第三步，创建项目计划：</strong></p><p>根据项目信息和ChatGPT生成的结果，创建项目计划。</p><p>项目计划可以包括项目的目标、范围、时间、成本、质量等方面的信息，以及每个团队或个人要执行的具体任务、每个任务最后期限和任何事情之间的依赖关系等信息。</p><p><strong>第四步，分配任务和角色：</strong></p><p>根据项目计划，分配任务和角色给每个团队或个人。</p><p>通过ChatGPT生成的结果，让员工更容易理解他们的角色和职责，明确每个团队或个人需要完成的具体任务和时间节点。</p><p><strong>第五步，维护项目计划：</strong></p><p>在项目执行的过程中，需要不断维护项目计划。根据实际情况和进展情况，不断调整和优化项目计划，以确保项目能够按时、按质量、按预算完成。</p><h3 id="举例："><a href="#举例：" class="headerlink" title="举例："></a><strong>举例：</strong></h3><p><strong>问题输入1：请学习以下信息</strong></p><p><img src="/img/sc/036.png"></p><p><img src="/img/sc/037.png"></p><p><strong>问题输入2：创建项目计划</strong></p><p><img src="/img/sc/038.png"></p><p><strong>问题输入3：人员分工</strong></p><p><img src="/img/sc/039.png"></p>]]></content>
+    <content type="html"><![CDATA[<p><strong>fluid主题设置网页随机背景图片</strong></p><p>通过引入外部js文件的方式，添加以下js脚本</p><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">var</span> backgroundImageUrls <span class="token operator">=</span> <span class="token punctuation">[</span>  <span class="token string">"url('/2023/10/11/1.jpg')"</span><span class="token punctuation">,</span>  <span class="token string">"url('/2023/09/12/2.jpg')"</span><span class="token punctuation">,</span>  <span class="token string">"url('/2023/09/12/3.jpg')"</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">var</span> randomIndex <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> backgroundImageUrls<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">var</span> bodyElement <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"body"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>bodyElement<span class="token punctuation">.</span>style<span class="token punctuation">.</span>backgroundImage <span class="token operator">=</span> backgroundImageUrls<span class="token punctuation">[</span>randomIndex<span class="token punctuation">]</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>请将backgroundImageUrls当中的数组图片地址替换为自己的图片地址</p><p>可以根据自己的需求将更多的图片地址添加到backgroundImageUrls数组当中</p><p>这个代码默认body已经添加了其他必要的属性如background-attachment</p><p>否则可能不会正常加载图片</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span> <span class="token punctuation">&#123;</span>    <span class="token property">background-attachment</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span>    <span class="token property">background-size</span><span class="token punctuation">:</span> cover<span class="token punctuation">;</span>  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>如果没有，请自行添加css样式。</p>]]></content>
     
     
     <categories>
       
-      <category>ChatGPT</category>
+      <category>hexo</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>ChatGPT</tag>
+      <tag>网页美化</tag>
       
-      <tag>提问技巧</tag>
+      <tag>fluid主题</tag>
       
     </tags>
     
@@ -676,11 +649,11 @@
   
   
   <entry>
-    <title>10-如何让ChatGPT根据不同来源的数据进行调整</title>
-    <link href="/2023/10-15-chatgpt010.html"/>
-    <url>/2023/10-15-chatgpt010.html</url>
+    <title>11-如何用ChatGPT做项目管理</title>
+    <link href="/2023/10-16-chatgpt011.html"/>
+    <url>/2023/10-16-chatgpt011.html</url>
     
-    <content type="html"><![CDATA[<h2 id="10-如何让ChatGPT根据不同来源的数据，例如销售数据、客户反馈、财务报告，自动生成报告，并根据不同利益方的需要和偏好进行调整？"><a href="#10-如何让ChatGPT根据不同来源的数据，例如销售数据、客户反馈、财务报告，自动生成报告，并根据不同利益方的需要和偏好进行调整？" class="headerlink" title="10-如何让ChatGPT根据不同来源的数据，例如销售数据、客户反馈、财务报告，自动生成报告，并根据不同利益方的需要和偏好进行调整？"></a><strong>10-如何让ChatGPT根据不同来源的数据，例如销售数据、客户反馈、财务报告，自动生成报告，并根据不同利益方的需要和偏好进行调整？</strong></h2><h3 id="该场景对应的关键词库（24个）"><a href="#该场景对应的关键词库（24个）" class="headerlink" title="该场景对应的关键词库（24个）"></a><strong>该场景对应的关键词库（24个）</strong></h3><p>汇报对象身份（下属、跨部门平级、领导）、销售数据（销售额、销售量、销售渠道）、财务报告（营业收入、净利润、成本费用）、市场分析（市场份额、竞争情况、市场趋势）、客户反馈（客户满意度、客户投诉、客户留存率）、营销效果评估（广告投放效果、促销活动效果、营销策略效果）</p><h3 id="提问模板"><a href="#提问模板" class="headerlink" title="提问模板"></a><strong>提问模板</strong></h3><p>1、请根据已有的不同来源的数据，生成详细的报告，分别汇报给下属、跨部门平级和领导</p><p>2、请根据给出的数据，回答以下问题，并给出结论与图表</p><p>​                ● 最近一个季度的销售趋势如何？导致销售量变化的因素有哪些？</p><p>​                ● 客户反馈如何反映我们的营销策略效果？根据客户反馈，我们可以做出哪些调整？</p><p>​                ● 我们营销活动的投资回报率是多少？如何优化我们的营销支出以在下一个季度获得更好的效果？</p><p>3、请根据数据报表，提炼3个重要结论汇报给领导</p><p><strong>第一步，明确进行数据分析的目标</strong></p><p>确定目标是理解业务、优化业务还是预测未来</p><p><strong>第二步，收集整理与清洗相关数据</strong></p><p>收集整理销售数据、客户反馈、财务报告等方面的数据，可以通过公司的数据库、营销工具、调查问卷等方式收集。完成后做简单的数据清洗。</p><p><strong>第三步，让ChatGPT学习相关数据含义和用法</strong></p><p>将不同来源的数据输入到ChatGPT中进行学习，让ChatGPT能够理解这些数据的含义和用法。这些数据可以包括销售额、销售量、客户满意度、市场份额、竞争情况、营销费用等信息。</p><p><strong>第四步，进行数据分析给出重要结论</strong></p><p>通过ChatGPT生成的结果，分析不同来源的数据，根据以下几个方面得出重要结论</p><p>提高销售额和市场份额的营销策略和活动：例如降低产品价格、提供更好的售后服务、优化产品设计和功能、增加市场推广力度等。</p><p>影响客户满意度和忠诚度的因素：例如产品质量、服务质量、品牌形象、价格竞争力等。</p><p>影响财务报告的因素：例如销售额、毛利率、净利润、营销费用占比等。</p><p><strong>第五步，根据汇报对象身份进行可视化调整</strong></p><p>报告可以包括销售趋势、客户分析、竞争分析、市场细分、营销效果评估等方面的信息。</p><p>针对不同身份的人的营销报告的不同之处：</p><p><strong>下属：对于下属，营销报告需要更加直观和易懂。</strong></p><p>需要突出产品和服务的优势和特点，以及营销策略和活动的效果和影响。同时，需要将报告的重点放在实际操作和执行方面，为下属提供具体的指导和建议，帮助下属更好地完成任务和达成目标。</p><p><strong>跨部门平级：对于跨部门平级，营销报告需要更加全面和详细。</strong></p><p>需要涵盖不同部门和领域的数据和信息，以便平级的同事了解整个公司的营销情况和趋势。同时，需要突出不同部门和领域之间的联系和协作，为跨部门合作提供参考和支持。</p><p><strong>领导：对于领导，营销报告需要更加战略性和全局性。</strong></p><p>需要突出市场和客户的需求和状况，分析企业的竞争优势和挑战，提出未来的发展方向和策略。同时，需要突出财务和经营状况的重要性和影响，为领导的决策提供有力支持和参考。</p><p><strong>注意事项：</strong></p><p>务必注意保护数据的隐私和安全，遵守相关政策。</p><h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a><strong>举例</strong></h3><p><strong>问题输入1：请学习以下一个完整的营销数据报表</strong></p><p><img src="/img/sc/029.png"></p><p><strong>问题输入2：针对下属调整营销报告</strong></p><p><img src="/img/sc/030.png"></p><p><img src="/img/sc/031.png"></p><p><strong>3、针对跨部门平级调整营销报告</strong></p><p><img src="/img/sc/032.png"></p><p><img src="/img/sc/033.png"></p><p><strong>4、针对领导调整营销报告</strong></p><p><img src="/img/sc/034.png"></p><p><img src="/img/sc/035.png"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="11-如何用ChatGPT做项目管理？"><a href="#11-如何用ChatGPT做项目管理？" class="headerlink" title="11-如何用ChatGPT做项目管理？"></a><strong>11-如何用ChatGPT做项目管理？</strong></h2><p>ChatGPT可以通过创建和维护跨团队项目协作计划，让员工更容易理解他们的角色和职责。这个协作计划里面会包括每个团队或个人要执行的具体任务，每个任务最后期限和任何事情之间的依赖关系。</p><h3 id="该场景对应的关键词库：（24个）"><a href="#该场景对应的关键词库：（24个）" class="headerlink" title="该场景对应的关键词库：（24个）"></a><strong>该场景对应的关键词库：（24个）</strong></h3><p>项目管理、项目协作计划、跨团队协作、任务分配、任务执行、任务最后期限、依赖关系、角色定义、职责明确、团队合作、协作平台、跟进进度、项目进度、里程碑、风险管理、问题解决、沟通协调、时间管理、成本管理、质量管理、数据分析、性能考核、效率提升、团队培训</p><h3 id="提问模板："><a href="#提问模板：" class="headerlink" title="提问模板："></a><strong>提问模板：</strong></h3><p>1、假设我们要为一家新开业的咖啡馆设计一个品牌营销项目管理文档，你会怎么做？</p><p>2、团队中包含ABCD4个人，请明确每个人负责的事情和DDL以及彼此之间的协作衔接依赖关系</p><p>3、请根据项目情况和人员分工输出一个项目协作计划文档，包含任务截止时间与任务依赖关系</p><p><strong>第一步，收集项目信息：</strong></p><p>首先需要收集项目的目标、范围、时间、成本、质量等方面的信息。这些信息可以通过项目管理工具、会议记录、邮件等方式收集。</p><p><strong>第二步，输入数据到ChatGPT中：</strong></p><p>将项目的目标、范围、时间、成本、质量等方面的信息输入到ChatGPT中进行学习，让ChatGPT能够理解这些数据的含义和用法。</p><p><strong>第三步，创建项目计划：</strong></p><p>根据项目信息和ChatGPT生成的结果，创建项目计划。</p><p>项目计划可以包括项目的目标、范围、时间、成本、质量等方面的信息，以及每个团队或个人要执行的具体任务、每个任务最后期限和任何事情之间的依赖关系等信息。</p><p><strong>第四步，分配任务和角色：</strong></p><p>根据项目计划，分配任务和角色给每个团队或个人。</p><p>通过ChatGPT生成的结果，让员工更容易理解他们的角色和职责，明确每个团队或个人需要完成的具体任务和时间节点。</p><p><strong>第五步，维护项目计划：</strong></p><p>在项目执行的过程中，需要不断维护项目计划。根据实际情况和进展情况，不断调整和优化项目计划，以确保项目能够按时、按质量、按预算完成。</p><h3 id="举例："><a href="#举例：" class="headerlink" title="举例："></a><strong>举例：</strong></h3><p><strong>问题输入1：请学习以下信息</strong></p><p><img src="/img/sc/036.png"></p><p><img src="/img/sc/037.png"></p><p><strong>问题输入2：创建项目计划</strong></p><p><img src="/img/sc/038.png"></p><p><strong>问题输入3：人员分工</strong></p><p><img src="/img/sc/039.png"></p>]]></content>
     
     
     <categories>
@@ -722,6 +695,33 @@
       <tag>网页美化</tag>
       
       <tag>fluid主题</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>10-如何让ChatGPT根据不同来源的数据进行调整</title>
+    <link href="/2023/10-12-chatgpt010.html"/>
+    <url>/2023/10-12-chatgpt010.html</url>
+    
+    <content type="html"><![CDATA[<h2 id="10-如何让ChatGPT根据不同来源的数据，例如销售数据、客户反馈、财务报告，自动生成报告，并根据不同利益方的需要和偏好进行调整？"><a href="#10-如何让ChatGPT根据不同来源的数据，例如销售数据、客户反馈、财务报告，自动生成报告，并根据不同利益方的需要和偏好进行调整？" class="headerlink" title="10-如何让ChatGPT根据不同来源的数据，例如销售数据、客户反馈、财务报告，自动生成报告，并根据不同利益方的需要和偏好进行调整？"></a><strong>10-如何让ChatGPT根据不同来源的数据，例如销售数据、客户反馈、财务报告，自动生成报告，并根据不同利益方的需要和偏好进行调整？</strong></h2><h3 id="该场景对应的关键词库（24个）"><a href="#该场景对应的关键词库（24个）" class="headerlink" title="该场景对应的关键词库（24个）"></a><strong>该场景对应的关键词库（24个）</strong></h3><p>汇报对象身份（下属、跨部门平级、领导）、销售数据（销售额、销售量、销售渠道）、财务报告（营业收入、净利润、成本费用）、市场分析（市场份额、竞争情况、市场趋势）、客户反馈（客户满意度、客户投诉、客户留存率）、营销效果评估（广告投放效果、促销活动效果、营销策略效果）</p><h3 id="提问模板"><a href="#提问模板" class="headerlink" title="提问模板"></a><strong>提问模板</strong></h3><p>1、请根据已有的不同来源的数据，生成详细的报告，分别汇报给下属、跨部门平级和领导</p><p>2、请根据给出的数据，回答以下问题，并给出结论与图表</p><p>​                ● 最近一个季度的销售趋势如何？导致销售量变化的因素有哪些？</p><p>​                ● 客户反馈如何反映我们的营销策略效果？根据客户反馈，我们可以做出哪些调整？</p><p>​                ● 我们营销活动的投资回报率是多少？如何优化我们的营销支出以在下一个季度获得更好的效果？</p><p>3、请根据数据报表，提炼3个重要结论汇报给领导</p><p><strong>第一步，明确进行数据分析的目标</strong></p><p>确定目标是理解业务、优化业务还是预测未来</p><p><strong>第二步，收集整理与清洗相关数据</strong></p><p>收集整理销售数据、客户反馈、财务报告等方面的数据，可以通过公司的数据库、营销工具、调查问卷等方式收集。完成后做简单的数据清洗。</p><p><strong>第三步，让ChatGPT学习相关数据含义和用法</strong></p><p>将不同来源的数据输入到ChatGPT中进行学习，让ChatGPT能够理解这些数据的含义和用法。这些数据可以包括销售额、销售量、客户满意度、市场份额、竞争情况、营销费用等信息。</p><p><strong>第四步，进行数据分析给出重要结论</strong></p><p>通过ChatGPT生成的结果，分析不同来源的数据，根据以下几个方面得出重要结论</p><p>提高销售额和市场份额的营销策略和活动：例如降低产品价格、提供更好的售后服务、优化产品设计和功能、增加市场推广力度等。</p><p>影响客户满意度和忠诚度的因素：例如产品质量、服务质量、品牌形象、价格竞争力等。</p><p>影响财务报告的因素：例如销售额、毛利率、净利润、营销费用占比等。</p><p><strong>第五步，根据汇报对象身份进行可视化调整</strong></p><p>报告可以包括销售趋势、客户分析、竞争分析、市场细分、营销效果评估等方面的信息。</p><p>针对不同身份的人的营销报告的不同之处：</p><p><strong>下属：对于下属，营销报告需要更加直观和易懂。</strong></p><p>需要突出产品和服务的优势和特点，以及营销策略和活动的效果和影响。同时，需要将报告的重点放在实际操作和执行方面，为下属提供具体的指导和建议，帮助下属更好地完成任务和达成目标。</p><p><strong>跨部门平级：对于跨部门平级，营销报告需要更加全面和详细。</strong></p><p>需要涵盖不同部门和领域的数据和信息，以便平级的同事了解整个公司的营销情况和趋势。同时，需要突出不同部门和领域之间的联系和协作，为跨部门合作提供参考和支持。</p><p><strong>领导：对于领导，营销报告需要更加战略性和全局性。</strong></p><p>需要突出市场和客户的需求和状况，分析企业的竞争优势和挑战，提出未来的发展方向和策略。同时，需要突出财务和经营状况的重要性和影响，为领导的决策提供有力支持和参考。</p><p><strong>注意事项：</strong></p><p>务必注意保护数据的隐私和安全，遵守相关政策。</p><h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a><strong>举例</strong></h3><p><strong>问题输入1：请学习以下一个完整的营销数据报表</strong></p><p><img src="/img/sc/029.png"></p><p><strong>问题输入2：针对下属调整营销报告</strong></p><p><img src="/img/sc/030.png"></p><p><img src="/img/sc/031.png"></p><p><strong>3、针对跨部门平级调整营销报告</strong></p><p><img src="/img/sc/032.png"></p><p><img src="/img/sc/033.png"></p><p><strong>4、针对领导调整营销报告</strong></p><p><img src="/img/sc/034.png"></p><p><img src="/img/sc/035.png"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>ChatGPT</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>ChatGPT</tag>
+      
+      <tag>提问技巧</tag>
       
     </tags>
     
