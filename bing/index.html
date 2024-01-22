@@ -801,18 +801,26 @@ function set_video_attr(id) {
     video_item.setAttribute("width", "auto");
   }
 }
-     video_url = "https://cloud.zzzwb.com:60443/videobg.php";
-     pre_show_image_url = "https://api.zzzwb.com/v1?get=wallpaper&device=phone&category=dm&data=pic&type=img";
-     banner_obj = document.getElementById("bannerimg");
-     banner_obj.style.cssText ="background: url('" + pre_show_image_url + "') no-repeat;";
 
+//$.getJSON("https://cloud.zzzwb.com:60443/blog/js/zidingyi/json/video.json", function (data) {
+//  if (true) {
+//    var video_list_length = data.length;
+//    var seed = Math.random();
+//    index = Math.floor(seed * video_list_length);
 
-    vvd_banner_obj = document.getElementById("vvd_banner_img");
-    vvd_banner_content =
-      "<img id='banner_img_item' src='" +
-      pre_show_image_url +
-      "'style='position: fixed;z-index: -999;top: 0;left: 0;width: -webkit-fill-available;height: -webkit-fill-available;'>";
-    vvd_banner_obj.innerHTML = vvd_banner_content;
+//    video_url = data[index][0];
+//    pre_show_image_url = data[index][1];
+       video_url = "https://cloud.zzzwb.com:60443/videobg.php";
+//    banner_obj = document.getElementById("bannerimg");
+//    banner_obj.style.cssText =
+//      "background: url('" + pre_show_image_url + "') no-repeat;";
+
+//    vvd_banner_obj = document.getElementById("vvd_banner_img");
+//    vvd_banner_content =
+//      "<img id='banner_img_item' src='" +
+//      pre_show_image_url +
+//      "'style='position: fixed; z-index: -999'>";
+//    vvd_banner_obj.innerHTML = vvd_banner_content;
 
     if (!isMobile) {
       video_html_res =
@@ -821,12 +829,17 @@ function set_video_attr(id) {
         " autoplay='autoplay' loop='loop'></video>";
       document.getElementById("banner_video_insert").innerHTML = video_html_res;
       set_video_attr("video_item");
+//      set_video_attr("banner_img_item");
+//    }
+//  }
+//});
 }
 
 if (!isMobile) {
   document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("resize", function () {
       set_video_attr("video_item");
+//      set_video_attr("banner_img_item");
     });
   });
 }
