@@ -1498,15 +1498,15 @@ function set_video_attr(id) {
   }
 }
 
-//$.getJSON("https://cloud.zzzwb.com:60443/blog/js/zidingyi/json/video.json", function (data) {
-//  if (true) {
-//    var video_list_length = data.length;
-//    var seed = Math.random();
-//    index = Math.floor(seed * video_list_length);
+$.getJSON("https://cloud.zzzwb.com:60443/blog/js/zidingyi/json/video-0001.json", function (data) {
+  if (true) {
+    var video_list_length = data.length;
+    var seed = Math.random();
+    index = Math.floor(seed * video_list_length);
 
-//    video_url = data[index][0];
+    video_url = data[index][0];
 //    pre_show_image_url = data[index][1];
-       video_url = "https://cloud.zzzwb.com:60443/videobg.php";
+
 //    banner_obj = document.getElementById("bannerimg");
 //    banner_obj.style.cssText =
 //      "background: url('" + pre_show_image_url + "') no-repeat;";
@@ -1526,10 +1526,9 @@ function set_video_attr(id) {
       document.getElementById("banner_video_insert").innerHTML = video_html_res;
       set_video_attr("video_item");
 //      set_video_attr("banner_img_item");
-//    }
-//  }
-//});
-}
+    }
+  }
+});
 
 if (!isMobile) {
   document.addEventListener("DOMContentLoaded", function () {
