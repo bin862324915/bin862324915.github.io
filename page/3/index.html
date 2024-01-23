@@ -1390,13 +1390,13 @@ subtitleElement.classList.add('subtitle-ys');
       
         jQuery.ajax({
           type: 'GET',
-          url: 'https://v1.hitokoto.cn/',
+          url: 'https://api.zzzwb.com/v1?get=hitokoto',
           headers: {},
           dataType: 'json',
           success: function(result) {
             var apiText;
             if (result) {
-              var keys = 'hitokoto'.split(',');
+              var keys = 'data,hitokoto'.split(',');
               if (result instanceof Array) {
                 result = result[0];
               }
@@ -1414,7 +1414,7 @@ subtitleElement.classList.add('subtitle-ys');
           },
           error: function(xhr, status, error) {
             if (error) {
-              console.error('Failed to request https://v1.hitokoto.cn/:', error);
+              console.error('Failed to request https://api.zzzwb.com/v1?get=hitokoto:', error);
             }
             typing(text);
           }
