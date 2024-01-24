@@ -18,27 +18,27 @@
   <meta name="author" content="Wenbin">
   <meta name="keywords" content="前端技术，python，人工智能，个人博客">
   
-    <meta name="description" content="01-如何用ChatGPT做品牌项目的二手信息搜集该场景对应的关键词库（25个）品牌案例、竞品、信息来源、项目分析、官方渠道、品类、品牌、节日节庆、明星、国家、奖项、代理商、项目名称、项目描述、品牌介绍、竞争情况、运营数据、财务信息、交易信息、法律问题、网络平台、行业人士、品牌拥有者、报纸杂志、研究报告 提问模板： 模板1：特定模式针对品牌自身信息的搜集，可参考如下提问方式： 假设你是一个世界一流">
+    <meta name="description" content="这马上就要到2024了，发现最近这几天各大平台也陆续的新添加了用户头像挂件的装饰，迎接2024年的到来。于是想到，我的博客中评论区不也是有用户头像嘛。这不，趁这会有空，马上就着手开搞。首先分析一下twikoo评论系统的架构及css样式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="01-如何用ChatGPT做品牌项目的二手信息搜集">
-<meta property="og:url" content="https://www.zzzwb.com/2023/08-30-chatgpt001.html">
+<meta property="og:title" content="fluid主题-twikoo评论系统添加头像挂件">
+<meta property="og:url" content="https://www.zzzwb.com/2023/12-27-css004.html">
 <meta property="og:site_name" content="Wenbin&#39;s blog">
-<meta property="og:description" content="01-如何用ChatGPT做品牌项目的二手信息搜集该场景对应的关键词库（25个）品牌案例、竞品、信息来源、项目分析、官方渠道、品类、品牌、节日节庆、明星、国家、奖项、代理商、项目名称、项目描述、品牌介绍、竞争情况、运营数据、财务信息、交易信息、法律问题、网络平台、行业人士、品牌拥有者、报纸杂志、研究报告 提问模板： 模板1：特定模式针对品牌自身信息的搜集，可参考如下提问方式： 假设你是一个世界一流">
+<meta property="og:description" content="这马上就要到2024了，发现最近这几天各大平台也陆续的新添加了用户头像挂件的装饰，迎接2024年的到来。于是想到，我的博客中评论区不也是有用户头像嘛。这不，趁这会有空，马上就着手开搞。首先分析一下twikoo评论系统的架构及css样式">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://imgsrc.baidu.com/forum/pic/item/6159252dd42a2834f6e4483e1db5c9ea15cebf41.jpg">
-<meta property="article:published_time" content="2023-08-30T13:51:00.000Z">
-<meta property="article:modified_time" content="2023-12-07T03:26:23.842Z">
+<meta property="og:image" content="https://imgsrc.baidu.com/forum/pic/item/8c1001e93901213f547e30e912e736d12f2e95b2.jpg">
+<meta property="article:published_time" content="2023-12-27T14:31:44.000Z">
+<meta property="article:modified_time" content="2024-01-24T15:36:38.080Z">
 <meta property="article:author" content="Wenbin">
-<meta property="article:tag" content="ChatGPT">
-<meta property="article:tag" content="提问技巧">
+<meta property="article:tag" content="网页美化">
+<meta property="article:tag" content="fluid主题">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://imgsrc.baidu.com/forum/pic/item/6159252dd42a2834f6e4483e1db5c9ea15cebf41.jpg">
+<meta name="twitter:image" content="https://imgsrc.baidu.com/forum/pic/item/8c1001e93901213f547e30e912e736d12f2e95b2.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>01-如何用ChatGPT做品牌项目的二手信息搜集 - Wenbin&#39;s blog</title>
+  <title>fluid主题-twikoo评论系统添加头像挂件 - Wenbin&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -413,7 +413,7 @@ var _hmt = _hmt || [];
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="01-如何用ChatGPT做品牌项目的二手信息搜集"></span>
+            <span id="subtitle" data-typed-text="fluid主题-twikoo评论系统添加头像挂件"></span>
           
         </div>
 
@@ -429,8 +429,8 @@ var _hmt = _hmt || [];
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-08-30 21:51" pubdate>
-          2023年8月30日 晚上
+        <time datetime="2023-12-27 22:31" pubdate>
+          2023年12月27日 晚上
         </time>
       </span>
     
@@ -441,7 +441,7 @@ var _hmt = _hmt || [];
       <span class="post-meta mr-2">
         <i class="iconfont icon-a-tongjishuju"></i>
         
-          588 字
+          886 字
         
       </span>
     
@@ -452,7 +452,7 @@ var _hmt = _hmt || [];
         
         
         
-          5 分钟
+          8 分钟
         
       </span>
     
@@ -499,12 +499,12 @@ var _hmt = _hmt || [];
       <div class="container nopadding-x-md" id="board-ctn">
         <div class=py-5 id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">01-如何用ChatGPT做品牌项目的二手信息搜集</h1>
+            <h1 id="seo-header">fluid主题-twikoo评论系统添加头像挂件</h1>
             
               <p class="note note-warning">
                 
                   
-                    本文最后更新于：2023年12月7日 上午
+                    本文最后更新于：2024年1月24日 晚上
                   
                 
               </p>
@@ -512,30 +512,36 @@ var _hmt = _hmt || [];
             
               <div class="markdown-body">
                 
-                <h2 id="01-如何用ChatGPT做品牌项目的二手信息搜集"><a href="#01-如何用ChatGPT做品牌项目的二手信息搜集" class="headerlink" title="01-如何用ChatGPT做品牌项目的二手信息搜集"></a><strong>01-如何用ChatGPT做品牌项目的二手信息搜集</strong></h2><h3 id="该场景对应的关键词库（25个）"><a href="#该场景对应的关键词库（25个）" class="headerlink" title="该场景对应的关键词库（25个）"></a><strong>该场景对应的关键词库（25个）</strong></h3><p>品牌案例、竞品、信息来源、项目分析、官方渠道、品类、品牌、节日节庆、明星、国家、奖项、代理商、项目名称、项目描述、品牌介绍、竞争情况、运营数据、财务信息、交易信息、法律问题、网络平台、行业人士、品牌拥有者、报纸杂志、研究报告</p>
-<p><strong>提问模板：</strong></p>
-<h3 id="模板1：特定模式"><a href="#模板1：特定模式" class="headerlink" title="模板1：特定模式"></a><strong>模板1：特定模式</strong></h3><p>针对品牌自身信息的搜集，可参考如下提问方式：</p>
-<p>假设你是一个世界一流的品牌案例分析师，请根据“XX”品牌，帮我搜集5篇非官方渠道的内容，可包含竞品分析和用户画像等内容，并附上信息来源渠道。</p>
-<h3 id="模板2：代理模式"><a href="#模板2：代理模式" class="headerlink" title="模板2：代理模式"></a><strong>模板2：代理模式</strong></h3><p>针对品牌之间联名的项目相关信息搜集，可参考如下提问方式：</p>
-<p>假设你是一个世界一流的品牌案例分析师，请根据以下信息，帮我搜集10篇内容，并附上信息来源渠道。</p>
-<p>品牌名：XXX</p>
-<p>项目名称：“XXX”</p>
-<p>项目时间：XXX</p>
-<h3 id="模板3：混合模式"><a href="#模板3：混合模式" class="headerlink" title="模板3：混合模式"></a><strong>模板3：混合模式</strong></h3><p>针对品牌特殊时间节点营销事件的相关信息收集，可参考如下提问方式：</p>
-<p>假设你是一个世界一流的品牌案例分析师，请根据如下信息，帮我搜集10篇内容，并附上信息来源渠道：</p>
-<p>品类：XXX</p>
-<p>品牌：XXX</p>
-<p>节日：XXX</p>
-<p>联名：XXX</p>
-<p>类型：XXX</p>
-<p>国家：XXX</p>
-<h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a><strong>举例</strong></h3><p><strong>假设你是一个世界一流的品牌案例分析师，请根据如下信息，帮我搜集10篇内容，并附上信息来源渠道：</strong></p>
-<p><strong>品类：餐饮类</strong></p>
-<p><strong>品牌：瑞幸咖啡</strong></p>
-<p><strong>节日：2023年情人节</strong></p>
-<p><strong>联名：线条小狗</strong></p>
-<p><strong>类型：“修狗爱情故事”限定饮品</strong></p>
-<p><strong>国家：中国</strong><br><img src="/img/sc/gpt001.png" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload></p>
+                <h2 id="twikoo评论系统添加头像挂件"><a href="#twikoo评论系统添加头像挂件" class="headerlink" title="twikoo评论系统添加头像挂件"></a>twikoo评论系统添加头像挂件</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>  这马上就要到2024了，发现最近这几天各大平台也陆续的新添加了用户头像挂件的装饰，迎接2024年的到来。于是想到，我的博客中评论区不也是有用户头像嘛。这不，趁这会有空，马上就着手开搞。</p>
+<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>首先分析一下twikoo评论系统的架构及css样式，可以看到整个评论区都是包含在id为<code>twikoo</code>的div块里的</p>
+<p><img src="https://imgsrc.baidu.com/forum/pic/item/b64543a98226cffc0afe2c8aff014a90f603ea36.jpg" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload></p>
+<p>然后逐步定位到用于展示头像图片的div块，可以看到是类名为<code>tk-avatar-img</code>的img标签，并且都是在父块<code>tk-comment</code>类名下的，定位到了头像展示的块，这下就好办了</p>
+<p><img src="https://imgsrc.baidu.com/forum/pic/item/a1ec08fa513d26971f049b6513fbb2fb4316d837.jpg" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload></p>
+<h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><p>直接用css的伪元素<code>::before</code>进行装饰，实现代码如下</p>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">.tk-comment .tk-avatar.tk-has-avatar::before</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> -12px<span class="token punctuation">;</span>
+    <span class="token property">margin-top</span><span class="token punctuation">:</span> -10px<span class="token punctuation">;</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 3.7rem<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 3.7rem<span class="token punctuation">;</span>
+    <span class="token property">opacity</span><span class="token punctuation">:</span> .9<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>../txk/src/001.gif<span class="token punctuation">)</span></span> center/cover<span class="token punctuation">;</span>
+    <span class="token property">pointer-events</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+    <span class="token property">z-index</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>因为这个ccs定位会覆盖回复块的用户头像，但是回复块的用户头像显示是比较小的，不建议添加，因为添加了感觉也不好看，反而有点别扭了，所以需要新增css样式来屏蔽掉回复块的用户头像挂件装饰。代码如下</p>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">.tk-submit .tk-row .tk-avatar.tk-has-avatar::before</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> unset<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">.tk-replies .tk-comment .tk-avatar.tk-has-avatar::before</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> unset<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>注意，有两个显示头像的地方需要屏蔽，一个是回复框里的，一个是展示回复的，添加以上css样式后刷新一下网页即可看到效果。</p>
+<p>其他评论系统同理，只要找到展示用户头像的块，然后利用css的伪元素<code>::before</code>进行装饰即可。</p>
 
                 
               </div>
@@ -579,7 +585,7 @@ var _hmt = _hmt || [];
     
       <span class="category-chain">
         
-  <a href="/categories/ChatGPT/" class="hover-with-bg">ChatGPT</a>
+  <a href="/categories/hexo/" class="hover-with-bg">hexo</a>
   
   
 
@@ -594,9 +600,9 @@ var _hmt = _hmt || [];
     <div class="post-meta">
       <i class="iconfont icon-tags-fill"></i>
       
-        <a class="hover-with-bg" href="/tags/ChatGPT/" class="print-no-link"> ChatGPT</a>
+        <a class="hover-with-bg" href="/tags/%E7%BD%91%E9%A1%B5%E7%BE%8E%E5%8C%96/" class="print-no-link"> 网页美化</a>
       
-        <a class="hover-with-bg" href="/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/" class="print-no-link"> 提问技巧</a>
+        <a class="hover-with-bg" href="/tags/fluid%E4%B8%BB%E9%A2%98/" class="print-no-link"> fluid主题</a>
       
     </div>
   
@@ -624,7 +630,7 @@ var _hmt = _hmt || [];
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href=https://www.zzzwb.com/2023/08-30-chatgpt001.html>https://www.zzzwb.com/2023/08-30-chatgpt001.html</a>
+                    <a href=https://www.zzzwb.com/2023/12-27-css004.html>https://www.zzzwb.com/2023/12-27-css004.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -657,18 +663,12 @@ var _hmt = _hmt || [];
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/09-01-zaixianaiwangzhan.html" class="common-chip text-ellipsis">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">目前可以免费AI绘画的6个宝藏级别的AI网站</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/08-29-aihhfooocus.html" class="common-chip text-ellipsis">
-                        <span class="hidden-mobile">免费畅玩AI绘图！fooocus（附安装包）</span>
+                      <a href="/2023/12-26-jshqysdff.html" class="common-chip text-ellipsis">
+                        <span class="hidden-mobile">JS获取随机颜色的三种方法</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

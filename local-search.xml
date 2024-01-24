@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>fluid主题-twikoo评论系统添加头像挂件</title>
+    <link href="/2023/12-27-css004.html"/>
+    <url>/2023/12-27-css004.html</url>
+    
+    <content type="html"><![CDATA[<h2 id="twikoo评论系统添加头像挂件"><a href="#twikoo评论系统添加头像挂件" class="headerlink" title="twikoo评论系统添加头像挂件"></a>twikoo评论系统添加头像挂件</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>  这马上就要到2024了，发现最近这几天各大平台也陆续的新添加了用户头像挂件的装饰，迎接2024年的到来。于是想到，我的博客中评论区不也是有用户头像嘛。这不，趁这会有空，马上就着手开搞。</p><h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>首先分析一下twikoo评论系统的架构及css样式，可以看到整个评论区都是包含在id为<code>twikoo</code>的div块里的</p><p><img src="https://imgsrc.baidu.com/forum/pic/item/b64543a98226cffc0afe2c8aff014a90f603ea36.jpg"></p><p>然后逐步定位到用于展示头像图片的div块，可以看到是类名为<code>tk-avatar-img</code>的img标签，并且都是在父块<code>tk-comment</code>类名下的，定位到了头像展示的块，这下就好办了</p><p><img src="https://imgsrc.baidu.com/forum/pic/item/a1ec08fa513d26971f049b6513fbb2fb4316d837.jpg"></p><h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><p>直接用css的伪元素<code>::before</code>进行装饰，实现代码如下</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">.tk-comment .tk-avatar.tk-has-avatar::before</span> <span class="token punctuation">&#123;</span>    <span class="token property">margin-left</span><span class="token punctuation">:</span> -12px<span class="token punctuation">;</span>    <span class="token property">margin-top</span><span class="token punctuation">:</span> -10px<span class="token punctuation">;</span>    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>    <span class="token property">width</span><span class="token punctuation">:</span> 3.7rem<span class="token punctuation">;</span>    <span class="token property">height</span><span class="token punctuation">:</span> 3.7rem<span class="token punctuation">;</span>    <span class="token property">opacity</span><span class="token punctuation">:</span> .9<span class="token punctuation">;</span>    <span class="token property">background</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>../txk/src/001.gif<span class="token punctuation">)</span></span> center/cover<span class="token punctuation">;</span>    <span class="token property">pointer-events</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>    <span class="token property">z-index</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>因为这个ccs定位会覆盖回复块的用户头像，但是回复块的用户头像显示是比较小的，不建议添加，因为添加了感觉也不好看，反而有点别扭了，所以需要新增css样式来屏蔽掉回复块的用户头像挂件装饰。代码如下</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">.tk-submit .tk-row .tk-avatar.tk-has-avatar::before</span> <span class="token punctuation">&#123;</span>    <span class="token property">background</span><span class="token punctuation">:</span> unset<span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span class="token selector">.tk-replies .tk-comment .tk-avatar.tk-has-avatar::before</span> <span class="token punctuation">&#123;</span>    <span class="token property">background</span><span class="token punctuation">:</span> unset<span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>注意，有两个显示头像的地方需要屏蔽，一个是回复框里的，一个是展示回复的，添加以上css样式后刷新一下网页即可看到效果。</p><p>其他评论系统同理，只要找到展示用户头像的块，然后利用css的伪元素<code>::before</code>进行装饰即可。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>hexo</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>网页美化</tag>
+      
+      <tag>fluid主题</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>JS获取随机颜色的三种方法</title>
     <link href="/2023/12-26-jshqysdff.html"/>
     <url>/2023/12-26-jshqysdff.html</url>
