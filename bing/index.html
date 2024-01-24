@@ -26,7 +26,7 @@
 <meta property="og:description" content="@media (max-width: 1199.98px) { .bing-tk {     display: flex;     padding-top: 10px;     overflow: visible;     margin-right: -6em;     flex-wrap: wrap;     margin-left: 2em; } .bing {     width: cal">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-10-17T07:41:54.000Z">
-<meta property="article:modified_time" content="2023-12-16T08:25:45.938Z">
+<meta property="article:modified_time" content="2024-01-24T09:39:25.562Z">
 <meta property="article:author" content="Wenbin">
 <meta property="article:tag" content="前端技术，python，人工智能，个人博客">
 <meta name="twitter:card" content="summary_large_image">
@@ -472,8 +472,9 @@ var _hmt = _hmt || [];
 
 <div class="bing-tk">
 </div>
-<div id="jiazaiButton" style="text-align: center; margin-top: 20px;">
+<div id="jiazaiButton" style="text-align: center; margin-top: 3rem; margin-bottom: 10rem;">
   <button id="loadMoreButton" class="at_button">加载更多...</button>
+<hr>
 </div>
   <script src="https://cloud.zzzwb.com:60443/blog/js/zidingyi/av-min.js"></script>
   <script src="/js/zidingyi/mrbz.js"></script>
@@ -494,6 +495,47 @@ function imgloading(oImg) {
 
 
   
+  
+  
+    <article id="comments">
+      
+  <div id="twikoo"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#comments', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/twikoo/1.6.27/twikoo.min.js', function() {
+        var options = Object.assign(
+          {"envId":"https://twikoojs.zzzwb.com/","region":null,"path":"window.location.pathname"},
+          {
+            el: '#twikoo',
+            path: 'window.location.pathname',
+            onCommentLoaded: function() {
+              Fluid.utils.listenDOMLoaded(function() {
+                var imgSelector = '#twikoo .tk-content img:not(.tk-owo-emotion)';
+                Fluid.plugins.imageCaption(imgSelector);
+                Fluid.plugins.fancyBox(imgSelector);
+                var pltjElement = document.getElementById('pltj');
+                if (pltjElement) {
+                  var plnum = e.comments[0].children[0].firstElementChild.childNodes[0].nextElementSibling.childNodes[0].__vue__._data.count;
+                  var plnumtElement = document.querySelector('#plnum');
+                  plnumtElement.textContent = plnum;
+                  pltjElement.style.display = 'inline';
+                } else {
+                  return;
+}
+              });
+            }
+          }
+        )
+        twikoo.init(options)
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
 
 </article>
 
