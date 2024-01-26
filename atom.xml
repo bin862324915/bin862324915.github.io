@@ -107,6 +107,27 @@
   </entry>
   
   <entry>
+    <title>BenAPI使用文档</title>
+    <link href="https://www.zzzwb.com/2023/12-06-Benapi.html"/>
+    <id>https://www.zzzwb.com/2023/12-06-Benapi.html</id>
+    <published>2023-12-06T08:15:12.000Z</published>
+    <updated>2024-01-26T08:47:30.051Z</updated>
+    
+    
+    <summary type="html">本文是Benapi项目的使用文档，在使用过程中，可以参照本文提供的参数说明进行调用Benapi接口，遇到问题也可以在本文评论区反馈！</summary>
+    
+    
+    
+    <category term="个人项目" scheme="https://www.zzzwb.com/categories/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+    <category term="Benapi" scheme="https://www.zzzwb.com/tags/Benapi/"/>
+    
+    <category term="文档" scheme="https://www.zzzwb.com/tags/%E6%96%87%E6%A1%A3/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CSS实现图片光影滑过实例</title>
     <link href="https://www.zzzwb.com/2023/11-27-css003.html"/>
     <id>https://www.zzzwb.com/2023/11-27-css003.html</id>
@@ -315,9 +336,9 @@
     
     
     
-    <category term="hexo" scheme="https://www.zzzwb.com/categories/hexo/"/>
-    
     <category term="个人项目" scheme="https://www.zzzwb.com/categories/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="hexo" scheme="https://www.zzzwb.com/categories/hexo/"/>
     
     
     <category term="hexo" scheme="https://www.zzzwb.com/tags/hexo/"/>
@@ -460,9 +481,9 @@
     
     
     
-    <category term="hexo" scheme="https://www.zzzwb.com/categories/hexo/"/>
-    
     <category term="个人项目" scheme="https://www.zzzwb.com/categories/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="hexo" scheme="https://www.zzzwb.com/categories/hexo/"/>
     
     
     <category term="hexo" scheme="https://www.zzzwb.com/tags/hexo/"/>
@@ -519,33 +540,6 @@
         
         
     <summary type="html">&lt;h2 id=&quot;15-如何用ChatGPT搭建品牌文本体系？（品牌名-slogan-品牌故事）&quot;&gt;&lt;a href=&quot;#15-如何用ChatGPT搭建品牌文本体系？（品牌名-slogan-品牌故事）&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="ChatGPT" scheme="https://www.zzzwb.com/categories/ChatGPT/"/>
-    
-    
-    <category term="ChatGPT" scheme="https://www.zzzwb.com/tags/ChatGPT/"/>
-    
-    <category term="提问技巧" scheme="https://www.zzzwb.com/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>14-如何用ChatGPT写专业方向的科普内容</title>
-    <link href="https://www.zzzwb.com/2023/10-21-chatgpt014.html"/>
-    <id>https://www.zzzwb.com/2023/10-21-chatgpt014.html</id>
-    <published>2023-10-21T06:14:33.000Z</published>
-    <updated>2023-12-07T03:26:23.842Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;14-如何用ChatGPT写专业方向的科普内容？&quot;&gt;&lt;a href=&quot;#14-如何用ChatGPT写专业方向的科普内容？&quot; class=&quot;headerlink&quot;</summary>
         
       
     
