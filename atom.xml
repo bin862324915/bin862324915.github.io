@@ -6,7 +6,7 @@
   <link href="https://www.zzzwb.com/atom.xml" rel="self"/>
   
   <link href="https://www.zzzwb.com/"/>
-  <updated>2024-01-24T15:36:38.080Z</updated>
+  <updated>2024-02-02T06:35:16.554Z</updated>
   <id>https://www.zzzwb.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>学会钝感力-让生活更加轻松自在</title>
+    <link href="https://www.zzzwb.com/2023/12-29-post001.html"/>
+    <id>https://www.zzzwb.com/2023/12-29-post001.html</id>
+    <published>2023-12-29T11:17:59.000Z</published>
+    <updated>2024-02-02T06:35:16.554Z</updated>
+    
+    
+    <summary type="html">钝感力是指一个人应对逆境、压力和挫折的能力。它涉及到个体在面对困难、挑战或创伤时，能够迅速恢复并保持积极心态、适应能力和自我调节能力的能力。日本作家渡边淳一在自己的著作《钝感力》中写道，敏感的对立面就是钝感。</summary>
+    
+    
+    
+    <category term="life" scheme="https://www.zzzwb.com/categories/life/"/>
+    
+    
+    <category term="life" scheme="https://www.zzzwb.com/tags/life/"/>
+    
+    <category term="日常随笔" scheme="https://www.zzzwb.com/tags/%E6%97%A5%E5%B8%B8%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>fluid主题-twikoo评论系统添加头像挂件</title>
@@ -524,33 +545,6 @@
     <category term="python" scheme="https://www.zzzwb.com/tags/python/"/>
     
     <category term="爬虫" scheme="https://www.zzzwb.com/tags/%E7%88%AC%E8%99%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>15-如何用ChatGPT搭建品牌文本体系</title>
-    <link href="https://www.zzzwb.com/2023/10-22-chatgpt015.html"/>
-    <id>https://www.zzzwb.com/2023/10-22-chatgpt015.html</id>
-    <published>2023-10-22T06:18:33.000Z</published>
-    <updated>2023-12-07T03:26:23.842Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;15-如何用ChatGPT搭建品牌文本体系？（品牌名-slogan-品牌故事）&quot;&gt;&lt;a href=&quot;#15-如何用ChatGPT搭建品牌文本体系？（品牌名-slogan-品牌故事）&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="ChatGPT" scheme="https://www.zzzwb.com/categories/ChatGPT/"/>
-    
-    
-    <category term="ChatGPT" scheme="https://www.zzzwb.com/tags/ChatGPT/"/>
-    
-    <category term="提问技巧" scheme="https://www.zzzwb.com/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
     
   </entry>
   
