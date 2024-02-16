@@ -27,7 +27,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://imgsrc.baidu.com/forum/pic/item/d62a6059252dd42ae94c7f9e453b5bb5c9eab8ba.jpg">
 <meta property="article:published_time" content="2023-09-04T11:07:02.000Z">
-<meta property="article:modified_time" content="2023-11-03T15:58:54.349Z">
+<meta property="article:modified_time" content="2024-02-16T02:35:55.539Z">
 <meta property="article:author" content="Wenbin">
 <meta property="article:tag" content="FFmpeg">
 <meta property="article:tag" content="影音处理">
@@ -504,7 +504,7 @@ var _hmt = _hmt || [];
               <p class="note note-warning">
                 
                   
-                    本文最后更新于：2023年11月3日 晚上
+                    本文最后更新于：2024年2月16日 上午
                   
                 
               </p>
@@ -626,7 +626,7 @@ draw&#x3D;lt(mod(t\,3)\,1)<span aria-hidden="true" class="line-numbers-rows"><sp
 <h5 id="同时添加水印跟封面图片"><a href="#同时添加水印跟封面图片" class="headerlink" title="同时添加水印跟封面图片"></a><strong>同时添加水印跟封面图片</strong></h5><pre class="line-numbers language-none"><code class="language-none">ffmpeg -hide_banner -i 222.mp4 -i F:\ffmpeg\sy.png -i F:\ffmpeg\cover.png -filter_complex [1]scale&#x3D;200:200[wm];[0][wm]&quot;overlay&#x3D;&#39;main_w-overlay_w-10:main_h-overlay_h-10&#39;:enable&#x3D;&#39;between(t,5,15)&#39;[wm]&quot; -map &quot;[wm]&quot; -map 2 -c:v:1 -c:a:1 png -disposition:v:1 attached_pic 6616.mp4<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>#以上代码合成后会没声音</p>
-<h5 id="视频添加备注信息"><a href="#视频添加备注信息" class="headerlink" title="视频添加备注信息"></a><strong>视频添加备注信息</strong></h5><pre class="line-numbers language-none"><code class="language-none">ffmpeg -i 30秒.mp4 -metadata comment&#x3D;&quot;关注微信公众号【海豚学长】获取更多最新影视资源&quot; -vcodec copy -acodec copy output.mp4 -y<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h5 id="视频添加备注信息"><a href="#视频添加备注信息" class="headerlink" title="视频添加备注信息"></a><strong>视频添加备注信息</strong></h5><pre class="line-numbers language-none"><code class="language-none">ffmpeg -i 30秒.mp4 -metadata comment&#x3D;&quot;这是一个备注说明&quot; -vcodec copy -acodec copy output.mp4 -y<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>#添加视频的备注信息并保持原来的音视频质量输出</p>
 <h5 id=""><a href="#" class="headerlink" title=""></a></h5><h5 id="录制屏幕"><a href="#录制屏幕" class="headerlink" title="录制屏幕"></a><strong>录制屏幕</strong></h5><pre class="line-numbers language-none"><code class="language-none">ffmpeg -f gdigrab -i desktop -f dshow -i audio&#x3D;&quot;virtual-audio-capturer&quot; test.mp4<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
