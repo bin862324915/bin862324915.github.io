@@ -27,7 +27,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://imgsrc.baidu.com/forum/pic/item/8c1001e93901213f547e30e912e736d12f2e95b2.jpg">
 <meta property="article:published_time" content="2023-12-27T14:31:44.000Z">
-<meta property="article:modified_time" content="2024-01-24T15:36:38.080Z">
+<meta property="article:modified_time" content="2024-02-23T05:40:28.680Z">
 <meta property="article:author" content="Wenbin">
 <meta property="article:tag" content="网页美化">
 <meta property="article:tag" content="fluid主题">
@@ -441,7 +441,7 @@ var _hmt = _hmt || [];
       <span class="post-meta mr-2">
         <i class="iconfont icon-a-tongjishuju"></i>
         
-          886 字
+          870 字
         
       </span>
     
@@ -504,7 +504,7 @@ var _hmt = _hmt || [];
               <p class="note note-warning">
                 
                   
-                    本文最后更新于：2024年1月24日 晚上
+                    本文最后更新于：2024年2月23日 下午
                   
                 
               </p>
@@ -512,7 +512,7 @@ var _hmt = _hmt || [];
             
               <div class="markdown-body">
                 
-                <h2 id="twikoo评论系统添加头像挂件"><a href="#twikoo评论系统添加头像挂件" class="headerlink" title="twikoo评论系统添加头像挂件"></a>twikoo评论系统添加头像挂件</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>  这马上就要到2024了，发现最近这几天各大平台也陆续的新添加了用户头像挂件的装饰，迎接2024年的到来。于是想到，我的博客中评论区不也是有用户头像嘛。这不，趁这会有空，马上就着手开搞。</p>
+                <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>  这马上就要到2024了，发现最近这几天各大平台也陆续的新添加了用户头像挂件的装饰，迎接2024年的到来。于是想到，我的博客中评论区不也是有用户头像嘛。这不，趁这会有空，马上就着手开搞。</p>
 <h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>首先分析一下twikoo评论系统的架构及css样式，可以看到整个评论区都是包含在id为<code>twikoo</code>的div块里的</p>
 <p><img src="https://imgsrc.baidu.com/forum/pic/item/b64543a98226cffc0afe2c8aff014a90f603ea36.jpg" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload></p>
 <p>然后逐步定位到用于展示头像图片的div块，可以看到是类名为<code>tk-avatar-img</code>的img标签，并且都是在父块<code>tk-comment</code>类名下的，定位到了头像展示的块，这下就好办了</p>
