@@ -18,27 +18,28 @@
   <meta name="author" content="Wenbin">
   <meta name="keywords" content="前端技术，python，人工智能，个人博客">
   
-    <meta name="description" content="人生中有时会面临各种挑战和困难，这些都会引起不同程度的情绪波动。然而，情绪管理是一个必须掌握的技能，不仅可以提高自我控制能力，更可以帮助我们更好地应对生活中的各种情境。如何管理自己的情绪，保持良好的心态，成为了我们不可回避的课题。">
+    <meta name="description" content="因为平时有看盘的习惯，基于在某些场景下不适合安装打开看盘软件。比如，在公司上班的时候，之前也都是想看的时候打开网页看一下，但还是不方便。所以今儿有空就利用python的PyQt5编写了一个简易的桌面看盘小工具，因为只需要看自己想看的那几只票的行情，所以也没有什么花里胡哨的功能，主打的就是一个简约，实用。欢迎有需要的同学试用">
 <meta property="og:type" content="article">
-<meta property="og:title" content="情绪管理的艺术：如何保持内心的平静与平衡">
-<meta property="og:url" content="https://www.zzzwb.com/2024/02-21-post002.html">
+<meta property="og:title" content="利用python的PyQt5设计编译桌面看盘小工具">
+<meta property="og:url" content="https://www.zzzwb.com/2024/02-26-python005.html">
 <meta property="og:site_name" content="Wenbin&#39;s blog">
-<meta property="og:description" content="人生中有时会面临各种挑战和困难，这些都会引起不同程度的情绪波动。然而，情绪管理是一个必须掌握的技能，不仅可以提高自我控制能力，更可以帮助我们更好地应对生活中的各种情境。如何管理自己的情绪，保持良好的心态，成为了我们不可回避的课题。">
+<meta property="og:description" content="因为平时有看盘的习惯，基于在某些场景下不适合安装打开看盘软件。比如，在公司上班的时候，之前也都是想看的时候打开网页看一下，但还是不方便。所以今儿有空就利用python的PyQt5编写了一个简易的桌面看盘小工具，因为只需要看自己想看的那几只票的行情，所以也没有什么花里胡哨的功能，主打的就是一个简约，实用。欢迎有需要的同学试用">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://imgsrc.baidu.com/forum/pic/item/43a7d933c895d14362d4071a35f082025aaf076d.png">
-<meta property="article:published_time" content="2024-02-21T11:46:38.000Z">
-<meta property="article:modified_time" content="2024-02-23T05:44:33.065Z">
+<meta property="og:image" content="https://imgsrc.baidu.com/forum/pic/item/72f082025aafa40feb95f0e7ed64034f78f019bc.png">
+<meta property="article:published_time" content="2024-02-26T13:15:59.000Z">
+<meta property="article:modified_time" content="2024-02-26T14:53:48.051Z">
 <meta property="article:author" content="Wenbin">
-<meta property="article:tag" content="life">
-<meta property="article:tag" content="日常随笔">
+<meta property="article:tag" content="代码">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="PyQt5">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://imgsrc.baidu.com/forum/pic/item/43a7d933c895d14362d4071a35f082025aaf076d.png">
+<meta name="twitter:image" content="https://imgsrc.baidu.com/forum/pic/item/72f082025aafa40feb95f0e7ed64034f78f019bc.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>情绪管理的艺术：如何保持内心的平静与平衡 - Wenbin&#39;s blog</title>
+  <title>利用python的PyQt5设计编译桌面看盘小工具 - Wenbin&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -413,7 +414,7 @@ var _hmt = _hmt || [];
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="情绪管理的艺术：如何保持内心的平静与平衡"></span>
+            <span id="subtitle" data-typed-text="利用python的PyQt5设计编译桌面看盘小工具"></span>
           
         </div>
 
@@ -429,8 +430,8 @@ var _hmt = _hmt || [];
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-02-21 19:46" pubdate>
-          2024年2月21日 晚上
+        <time datetime="2024-02-26 21:15" pubdate>
+          2024年2月26日 晚上
         </time>
       </span>
     
@@ -441,7 +442,7 @@ var _hmt = _hmt || [];
       <span class="post-meta mr-2">
         <i class="iconfont icon-a-tongjishuju"></i>
         
-          2.2k 字
+          3k 字
         
       </span>
     
@@ -452,7 +453,7 @@ var _hmt = _hmt || [];
         
         
         
-          19 分钟
+          26 分钟
         
       </span>
     
@@ -499,12 +500,12 @@ var _hmt = _hmt || [];
       <div class="container nopadding-x-md" id="board-ctn">
         <div class=py-5 id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">情绪管理的艺术：如何保持内心的平静与平衡</h1>
+            <h1 id="seo-header">利用python的PyQt5设计编译桌面看盘小工具</h1>
             
               <p class="note note-warning">
                 
                   
-                    本文最后更新于：2024年2月23日 下午
+                    本文最后更新于：2024年2月26日 晚上
                   
                 
               </p>
@@ -512,29 +513,98 @@ var _hmt = _hmt || [];
             
               <div class="markdown-body">
                 
-                <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a><strong>前言</strong></h3><p>人生中有时会面临各种挑战和困难，这些都会引起不同程度的情绪波动。然而，情绪管理是一个必须掌握的技能，不仅可以提高自我控制能力，更可以帮助我们更好地应对生活中的各种情境。如何管理自己的情绪，保持良好的心态，成为了我们不可回避的课题。本文将分享一些心理技巧，帮助你更好地管理自己的情绪，让你在面对压力时更加从容不迫。</p>
-<h3 id="1-深呼吸法"><a href="#1-深呼吸法" class="headerlink" title="1.深呼吸法"></a><strong>1.深呼吸法</strong></h3><p>当我们情绪激动时，通过深呼吸可以有效地缓解紧张情绪。深呼吸能够帮助我们放松身体，减轻焦虑和紧张感。每当你感到情绪波动时，尝试闭上眼睛，进行几次深呼吸，你会发现自己的情绪逐渐平静下来。</p>
-<h3 id="2-自我暗示"><a href="#2-自我暗示" class="headerlink" title="2.自我暗示"></a><strong>2.自我暗示</strong></h3><p>自我暗示是一种有效的心理调节方法。当你感受到负面情绪时，尝试对自己说：“我可以应对这个问题，我有能力解决它。”通过自我暗示，你可以逐渐增强自信，化解内心的恐惧和担忧。</p>
-<h3 id="3-情绪释放"><a href="#3-情绪释放" class="headerlink" title="3.情绪释放"></a><strong>3.情绪释放</strong></h3><p>当我们积压了太多的情绪，需要寻找一个途径将其释放出来。可以选择倾诉给亲朋好友，或者进行一些剧烈的运动，如跑步、打球等。通过情绪释放，我们可以将内心的压力得到缓解，从而更好地面对生活中的挑战。</p>
-<h3 id="4-换个角度看问题"><a href="#4-换个角度看问题" class="headerlink" title="4.换个角度看问题"></a><strong>4.换个角度看问题</strong></h3><p>当我们遇到困难时，往往会陷入消极的情绪中。这时，不妨换个角度看问题。试着从不同的视角去分析问题，你会发现问题并没有想象中那么严重。学会换位思考，可以让我们更加冷静地应对问题，同时也能培养同理心。</p>
-<h3 id="5-保持乐观心态"><a href="#5-保持乐观心态" class="headerlink" title="5.保持乐观心态"></a><strong>5.保持乐观心态</strong></h3><p>乐观的心态对于情绪管理至关重要。面对困难，我们要相信自己有能力克服，相信未来会更好。保持乐观心态，可以帮助我们更好地应对压力，提高生活质量。</p>
-<h3 id="6-建立良好的人际关系"><a href="#6-建立良好的人际关系" class="headerlink" title="6.建立良好的人际关系"></a><strong>6.建立良好的人际关系</strong></h3><p>良好的人际关系是情绪管理的重要支柱。当我们与身边的人保持和谐关系时，我们的情绪也会更加稳定。学会倾听他人，关心他人，用心去交流，建立起良好的人际关系，让我们的情绪得到充分的支持。</p>
-<h3 id="7-学会放手"><a href="#7-学会放手" class="headerlink" title="7.学会放手"></a><strong>7.学会放手</strong></h3><p>当我们遇到无法改变的事情时，学会放手是情绪管理的关键。接受现实，放下执念，让自己的心灵得到解脱。学会放手，不仅能帮助我们减轻心理压力，还能让我们的生活更加美好。</p>
-<h3 id="8-制定目标"><a href="#8-制定目标" class="headerlink" title="8.制定目标"></a><strong>8.制定目标</strong></h3><p>明确的目标可以帮助我们更好地管理情绪。当我们为自己设定一个具体的目标时，我们会更加专注于实现它，从而减少情绪波动的机会。通过制定目标，我们可以让自己的生活更加有序，更加充实。</p>
-<h3 id="9-培养兴趣爱好"><a href="#9-培养兴趣爱好" class="headerlink" title="9.培养兴趣爱好"></a><strong>9.培养兴趣爱好</strong></h3><p>拥有一项兴趣爱好，可以帮助我们在面对压力时找到释放的出口。无论是画画、写作、运动还是音乐，都可以让我们在其中找到乐趣，从而摆脱负面情绪的困扰。</p>
-<h3 id="10-注重身体健康"><a href="#10-注重身体健康" class="headerlink" title="10.注重身体健康"></a><strong>10.注重身体健康</strong></h3><p>身体健康是情绪管理的基石。保持良好的作息规律，注意饮食营养，进行适量的锻炼，都有助于我们保持良好的身体健康。一个健康的身体，可以让我们更加从容地应对生活中的压力。</p>
-<p>当我们掌握了这些情绪管理技巧后，我们还可以进一步提升自己的心理素质，让自己在面对生活中的种种困境时更加从容不迫。以下是一些建议，帮助你在应对压力和挑战时更加稳定、更加自信。</p>
-<h3 id="11-学会时间管理"><a href="#11-学会时间管理" class="headerlink" title="11.学会时间管理"></a><strong>11.学会时间管理</strong></h3><p>时间管理能够帮助我们更高效地完成任务，减轻压力感。学会合理安排时间，为每个任务设定优先级，避免因为拖延而产生焦虑。同时，也要给自己留出休息和娱乐的时间，保持身心的平衡。</p>
-<h3 id="12-增强自我认知"><a href="#12-增强自我认知" class="headerlink" title="12.增强自我认知"></a><strong>12.增强自我认知</strong></h3><p>了解自己的优点和不足，是情绪管理的基础。通过自我认知，我们可以更好地发挥自己的优势，改善自己的弱点。同时，也能让我们更加自信地面对生活中的各种挑战。</p>
-<h3 id="13-学会自我激励"><a href="#13-学会自我激励" class="headerlink" title="13.学会自我激励"></a><strong>13.学会自我激励</strong></h3><p>自我激励是一种有效的情绪管理策略。当我们遇到困难时，可以通过设定小目标、奖励自己等方式，激发自己的积极性。自我激励能够帮助我们保持积极向上的心态，提高工作和生活的质量。</p>
-<h3 id="14-增强心理承受能力"><a href="#14-增强心理承受能力" class="headerlink" title="14.增强心理承受能力"></a><strong>14.增强心理承受能力</strong></h3><p>在面对压力和挑战时，我们需要增强心理承受能力。可以通过阅读心理学书籍、参加培训课程等方式，学习提升心理承受能力的方法。同时，也要学会面对失败，从失败中吸取经验教训，增强自己的心理承受能力。</p>
-<h3 id="15-寻求专业帮助"><a href="#15-寻求专业帮助" class="headerlink" title="15.寻求专业帮助"></a><strong>15.寻求专业帮助</strong></h3><p>当我们觉得自己无法应对生活中的压力时，不妨寻求专业人士的帮助。心理咨询师、心理医生等专业人士能够为我们提供针对性的建议和治疗方案，帮助我们更好地管理情绪，克服困难。</p>
-<h3 id="16-建立支持网络"><a href="#16-建立支持网络" class="headerlink" title="16.建立支持网络"></a><strong>16.建立支持网络</strong></h3><p>一个强大的支持网络对于情绪管理至关重要。我们可以通过加入兴趣小组、志愿者组织等社交活动，结交志同道合的朋友。拥有一个支持网络，可以让我们在遇到困难时得到鼓励和支持，从而更好地应对压力。</p>
-<h3 id="17-保持学习态度"><a href="#17-保持学习态度" class="headerlink" title="17.保持学习态度"></a><strong>17.保持学习态度</strong></h3><p>保持一颗好奇心，不断地学习新知识和技能，有助于我们更好地应对生活中的变化。通过不断地学习，我们可以提升自己的能力，增强自信心，从而更好地管理情绪。</p>
-<h3 id="18-培养感恩心态"><a href="#18-培养感恩心态" class="headerlink" title="18.培养感恩心态"></a><strong>18.培养感恩心态</strong></h3><p>感恩是一种美好的品质，也是情绪管理的有效方式。当我们学会感恩，我们会更加珍惜眼前的一切，从而减轻负面情绪的影响。试着每天找出三件值得感恩的事情，让自己的心情变得更加美好。</p>
-<h3 id="19-寻求平衡"><a href="#19-寻求平衡" class="headerlink" title="19.寻求平衡"></a><strong>19.寻求平衡</strong></h3><p>在工作和生活中寻求平衡，是情绪管理的关键。我们需要在忙碌的工作中，安排适当的休息和娱乐时间，让自己的身心得到充分的放松。只有保持良好的身心平衡，我们才能更好地应对生活中的压力。</p>
-<h3 id="20-保持自律"><a href="#20-保持自律" class="headerlink" title="20.保持自律"></a><strong>20.保持自律</strong></h3><p>自律是情绪管理的重要组成部分。保持自律，可以让我们更好地控制自己的情绪，避免因为冲动而做出错误的决定。通过养成良好的生活习惯，我们可以更好地管理自己的情绪，提高生活质量。</p>
-<h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a><strong>结论</strong></h3><p>情绪管理是人生中重要的技能之一，可以帮助我们更好地应对生活中的各种情境，保持良好的情绪状态。<br>总之，通过掌握这些情绪管理技巧和策略，我们可以更好地应对生活中的压力和挑战。学会调整自己的情绪，让自己的生活变得更加美好。</p>
+                <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>因为平时有看盘的习惯，基于在某些场景下不适合安装打开看盘软件。比如，在公司上班的时候，之前也都是想看的时候打开网页看一下，但还是不方便。所以今儿有空就利用python的PyQt5编写了一个简易的桌面看盘小工具，因为只需要看自己想看的那几只票的行情，所以也没有什么花里胡哨的功能，主打的就是一个简约，实用。欢迎有需要的同学试用</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> sys
+<span class="token keyword">import</span> requests
+<span class="token keyword">from</span> PyQt5 <span class="token keyword">import</span> QtWidgets<span class="token punctuation">,</span> QtCore<span class="token punctuation">,</span> QtGui
+<span class="token keyword">import</span> configparser
+<span class="token keyword">import</span> keyboard
+
+headers <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+    <span class="token string">'User-Agent'</span><span class="token punctuation">:</span> <span class="token string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'</span><span class="token punctuation">,</span>
+    <span class="token string">'Referer'</span><span class="token punctuation">:</span> <span class="token string">'https://xueqiu.com/'</span><span class="token punctuation">,</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">ReminderApp</span><span class="token punctuation">(</span>QtWidgets<span class="token punctuation">.</span>QMainWindow<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span>ReminderApp<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        self<span class="token punctuation">.</span>resize<span class="token punctuation">(</span>position<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> position<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>setWindowTitle<span class="token punctuation">(</span><span class="token string">"桌面看盘工具"</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>setWindowFlag<span class="token punctuation">(</span>QtCore<span class="token punctuation">.</span>Qt<span class="token punctuation">.</span>SplashScreen<span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>setWindowFlag<span class="token punctuation">(</span>QtCore<span class="token punctuation">.</span>Qt<span class="token punctuation">.</span>FramelessWindowHint<span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>setWindowFlag<span class="token punctuation">(</span>QtCore<span class="token punctuation">.</span>Qt<span class="token punctuation">.</span>WindowStaysOnTopHint<span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>setAttribute<span class="token punctuation">(</span>QtCore<span class="token punctuation">.</span>Qt<span class="token punctuation">.</span>WA_TranslucentBackground<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>setStyleSheet<span class="token punctuation">(</span><span class="token string">"background:"</span> <span class="token operator">+</span> bg_color<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>label <span class="token operator">=</span> QtWidgets<span class="token punctuation">.</span>QLabel<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>label<span class="token punctuation">.</span>setGeometry<span class="token punctuation">(</span>QtCore<span class="token punctuation">.</span>QRect<span class="token punctuation">(</span>position<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> position<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> position<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> position<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>label<span class="token punctuation">.</span>setFont<span class="token punctuation">(</span>QtGui<span class="token punctuation">.</span>QFont<span class="token punctuation">(</span>Font<span class="token punctuation">,</span> Fontsize<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>label<span class="token punctuation">.</span>setTextFormat<span class="token punctuation">(</span>QtCore<span class="token punctuation">.</span>Qt<span class="token punctuation">.</span>RichText<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>timer <span class="token operator">=</span> QtCore<span class="token punctuation">.</span>QTimer<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>timer<span class="token punctuation">.</span>timeout<span class="token punctuation">.</span>connect<span class="token punctuation">(</span>self<span class="token punctuation">.</span>update_stock_data<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>timer<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span>  
+
+        self<span class="token punctuation">.</span>update_stock_data<span class="token punctuation">(</span><span class="token punctuation">)</span> 
+        keyboard<span class="token punctuation">.</span>add_hotkey<span class="token punctuation">(</span>Quick_exit<span class="token punctuation">,</span> self<span class="token punctuation">.</span>exit_application<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">exit_application</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        QtWidgets<span class="token punctuation">.</span>QApplication<span class="token punctuation">.</span>quit<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">update_stock_data</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        stock_data <span class="token operator">=</span> self<span class="token punctuation">.</span>get_stock_data<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span> stock_data<span class="token punctuation">:</span>
+            stock_name_mapping <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">(</span><span class="token builtin">zip</span><span class="token punctuation">(</span>stock_symbols<span class="token punctuation">,</span> name<span class="token punctuation">)</span><span class="token punctuation">)</span>
+            display_text <span class="token operator">=</span> <span class="token string">"&lt;br>"</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">[</span>
+                <span class="token string-interpolation"><span class="token string">f"&lt;font color=</span><span class="token interpolation"><span class="token punctuation">&#123;</span>zhang_color<span class="token punctuation">&#125;</span></span><span class="token string">>  </span><span class="token interpolation"><span class="token punctuation">&#123;</span>symbol<span class="token punctuation">&#125;</span></span><span class="token string"> </span><span class="token interpolation"><span class="token punctuation">&#123;</span>stock_name_mapping<span class="token punctuation">.</span>get<span class="token punctuation">(</span>symbol<span class="token punctuation">,</span> symbol<span class="token punctuation">)</span><span class="token punctuation">&#125;</span></span><span class="token string">: </span><span class="token interpolation"><span class="token punctuation">&#123;</span>data<span class="token punctuation">[</span><span class="token string">'current'</span><span class="token punctuation">]</span><span class="token punctuation">&#125;</span></span><span class="token string"> </span><span class="token interpolation"><span class="token punctuation">&#123;</span>data<span class="token punctuation">[</span><span class="token string">'percent'</span><span class="token punctuation">]</span><span class="token punctuation">&#125;</span></span><span class="token string">%&lt;/font>"</span></span> <span class="token keyword">if</span> data<span class="token punctuation">[</span><span class="token string">'percent'</span><span class="token punctuation">]</span> <span class="token operator">>=</span> <span class="token number">0</span> <span class="token keyword">else</span>
+                <span class="token string-interpolation"><span class="token string">f"&lt;font color=</span><span class="token interpolation"><span class="token punctuation">&#123;</span>die_color<span class="token punctuation">&#125;</span></span><span class="token string">>  </span><span class="token interpolation"><span class="token punctuation">&#123;</span>symbol<span class="token punctuation">&#125;</span></span><span class="token string"> </span><span class="token interpolation"><span class="token punctuation">&#123;</span>stock_name_mapping<span class="token punctuation">.</span>get<span class="token punctuation">(</span>symbol<span class="token punctuation">,</span> symbol<span class="token punctuation">)</span><span class="token punctuation">&#125;</span></span><span class="token string">: </span><span class="token interpolation"><span class="token punctuation">&#123;</span>data<span class="token punctuation">[</span><span class="token string">'current'</span><span class="token punctuation">]</span><span class="token punctuation">&#125;</span></span><span class="token string"> </span><span class="token interpolation"><span class="token punctuation">&#123;</span>data<span class="token punctuation">[</span><span class="token string">'percent'</span><span class="token punctuation">]</span><span class="token punctuation">&#125;</span></span><span class="token string">%&lt;/font>"</span></span>
+                <span class="token keyword">for</span> symbol<span class="token punctuation">,</span> data <span class="token keyword">in</span> stock_data<span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">]</span><span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>label<span class="token punctuation">.</span>setText<span class="token punctuation">(</span>display_text<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">get_stock_data</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        stock_data <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span>
+        <span class="token keyword">for</span> symbol <span class="token keyword">in</span> stock_symbols<span class="token punctuation">:</span>
+            url <span class="token operator">=</span> <span class="token string-interpolation"><span class="token string">f"https://stock.xueqiu.com/v5/stock/realtime/quotec.json?symbol=</span><span class="token interpolation"><span class="token punctuation">&#123;</span>symbol<span class="token punctuation">&#125;</span></span><span class="token string">"</span></span>
+            <span class="token keyword">try</span><span class="token punctuation">:</span>
+                response <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">,</span> headers<span class="token operator">=</span>headers<span class="token punctuation">)</span>
+                response<span class="token punctuation">.</span>raise_for_status<span class="token punctuation">(</span><span class="token punctuation">)</span> 
+                data <span class="token operator">=</span> response<span class="token punctuation">.</span>json<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+                <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">"data"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token builtin">list</span><span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">len</span><span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">"data"</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">:</span>
+                    quote_data <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">"data"</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+                    stock_data<span class="token punctuation">[</span>symbol<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+                        <span class="token string">"current"</span><span class="token punctuation">:</span> quote_data<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">"current"</span><span class="token punctuation">,</span> <span class="token boolean">None</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                        <span class="token string">"percent"</span><span class="token punctuation">:</span> quote_data<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">"percent"</span><span class="token punctuation">,</span> <span class="token boolean">None</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">&#125;</span>
+                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"No data found for </span><span class="token interpolation"><span class="token punctuation">&#123;</span>symbol<span class="token punctuation">&#125;</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+            <span class="token keyword">except</span> requests<span class="token punctuation">.</span>exceptions<span class="token punctuation">.</span>RequestException <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+                <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"Error fetching data for </span><span class="token interpolation"><span class="token punctuation">&#123;</span>symbol<span class="token punctuation">&#125;</span></span><span class="token string">: </span><span class="token interpolation"><span class="token punctuation">&#123;</span>e<span class="token punctuation">&#125;</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+
+        <span class="token keyword">return</span> stock_data
+
+<span class="token keyword">def</span> <span class="token function">StartReminder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    app <span class="token operator">=</span> QtWidgets<span class="token punctuation">.</span>QApplication<span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">)</span>
+    main_window <span class="token operator">=</span> ReminderApp<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    main_window<span class="token punctuation">.</span>showFullScreen<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span>app<span class="token punctuation">.</span><span class="token keyword">exec</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    StartReminder<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="配置说明"><a href="#配置说明" class="headerlink" title="配置说明"></a>配置说明</h3><pre class="line-numbers language-ini" data-language="ini"><code class="language-ini"><span class="token section"><span class="token punctuation">[</span><span class="token section-name selector">ConfigSettings</span><span class="token punctuation">]</span></span>
+<span class="token key attr-name">Font</span> <span class="token punctuation">=</span> <span class="token value attr-value">"Courier New" #设置字体</span>
+<span class="token key attr-name">Fontsize</span> <span class="token punctuation">=</span> <span class="token value attr-value">14 #设置字体大小</span>
+<span class="token key attr-name">zhang_color</span> <span class="token punctuation">=</span> <span class="token value attr-value">"#dd2200" #设置涨的显示颜色</span>
+<span class="token key attr-name">die_color</span> <span class="token punctuation">=</span> <span class="token value attr-value">"#009933" #设置跌的显示颜色</span>
+<span class="token key attr-name">bg_color</span> <span class="token punctuation">=</span> <span class="token value attr-value">"#00000000" #设置窗口背景颜色</span>
+<span class="token key attr-name">position</span> <span class="token punctuation">=</span> <span class="token value attr-value">1500,0,400,150 #设置显示的位置，参数分别为：x坐标，y坐标，宽度，高度</span>
+<span class="token key attr-name">Quick_exit</span> <span class="token punctuation">=</span> <span class="token value attr-value">Ctrl+Alt+K #设置快捷退出的按键</span>
+<span class="token key attr-name">List</span> <span class="token punctuation">=</span> <span class="token value attr-value">SZ002288,SH600305,SH600773,SZ300512,SH688584 #股票代码</span>
+<span class="token key attr-name">Names</span> <span class="token punctuation">=</span> <span class="token value attr-value">超华科技,恒顺醋业,西藏城投,中亚股份,上海合晶 #股票对应的中文名字</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>123盘：<a target="_blank" rel="noopener" href="https://www.123pan.com/s/BZouVv-NvWF3.html">https://www.123pan.com/s/BZouVv-NvWF3.html</a></p>
 
                 
               </div>
@@ -578,7 +648,7 @@ var _hmt = _hmt || [];
     
       <span class="category-chain">
         
-  <a href="/categories/life/" class="hover-with-bg">life</a>
+  <a href="/categories/python/" class="hover-with-bg">python</a>
   
   
 
@@ -593,9 +663,11 @@ var _hmt = _hmt || [];
     <div class="post-meta">
       <i class="iconfont icon-tags-fill"></i>
       
-        <a class="hover-with-bg" href="/tags/life/" class="print-no-link"> life</a>
+        <a class="hover-with-bg" href="/tags/%E4%BB%A3%E7%A0%81/" class="print-no-link"> 代码</a>
       
-        <a class="hover-with-bg" href="/tags/%E6%97%A5%E5%B8%B8%E9%9A%8F%E7%AC%94/" class="print-no-link"> 日常随笔</a>
+        <a class="hover-with-bg" href="/tags/python/" class="print-no-link"> python</a>
+      
+        <a class="hover-with-bg" href="/tags/PyQt5/" class="print-no-link"> PyQt5</a>
       
     </div>
   
@@ -623,7 +695,7 @@ var _hmt = _hmt || [];
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href=https://www.zzzwb.com/2024/02-21-post002.html>https://www.zzzwb.com/2024/02-21-post002.html</a>
+                    <a href=https://www.zzzwb.com/2024/02-26-python005.html>https://www.zzzwb.com/2024/02-26-python005.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -656,18 +728,12 @@ var _hmt = _hmt || [];
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/02-26-python005.html" class="common-chip text-ellipsis">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">利用python的PyQt5设计编译桌面看盘小工具</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/12-29-post001.html" class="common-chip text-ellipsis">
-                        <span class="hidden-mobile">成年人必须学会的技能：钝感力</span>
+                      <a href="/2024/02-21-post002.html" class="common-chip text-ellipsis">
+                        <span class="hidden-mobile">情绪管理的艺术：如何保持内心的平静与平衡</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

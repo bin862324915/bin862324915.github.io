@@ -6,7 +6,7 @@
   <link href="https://www.zzzwb.com/atom.xml" rel="self"/>
   
   <link href="https://www.zzzwb.com/"/>
-  <updated>2024-02-23T05:44:33.065Z</updated>
+  <updated>2024-02-26T14:53:48.051Z</updated>
   <id>https://www.zzzwb.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>利用python的PyQt5设计编译桌面看盘小工具</title>
+    <link href="https://www.zzzwb.com/2024/02-26-python005.html"/>
+    <id>https://www.zzzwb.com/2024/02-26-python005.html</id>
+    <published>2024-02-26T13:15:59.000Z</published>
+    <updated>2024-02-26T14:53:48.051Z</updated>
+    
+    
+    <summary type="html">因为平时有看盘的习惯，基于在某些场景下不适合安装打开看盘软件。比如，在公司上班的时候，之前也都是想看的时候打开网页看一下，但还是不方便。所以今儿有空就利用python的PyQt5编写了一个简易的桌面看盘小工具，因为只需要看自己想看的那几只票的行情，所以也没有什么花里胡哨的功能，主打的就是一个简约，实用。欢迎有需要的同学试用</summary>
+    
+    
+    
+    <category term="python" scheme="https://www.zzzwb.com/categories/python/"/>
+    
+    
+    <category term="代码" scheme="https://www.zzzwb.com/tags/%E4%BB%A3%E7%A0%81/"/>
+    
+    <category term="python" scheme="https://www.zzzwb.com/tags/python/"/>
+    
+    <category term="PyQt5" scheme="https://www.zzzwb.com/tags/PyQt5/"/>
+    
+  </entry>
   
   <entry>
     <title>情绪管理的艺术：如何保持内心的平静与平衡</title>
@@ -502,39 +525,6 @@
     <category term="ChatGPT" scheme="https://www.zzzwb.com/tags/ChatGPT/"/>
     
     <category term="提问技巧" scheme="https://www.zzzwb.com/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo基于leancloud创建漂流瓶应用</title>
-    <link href="https://www.zzzwb.com/2023/10-23-plp.html"/>
-    <id>https://www.zzzwb.com/2023/10-23-plp.html</id>
-    <published>2023-10-23T07:23:05.000Z</published>
-    <updated>2023-10-26T16:06:44.312Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;hexo基于leancloud创建漂流瓶应用&quot;&gt;&lt;a href=&quot;#hexo基于leancloud创建漂流瓶应用&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="个人项目" scheme="https://www.zzzwb.com/categories/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
-    
-    <category term="hexo" scheme="https://www.zzzwb.com/categories/hexo/"/>
-    
-    
-    <category term="hexo" scheme="https://www.zzzwb.com/tags/hexo/"/>
-    
-    <category term="网页应用" scheme="https://www.zzzwb.com/tags/%E7%BD%91%E9%A1%B5%E5%BA%94%E7%94%A8/"/>
-    
-    <category term="html" scheme="https://www.zzzwb.com/tags/html/"/>
-    
-    <category term="个人项目" scheme="https://www.zzzwb.com/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
     
   </entry>
   
