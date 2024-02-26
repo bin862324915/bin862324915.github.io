@@ -6,7 +6,7 @@
   <link href="https://www.zzzwb.com/atom.xml" rel="self"/>
   
   <link href="https://www.zzzwb.com/"/>
-  <updated>2024-02-26T14:53:48.051Z</updated>
+  <updated>2024-02-26T15:39:13.252Z</updated>
   <id>https://www.zzzwb.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.zzzwb.com/2024/02-26-python005.html"/>
     <id>https://www.zzzwb.com/2024/02-26-python005.html</id>
     <published>2024-02-26T13:15:59.000Z</published>
-    <updated>2024-02-26T14:53:48.051Z</updated>
+    <updated>2024-02-26T15:39:13.252Z</updated>
     
     
     <summary type="html">因为平时有看盘的习惯，基于在某些场景下不适合安装打开看盘软件。比如，在公司上班的时候，之前也都是想看的时候打开网页看一下，但还是不方便。所以今儿有空就利用python的PyQt5编写了一个简易的桌面看盘小工具，因为只需要看自己想看的那几只票的行情，所以也没有什么花里胡哨的功能，主打的就是一个简约，实用。欢迎有需要的同学试用</summary>
