@@ -254,10 +254,8 @@ button{
 
 #newdata {
   font-size: 25px;
-  color: #666;
   padding-left: 10px;
   margin-top: 20px;
-  text-decoration: underline;
 }
 
 
@@ -275,7 +273,7 @@ button{
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 80%;
-    background-color: #efe0b7;
+    background-color: #ffffff;
 
     }
 .diu-anniu {
