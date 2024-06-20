@@ -139,8 +139,8 @@ const store = {
 			wordShell: true, //文字烟花 默认为开启 若不开启可修改为false
 			autoLaunch: true, //自动发射烟花
 			finale: true, //同时放更多烟花
-			skyLighting: SKY_LIGHT_NORMAL + "",
-			hideControls: IS_HEADER,
+			skyLighting: SKY_LIGHT_NONE + "",
+			hideControls: false,
 			longExposure: false,
 			scaleFactor: getDefaultScaleFactor(),
 		},

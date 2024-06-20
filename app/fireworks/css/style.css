@@ -251,7 +251,7 @@ body {
 	text-align: center;
 }
 .credits a {
-	color: rgba(255, 255, 255, 0.5);
+	color: #007bff;
 	text-decoration: none;
 }
 .credits a:hover,
