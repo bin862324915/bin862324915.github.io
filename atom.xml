@@ -6,7 +6,7 @@
   <link href="https://www.zzzwb.com/atom.xml" rel="self"/>
   
   <link href="https://www.zzzwb.com/"/>
-  <updated>2024-03-03T07:22:02.624Z</updated>
+  <updated>2024-07-06T03:49:43.265Z</updated>
   <id>https://www.zzzwb.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>serv00部署alist详细记录</title>
+    <link href="https://www.zzzwb.com/2024/07-06-serv00-alist.html"/>
+    <id>https://www.zzzwb.com/2024/07-06-serv00-alist.html</id>
+    <published>2024-07-06T03:17:30.000Z</published>
+    <updated>2024-07-06T03:49:43.265Z</updated>
+    
+    
+    <summary type="html">最近在serv00薅了个服务器，经过一系列的折腾，发现还是有一点可玩性的，本文将记录在`serv00`服务器上部署`alist`应用的详细过程</summary>
+    
+    
+    
+    <category term="serv00" scheme="https://www.zzzwb.com/categories/serv00/"/>
+    
+    
+    <category term="serv00" scheme="https://www.zzzwb.com/tags/serv00/"/>
+    
+    <category term="alist" scheme="https://www.zzzwb.com/tags/alist/"/>
+    
+  </entry>
   
   <entry>
     <title>SD炼丹记录—春•梦</title>
@@ -471,33 +492,6 @@
         
         
     <summary type="html">&lt;h2 id=&quot;09-如何让ChatGPT自动生成内容，作为客户服务工作人员的回答话术？&quot;&gt;&lt;a href=&quot;#09-如何让ChatGPT自动生成内容，作为客户服务工作人员的回答话术？&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="ChatGPT" scheme="https://www.zzzwb.com/categories/ChatGPT/"/>
-    
-    
-    <category term="ChatGPT" scheme="https://www.zzzwb.com/tags/ChatGPT/"/>
-    
-    <category term="提问技巧" scheme="https://www.zzzwb.com/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>17-如何用ChatGP从品牌角度对产品提出升级建议</title>
-    <link href="https://www.zzzwb.com/2023/10-25-chatgpt017.html"/>
-    <id>https://www.zzzwb.com/2023/10-25-chatgpt017.html</id>
-    <published>2023-10-25T06:33:33.000Z</published>
-    <updated>2023-12-07T03:26:23.842Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;17-如何用ChatGP协助你，从品牌角度对产品提出升级建议？&quot;&gt;&lt;a href=&quot;#17-如何用ChatGP协助你，从品牌角度对产品提出升级建议？&quot; class=&quot;headerlink&quot;</summary>
         
       
     
