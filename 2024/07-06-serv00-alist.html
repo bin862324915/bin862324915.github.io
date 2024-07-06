@@ -27,7 +27,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://imgsrc.baidu.com/www.zzzwb.com/pic/item/aa18972bd40735fac0890d86d8510fb30f240897.png">
 <meta property="article:published_time" content="2024-07-06T03:17:30.000Z">
-<meta property="article:modified_time" content="2024-07-06T03:57:54.106Z">
+<meta property="article:modified_time" content="2024-07-06T06:15:35.347Z">
 <meta property="article:author" content="Wenbin">
 <meta property="article:tag" content="serv00">
 <meta property="article:tag" content="alist">
@@ -449,7 +449,7 @@ var _hmt = _hmt || [];
       <span class="post-meta mr-2">
         <i class="iconfont icon-a-tongjishuju"></i>
         
-          2.3k 字
+          2.4k 字
         
       </span>
     
@@ -460,7 +460,7 @@ var _hmt = _hmt || [];
         
         
         
-          19 分钟
+          20 分钟
         
       </span>
     
@@ -512,7 +512,7 @@ var _hmt = _hmt || [];
               <p class="note note-warning">
                 
                   
-                    本文最后更新于：2024年7月6日 中午
+                    本文最后更新于：2024年7月6日 下午
                   
                 
               </p>
@@ -521,7 +521,8 @@ var _hmt = _hmt || [];
               <div class="markdown-body">
                 
                 <h1 id="serv00部署alist详细记录"><a href="#serv00部署alist详细记录" class="headerlink" title="serv00部署alist详细记录"></a>serv00部署alist详细记录</h1><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>最近在serv00薅了个服务器，经过一系列的折腾，发现还是有一点可玩性的，本文将记录在<code>serv00</code>服务器上部署<code>alist</code>应用的详细过程</p>
-<h3 id="绑定端口"><a href="#绑定端口" class="headerlink" title="绑定端口"></a>绑定端口</h3><p>新建一个端口，进入网页管理面板，点击左侧的<code>Port reservation</code>菜单，然后点击<code>Add port</code>，可以点击<code>Rondom</code>新建一个随机端口，然后点击<code>Add</code>，比如新建的端口号是<code>45476</code>，点击<code>WWW Websites</code>-点击<code>Add website</code>，新建一个自定义网站，也可用系统分配的二级域名，比如<code>ztest.serv00.net</code>，系统分配的域名不用申请证书，如果是自定义域名的话就到<code>SSL</code>菜单，给自定义域名申请一下证书</p>
+<h3 id="绑定端口"><a href="#绑定端口" class="headerlink" title="绑定端口"></a>绑定端口</h3><p>在后台管理面板新建一个端口，比如新建的端口号是<code>45476</code>，点击<code>WWW Websites</code>-点击<code>Add website</code>，新建一个自定义网站，类型选择proxy，端口就是刚刚新建的那个端口<code>45476</code>。</p>
+<p>也可用系统分配的二级域名，比如<code>bin001.serv00.net</code>，用系统分配的域名的话需要先删除掉，然后重新添加上，类型选proxy，端口就是刚刚新建的那个端口<code>45476</code>,系统分配的域名不用申请证书，如果是自定义域名的话就到<code>SSL</code>菜单，给自定义域名申请一下证书</p>
 <h3 id="登录SSH"><a href="#登录SSH" class="headerlink" title="登录SSH"></a>登录SSH</h3><p>执行操作，<code>cd</code>到你的网站名字的文件夹，比如</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> domains/ztest.serv00.net/<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -535,13 +536,13 @@ var _hmt = _hmt || [];
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">wget</span> <span class="token parameter variable">-O</span> alist-freebsd.sh https://raw.githubusercontent.com/bin862324915/serv00-app/main/alist/alist-freebsd.sh <span class="token operator">&amp;&amp;</span> <span class="token function">sh</span> alist-freebsd.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>执行完成后会弹出对应的提示</p>
-<h3 id="修改配置信息"><a href="#修改配置信息" class="headerlink" title="修改配置信息"></a>修改配置信息</h3><p>从网页管理面板进入文件管理器<code>file_manager</code>，然后进入到刚刚部署的网站文件夹下的<code>alist</code>目录，比如<code>/home/ztest/domains/ztest.serv00.net/alist/data/</code></p>
-<p>先进入网页管理面板<code>MySQL</code>菜单，点击<code>Add database</code>新建数据库，填写好信息，保存备用</p>
+<h3 id="修改配置信息"><a href="#修改配置信息" class="headerlink" title="修改配置信息"></a>修改配置信息</h3><p>先进入网页管理面板<code>MySQL</code>菜单，点击<code>Add database</code>新建数据库，填写好信息，保存备用，下面是数据库创建的示例信息，实际操作中填写为自己的即可</p>
 <pre class="line-numbers language-none"><code class="language-none">Database name：m5022_alist
 Username：m5022_alist
 Password：Test240706<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<p>修改<code>config.json</code>文件的配置</p>
+<p>从网页管理面板进入文件管理器<code>file_manager</code>，然后进入到刚刚部署的网站文件夹下的<code>alist</code>目录，比如<code>/home/ztest/domains/ztest.serv00.net/alist/data/</code></p>
+<p>修改<code>config.json</code>文件的配置，只需要找到对应字段，修改对应字段的信息即可，其他配置信息不要删除或修改</p>
 <pre class="line-numbers language-json" data-language="json"><code class="language-json">  <span class="token property">"database"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
     <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"sqlite3"</span><span class="token punctuation">,</span>
     <span class="token property">"host"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
@@ -595,7 +596,7 @@ Password：Test240706<span aria-hidden="true" class="line-numbers-rows"><span></
 <pre class="line-numbers language-none"><code class="language-none">.&#x2F;alist server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>首次运行后会生成一个默认的密码，找到<code>password</code>后面的字符串就是默认密码，保存备用</p>
-<p>进入浏览器，打开你刚刚部署的网站，比如<a target="_blank" rel="noopener" href="https://ztest.serv00.net/%EF%BC%8C%E8%BE%93%E5%85%A5%E7%94%A8%E6%88%B7%E5%90%8D%60admin%60%EF%BC%8C%E5%AF%86%E7%A0%81%E6%98%AF%E5%88%9A%E5%88%9A%E7%94%9F%E6%88%90%E7%9A%84%E9%82%A3%E4%B8%AA%EF%BC%8C%E8%87%B3%E6%AD%A4%EF%BC%8C%E6%95%B4%E4%B8%AA%60alist%60%E7%9A%84%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E5%B0%B1%E5%88%B0%E6%AD%A4%E7%BB%93%E6%9D%9F%E4%BA%86,%E5%9C%A8SSH%E5%AE%A2%E6%88%B7%E7%AB%AF">https://ztest.serv00.net/，输入用户名`admin`，密码是刚刚生成的那个，至此，整个`alist`的安装部署就到此结束了,在SSH客户端</a> 按<code>Ctrl + C</code>，结束<code>alist</code>的运行</p>
+<p>进入浏览器，打开你刚刚部署的网站，比如<a target="_blank" rel="noopener" href="https://bin001.serv00.net/">https://bin001.serv00.net/</a>，输入用户名<code>admin</code>，密码是刚刚生成的那个，至此，整个<code>alist</code>的安装部署就到此结束了,在SSH客户端 按<code>Ctrl + C</code>，结束<code>alist</code>的运行</p>
 <h3 id="后台运行"><a href="#后台运行" class="headerlink" title="后台运行"></a>后台运行</h3><p>可以通过<code>screen</code>新建会话让<code>alist</code>保持在后台运行，执行操作</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">screen</span> <span class="token parameter variable">-S</span> alist /home/ztest/domains/ztest.serv00.net/alist/alist server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -606,7 +607,7 @@ Password：Test240706<span aria-hidden="true" class="line-numbers-rows"><span></
 
 <p>在网页管理面板进入<code>Cron jobs</code>菜单，点击<code>Add cron job</code>，新建一个脚本，然后在<code>Command</code>框中输入<code>screen -S alist /home/ztest/domains/ztest.serv00.net/alist/alist server</code>，然后点击<code>Add</code>，这样，当服务器重启的时候就会执行操作自动启动<code>alist</code>应用了</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">screen</span> <span class="token parameter variable">-S</span> alist /home/ztest/domains/ztest.serv00.net/alist/alist server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
+<p>alist官方参考文档：<a target="_blank" rel="noopener" href="https://alist.nn.ci/zh/">https://alist.nn.ci/zh/</a></p>
 
                 
               </div>
