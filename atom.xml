@@ -6,7 +6,7 @@
   <link href="https://www.zzzwb.com/atom.xml" rel="self"/>
   
   <link href="https://www.zzzwb.com/"/>
-  <updated>2024-07-06T09:50:15.968Z</updated>
+  <updated>2024-07-07T07:44:23.922Z</updated>
   <id>https://www.zzzwb.com/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>serv00一键部署vless详细记录</title>
+    <link href="https://www.zzzwb.com/2024/07-07-serv00-vless.html"/>
+    <id>https://www.zzzwb.com/2024/07-07-serv00-vless.html</id>
+    <published>2024-07-07T05:06:27.000Z</published>
+    <updated>2024-07-07T07:44:23.922Z</updated>
+    
+    
+    <summary type="html">昨天发布了一篇关于serv00部署alist的详细记录，很多朋友们反馈按照步骤来都成功部署用上了，趁今天有时间，记录一下sev00部署vless的详细记录，为了方便大家安装，我写了一个一键安装脚本，可以省去一下操作</summary>
+    
+    
+    
+    <category term="serv00" scheme="https://www.zzzwb.com/categories/serv00/"/>
+    
+    
+    <category term="serv00" scheme="https://www.zzzwb.com/tags/serv00/"/>
+    
+    <category term="vless" scheme="https://www.zzzwb.com/tags/vless/"/>
+    
+  </entry>
+  
+  <entry>
     <title>serv00部署alist详细记录</title>
     <link href="https://www.zzzwb.com/2024/07-06-serv00-alist.html"/>
     <id>https://www.zzzwb.com/2024/07-06-serv00-alist.html</id>
     <published>2024-07-06T03:17:30.000Z</published>
-    <updated>2024-07-06T09:50:15.968Z</updated>
+    <updated>2024-07-06T12:21:04.462Z</updated>
     
     
     <summary type="html">最近在serv00薅了个服务器，经过一系列的折腾，发现还是有一点可玩性的，本文将记录在serv00服务器上部署alist应用的详细过程</summary>
@@ -476,33 +497,6 @@
     <category term="html" scheme="https://www.zzzwb.com/tags/html/"/>
     
     <category term="个人项目" scheme="https://www.zzzwb.com/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>09-如何让ChatGPT作为客户服务回答话术</title>
-    <link href="https://www.zzzwb.com/2023/10-26-chatgpt009.html"/>
-    <id>https://www.zzzwb.com/2023/10-26-chatgpt009.html</id>
-    <published>2023-10-26T07:07:43.000Z</published>
-    <updated>2023-12-07T03:26:23.842Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;09-如何让ChatGPT自动生成内容，作为客户服务工作人员的回答话术？&quot;&gt;&lt;a href=&quot;#09-如何让ChatGPT自动生成内容，作为客户服务工作人员的回答话术？&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="ChatGPT" scheme="https://www.zzzwb.com/categories/ChatGPT/"/>
-    
-    
-    <category term="ChatGPT" scheme="https://www.zzzwb.com/tags/ChatGPT/"/>
-    
-    <category term="提问技巧" scheme="https://www.zzzwb.com/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
     
   </entry>
   

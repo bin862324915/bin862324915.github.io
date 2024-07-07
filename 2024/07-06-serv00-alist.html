@@ -27,7 +27,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://imgsrc.baidu.com/www.zzzwb.com/pic/item/aa18972bd40735fac0890d86d8510fb30f240897.png">
 <meta property="article:published_time" content="2024-07-06T03:17:30.000Z">
-<meta property="article:modified_time" content="2024-07-06T09:50:15.968Z">
+<meta property="article:modified_time" content="2024-07-06T12:21:04.462Z">
 <meta property="article:author" content="Wenbin">
 <meta property="article:tag" content="serv00">
 <meta property="article:tag" content="alist">
@@ -449,7 +449,7 @@ var _hmt = _hmt || [];
       <span class="post-meta mr-2">
         <i class="iconfont icon-a-tongjishuju"></i>
         
-          2.5k 字
+          2.6k 字
         
       </span>
     
@@ -460,7 +460,7 @@ var _hmt = _hmt || [];
         
         
         
-          21 分钟
+          22 分钟
         
       </span>
     
@@ -512,7 +512,7 @@ var _hmt = _hmt || [];
               <p class="note note-warning">
                 
                   
-                    本文最后更新于：2024年7月6日 下午
+                    本文最后更新于：2024年7月6日 晚上
                   
                 
               </p>
@@ -593,9 +593,15 @@ Password：Test240706<span aria-hidden="true" class="line-numbers-rows"><span></
 
 <p>修改好后点击<code>Save</code>保存。</p>
 <h3 id="运行测试"><a href="#运行测试" class="headerlink" title="运行测试"></a>运行测试</h3><p>回到SSH客户端，执行操作</p>
-<pre class="line-numbers language-none"><code class="language-none">.&#x2F;alist server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">./alist server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>首次运行后会生成一个默认的密码，找到<code>password</code>后面的字符串就是默认密码，保存备用</p>
+<p>如果忘记密码可以使用以下指令重置密码</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 随机生成一个密码</span>
+./alist admin random
+<span class="token comment"># 手动设置一个密码,`NEW_PASSWORD`是指你需要设置的密码</span>
+./alist admin <span class="token builtin class-name">set</span> NEW_PASSWORD<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
 <p>进入浏览器，打开你刚刚部署的网站，比如<a target="_blank" rel="noopener" href="https://bin001.serv00.net/">https://bin001.serv00.net/</a>，输入用户名<code>admin</code>，密码是刚刚生成的那个，至此，整个<code>alist</code>的安装部署就到此结束了,在SSH客户端 按<code>Ctrl + C</code>，结束<code>alist</code>的运行</p>
 <h3 id="后台运行"><a href="#后台运行" class="headerlink" title="后台运行"></a>后台运行</h3><p>可以通过<code>screen</code>新建会话让<code>alist</code>保持在后台运行，执行操作</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">screen</span> <span class="token parameter variable">-S</span> alist /home/ztest/domains/ztest.serv00.net/alist/alist server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -607,7 +613,7 @@ Password：Test240706<span aria-hidden="true" class="line-numbers-rows"><span></
 
 <p>在网页管理面板进入<code>Cron jobs</code>菜单，点击<code>Add cron job</code>，新建一个脚本，然后在<code>Command</code>框中输入<code>screen -S alist /home/ztest/domains/ztest.serv00.net/alist/alist server</code>，然后点击<code>Add</code>，这样，当服务器重启的时候就会执行操作自动启动<code>alist</code>应用了</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">screen</span> <span class="token parameter variable">-S</span> alist /home/ztest/domains/ztest.serv00.net/alist/alist server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>alist官方参考文档：<a target="_blank" rel="noopener" href="https://alist.nn.ci/zh/">https://alist.nn.ci/zh/</a></p>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p>alist官方参考文档：<a target="_blank" rel="noopener" href="https://alist.nn.ci/zh/">https://alist.nn.ci/zh/</a></p>
 <p>B站视频演示地址：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1JHaueaEbP/?vd_source=b3070a0523c34c08f7ff2131cc45b582">https://www.bilibili.com/video/BV1JHaueaEbP/?vd_source&#x3D;b3070a0523c34c08f7ff2131cc45b582</a></p>
 
                 
@@ -729,6 +735,12 @@ Password：Test240706<span aria-hidden="true" class="line-numbers-rows"><span></
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/2024/07-07-serv00-vless.html" class="common-chip text-ellipsis">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">serv00一键部署vless详细记录</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
