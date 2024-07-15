@@ -6,7 +6,7 @@
   <link href="https://www.zzzwb.com/atom.xml" rel="self"/>
   
   <link href="https://www.zzzwb.com/"/>
-  <updated>2024-07-11T14:00:41.176Z</updated>
+  <updated>2024-07-15T10:14:21.852Z</updated>
   <id>https://www.zzzwb.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.zzzwb.com/2024/07-11-serv00-automation.html"/>
     <id>https://www.zzzwb.com/2024/07-11-serv00-automation.html</id>
     <published>2024-07-11T13:37:12.000Z</published>
-    <updated>2024-07-11T14:00:41.176Z</updated>
+    <updated>2024-07-15T10:14:21.852Z</updated>
     
     
     <summary type="html">因serv00服务器要求，如果用户帐户在 90 天内未通过 DevilWEB 或 SSH 面板正确登录，则该帐户将自动从系统中删除，并且无法恢复该帐户收集的数据。于是我就利用Github的Actions来实现我的账号进行定期登录，达到自动保号的效果！</summary>
@@ -33,7 +33,7 @@
     
     <category term="serv00" scheme="https://www.zzzwb.com/tags/serv00/"/>
     
-    <category term="gitHub" scheme="https://www.zzzwb.com/tags/gitHub/"/>
+    <category term="github" scheme="https://www.zzzwb.com/tags/github/"/>
     
   </entry>
   
@@ -42,7 +42,7 @@
     <link href="https://www.zzzwb.com/2024/07-07-serv00-vless.html"/>
     <id>https://www.zzzwb.com/2024/07-07-serv00-vless.html</id>
     <published>2024-07-07T05:06:27.000Z</published>
-    <updated>2024-07-11T13:55:11.399Z</updated>
+    <updated>2024-07-15T10:16:57.454Z</updated>
     
     
     <summary type="html">昨天发布了一篇关于serv00部署alist的详细记录，很多朋友们反馈按照步骤来都成功部署用上了，趁今天有时间，记录一下sev00部署vless的详细记录，为了方便大家安装，我写了一个一键安装脚本，可以省去一下操作</summary>
@@ -63,7 +63,7 @@
     <link href="https://www.zzzwb.com/2024/07-06-serv00-alist.html"/>
     <id>https://www.zzzwb.com/2024/07-06-serv00-alist.html</id>
     <published>2024-07-06T03:17:30.000Z</published>
-    <updated>2024-07-11T13:55:24.405Z</updated>
+    <updated>2024-07-15T15:11:20.921Z</updated>
     
     
     <summary type="html">最近在serv00薅了个服务器，经过一系列的折腾，发现还是有一点可玩性的，本文将记录在serv00服务器上部署alist应用的详细过程</summary>
