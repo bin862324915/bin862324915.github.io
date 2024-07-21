@@ -6,7 +6,7 @@
   <link href="https://www.zzzwb.com/atom.xml" rel="self"/>
   
   <link href="https://www.zzzwb.com/"/>
-  <updated>2024-07-16T14:10:30.822Z</updated>
+  <updated>2024-07-21T16:17:16.998Z</updated>
   <id>https://www.zzzwb.com/</id>
   
   <author>
@@ -17,14 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>通过cloudflare提供的免费cdn给serv00节点加速</title>
+    <link href="https://www.zzzwb.com/2024/07-21-serv00-cloudflare.html"/>
+    <id>https://www.zzzwb.com/2024/07-21-serv00-cloudflare.html</id>
+    <published>2024-07-21T15:37:06.000Z</published>
+    <updated>2024-07-21T16:17:16.998Z</updated>
+    
+    
+    <summary type="html">最近有很多朋友们反馈说serv00的服务器国内基本是访问不了的，要不就是能访问，但是速度非常慢，那有没有什么其他方法可以解决这个问题呢？答案是：肯定有的，那么我们今天就来记录一下serv00系列的第五期，如何通过cloudflare提供的免费服务来提升serv00节点的网络速度。</summary>
+    
+    
+    
+    <category term="serv00" scheme="https://www.zzzwb.com/categories/serv00/"/>
+    
+    
+    <category term="serv00" scheme="https://www.zzzwb.com/tags/serv00/"/>
+    
+    <category term="cloudflare" scheme="https://www.zzzwb.com/tags/cloudflare/"/>
+    
+  </entry>
+  
+  <entry>
     <title>serv00通过WordPress轻松搭建个人网站</title>
     <link href="https://www.zzzwb.com/2024/07-16-serv00-wordpress.html"/>
     <id>https://www.zzzwb.com/2024/07-16-serv00-wordpress.html</id>
     <published>2024-07-16T13:47:24.000Z</published>
-    <updated>2024-07-16T14:10:30.822Z</updated>
+    <updated>2024-07-21T16:17:51.776Z</updated>
     
     
-    <summary type="html">前段时间发布了serv00服务器部署vless跟alist的文章，受到不少朋友的关注，也有不少的朋友建议出一期搭建个人网站的教程，本文是记录serv00系列的第三期，这次我们就记录一下serv00如何通过安装部署WordPress轻松搭建自己的个人博客网站</summary>
+    <summary type="html">前段时间发布了serv00服务器部署vless跟alist的文章，受到不少朋友的关注，也有不少的朋友建议出一期搭建个人网站的教程，本文是记录serv00系列的第四期，这次我们就记录一下serv00如何通过安装部署WordPress轻松搭建自己的个人博客网站</summary>
     
     
     
@@ -452,33 +473,6 @@
     <category term="ChatGPT" scheme="https://www.zzzwb.com/tags/ChatGPT/"/>
     
     <category term="提问技巧" scheme="https://www.zzzwb.com/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>fluid主题添加侧边栏</title>
-    <link href="https://www.zzzwb.com/2023/11-05-tjcbl.html"/>
-    <id>https://www.zzzwb.com/2023/11-05-tjcbl.html</id>
-    <published>2023-11-05T09:47:51.000Z</published>
-    <updated>2023-12-07T03:26:23.842Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;fluid主题添加侧边栏&quot;&gt;&lt;a href=&quot;#fluid主题添加侧边栏&quot; class=&quot;headerlink&quot; title=&quot;fluid主题添加侧边栏&quot;&gt;&lt;/a&gt;fluid主题添加侧边栏&lt;/h1&gt;&lt;p&gt;今天逛网页的时候偶然发现一个使用fluid主题的博主&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="hexo" scheme="https://www.zzzwb.com/categories/hexo/"/>
-    
-    
-    <category term="网页美化" scheme="https://www.zzzwb.com/tags/%E7%BD%91%E9%A1%B5%E7%BE%8E%E5%8C%96/"/>
-    
-    <category term="fluid主题" scheme="https://www.zzzwb.com/tags/fluid%E4%B8%BB%E9%A2%98/"/>
     
   </entry>
   

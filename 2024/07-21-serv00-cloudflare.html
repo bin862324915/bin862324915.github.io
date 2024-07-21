@@ -18,27 +18,27 @@
   <meta name="author" content="Wenbin">
   <meta name="keywords" content="前端技术，python，人工智能，个人博客">
   
-    <meta name="description" content="17-如何用ChatGP协助你，从品牌角度对产品提出升级建议？该场景对应的关键词库（19个）：品牌洋葱图思维模型、产品信息、人群、品类、属性、体验、差异化特征、功效、品牌价值主张、目标用户、需求、痛点、爽点、消费者、外观、功能、结构、产品优化建议、产品开发可行性。 提问模板(3个）：第一步：确保ChatGPT了解品牌洋葱图的概念。 提问模板： 请解释什么是品牌洋葱图思维模型。 第二步：输入你要从品">
+    <meta name="description" content="最近有很多朋友们反馈说serv00的服务器国内基本是访问不了的，要不就是能访问，但是速度非常慢，那有没有什么其他方法可以解决这个问题呢？答案是：肯定有的，那么我们今天就来记录一下serv00系列的第五期，如何通过cloudflare提供的免费服务来提升serv00节点的网络速度。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="17-如何用ChatGP从品牌角度对产品提出升级建议">
-<meta property="og:url" content="https://www.zzzwb.com/2023/10-25-chatgpt017.html">
+<meta property="og:title" content="通过cloudflare提供的免费cdn给serv00节点加速">
+<meta property="og:url" content="https://www.zzzwb.com/2024/07-21-serv00-cloudflare.html">
 <meta property="og:site_name" content="Wenbin&#39;s blog">
-<meta property="og:description" content="17-如何用ChatGP协助你，从品牌角度对产品提出升级建议？该场景对应的关键词库（19个）：品牌洋葱图思维模型、产品信息、人群、品类、属性、体验、差异化特征、功效、品牌价值主张、目标用户、需求、痛点、爽点、消费者、外观、功能、结构、产品优化建议、产品开发可行性。 提问模板(3个）：第一步：确保ChatGPT了解品牌洋葱图的概念。 提问模板： 请解释什么是品牌洋葱图思维模型。 第二步：输入你要从品">
+<meta property="og:description" content="最近有很多朋友们反馈说serv00的服务器国内基本是访问不了的，要不就是能访问，但是速度非常慢，那有没有什么其他方法可以解决这个问题呢？答案是：肯定有的，那么我们今天就来记录一下serv00系列的第五期，如何通过cloudflare提供的免费服务来提升serv00节点的网络速度。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://imgsrc.baidu.com/forum/pic/item/6159252dd42a2834f6e4483e1db5c9ea15cebf41.jpg">
-<meta property="article:published_time" content="2023-10-25T06:33:33.000Z">
-<meta property="article:modified_time" content="2023-12-07T03:26:23.842Z">
+<meta property="og:image" content="https://imgsrc.baidu.com/www.zzzwb.com/pic/item/f636afc379310a55dc9daed4f14543a982261050.png">
+<meta property="article:published_time" content="2024-07-21T15:37:06.000Z">
+<meta property="article:modified_time" content="2024-07-21T16:17:16.998Z">
 <meta property="article:author" content="Wenbin">
-<meta property="article:tag" content="ChatGPT">
-<meta property="article:tag" content="提问技巧">
+<meta property="article:tag" content="serv00">
+<meta property="article:tag" content="cloudflare">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://imgsrc.baidu.com/forum/pic/item/6159252dd42a2834f6e4483e1db5c9ea15cebf41.jpg">
+<meta name="twitter:image" content="https://imgsrc.baidu.com/www.zzzwb.com/pic/item/f636afc379310a55dc9daed4f14543a982261050.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>17-如何用ChatGP从品牌角度对产品提出升级建议 - Wenbin&#39;s blog</title>
+  <title>通过cloudflare提供的免费cdn给serv00节点加速 - Wenbin&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -421,7 +421,7 @@ var _hmt = _hmt || [];
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="17-如何用ChatGP从品牌角度对产品提出升级建议"></span>
+            <span id="subtitle" data-typed-text="通过cloudflare提供的免费cdn给serv00节点加速"></span>
           
         </div>
 
@@ -437,8 +437,8 @@ var _hmt = _hmt || [];
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-10-25 14:33" pubdate>
-          2023年10月25日 下午
+        <time datetime="2024-07-21 23:37" pubdate>
+          2024年7月21日 晚上
         </time>
       </span>
     
@@ -449,7 +449,7 @@ var _hmt = _hmt || [];
       <span class="post-meta mr-2">
         <i class="iconfont icon-a-tongjishuju"></i>
         
-          595 字
+          1.2k 字
         
       </span>
     
@@ -460,7 +460,7 @@ var _hmt = _hmt || [];
         
         
         
-          5 分钟
+          10 分钟
         
       </span>
     
@@ -507,12 +507,12 @@ var _hmt = _hmt || [];
       <div class="container nopadding-x-md" id="board-ctn">
         <div class=py-5 id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">17-如何用ChatGP从品牌角度对产品提出升级建议</h1>
+            <h1 id="seo-header">通过cloudflare提供的免费cdn给serv00节点加速</h1>
             
               <p class="note note-warning">
                 
                   
-                    本文最后更新于：2023年12月7日 上午
+                    本文最后更新于：2024年7月22日 凌晨
                   
                 
               </p>
@@ -520,27 +520,35 @@ var _hmt = _hmt || [];
             
               <div class="markdown-body">
                 
-                <h2 id="17-如何用ChatGP协助你，从品牌角度对产品提出升级建议？"><a href="#17-如何用ChatGP协助你，从品牌角度对产品提出升级建议？" class="headerlink" title="17-如何用ChatGP协助你，从品牌角度对产品提出升级建议？"></a><strong>17-如何用ChatGP协助你，从品牌角度对产品提出升级建议？</strong></h2><h3 id="该场景对应的关键词库（19个）："><a href="#该场景对应的关键词库（19个）：" class="headerlink" title="该场景对应的关键词库（19个）："></a><strong>该场景对应的关键词库（19个）：</strong></h3><p>品牌洋葱图思维模型、产品信息、人群、品类、属性、体验、差异化特征、功效、品牌价值主张、目标用户、需求、痛点、爽点、消费者、外观、功能、结构、产品优化建议、产品开发可行性。</p>
-<h3 id="提问模板-3个）："><a href="#提问模板-3个）：" class="headerlink" title="提问模板(3个）："></a><strong>提问模板(3个）：</strong></h3><p><strong>第一步：确保ChatGPT了解品牌洋葱图的概念。</strong></p>
-<p><strong>提问模板：</strong></p>
-<p>请解释什么是品牌洋葱图思维模型。</p>
-<p><strong>第二步：输入你要从品牌方向去优化的产品信息（人群、体验、属性、功效等）+品牌价值主张信息。</strong></p>
-<p><strong>提问模板：</strong></p>
-<p>请根据我所提供的产品信息和品牌价值主张信息，根据“品牌洋葱图思维模型”进行分析：</p>
-<p>1、产品信息：面向儿童（人群）的口服制剂（品类），内含葡萄糖酸钙和氨基酸钙成分，人性化双插管设计（属性），口感好（体验），具备儿童补钙的黄金标准，吸收率高（差异化特征），有利于儿童健康成长（功效）</p>
-<p>2、品牌价值主张：“专业、爱心”</p>
-<p><strong>第三步：从品牌方向提出产品优化建议：</strong></p>
-<p><strong>提问模板：</strong></p>
-<p>请根据以下步骤和上述分析结果，为上述产品提供产品优化建议：</p>
-<p>1、首先，请从目标用户的需求、痛点、爽点出发，给出该产品的优化建议</p>
-<p>2、然后，请从该品类下消费者更关注哪些属性（例如外观、功能、结构等属性）出发，给出该产品的优化建议</p>
-<p>3、最后请从品牌的价值主张出发，看看是否还有可以“锦上添花”的产品功能或属性？</p>
-<p>4、请结合上述产品优化建议，进行产品开发可行性的总结陈述。</p>
-<h3 id="案例："><a href="#案例：" class="headerlink" title="案例："></a><strong>案例：</strong></h3><p><img src="/img/sc/077.png" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload></p>
-<p><img src="/img/sc/078.png" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload></p>
-<p><img src="/img/sc/079.png" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload></p>
-<p><img src="/img/sc/080.png" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload></p>
-<p><img src="/img/sc/081.png" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload></p>
+                <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>最近有很多朋友们反馈说<code>serv00</code>的服务器国内基本是访问不了的，要不就是能访问，但是速度慢，那有没有什么其他方法可以解决这个问题呢？答案是：肯定有的，那么我们今天就来记录一下<code>serv00</code>系列的第五期，如何通过<code>cloudflare</code>提供的免费服务来提升<code>serv00</code>节点的网络速度。</p>
+<h3 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h3><p>拥有一个<code>serv00</code>的服务器并且搭建了节点服务，还没有的朋友请<a href="https://www.zzzwb.com/2024/07-07-serv00-vless.html">点击这里</a></p>
+<p>拥有<code>cloudflare</code>账号，并且将自有域名托管至<code>cloudflare</code>，还没有的朋友请<a target="_blank" rel="noopener" href="https://dash.cloudflare.com/login">点击这里</a></p>
+<h3 id="配置DNS"><a href="#配置DNS" class="headerlink" title="配置DNS"></a>配置DNS</h3><p>当你满足<code>前置条件</code>后就可以进行接下来的操作了</p>
+<p>在<code>v2ray</code>客户端选中你在<code>serv00</code>搭建的节点，点击<code>右键</code>，选择<code>克隆所选服务器</code>，新增一个节点信息</p>
+<p>查看你的节点信息<code>地址</code>这一栏目，保存下来备用，比如：<code>ztest.serv00.net</code></p>
+<p>查看你的节点信息<code>端口</code>这一栏目，保存下来备用，比如：<code>58623</code></p>
+<p>进入cloudflare，<code>管理面板</code>&gt;<code>网站</code>&gt;<code>DNS</code>&gt;<code>记录</code>&gt;<code>添加记录</code>&gt;参考以下信息填写后<code>保存</code></p>
+<p>类型：<code>CNAME</code></p>
+<p>名称：填写一个自己喜欢的，比如：<code>cdn</code></p>
+<p>目标：刚刚在地址栏目复制下来的地址，比如：<code>ztest.serv00.net</code></p>
+<p>代理状态：<code>√</code></p>
+<h3 id="配置规则"><a href="#配置规则" class="headerlink" title="配置规则"></a>配置规则</h3><p>完成上面的操作后，点击右边菜单栏的<code>规则</code>，点击<code>Origin Rules</code>，点击<code>创建规则</code>&gt;参考以下信息填写后<code>部署</code></p>
+<p>规则名称：填一个自己喜欢的，比如：<code>serv00-cdn</code></p>
+<p>当传入请求匹配时：<code>自定义筛选表达式</code></p>
+<p>字段：<code>主机名</code></p>
+<p>运算符：<code>等于</code></p>
+<p>值：刚刚配置dns记录中名称一栏中填写的加主域名，比如：<code>cdn.zzzwb.com</code>，其中<code>zzzwb.com</code>是你的主域名</p>
+<p>目标端口：<code>重写到...</code>，框框中输入刚刚保存下来的端口号。比如：<code>58623</code></p>
+<h3 id="配置CDN"><a href="#配置CDN" class="headerlink" title="配置CDN"></a>配置CDN</h3><p>回到<code>v2ray</code>客户端，<code>选中</code>刚刚克隆下来的节点，<code>双击</code>编辑节点，参考以下信息填写后<code>保存</code></p>
+<p>地址：将原来的地址修改为cloudflare的地址，比如：原：<code>ztest.serv00.net</code>，改为：<code>cdn.zzzwb.com</code></p>
+<p>端口：将原来的端口修改为443，比如：原：<code>58623</code>，改为：<code>443</code></p>
+<p>伪装域名：填写跟地址栏的信息一样，比如：<code>cdn.zzzwb.com</code></p>
+<p>传输层安全：选择<code>tls</code></p>
+<p>SNI：填写跟地址栏的信息一样，比如：<code>cdn.zzzwb.com</code></p>
+<p>跳过证书验证：<code>false</code></p>
+<p>修改并保存后选中节点信息，单击右键选择真连接延迟测试一下，如果没有显示<code>-1</code>，那么就说明你已经成功通过cloudflare提供的免费cdn服务来提升serv00节点的网络速度了</p>
+<h3 id="优选ip"><a href="#优选ip" class="headerlink" title="优选ip"></a>优选ip</h3><p>很多时候<code>cloudflare</code>默认分配的<code>cdn节点ip</code>的加速效果可能并不明显，那么这个时候很多<code>老手</code>就会通过自己<code>手动优选</code>的方式去筛选出最适合自己网络的<code>优选ip</code>了，关于如何筛选最适合自己网络的优质ip，网上一大把，我这边就不再细述了哈</p>
+<p>以上就是本次记录的所有内容，如果这篇文章对你有帮助还请多多支持哈</p>
 
                 
               </div>
@@ -584,7 +592,7 @@ var _hmt = _hmt || [];
     
       <span class="category-chain">
         
-  <a href="/categories/ChatGPT/" class="hover-with-bg">ChatGPT</a>
+  <a href="/categories/serv00/" class="hover-with-bg">serv00</a>
   
   
 
@@ -599,9 +607,9 @@ var _hmt = _hmt || [];
     <div class="post-meta">
       <i class="iconfont icon-tags-fill"></i>
       
-        <a class="hover-with-bg" href="/tags/ChatGPT/" class="print-no-link"> ChatGPT</a>
+        <a class="hover-with-bg" href="/tags/serv00/" class="print-no-link"> serv00</a>
       
-        <a class="hover-with-bg" href="/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/" class="print-no-link"> 提问技巧</a>
+        <a class="hover-with-bg" href="/tags/cloudflare/" class="print-no-link"> cloudflare</a>
       
     </div>
   
@@ -629,7 +637,7 @@ var _hmt = _hmt || [];
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href=https://www.zzzwb.com/2023/10-25-chatgpt017.html>https://www.zzzwb.com/2023/10-25-chatgpt017.html</a>
+                    <a href=https://www.zzzwb.com/2024/07-21-serv00-cloudflare.html>https://www.zzzwb.com/2024/07-21-serv00-cloudflare.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -662,18 +670,12 @@ var _hmt = _hmt || [];
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/10-26-chatgpt009.html" class="common-chip text-ellipsis">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">09-如何让ChatGPT作为客户服务回答话术</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/10-24-python004.html" class="common-chip text-ellipsis">
-                        <span class="hidden-mobile">python爬取元气桌面动态壁纸实例</span>
+                      <a href="/2024/07-16-serv00-wordpress.html" class="common-chip text-ellipsis">
+                        <span class="hidden-mobile">serv00通过WordPress轻松搭建个人网站</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

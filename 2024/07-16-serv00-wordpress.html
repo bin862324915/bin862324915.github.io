@@ -18,16 +18,16 @@
   <meta name="author" content="Wenbin">
   <meta name="keywords" content="前端技术，python，人工智能，个人博客">
   
-    <meta name="description" content="前段时间发布了serv00服务器部署vless跟alist的文章，受到不少朋友的关注，也有不少的朋友建议出一期搭建个人网站的教程，本文是记录serv00系列的第三期，这次我们就记录一下serv00如何通过安装部署WordPress轻松搭建自己的个人博客网站">
+    <meta name="description" content="前段时间发布了serv00服务器部署vless跟alist的文章，受到不少朋友的关注，也有不少的朋友建议出一期搭建个人网站的教程，本文是记录serv00系列的第四期，这次我们就记录一下serv00如何通过安装部署WordPress轻松搭建自己的个人博客网站">
 <meta property="og:type" content="article">
 <meta property="og:title" content="serv00通过WordPress轻松搭建个人网站">
 <meta property="og:url" content="https://www.zzzwb.com/2024/07-16-serv00-wordpress.html">
 <meta property="og:site_name" content="Wenbin&#39;s blog">
-<meta property="og:description" content="前段时间发布了serv00服务器部署vless跟alist的文章，受到不少朋友的关注，也有不少的朋友建议出一期搭建个人网站的教程，本文是记录serv00系列的第三期，这次我们就记录一下serv00如何通过安装部署WordPress轻松搭建自己的个人博客网站">
+<meta property="og:description" content="前段时间发布了serv00服务器部署vless跟alist的文章，受到不少朋友的关注，也有不少的朋友建议出一期搭建个人网站的教程，本文是记录serv00系列的第四期，这次我们就记录一下serv00如何通过安装部署WordPress轻松搭建自己的个人博客网站">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://imgsrc.baidu.com/www.zzzwb.com/pic/item/2fdda3cc7cd98d105168dd0e673fb80e7bec9055.png">
 <meta property="article:published_time" content="2024-07-16T13:47:24.000Z">
-<meta property="article:modified_time" content="2024-07-16T14:10:30.822Z">
+<meta property="article:modified_time" content="2024-07-21T16:17:51.776Z">
 <meta property="article:author" content="Wenbin">
 <meta property="article:tag" content="serv00">
 <meta property="article:tag" content="建站">
@@ -512,7 +512,7 @@ var _hmt = _hmt || [];
               <p class="note note-warning">
                 
                   
-                    本文最后更新于：2024年7月16日 晚上
+                    本文最后更新于：2024年7月22日 凌晨
                   
                 
               </p>
@@ -520,7 +520,7 @@ var _hmt = _hmt || [];
             
               <div class="markdown-body">
                 
-                <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>前段时间发布了serv00服务器部署<a href="https://www.zzzwb.com/2024/07-07-serv00-vless.html">vless</a>跟<a href="https://www.zzzwb.com/2024/07-06-serv00-alist.html">alist</a>的文章，受到不少朋友的关注，也有不少的朋友建议出一期搭建个人网站的教程，本文是记录serv00系列的第三期，这次我们就记录一下serv00如何通过安装部署WordPress轻松搭建自己的个人博客网站</p>
+                <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>前段时间发布了serv00服务器部署<a href="https://www.zzzwb.com/2024/07-07-serv00-vless.html">vless</a>跟<a href="https://www.zzzwb.com/2024/07-06-serv00-alist.html">alist</a>的文章，受到不少朋友的关注，也有不少的朋友建议出一期搭建个人网站的教程，本文是记录serv00系列的第四期，这次我们就记录一下serv00如何通过安装部署WordPress轻松搭建自己的个人博客网站</p>
 <h3 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h3><ol>
 <li>使用系统分配的域名</li>
 </ol>
@@ -534,7 +534,9 @@ var _hmt = _hmt || [];
 <h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><ol>
 <li>在线下载</li>
 </ol>
-<p>进入<a target="_blank" rel="noopener" href="https://wordpress.org/">WordPress</a>官网，点击右上角<code>Get WordPress</code>，下载最新版本的<code>WordPress</code>压缩包，下载好后上传至serv00文件夹，从网页管理面板进入文件管理器<code>file_manager</code>，然后上传至刚刚添加的自定义域名文件夹，上传完成后点击该压缩包，右键选择提取，提取到域名文件夹目录下，比如<code>*/blog/</code>目录下</p>
+<p>进入<a target="_blank" rel="noopener" href="https://wordpress.org/">WordPress</a>官网，点击右上角<code>Get WordPress</code>，下载最新版本的<code>WordPress</code>压缩包</p>
+<p>下载好后上传至serv00文件夹，从网页管理面板进入文件管理器<code>file_manager</code>，然后上传至刚刚添加的自定义域名文件夹</p>
+<p>上传完成后点击该压缩包，右键选择提取，提取到域名文件夹目录下，比如<code>*/blog/</code>目录下</p>
 <ol start="2">
 <li>通过<code>ssh</code>下载</li>
 </ol>
@@ -678,6 +680,12 @@ Password：Blog123456<span aria-hidden="true" class="line-numbers-rows"><span></
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/2024/07-21-serv00-cloudflare.html" class="common-chip text-ellipsis">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">通过cloudflare提供的免费cdn给serv00节点加速</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
@@ -890,8 +898,8 @@ if(rewardBtn){
       <p class="h3 sidebar-author">Wenbin</p>
       <p class="sidebar-subtitle">一个热衷于Code的爱好者</p>
       
-        <a href="https://wpa.qq.com/msgrd?v=3&uin=862324915" class="h4" target="_blank">
-          <i class="iconfont iconfont icon-qq-fill" aria-hidden="true"></i>
+        <a href="https://t.me/CN_zzzwb" class="h4" target="_blank">
+          <i class="iconfont iconfont icon-telegram-fill" aria-hidden="true"></i>
         </a>
         &nbsp;&nbsp;
       
@@ -900,8 +908,8 @@ if(rewardBtn){
         </a>
         &nbsp;&nbsp;
       
-        <a href="https://music.163.com/#/user?id=401567916" class="h4" target="_blank">
-          <i class="iconfont icon-wyy" aria-hidden="true"></i>
+        <a href="https://www.youtube.com/@CN_zzzwb" class="h4" target="_blank">
+          <i class="iconfont icon-youtube-fill" aria-hidden="true"></i>
         </a>
         &nbsp;&nbsp;
       
