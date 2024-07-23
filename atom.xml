@@ -42,7 +42,7 @@
     <link href="https://www.zzzwb.com/2024/07-16-serv00-wordpress.html"/>
     <id>https://www.zzzwb.com/2024/07-16-serv00-wordpress.html</id>
     <published>2024-07-16T13:47:24.000Z</published>
-    <updated>2024-07-21T16:17:51.776Z</updated>
+    <updated>2024-07-23T18:30:57.710Z</updated>
     
     
     <summary type="html">前段时间发布了serv00服务器部署vless跟alist的文章，受到不少朋友的关注，也有不少的朋友建议出一期搭建个人网站的教程，本文是记录serv00系列的第四期，这次我们就记录一下serv00如何通过安装部署WordPress轻松搭建自己的个人博客网站</summary>
@@ -63,7 +63,7 @@
     <link href="https://www.zzzwb.com/2024/07-11-serv00-automation.html"/>
     <id>https://www.zzzwb.com/2024/07-11-serv00-automation.html</id>
     <published>2024-07-11T13:37:12.000Z</published>
-    <updated>2024-07-15T10:14:21.852Z</updated>
+    <updated>2024-07-23T18:28:29.341Z</updated>
     
     
     <summary type="html">因serv00服务器要求，如果用户帐户在 90 天内未通过 DevilWEB 或 SSH 面板正确登录，则该帐户将自动从系统中删除，并且无法恢复该帐户收集的数据。于是我就利用Github的Actions来实现我的账号进行定期登录，达到自动保号的效果！</summary>
@@ -84,7 +84,7 @@
     <link href="https://www.zzzwb.com/2024/07-07-serv00-vless.html"/>
     <id>https://www.zzzwb.com/2024/07-07-serv00-vless.html</id>
     <published>2024-07-07T05:06:27.000Z</published>
-    <updated>2024-07-15T10:16:57.454Z</updated>
+    <updated>2024-07-23T18:28:43.025Z</updated>
     
     
     <summary type="html">昨天发布了一篇关于serv00部署alist的详细记录，很多朋友们反馈按照步骤来都成功部署用上了，趁今天有时间，记录一下sev00部署vless的详细记录，为了方便大家安装，我写了一个一键安装脚本，可以省去一下操作</summary>
@@ -105,7 +105,7 @@
     <link href="https://www.zzzwb.com/2024/07-06-serv00-alist.html"/>
     <id>https://www.zzzwb.com/2024/07-06-serv00-alist.html</id>
     <published>2024-07-06T03:17:30.000Z</published>
-    <updated>2024-07-15T15:11:20.921Z</updated>
+    <updated>2024-07-23T18:28:15.092Z</updated>
     
     
     <summary type="html">最近在serv00薅了个服务器，经过一系列的折腾，发现还是有一点可玩性的，本文将记录在serv00服务器上部署alist应用的详细过程</summary>
