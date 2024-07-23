@@ -6,7 +6,7 @@
   <link href="https://www.zzzwb.com/atom.xml" rel="self"/>
   
   <link href="https://www.zzzwb.com/"/>
-  <updated>2024-07-21T16:17:16.998Z</updated>
+  <updated>2024-07-23T18:23:24.755Z</updated>
   <id>https://www.zzzwb.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.zzzwb.com/2024/07-21-serv00-cloudflare.html"/>
     <id>https://www.zzzwb.com/2024/07-21-serv00-cloudflare.html</id>
     <published>2024-07-21T15:37:06.000Z</published>
-    <updated>2024-07-21T16:17:16.998Z</updated>
+    <updated>2024-07-23T18:23:24.755Z</updated>
     
     
     <summary type="html">最近有很多朋友们反馈说serv00的服务器国内基本是访问不了的，要不就是能访问，但是速度非常慢，那有没有什么其他方法可以解决这个问题呢？答案是：肯定有的，那么我们今天就来记录一下serv00系列的第五期，如何通过cloudflare提供的免费服务来提升serv00节点的网络速度。</summary>
