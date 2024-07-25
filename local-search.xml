@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>serv00搭建哪吒面板轻松管理多台VPS</title>
+    <link href="/2024/07-25-serv00-nezha.html"/>
+    <url>/2024/07-25-serv00-nezha.html</url>
+    
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>最近很多小伙伴们在我的<code>tg群</code>讨论<code>serv00</code>能不能安装哪吒面板，因为一般自己买的<code>vps</code>都是有<code>root</code>权限的，所以可以使用官方的一键安装脚本，那没有<code>root</code>权限的<code>serv00</code>到底能不能搭建哪吒面板呢，这几天我也在研究，终于，在经过参考了多方面资料并经过测试，<code>serv00</code>是可以搭建哪吒面板的，那今天就来继续<code>serv00</code>系列的第六期，详细讲解一下<code>serv00</code>搭建部署哪吒面板的记录</p><h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ol><li>新建2个端口</li><li>创建一个域名<code>type</code>选择<code>proxy</code>并绑定其中一个端口</li><li>准备<code>Github</code>的<code>OAuth Apps</code>的<code>Client ID</code>和<code>Client secrets</code></li></ol><h3 id="安装哪吒"><a href="#安装哪吒" class="headerlink" title="安装哪吒"></a>安装哪吒</h3><p>当你准备工作做好了之后就可以进行接下来的操作了，<code>ssh</code>登录服务器</p><p>执行以下指令下载哪吒面板的安装包</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">wget</span> https://github.com/bin862324915/serv00-app/releases/download/freebsd/nezha.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>解压</p><pre class="line-numbers language-none"><code class="language-none">unzip nezha.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="配置面板"><a href="#配置面板" class="headerlink" title="配置面板"></a>配置面板</h3><p>登录<code>网页管理面板</code>&gt;<code>文件管理器</code>，进入哪吒目录下的<code>data</code>目录，打开<code>config.yaml</code>文件</p><p>修改以下内容</p><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">GRPCHost</span><span class="token punctuation">:</span> <span class="token string">'[you host[]'</span><span class="token key atrule">GRPCPort</span><span class="token punctuation">:</span> <span class="token key atrule">HTTPPort</span><span class="token punctuation">:</span> <span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token key atrule">GRPCHost</span><span class="token punctuation">:</span> <span class="token string">'你的域名'</span><span class="token key atrule">GRPCPort</span><span class="token punctuation">:</span> 创建的另外一个端口<span class="token key atrule">HTTPPort</span><span class="token punctuation">:</span> 填写绑定域名的端口<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-none"><code class="language-none">Oauth2:  Admin: [username]  ClientID: [github clientid]  ClientSecret: []  Endpoint: &quot;&quot;  Type: github  -------------  Oauth2:  Admin: [Github账号]  ClientID: [你准备的Client ID]  ClientSecret: [你准备的Client secrets]  Endpoint: &quot;&quot;  Type: github<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>编辑修改后保存，回到<code>ssh</code>客户端，执行以下命令，赋予哪吒权限</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">chmod</span> +x dashboard<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>执行以下命令运行</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">./dashboard<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>浏览器打开你的域名，操作没有问题的话就会显示哪吒面板的页面了</p><h3 id="配置监控"><a href="#配置监控" class="headerlink" title="配置监控"></a>配置监控</h3><p>登录后台管理，新增一个服务器，填写相关信息，新增后在页面复制秘钥保存备用</p><p><code>ssh</code>登录被控端服务器</p><p>执行以下指令下载<code>agent</code>安装包</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">wget</span> https://github.com/bin862324915/serv00-app/releases/download/freebsd/nezha-agent.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>解压</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">unzip</span> nezha-agent.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>执行以下命令，赋予权限</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">chmod</span> +x start.sh agent<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>修改<code>start.sh</code>文件内容</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/sh</span><span class="token builtin class-name">export</span> <span class="token assign-left variable">TMPDIR</span><span class="token operator">=</span>/home/<span class="token punctuation">[</span>username<span class="token punctuation">[</span><span class="token punctuation">]</span>/nezha-agent/tmp/home/<span class="token punctuation">[</span>username<span class="token punctuation">[</span><span class="token punctuation">]</span>/nezha-agent/agent <span class="token parameter variable">-s</span> <span class="token punctuation">[</span>you host<span class="token punctuation">]</span>:grcppoet <span class="token parameter variable">-p</span> <span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token parameter variable">-d</span>EOF---------<span class="token builtin class-name">export</span> <span class="token assign-left variable">TMPDIR</span><span class="token operator">=</span>这里修改为tmp的实际路径这里修改为agent的实际路径 <span class="token parameter variable">-s</span> <span class="token punctuation">[</span>这里是哪吒面板的域名<span class="token punctuation">]</span>:<span class="token punctuation">[</span>这里是哪吒面板GRPCPort设置的端口号<span class="token punctuation">]</span> <span class="token parameter variable">-p</span> <span class="token punctuation">[</span>这里填写刚刚新增服务器后保存的秘钥<span class="token punctuation">]</span> <span class="token parameter variable">-d</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>修改后保存，回到ssh客户端执行</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sh</span> start.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>这时候回到哪吒面板刷新一下，你新增的服务器信息就出来了</p><h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><p><img src="https://imgsrc.baidu.com/www.zzzwb.com/pic/item/eac4b74543a98226891c6d07cc82b9014a90eb35.png"></p><h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p>加入我的tg群：<a href="https://t.me/zzzjsjl">https://t.me/zzzjsjl</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>serv00</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>serv00</tag>
+      
+      <tag>哪吒面板</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>通过cloudflare提供的免费cdn给serv00节点加速</title>
     <link href="/2024/07-21-serv00-cloudflare.html"/>
     <url>/2024/07-21-serv00-cloudflare.html</url>
@@ -1623,17 +1650,6 @@
   
   
   <entry>
-    <title>必应每日壁纸</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[<style>@media (max-width: 1199.98px) {.bing-tk {    display: flex;    padding-top: 10px;    overflow: visible;    margin-right: -6em;    flex-wrap: wrap;    margin-left: 2em;}.bing {    width: calc(45% - 0px);    padding: 0px 8px 5px 0px;    margin-left: 0;}.shengming p {    font-size: larger;}}@media (max-width: 991.98px) {.bing {    width: calc(100% - 0px);    padding: 0px 8px 5px 0px;    margin-left: -4em;    text-align: center; }.bing p {    margin-left: 0;}.shengming p {    font-size: inherit;}}</style><div class="shengming"><p style="text-align: center;">以下图片均来自必应搜索当日背景壁纸，每日自动获取更新</p></div><div class="bing-tk"></div><div id="jiazaiButton" style="text-align: center; margin-top: 3rem; margin-bottom: 10rem;">  <button id="loadMoreButton" class="at_button">加载更多...</button><hr></div>  <script src="https://cdn.zzzwb.com/blog/js/zidingyi/av-min.js"></script>  <script src="/js/zidingyi/mrbz.js"></script><script>function imgloading(oImg) {    if (oImg && oImg.style) {        var n = 0;        var timer = setInterval(function () {            n++;            oImg.style.opacity = n * n / 50;            if (n * n >= 50) {                clearInterval(timer);            }        }, 100);    }}</script>]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>圈小猫</title>
     <link href="/"/>
     <url>/</url>
@@ -1645,11 +1661,11 @@
   
   
   <entry>
-    <title>碎碎念</title>
+    <title>必应每日壁纸</title>
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<style>@media (max-width: 1199.98px) {.bing-tk {    display: flex;    padding-top: 10px;    overflow: visible;    margin-right: -6em;    flex-wrap: wrap;    margin-left: 2em;}.bing {    width: calc(45% - 0px);    padding: 0px 8px 5px 0px;    margin-left: 0;}.shengming p {    font-size: larger;}}@media (max-width: 991.98px) {.bing {    width: calc(100% - 0px);    padding: 0px 8px 5px 0px;    margin-left: -4em;    text-align: center; }.bing p {    margin-left: 0;}.shengming p {    font-size: inherit;}}</style><div class="shengming"><p style="text-align: center;">以下图片均来自必应搜索当日背景壁纸，每日自动获取更新</p></div><div class="bing-tk"></div><div id="jiazaiButton" style="text-align: center; margin-top: 3rem; margin-bottom: 10rem;">  <button id="loadMoreButton" class="at_button">加载更多...</button><hr></div>  <script src="https://cdn.zzzwb.com/blog/js/zidingyi/av-min.js"></script>  <script src="/js/zidingyi/mrbz.js"></script><script>function imgloading(oImg) {    if (oImg && oImg.style) {        var n = 0;        var timer = setInterval(function () {            n++;            oImg.style.opacity = n * n / 50;            if (n * n >= 50) {                clearInterval(timer);            }        }, 100);    }}</script>]]></content>
     
   </entry>
   
@@ -1661,6 +1677,17 @@
     <url>/</url>
     
     <content type="html"><![CDATA[<style>body, div, h1,h2, form, fieldset, footer,p {    margin: 0; padding: 0; border: 0; outline: none;}#wrap {width:530px; margin:20px auto 0; }h1 {margin-bottom:20px; text-align:center;font-size:48px; text-shadow:0 1px 0 #ede8d9; }    #form_wrap { overflow:hidden; height:446px; position:relative; top:0px;        -webkit-transition: all 1s ease-in-out .3s;        -moz-transition: all 1s ease-in-out .3s;        -o-transition: all 1s ease-in-out .3s;        transition: all 1s ease-in-out .3s;}    #form_wrap:before {content:"";        position:absolute;        bottom:128px;left:0px;        background:url('https://imgsrc.baidu.com/forum/pic/item/b7003af33a87e950126b375856385343fbf2b482.png');        width:530px;height: 316px;}    #form_wrap:after {content:"";position:absolute;        bottom:0px;left:0;        background:url('https://imgsrc.baidu.com/forum/pic/item/838ba61ea8d3fd1f3d79660e764e251f95ca5f96.png');        width:530px;height: 260px; }    #form_wrap.hide:after, #form_wrap.hide:before {display:none; }    #form_wrap:hover {height:806px;top:-30px;}    form {background:#f7f2ec url('/img/letter_bg.png');         position:relative;top:200px;overflow:hidden;        height:200px;width:400px;margin:0px auto;padding:20px;         border: 1px solid #fff;        color: #4d3b04;        border-radius: 3px;         -moz-border-radius: 3px; -webkit-border-radius: 3px;        box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;        -moz-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 14px #fff;        -webkit-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;        -webkit-transition: all 1s ease-in-out .3s;        -moz-transition: all 1s ease-in-out .3s;        -o-transition: all 1s ease-in-out .3s;        transition: all 1s ease-in-out .3s;}        #form_wrap:hover form {height:530px;}        label {            margin: 11px 20px 0 0;             font-size: 16px; color: #b3aba1;            text-transform: uppercase;             text-shadow: 0px 1px 0px #fff;        }        #form_wrap input[type=submit] {            position:relative;font-family: 'YanoneKaffeesatzRegular';             font-size:24px; color: #7c7873;text-shadow:0 1px 0 #fff;            width:100%; text-align:center;opacity:0;            background:none;            cursor: pointer;            -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;             -webkit-transition: opacity .6s ease-in-out 0s;            -moz-transition: opacity .6s ease-in-out 0s;            -o-transition: opacity .6s ease-in-out 0s;            transition: opacity .6s ease-in-out 0s;        }        #form_wrap:hover input[type=submit] {z-index:1;opacity:1;            -webkit-transition: opacity .5s ease-in-out 1.3s;            -moz-transition: opacity .5s ease-in-out 1.3s;            -o-transition: opacity .5s ease-in-out 1.3s;            transition: opacity .5s ease-in-out 1.3s;}            #form_wrap:hover input:hover[type=submit] {color:#435c70;}  .top-banner {    background-color: #555;  }</style><div style="margin-top: -10px">    <div id="wrap">        <div id='form_wrap'>            <form>                <img src='https://imgsrc.baidu.com/forum/pic/item/9213b07eca806538f1b3b426d1dda144ad3482ae.jpg' height=245px/>                <p >Hello ！</p>                <label for="email"> </label>        欢迎访问我的个人blog，如果您有任何想对我说的话，请随时留言。我将看到后第一时间进行回复，谢谢！！        </div>    </div></div><hr>]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>碎碎念</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[]]></content>
     
   </entry>
   

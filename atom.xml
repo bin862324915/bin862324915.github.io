@@ -6,7 +6,7 @@
   <link href="https://www.zzzwb.com/atom.xml" rel="self"/>
   
   <link href="https://www.zzzwb.com/"/>
-  <updated>2024-07-23T18:23:24.755Z</updated>
+  <updated>2024-07-25T13:13:41.205Z</updated>
   <id>https://www.zzzwb.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>serv00搭建哪吒面板轻松管理多台VPS</title>
+    <link href="https://www.zzzwb.com/2024/07-25-serv00-nezha.html"/>
+    <id>https://www.zzzwb.com/2024/07-25-serv00-nezha.html</id>
+    <published>2024-07-25T12:55:06.000Z</published>
+    <updated>2024-07-25T13:13:41.205Z</updated>
+    
+    
+    <summary type="html">最近很多人在tg群讨论serv00能不能安装哪吒面板，因为一般自己买的vps都是有root权限的，所以可以使用官方的一键安装脚本，那没有root权限的serv00到底能不能搭建哪吒面板呢，这几天我也在研究，终于，在经过参考了多方面资料并经过测试，serv00是可以搭建哪吒面板的，那今天就来继续serv00系列的第六期，详细讲解一下serv00搭建部署哪吒面板的记录</summary>
+    
+    
+    
+    <category term="serv00" scheme="https://www.zzzwb.com/categories/serv00/"/>
+    
+    
+    <category term="serv00" scheme="https://www.zzzwb.com/tags/serv00/"/>
+    
+    <category term="哪吒面板" scheme="https://www.zzzwb.com/tags/%E5%93%AA%E5%90%92%E9%9D%A2%E6%9D%BF/"/>
+    
+  </entry>
   
   <entry>
     <title>通过cloudflare提供的免费cdn给serv00节点加速</title>
@@ -435,33 +456,6 @@
         
         
     <summary type="html">&lt;h2 id=&quot;20-如何用ChatGPT做内容营销方案和选题计划，同时生产和优化内容？&quot;&gt;&lt;a href=&quot;#20-如何用ChatGPT做内容营销方案和选题计划，同时生产和优化内容？&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="ChatGPT" scheme="https://www.zzzwb.com/categories/ChatGPT/"/>
-    
-    
-    <category term="ChatGPT" scheme="https://www.zzzwb.com/tags/ChatGPT/"/>
-    
-    <category term="提问技巧" scheme="https://www.zzzwb.com/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>19-如何用ChatGPT协助搭建品牌视觉体系</title>
-    <link href="https://www.zzzwb.com/2023/11-10-chatgpt019.html"/>
-    <id>https://www.zzzwb.com/2023/11-10-chatgpt019.html</id>
-    <published>2023-11-10T06:45:33.000Z</published>
-    <updated>2023-12-07T03:26:23.842Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;19-如何用ChatGPT协助搭建品牌视觉体系（VI）？&quot;&gt;&lt;a href=&quot;#19-如何用ChatGPT协助搭建品牌视觉体系（VI）？&quot; class=&quot;headerlink&quot;</summary>
         
       
     
