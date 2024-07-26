@@ -6,7 +6,7 @@
   <link href="https://www.zzzwb.com/atom.xml" rel="self"/>
   
   <link href="https://www.zzzwb.com/"/>
-  <updated>2024-07-25T13:13:41.205Z</updated>
+  <updated>2024-07-26T16:46:16.071Z</updated>
   <id>https://www.zzzwb.com/</id>
   
   <author>
@@ -21,10 +21,10 @@
     <link href="https://www.zzzwb.com/2024/07-25-serv00-nezha.html"/>
     <id>https://www.zzzwb.com/2024/07-25-serv00-nezha.html</id>
     <published>2024-07-25T12:55:06.000Z</published>
-    <updated>2024-07-25T13:13:41.205Z</updated>
+    <updated>2024-07-26T16:46:16.071Z</updated>
     
     
-    <summary type="html">最近很多人在tg群讨论serv00能不能安装哪吒面板，因为一般自己买的vps都是有root权限的，所以可以使用官方的一键安装脚本，那没有root权限的serv00到底能不能搭建哪吒面板呢，这几天我也在研究，终于，在经过参考了多方面资料并经过测试，serv00是可以搭建哪吒面板的，那今天就来继续serv00系列的第六期，详细讲解一下serv00搭建部署哪吒面板的记录</summary>
+    <summary type="html">最近很多人在我的tg群讨论serv00能不能安装哪吒面板，因为一般自己买的vps都是有root权限的，所以可以使用官方的一键安装脚本，那没有root权限的serv00到底能不能搭建哪吒面板呢，这几天我也在研究，终于，在经过参考了多方面资料并经过测试，serv00是可以搭建哪吒面板的，那今天就来继续serv00系列的第六期，详细讲解一下serv00搭建部署哪吒面板的记录</summary>
     
     
     
