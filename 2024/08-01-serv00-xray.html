@@ -18,26 +18,37 @@
   <meta name="author" content="Wenbin">
   <meta name="keywords" content="前端技术，python，人工智能，个人博客">
   
-    <meta name="description" content="Wenbin的个人博客,一个热衷于code的爱好者">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Wenbin&#39;s blog">
-<meta property="og:url" content="https://www.zzzwb.com/page/3/index.html">
+    <meta name="description" content="前段时间发布了一篇关于serv00部署vless节点的文章，但是很多朋友在使用过后反馈说效果不是很好，会出各种问题，比如连接不上，掉线等等...，最近在测试，发现通过xray搭建的节点可以稳定运行，保持节点的连接，那趁着今天有点时间，我们就来记录一下，serv00部署xray搭建多协议节点并保持稳定在线的过程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="serv00部署xray搭建多协议节点保持稳定连接">
+<meta property="og:url" content="https://www.zzzwb.com/2024/08-01-serv00-xray.html">
 <meta property="og:site_name" content="Wenbin&#39;s blog">
-<meta property="og:description" content="Wenbin的个人博客,一个热衷于code的爱好者">
+<meta property="og:description" content="前段时间发布了一篇关于serv00部署vless节点的文章，但是很多朋友在使用过后反馈说效果不是很好，会出各种问题，比如连接不上，掉线等等...，最近在测试，发现通过xray搭建的节点可以稳定运行，保持节点的连接，那趁着今天有点时间，我们就来记录一下，serv00部署xray搭建多协议节点并保持稳定在线的过程">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://imgsrc.baidu.com/www.zzzwb.com/pic/item/cdbf6c81800a19d81e24752575fa828ba61e46ef.png">
+<meta property="article:published_time" content="2024-08-01T11:46:21.000Z">
+<meta property="article:modified_time" content="2024-08-01T12:04:47.541Z">
 <meta property="article:author" content="Wenbin">
-<meta property="article:tag" content="前端技术，python，人工智能，个人博客">
+<meta property="article:tag" content="sserv00">
+<meta property="article:tag" content="xray">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://imgsrc.baidu.com/www.zzzwb.com/pic/item/cdbf6c81800a19d81e24752575fa828ba61e46ef.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Wenbin&#39;s blog</title>
+  <title>serv00部署xray搭建多协议节点保持稳定连接 - Wenbin&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
 
 
@@ -154,7 +165,7 @@ var _hmt = _hmt || [];
   <header>
     
 
-<div class="header-inner" style="height: 100vh;">
+<div class="header-inner" style="height: 80vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -412,9 +423,64 @@ var _hmt = _hmt || [];
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="心向星空，梦往远方。星光如诗洒在夜幕，梦境在星辰中徜徉。"></span>
+            <span id="subtitle" data-typed-text="serv00部署xray搭建多协议节点保持稳定连接"></span>
           
         </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        Wenbin
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-08-01 19:46" pubdate>
+          2024年8月1日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-a-tongjishuju"></i>
+        
+          1.9k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          16 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> 次
+        </span>
+        <span id="pltj" style="display: none">
+          <i class="iconfont icon-pinglun" style="margin-left: 0.4rem;"></i><span id="plnum">0</span> 评论</span>
+        
+      
+    
+  </div>
+
 
         
       </div>
@@ -430,748 +496,395 @@ var _hmt = _hmt || [];
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div id="board"
-          style="margin-top: 0">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class=py-5 id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">serv00部署xray搭建多协议节点保持稳定连接</h1>
+            
+              <p class="note note-warning">
                 
-
-
-  <div class="row mx-auto index-card aos-init aos-animate" data-aos="flip-up">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2023/11-15-chatgpt020.html" target="_self">
-          <img src="https://imgsrc.baidu.com/forum/pic/item/6159252dd42a2834f6e4483e1db5c9ea15cebf41.jpg" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload alt="20-如何用ChatGPT做营销方案和选题计划">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/11-15-chatgpt020.html" target="_self">
-          20-如何用ChatGPT做营销方案和选题计划
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt " href="/2023/11-15-chatgpt020.html" target="_self">
-        <div>
-          20-如何用ChatGPT做内容营销方案和选题计划，同时生产和优化内容？该场景对应的关键词库（31个）：内容营销、目标、主题、类型、选题计划、素材、推广策略、优化方案、渠道、目标受众、竞争对手、行业背景、转化率、品牌知名度、客户参与度、销售、发布频率、选题阶段、生产阶段、推广阶段、预算分配、人群特征、话题标签、视觉元素、电子邮件、SEO、数字广告、线下广告、在线聊天、社交媒体、赞助 提问模板（8个
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-11-15 14:55" pubdate>
-              2023-11-15
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
+                  
+                    本文最后更新于：2024年8月1日 晚上
+                  
+                
+              </p>
             
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/ChatGPT/" class="hover-with-bg">ChatGPT</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/ChatGPT/">ChatGPT</a>
-            
-              <a href="/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/">提问技巧</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
+              <div class="markdown-body">
+                
+                <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>前段时间发布了一篇关于serv00部署vless节点的文章，但是很多朋友在使用过后反馈说效果不是很好，会出各种问题，比如连接不上，掉线等等…，最近在测试，发现通过xray搭建的节点可以稳定运行，保持节点的连接，趁着今天有点时间，那今天我们就来记录一下，serv00部署xray搭建多协议节点并保持稳定在线的过程</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>登录<code>ssh</code>连接终端，<code>cd</code>到你想要安装的<code>xray</code>的文件夹，然后执行以下命令下载<code>xray压缩包</code></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">wget</span> <span class="token parameter variable">-O</span> <span class="token string">'xray.zip'</span> <span class="token string">'https://raw.githubusercontent.com/bin862324915/serv00-app/main/xray/xray.zip'</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-  <div class="row mx-auto index-card aos-init aos-animate" data-aos="flip-up">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2023/11-10-chatgpt019.html" target="_self">
-          <img src="https://imgsrc.baidu.com/forum/pic/item/6159252dd42a2834f6e4483e1db5c9ea15cebf41.jpg" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload alt="19-如何用ChatGPT协助搭建品牌视觉体系">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/11-10-chatgpt019.html" target="_self">
-          19-如何用ChatGPT协助搭建品牌视觉体系
-        </a>
-      </h2>
+<p>执行以下指令解压</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">unzip</span> xray.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-      
-      <a class="index-excerpt " href="/2023/11-10-chatgpt019.html" target="_self">
-        <div>
-          19-如何用ChatGPT协助搭建品牌视觉体系（VI）？该场景对应的关键词库（18个）：VI体系、品牌、目标市场、品牌DNA、人群特征、设计理念、标志设计、配色方案、字体选择、图形元素、价值观、形象、客户经理、需求、品牌定位、目标受众、主色调、辅助色 提问模板（2个）：第一步：输入品牌与目标市场信息 提问模板： 假设你是一个广告公司的客户经理，你接到客户的需求，是搭建XXX品牌的VI（Visual
-        </div>
-      </a>
+<p>执行以下指令赋予<code>xray</code>权限</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">chmod</span> +x xray<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-11-10 14:45" pubdate>
-              2023-11-10
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>登录<code>网页管理面板</code>&gt;<code>新建</code>两个<code>端口</code>，然后打开<code>网页版</code>的<code>文件管理器</code>，进入你安装好<code>xray</code>的文件夹，找到<code>config.json</code>文件打开，找到以下内容，并<code>修改</code>为你自己的信息</p>
+<pre class="line-numbers language-json" data-language="json"><code class="language-json">  <span class="token property">"inbounds"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">&#123;</span>
+    <span class="token property">"port"</span><span class="token operator">:</span> <span class="token number">55555</span><span class="token punctuation">,</span> # 改成你新建端口的其中一个
+    <span class="token property">"listen"</span><span class="token operator">:</span> <span class="token string">"0.0.0.0"</span><span class="token punctuation">,</span>
+    <span class="token property">"tag"</span><span class="token operator">:</span> <span class="token string">"vless-inbound"</span><span class="token punctuation">,</span>
+    <span class="token property">"protocol"</span><span class="token operator">:</span> <span class="token string">"vless"</span><span class="token punctuation">,</span> # vless协议
+    <span class="token property">"settings"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+      <span class="token property">"auth"</span><span class="token operator">:</span> <span class="token string">"noauth"</span><span class="token punctuation">,</span>
+      <span class="token property">"udp"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">"ip"</span><span class="token operator">:</span> <span class="token string">"0.0.0.0"</span><span class="token punctuation">,</span>
+      <span class="token property">"clients"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">&#123;</span>
+        <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"f91c2710-b50c-4ccd-83cf-dd5e1b13eabf"</span> # 修改成你自己的uuid
+      <span class="token punctuation">&#125;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+---------------
+   <span class="token punctuation">&#123;</span>
+    <span class="token property">"port"</span><span class="token operator">:</span> <span class="token number">44444</span><span class="token punctuation">,</span> # 改成你新建端口的另外一个
+    <span class="token property">"listen"</span><span class="token operator">:</span> <span class="token string">"0.0.0.0"</span><span class="token punctuation">,</span>
+    <span class="token property">"protocol"</span><span class="token operator">:</span> <span class="token string">"socks"</span><span class="token punctuation">,</span> # socks协议
+    <span class="token property">"settings"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+      <span class="token property">"auth"</span><span class="token operator">:</span> <span class="token string">"password"</span><span class="token punctuation">,</span>
+      <span class="token property">"accounts"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">&#123;</span>
+          <span class="token property">"user"</span><span class="token operator">:</span> <span class="token string">"user"</span><span class="token punctuation">,</span> # 这个是用户名，可改可不改
+          <span class="token property">"pass"</span><span class="token operator">:</span> <span class="token string">"admin"</span> # 这个是密码，可改可不改
+        <span class="token punctuation">&#125;</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">"udp"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">"ip"</span><span class="token operator">:</span> <span class="token string">"0.0.0.0"</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/ChatGPT/" class="hover-with-bg">ChatGPT</a>
-  
-  
+<p>可以<a target="_blank" rel="noopener" href="https://api.zzzwb.com/v1?get=uuid">点击这里</a>生成一个随机的<code>uuid</code></p>
+<p>修改好后点击保存，回到<code>ssh</code>连接终端</p>
+<h3 id="运行测试"><a href="#运行测试" class="headerlink" title="运行测试"></a>运行测试</h3><p>回到<code>ssh</code>终端后执行以下命令运行<code>xray</code></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">./xray run<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-      </span>
-    
-  
-</span>
+<p>如果操作没问题的话，此时<code>xray</code>已经在运行了</p>
+<p>打开<code>v2ray</code>客户端，新添加一个<code>vless协议</code>的服务器</p>
+<p>在<code>v2ray</code>客户端填写服务器信息</p>
+<p>备注: 你可以填写任意的备注名称，例如 ：<code>serv00-vless</code></p>
+<p>地址: 你服务器的<code> IP 地址</code>或<code>域名</code></p>
+<p>端口: 你自己配置的端口号，比如：<code>44444</code></p>
+<p>用户ID (UUID): <code>f91c2710-b50c-4ccd-83cf-dd5e1b13eabf</code></p>
+<p>加密方式: <code>none</code></p>
+<p>传输协议: <code>WS</code></p>
+<p>路径:<code> /</code></p>
+<p>其他没有提到的留空默认</p>
+<p>点击确定，然后测试一下真连接延迟，有显示数值就表示通了，可以正常使用了</p>
+<p><strong>再新添加一个<code>socks协议</code>的服务器</strong></p>
+<p>在<code>v2ray</code>客户端填写服务器信息</p>
+<p>备注: 你可以填写任意的备注名称，例如：<code>serv00-socks</code></p>
+<p>地址: 你服务器的 <code>IP 地址</code>或<code>域名</code></p>
+<p>端口: 你自己配置的端口号，比如：<code>55555</code></p>
+<p>用户名：你自己在配置文件中填写的<code>用户名</code>。比如默认的：<code>user</code></p>
+<p>密码：你自己在配置文件中填写的<code>密码</code>。比如默认的：<code>password</code></p>
+<p>其他没有提到的留空默认</p>
+<p>点击确定，然后测试一下真连接延迟，有显示数值就表示通了，可以正常使用了</p>
+<h3 id="后台运行"><a href="#后台运行" class="headerlink" title="后台运行"></a>后台运行</h3><p>可以通过<code>screen</code>新建会话让<code>xray</code>保持在后台运行，执行操作，请将下面的目录修改成你自己的实际目录</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">screen</span> <span class="token parameter variable">-S</span> xray /home/xxx/domains/xxx.serv00.net/xray/xray run<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/ChatGPT/">ChatGPT</a>
-            
-              <a href="/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/">提问技巧</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
+<p>执行后会新建一个<code>screen</code>会话运行<code>xray</code></p>
+<p>可以在当前会话按下 <code>Ctrl + A</code>，然后按<code>D</code>，这会让你从当前 <code>screen</code> 会话中脱离，但 <code>xray</code> 程序仍会在后台运行。</p>
+<p>如果你需要重新连接到这个 <code>screen</code> 会话，可以使用以下命令：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">screen</span> <span class="token parameter variable">-r</span> xray<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-  <div class="row mx-auto index-card aos-init aos-animate" data-aos="flip-up">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2023/11-05-tjcbl.html" target="_self">
-          <img src="https://imgsrc.baidu.com/forum/pic/item/d1a20cf431adcbefb9b21533eaaf2edda3cc9f05.jpg" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload alt="fluid主题添加侧边栏">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/11-05-tjcbl.html" target="_self">
-          fluid主题添加侧边栏
-        </a>
-      </h2>
+<p>在网页管理面板进入<code>Cron jobs</code>菜单，点击<code>Add cron job</code>，新建一个脚本，然后在<code>Command</code>框中输入<code>screen -S xray /home/xxx/domains/xxx.serv00.net/xray/xray run</code>，然后点击<code>Add</code>，这样，当服务器重启的时候就会自动执行操作启动<code>xray</code>应用了</p>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p>加入我的tg群：<a target="_blank" rel="noopener" href="https://t.me/zzzjsjl">https://t.me/zzzjsjl</a></p>
 
-      
-      <a class="index-excerpt " href="/2023/11-05-tjcbl.html" target="_self">
-        <div>
-          fluid主题添加侧边栏今天逛网页的时候偶然发现一个使用fluid主题的博主七夏浅笑，她的fluid主题添加了一个侧边栏功能块，觉得非常不错。于是就动手折腾把它移植过来并且修改成了自己喜欢的样式颜色等，以下是操作过程记录 添加ejs模板文件新建文件layout&#x2F;_partial&#x2F;sidebar.ejs &lt;% if(theme.sidebar.enable)&#123; %
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-11-05 17:47" pubdate>
-              2023-11-05
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/hexo/" class="hover-with-bg">hexo</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E7%BD%91%E9%A1%B5%E7%BE%8E%E5%8C%96/">网页美化</a>
-            
-              <a href="/tags/fluid%E4%B8%BB%E9%A2%98/">fluid主题</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card aos-init aos-animate" data-aos="flip-up">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2023/11-05-chatgpt018.html" target="_self">
-          <img src="https://imgsrc.baidu.com/forum/pic/item/6159252dd42a2834f6e4483e1db5c9ea15cebf41.jpg" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload alt="18-如何用ChatGPT做新品上市推广方案策划">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/11-05-chatgpt018.html" target="_self">
-          18-如何用ChatGPT做新品上市推广方案策划
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt " href="/2023/11-05-chatgpt018.html" target="_self">
-        <div>
-          18-如何用ChatGPT做新品上市推广方案策划？该场景对应的关键词库(28个）：品牌、产品信息、新品、成分、属性、功效、人群特征、客户分析、产品定位、核心卖点、推广策略、广告、公关、线上推广、线下活动、合作伙伴、资源整合、预算、执行计划、监测、评估、微调方案、价值主张、营销策略、热点话题、消费者、向往感、诱惑钩子 提问模板（3个）：第一步：输入品牌与产品信息 提问模板： 1、你知道XXX品牌吗？
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-11-05 14:39" pubdate>
-              2023-11-05
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/ChatGPT/" class="hover-with-bg">ChatGPT</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/ChatGPT/">ChatGPT</a>
-            
-              <a href="/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/">提问技巧</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card aos-init aos-animate" data-aos="flip-up">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2023/10-26-love.html" target="_self">
-          <img src="https://imgsrc.baidu.com/forum/pic/item/4b90f603738da977ad659e1ef651f8198618e3b9.jpg" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload alt="hexo基于leancloud创建表白墙的应用">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/10-26-love.html" target="_self">
-          hexo基于leancloud创建表白墙的应用
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt " href="/2023/10-26-love.html" target="_self">
-        <div>
-          hexo基于leancloud创建表白墙的应用基于上一个创建的html应用漂流瓶，突然来了个灵感，于是就开始动手开发试试看，对于完全没有学过任何一款编程程序的我，经过这几天的反复查资料，反复测试，终于是搞出来了。掌声鼓励一下我自己，在这里也要感谢我师父（ChatGPT），不厌其烦的回答我的所有问题，哈哈哈哈哈~~~ html&lt;!DOCTYPE html> &lt;html> &lt;head
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-10-26 23:16" pubdate>
-              2023-10-26
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/" class="hover-with-bg">个人项目</a>
-  
-  
-
-      </span>
-    
-  
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/hexo/">hexo</a>
-            
-              <a href="/tags/%E7%BD%91%E9%A1%B5%E5%BA%94%E7%94%A8/">网页应用</a>
-            
-              <a href="/tags/html/">html</a>
-            
-              <a href="/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/">个人项目</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card aos-init aos-animate" data-aos="flip-up">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2023/10-26-chatgpt009.html" target="_self">
-          <img src="https://imgsrc.baidu.com/forum/pic/item/6159252dd42a2834f6e4483e1db5c9ea15cebf41.jpg" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload alt="09-如何让ChatGPT作为客户服务回答话术">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/10-26-chatgpt009.html" target="_self">
-          09-如何让ChatGPT作为客户服务回答话术
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt " href="/2023/10-26-chatgpt009.html" target="_self">
-        <div>
-          09-如何让ChatGPT自动生成内容，作为客户服务工作人员的回答话术？该场景对应的关键词库（13个）产品知识、使用方法、售后服务、售后维修、支付方式、支付流程、产品购买、产品配送、客户投诉、客户建议、政策法规、使用注意事项、客服身份 提问模板1、客服团队一般需要回答几个方面的问题？ 2、知名XX品牌商会覆盖哪15个常见问答场景？ 问题输入1 你是一个业务一流的客服主管，现在你需要出一个培训客服的
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-10-26 15:07" pubdate>
-              2023-10-26
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/ChatGPT/" class="hover-with-bg">ChatGPT</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/ChatGPT/">ChatGPT</a>
-            
-              <a href="/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/">提问技巧</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card aos-init aos-animate" data-aos="flip-up">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2023/10-25-chatgpt017.html" target="_self">
-          <img src="https://imgsrc.baidu.com/forum/pic/item/6159252dd42a2834f6e4483e1db5c9ea15cebf41.jpg" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload alt="17-如何用ChatGP从品牌角度对产品提出升级建议">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/10-25-chatgpt017.html" target="_self">
-          17-如何用ChatGP从品牌角度对产品提出升级建议
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt " href="/2023/10-25-chatgpt017.html" target="_self">
-        <div>
-          17-如何用ChatGP协助你，从品牌角度对产品提出升级建议？该场景对应的关键词库（19个）：品牌洋葱图思维模型、产品信息、人群、品类、属性、体验、差异化特征、功效、品牌价值主张、目标用户、需求、痛点、爽点、消费者、外观、功能、结构、产品优化建议、产品开发可行性。 提问模板(3个）：第一步：确保ChatGPT了解品牌洋葱图的概念。 提问模板： 请解释什么是品牌洋葱图思维模型。 第二步：输入你要从品
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-10-25 14:33" pubdate>
-              2023-10-25
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/ChatGPT/" class="hover-with-bg">ChatGPT</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/ChatGPT/">ChatGPT</a>
-            
-              <a href="/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/">提问技巧</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card aos-init aos-animate" data-aos="flip-up">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2023/10-24-python004.html" target="_self">
-          <img src="https://imgsrc.baidu.com/forum/pic/item/d4628535e5dde7115048f5c0e1efce1b9d16616a.jpg" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload alt="python爬取元气桌面动态壁纸实例">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/10-24-python004.html" target="_self">
-          python爬取元气桌面动态壁纸实例
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt " href="/2023/10-24-python004.html" target="_self">
-        <div>
-          python爬取元气桌面动态壁纸实例 将url替换成自己想爬取的分类起始页链接，根据需要修改爬取的页数，默认10页，1页有18个mp4视频。 import os import requests from lxml import etree   url = 'https://bizhi.cheetahfun.com/dn/c3d/p2'  headesp = &#123;     'User-Age
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-10-24 18:41" pubdate>
-              2023-10-24
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/python/" class="hover-with-bg">python</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E4%BB%A3%E7%A0%81/">代码</a>
-            
-              <a href="/tags/python/">python</a>
-            
-              <a href="/tags/%E7%88%AC%E8%99%AB/">爬虫</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card aos-init aos-animate" data-aos="flip-up">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2023/10-24-chatgpt016.html" target="_self">
-          <img src="https://imgsrc.baidu.com/forum/pic/item/6159252dd42a2834f6e4483e1db5c9ea15cebf41.jpg" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload alt="16-如何用ChatGPT做品牌联名方案策划">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/10-24-chatgpt016.html" target="_self">
-          16-如何用ChatGPT做品牌联名方案策划
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt " href="/2023/10-24-chatgpt016.html" target="_self">
-        <div>
-          16-如何用ChatGPT做品牌联名方案策划？——以下提问角度来自《Gbrandlab品牌案例拆解训练营：学习指导手册3.0》 该场景对应的关键词库（15个）：品牌、个人IP、社交话题、联名策划方案、调研分析、市场影响力、资源互补性、产品体验、传播话题、视觉形象设计、合作职权分配、销售转化、曝光目标、宣发渠道、品牌形象 提问模板（1个）：1、请确保你知道XX品牌与XXX品牌&#x2F;个人IP 2
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-10-24 14:26" pubdate>
-              2023-10-24
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/ChatGPT/" class="hover-with-bg">ChatGPT</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/ChatGPT/">ChatGPT</a>
-            
-              <a href="/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/">提问技巧</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card aos-init aos-animate" data-aos="flip-up">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2023/10-23-plp.html" target="_self">
-          <img src="https://imgsrc.baidu.com/forum/pic/item/4e4a20a4462309f7920a6c26340e0cf3d7cad699.jpg" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload alt="hexo基于leancloud创建漂流瓶应用">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/10-23-plp.html" target="_self">
-          hexo基于leancloud创建漂流瓶应用
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt " href="/2023/10-23-plp.html" target="_self">
-        <div>
-          hexo基于leancloud创建漂流瓶应用折腾了一个星期，终于把这个漂流瓶应用给搞出来了，其中过程是如何艰难的，就不细说了，直接上代码 HTML&lt;!DOCTYPE html> &lt;html> &lt;head>   &lt;meta charset="UTF-8">   &lt;script src="https://cdn.jsdelivr.net/npm/leancloud-sto
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-10-23 15:23" pubdate>
-              2023-10-23
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/" class="hover-with-bg">个人项目</a>
-  
-  
-
-      </span>
-    
-  
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/hexo/">hexo</a>
-            
-              <a href="/tags/%E7%BD%91%E9%A1%B5%E5%BA%94%E7%94%A8/">网页应用</a>
-            
-              <a href="/tags/html/">html</a>
-            
-              <a href="/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/">个人项目</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-
-  <nav aria-label="navigation">
-    <span class="pagination" id="pagination">
-      <a class="extend prev" rel="prev" href="/page/2/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/#board">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/#board">4</a><a class="page-number" href="/page/5/#board">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/#board">7</a><a class="extend next" rel="next" href="/page/4/#board"><i class="iconfont icon-arrowright"></i></a>
-    </span>
-  </nav>
-
-
-<script>
-var elements = document.querySelectorAll('.index-card');
-for (var i = 0; i < elements.length; i++) {
-    if (i % 2 === 1) {
-        elements[i].setAttribute('data-aos', 'fade-right');
-    } else {
-        elements[i].setAttribute('data-aos', 'fade-left');
-    }
-}
-var boardElement = document.getElementById('board');
-boardElement.classList.add('dhyc');
-//var subtitleElement = document.getElementById('subtitle');
-//subtitleElement.classList.add('subtitle-ys');
-</script>
-
+                
               </div>
+            
+            <hr/>
+	<!-- 打赏模块 -->
+	<div class="reward-container">
+	
+	<div id="rewardImgContainer" class="reward-img-container">
+         	<div class="singleImgContainer">
+            	<img id="wechatImg" class="reward-img" src="https://imgsrc.baidu.com/forum/pic/item/6609c93d70cf3bc7a372c6db9700baa1cd112a92.jpg" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload alt="微信二维码">
+                <p class="wechatPay">微信支付</p>
             </div>
-          </div>
+
+            <div class="singleImgContainer">
+               	<img id="alipayImg" class="reward-img" src="https://imgsrc.baidu.com/forum/pic/item/5366d0160924ab18cc60ea0073fae6cd7b890b96.png" srcset="https://imgsrc.baidu.com/forum/pic/item/377adab44aed2e736aca5a19c101a18b87d6fae1.gif" lazyload alt="支付宝二维码">
+                <p class="aliPay">支付宝支付</p>
+           	</div>
+	</div>
+		<button id="rewardBtn" class="reward-btn">
+			 
+				❤️ 打赏
+				
+		</button>
+		<p class="tea">“文章不错，请博主喝咖啡☕️”</p>
+		
+	
+	</div>
+
+			
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/serv00/" class="hover-with-bg">serv00</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags-fill"></i>
+      
+        <a class="hover-with-bg" href="/tags/sserv00/" class="print-no-link"> sserv00</a>
+      
+        <a class="hover-with-bg" href="/tags/xray/" class="print-no-link"> xray</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+<div class="reprint" id="reprint-statement">
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="iconfont icon-zuozhe">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Wenbin</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="iconfont icon-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href=https://www.zzzwb.com/2024/08-01-serv00-xray.html>https://www.zzzwb.com/2024/08-01-serv00-xray.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="iconfont icon-banquan1">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本站所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Wenbin</a>
+                    !
+                </span>
+            </div>
+    </div>
+
+
+                  <div class="post_share" style="text-align: center; margin-top: 1rem;">
+    <div id="article-share">
+            <link  rel="stylesheet" href="https://cdn.zzzwb.com/blog/js/zidingyi/share/share.min.css" type="text/css"/>
+            <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+            <script  src="https://cdn.zzzwb.com/blog/js/zidingyi/share/share.min.js" type="application/x-javascript"></script>
+    </div>
+</div>
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2024/07-25-serv00-nezha.html" class="common-chip text-ellipsis">
+                        <span class="hidden-mobile">serv00搭建哪吒面板轻松管理多台VPS</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+
+
+
+            </div>
+          </article>
         </div>
-      </div>
+
+
+          <div class="py-5" id="board" style="margin-top: 20px;">
+            <!-- Comments -->
+            <div class="post-content mx-auto" id="comments">
+              <div class="comment_headling" style="font-size: 17px; font-weight: 700; position: relative; padding-left: 20px; padding-bottom: 10px;">
+            
+  
+  
+    <article id="comments">
+      
+  <div id="twikoo"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#comments', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/twikoo/1.6.27/twikoo.min.js', function() {
+        var options = Object.assign(
+          {"envId":"https://twikoojs.zzzwb.com/","region":null,"path":"window.location.pathname"},
+          {
+            el: '#twikoo',
+            path: 'window.location.pathname',
+            onCommentLoaded: function() {
+              Fluid.utils.listenDOMLoaded(function() {
+                var imgSelector = '#twikoo .tk-content img:not(.tk-owo-emotion)';
+                Fluid.plugins.imageCaption(imgSelector);
+                Fluid.plugins.fancyBox(imgSelector);
+                var pltjElement = document.getElementById('pltj');
+                if (pltjElement) {
+                  var plnum = e.comments[0].children[0].firstElementChild.childNodes[0].nextElementSibling.childNodes[0].__vue__._data.count;
+                  var plnumtElement = document.querySelector('#plnum');
+                  plnumtElement.textContent = plnum;
+                  pltjElement.style.display = 'inline';
+                } else {
+                  return;
+}
+              });
+            }
+          }
+        )
+        twikoo.init(options)
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+<script>
+const rewardBtn = document.getElementById('rewardBtn');
+const rewardImgContainer = document.getElementById('rewardImgContainer');
+
+if(rewardBtn){
+	rewardBtn.onclick = () => {
+		rewardImgContainer.style.display = (rewardImgContainer.style.display === 'none' || rewardImgContainer.style.display === '') ? 'inline-flex' : 'none'
+		setTimeout(() => {
+			rewardImgContainer.style.opacity = (rewardImgContainer.style.opacity === '0' || rewardImgContainer.style.opacity === '') ? '1' : '0'
+		}, 10);
+	}
+}
+
+
+//copy
+      $('.markdown-body').on('copy', function (e) {
+          // IE8 or earlier browser is 'undefined'
+          if (typeof window.getSelection === 'undefined') return;
+  
+          var selection = window.getSelection();
+          // if the selection is short let's not annoy our users.
+          if (('' + selection).length < Number.parseInt('100')) {
+              return;
+          }
+  
+          // create a div outside of the visible area and fill it with the selected text.
+          var bodyElement = document.getElementsByTagName('body')[0];
+          var newdiv = document.createElement('div');
+          newdiv.style.position = 'absolute';
+          newdiv.style.left = '-99999px';
+          bodyElement.appendChild(newdiv);
+          newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+  
+          // we need a <div class="code-wrapper"><pre> tag workaround.
+          // otherwise the text inside "pre" loses all the line breaks!
+          if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+              newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre></div>";
+          }
+  
+          var url = document.location.href;
+          newdiv.innerHTML += '<br />'
+              + '-------------------------------------------------------------------------<br />'
+              + 'from: Wenbin\'s blog<br />'
+              + '文章作者: Wenbin<br />'
+              + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+              + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+  
+          selection.selectAllChildren(newdiv);
+          window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+});
+</script>
+ <div class="side-col d-none d-lg-block col-lg-2">
+            
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+  </div>
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
     
 
     
@@ -1412,37 +1125,7 @@ boardElement.classList.add('dhyc');
       }
       var text = subtitle.getAttribute('data-typed-text');
       
-        jQuery.ajax({
-          type: 'GET',
-          url: 'https://api.zzzwb.com/v1?get=hitokoto',
-          headers: {},
-          dataType: 'json',
-          success: function(result) {
-            var apiText;
-            if (result) {
-              var keys = 'data,hitokoto'.split(',');
-              if (result instanceof Array) {
-                result = result[0];
-              }
-              for (const k of keys) {
-                var value = result[k];
-                if (typeof value === 'string') {
-                  apiText = value;
-                  break;
-                } else if (value instanceof Object) {
-                  result = value;
-                }
-              }
-            }
-            apiText ? typing(apiText) : typing(text);
-          },
-          error: function(xhr, status, error) {
-            if (error) {
-              console.error('Failed to request https://api.zzzwb.com/v1?get=hitokoto:', error);
-            }
-            typing(text);
-          }
-        })
+        typing(text);
       
     })(window, document);
   </script>
@@ -1456,6 +1139,94 @@ boardElement.classList.add('dhyc');
 
 
 
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: false,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
 

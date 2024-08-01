@@ -6,7 +6,7 @@
   <link href="https://www.zzzwb.com/atom.xml" rel="self"/>
   
   <link href="https://www.zzzwb.com/"/>
-  <updated>2024-07-26T16:46:16.071Z</updated>
+  <updated>2024-08-01T12:04:47.541Z</updated>
   <id>https://www.zzzwb.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>serv00部署xray搭建多协议节点保持稳定连接</title>
+    <link href="https://www.zzzwb.com/2024/08-01-serv00-xray.html"/>
+    <id>https://www.zzzwb.com/2024/08-01-serv00-xray.html</id>
+    <published>2024-08-01T11:46:21.000Z</published>
+    <updated>2024-08-01T12:04:47.541Z</updated>
+    
+    
+    <summary type="html">前段时间发布了一篇关于serv00部署vless节点的文章，但是很多朋友在使用过后反馈说效果不是很好，会出各种问题，比如连接不上，掉线等等...，最近在测试，发现通过xray搭建的节点可以稳定运行，保持节点的连接，那趁着今天有点时间，我们就来记录一下，serv00部署xray搭建多协议节点并保持稳定在线的过程</summary>
+    
+    
+    
+    <category term="serv00" scheme="https://www.zzzwb.com/categories/serv00/"/>
+    
+    
+    <category term="sserv00" scheme="https://www.zzzwb.com/tags/sserv00/"/>
+    
+    <category term="xray" scheme="https://www.zzzwb.com/tags/xray/"/>
+    
+  </entry>
   
   <entry>
     <title>serv00搭建哪吒面板轻松管理多台VPS</title>
@@ -440,33 +461,6 @@
     <category term="python" scheme="https://www.zzzwb.com/tags/python/"/>
     
     <category term="爬虫" scheme="https://www.zzzwb.com/tags/%E7%88%AC%E8%99%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>20-如何用ChatGPT做营销方案和选题计划</title>
-    <link href="https://www.zzzwb.com/2023/11-15-chatgpt020.html"/>
-    <id>https://www.zzzwb.com/2023/11-15-chatgpt020.html</id>
-    <published>2023-11-15T06:55:33.000Z</published>
-    <updated>2023-12-07T03:26:23.842Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;20-如何用ChatGPT做内容营销方案和选题计划，同时生产和优化内容？&quot;&gt;&lt;a href=&quot;#20-如何用ChatGPT做内容营销方案和选题计划，同时生产和优化内容？&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="ChatGPT" scheme="https://www.zzzwb.com/categories/ChatGPT/"/>
-    
-    
-    <category term="ChatGPT" scheme="https://www.zzzwb.com/tags/ChatGPT/"/>
-    
-    <category term="提问技巧" scheme="https://www.zzzwb.com/tags/%E6%8F%90%E9%97%AE%E6%8A%80%E5%B7%A7/"/>
     
   </entry>
   
