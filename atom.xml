@@ -6,7 +6,7 @@
   <link href="https://www.zzzwb.com/atom.xml" rel="self"/>
   
   <link href="https://www.zzzwb.com/"/>
-  <updated>2024-08-01T12:04:47.541Z</updated>
+  <updated>2024-08-13T15:05:24.377Z</updated>
   <id>https://www.zzzwb.com/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>serv00通过sing-box搭建最新协议节点直接起飞</title>
+    <link href="https://www.zzzwb.com/2024/08-12-serv00-singbox.html"/>
+    <id>https://www.zzzwb.com/2024/08-12-serv00-singbox.html</id>
+    <published>2024-08-12T14:45:43.000Z</published>
+    <updated>2024-08-13T15:05:24.377Z</updated>
+    
+    
+    <summary type="html">最近发现了一个最新的hysteria2协议节点，于是我就在serv00上部署用上了，经过测试，没想到这速度直接起飞，就算是晚高峰油管4K也是秒开，那今天就来记录一下serv00如何通过sing-box一次性部署hysteria2，vless，tuic，三种协议节点，serv00也能带你体验高速冲浪。</summary>
+    
+    
+    
+    <category term="serv00" scheme="https://www.zzzwb.com/categories/serv00/"/>
+    
+    
+    <category term="serv00" scheme="https://www.zzzwb.com/tags/serv00/"/>
+    
+    <category term="sing-box" scheme="https://www.zzzwb.com/tags/sing-box/"/>
+    
+  </entry>
+  
+  <entry>
     <title>serv00部署xray搭建多协议节点保持稳定连接</title>
     <link href="https://www.zzzwb.com/2024/08-01-serv00-xray.html"/>
     <id>https://www.zzzwb.com/2024/08-01-serv00-xray.html</id>
     <published>2024-08-01T11:46:21.000Z</published>
-    <updated>2024-08-01T12:04:47.541Z</updated>
+    <updated>2024-08-13T14:54:30.326Z</updated>
     
     
     <summary type="html">前段时间发布了一篇关于serv00部署vless节点的文章，但是很多朋友在使用过后反馈说效果不是很好，会出各种问题，比如连接不上，掉线等等...，最近在测试，发现通过xray搭建的节点可以稳定运行，保持节点的连接，那趁着今天有点时间，我们就来记录一下，serv00部署xray搭建多协议节点并保持稳定在线的过程</summary>
@@ -434,33 +455,6 @@
     <category term="fluid主题" scheme="https://www.zzzwb.com/tags/fluid%E4%B8%BB%E9%A2%98/"/>
     
     <category term="github" scheme="https://www.zzzwb.com/tags/github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python爬取网易云音乐歌单ID</title>
-    <link href="https://www.zzzwb.com/2023/11-18-wyygd.html"/>
-    <id>https://www.zzzwb.com/2023/11-18-wyygd.html</id>
-    <published>2023-11-18T10:39:16.000Z</published>
-    <updated>2023-11-20T07:29:20.625Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;python爬取网易云音乐歌单ID&quot;&gt;&lt;a href=&quot;#python爬取网易云音乐歌单ID&quot; class=&quot;headerlink&quot; title=&quot;python爬取网易云音乐歌单ID&quot;&gt;&lt;/a&gt;python爬取网易云音乐歌单ID&lt;/h2&gt;&lt;h3</summary>
-        
-      
-    
-    
-    
-    <category term="python" scheme="https://www.zzzwb.com/categories/python/"/>
-    
-    
-    <category term="python" scheme="https://www.zzzwb.com/tags/python/"/>
-    
-    <category term="爬虫" scheme="https://www.zzzwb.com/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
