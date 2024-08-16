@@ -27,7 +27,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://imgsrc.baidu.com/www.zzzwb.com/pic/item/810a19d8bc3eb1353af5dd9ae01ea8d3fd1f44e4.png">
 <meta property="article:published_time" content="2024-08-12T14:45:43.000Z">
-<meta property="article:modified_time" content="2024-08-13T15:05:24.377Z">
+<meta property="article:modified_time" content="2024-08-16T15:03:55.840Z">
 <meta property="article:author" content="Wenbin">
 <meta property="article:tag" content="serv00">
 <meta property="article:tag" content="sing-box">
@@ -451,7 +451,7 @@ var _hmt = _hmt || [];
       <span class="post-meta mr-2">
         <i class="iconfont icon-a-tongjishuju"></i>
         
-          3k 字
+          3.1k 字
         
       </span>
     
@@ -462,7 +462,7 @@ var _hmt = _hmt || [];
         
         
         
-          25 分钟
+          26 分钟
         
       </span>
     
@@ -514,7 +514,7 @@ var _hmt = _hmt || [];
               <p class="note note-warning">
                 
                   
-                    本文最后更新于：2024年8月13日 晚上
+                    本文最后更新于：2024年8月16日 晚上
                   
                 
               </p>
@@ -607,7 +607,10 @@ var _hmt = _hmt || [];
 
 <p>可以<a target="_blank" rel="noopener" href="https://api.zzzwb.com/v1?get=uuid">点击这里</a>生成一个随机的<code>uuid</code></p>
 <p>修改好后点击保存，回到<code>ssh</code>连接终端</p>
-<h3 id="运行测试"><a href="#运行测试" class="headerlink" title="运行测试"></a>运行测试</h3><p>回到<code>ssh</code>终端后执行以下命令运行<code>sing-box</code></p>
+<h3 id="运行测试"><a href="#运行测试" class="headerlink" title="运行测试"></a>运行测试</h3><p>回到<code>ssh</code>终端后执行以下命令获取本机IP地址</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">curl</span> ifconfig.me <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>执行以下命令运行<code>sing-box</code></p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">./web run<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>如果操作没问题的话，此时<code>sing-box</code>已经在运行了</p>
@@ -632,7 +635,8 @@ var _hmt = _hmt || [];
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">screen</span> <span class="token parameter variable">-r</span> box<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>在网页管理面板进入<code>Cron jobs</code>菜单，点击<code>Add cron job</code>，新建一个脚本，然后在<code>Command</code>框中输入<code>screen -S box /home/xxx/domains/xxx.serv00.net/box/web run</code>，然后点击<code>Add</code>，这样，当服务器重启的时候就会自动执行操作启动<code>sing-box</code>应用了</p>
-<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p>加入我的tg群：<a target="_blank" rel="noopener" href="https://t.me/zzzjsjl">https://t.me/zzzjsjl</a></p>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p>YouTube视频演示地址：<a target="_blank" rel="noopener" href="https://youtu.be/D7zpHwbPDKQ">https://youtu.be/D7zpHwbPDKQ</a></p>
+<p>加入我的tg群：<a target="_blank" rel="noopener" href="https://t.me/zzzjsjl">https://t.me/zzzjsjl</a></p>
 
                 
               </div>

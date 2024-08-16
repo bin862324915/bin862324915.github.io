@@ -6,7 +6,7 @@
   <link href="https://www.zzzwb.com/atom.xml" rel="self"/>
   
   <link href="https://www.zzzwb.com/"/>
-  <updated>2024-08-13T15:05:24.377Z</updated>
+  <updated>2024-08-16T15:03:55.840Z</updated>
   <id>https://www.zzzwb.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.zzzwb.com/2024/08-12-serv00-singbox.html"/>
     <id>https://www.zzzwb.com/2024/08-12-serv00-singbox.html</id>
     <published>2024-08-12T14:45:43.000Z</published>
-    <updated>2024-08-13T15:05:24.377Z</updated>
+    <updated>2024-08-16T15:03:55.840Z</updated>
     
     
     <summary type="html">最近发现了一个最新的hysteria2协议节点，于是我就在serv00上部署用上了，经过测试，没想到这速度直接起飞，就算是晚高峰油管4K也是秒开，那今天就来记录一下serv00如何通过sing-box一次性部署hysteria2，vless，tuic，三种协议节点，serv00也能带你体验高速冲浪。</summary>
