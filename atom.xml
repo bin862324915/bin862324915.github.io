@@ -6,7 +6,7 @@
   <link href="https://www.zzzwb.com/atom.xml" rel="self"/>
   
   <link href="https://www.zzzwb.com/"/>
-  <updated>2024-11-05T05:20:08.863Z</updated>
+  <updated>2024-11-05T11:06:45.560Z</updated>
   <id>https://www.zzzwb.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.zzzwb.com/2024/09-22-cloudflare-warp.html"/>
     <id>https://www.zzzwb.com/2024/09-22-cloudflare-warp.html</id>
     <published>2024-09-22T14:30:25.000Z</published>
-    <updated>2024-11-05T05:20:08.863Z</updated>
+    <updated>2024-11-05T11:06:45.560Z</updated>
     
     
     <summary type="html">永久免费，不限流量！最强VPN Cloudflare WARP+，带着新协议MASQUE强势回归，我已经尝鲜体验了，效果非常不错，可谓是居家旅行必备软件！！本文将记录新版本的一些细节设置，附送一些24pb流量的秘钥</summary>
@@ -42,7 +42,7 @@
     <link href="https://www.zzzwb.com/2024/08-12-serv00-singbox.html"/>
     <id>https://www.zzzwb.com/2024/08-12-serv00-singbox.html</id>
     <published>2024-08-12T14:45:43.000Z</published>
-    <updated>2024-11-05T05:20:47.255Z</updated>
+    <updated>2024-11-05T11:08:25.944Z</updated>
     
     
     <summary type="html">最近发现了一个最新的hysteria2协议节点，于是我就在serv00上部署用上了，经过测试，没想到这速度直接起飞，就算是晚高峰油管4K也是秒开，那今天就来记录一下serv00如何通过sing-box一次性部署hysteria2，vless，tuic，三种协议节点，serv00也能带你体验高速冲浪。</summary>
@@ -63,7 +63,7 @@
     <link href="https://www.zzzwb.com/2024/08-01-serv00-xray.html"/>
     <id>https://www.zzzwb.com/2024/08-01-serv00-xray.html</id>
     <published>2024-08-01T11:46:21.000Z</published>
-    <updated>2024-11-05T05:21:06.494Z</updated>
+    <updated>2024-11-05T11:08:45.321Z</updated>
     
     
     <summary type="html">前段时间发布了一篇关于serv00部署vless节点的文章，但是很多朋友在使用过后反馈说效果不是很好，会出各种问题，比如连接不上，掉线等等...，最近在测试，发现通过xray搭建的节点可以稳定运行，保持节点的连接，那趁着今天有点时间，我们就来记录一下，serv00部署xray搭建多协议节点并保持稳定在线的过程</summary>
@@ -84,7 +84,7 @@
     <link href="https://www.zzzwb.com/2024/07-25-serv00-nezha.html"/>
     <id>https://www.zzzwb.com/2024/07-25-serv00-nezha.html</id>
     <published>2024-07-25T12:55:06.000Z</published>
-    <updated>2024-11-05T05:20:40.887Z</updated>
+    <updated>2024-11-05T11:08:18.473Z</updated>
     
     
     <summary type="html">最近很多人在我的tg群讨论serv00能不能安装哪吒面板，因为一般自己买的vps都是有root权限的，所以可以使用官方的一键安装脚本，那没有root权限的serv00到底能不能搭建哪吒面板呢，这几天我也在研究，终于，在经过参考了多方面资料并经过测试，serv00是可以搭建哪吒面板的，那今天就来继续serv00系列的第六期，详细讲解一下serv00搭建部署哪吒面板的记录</summary>
@@ -105,7 +105,7 @@
     <link href="https://www.zzzwb.com/2024/07-21-serv00-cloudflare.html"/>
     <id>https://www.zzzwb.com/2024/07-21-serv00-cloudflare.html</id>
     <published>2024-07-21T15:37:06.000Z</published>
-    <updated>2024-11-05T05:20:34.776Z</updated>
+    <updated>2024-11-05T11:08:05.376Z</updated>
     
     
     <summary type="html">最近有很多朋友们反馈说serv00的服务器国内基本是访问不了的，要不就是能访问，但是速度非常慢，那有没有什么其他方法可以解决这个问题呢？答案是：肯定有的，那么我们今天就来记录一下serv00系列的第五期，如何通过cloudflare提供的免费服务来提升serv00节点的网络速度。</summary>
@@ -126,7 +126,7 @@
     <link href="https://www.zzzwb.com/2024/07-16-serv00-wordpress.html"/>
     <id>https://www.zzzwb.com/2024/07-16-serv00-wordpress.html</id>
     <published>2024-07-16T13:47:24.000Z</published>
-    <updated>2024-11-05T05:20:59.354Z</updated>
+    <updated>2024-11-05T11:08:39.105Z</updated>
     
     
     <summary type="html">前段时间发布了serv00服务器部署vless跟alist的文章，受到不少朋友的关注，也有不少的朋友建议出一期搭建个人网站的教程，本文是记录serv00系列的第四期，这次我们就记录一下serv00如何通过安装部署WordPress轻松搭建自己的个人博客网站</summary>
@@ -147,7 +147,7 @@
     <link href="https://www.zzzwb.com/2024/07-11-serv00-automation.html"/>
     <id>https://www.zzzwb.com/2024/07-11-serv00-automation.html</id>
     <published>2024-07-11T13:37:12.000Z</published>
-    <updated>2024-11-05T05:20:28.504Z</updated>
+    <updated>2024-11-05T11:07:58.282Z</updated>
     
     
     <summary type="html">因serv00服务器要求，如果用户帐户在 90 天内未通过 DevilWEB 或 SSH 面板正确登录，则该帐户将自动从系统中删除，并且无法恢复该帐户收集的数据。于是我就利用Github的Actions来实现我的账号进行定期登录，达到自动保号的效果！</summary>
@@ -168,7 +168,7 @@
     <link href="https://www.zzzwb.com/2024/07-07-serv00-vless.html"/>
     <id>https://www.zzzwb.com/2024/07-07-serv00-vless.html</id>
     <published>2024-07-07T05:06:27.000Z</published>
-    <updated>2024-11-05T05:20:53.807Z</updated>
+    <updated>2024-11-05T11:08:31.633Z</updated>
     
     
     <summary type="html">昨天发布了一篇关于serv00部署alist的详细记录，很多朋友们反馈按照步骤来都成功部署用上了，趁今天有时间，记录一下sev00部署vless的详细记录，为了方便大家安装，我写了一个一键安装脚本，可以省去一下操作</summary>
@@ -189,7 +189,7 @@
     <link href="https://www.zzzwb.com/2024/07-06-serv00-alist.html"/>
     <id>https://www.zzzwb.com/2024/07-06-serv00-alist.html</id>
     <published>2024-07-06T03:17:30.000Z</published>
-    <updated>2024-11-05T05:20:21.778Z</updated>
+    <updated>2024-11-05T11:07:51.635Z</updated>
     
     
     <summary type="html">最近在serv00薅了个服务器，经过一系列的折腾，发现还是有一点可玩性的，本文将记录在serv00服务器上部署alist应用的详细过程</summary>
@@ -210,7 +210,7 @@
     <link href="https://www.zzzwb.com/2024/03-03-sd-002.html"/>
     <id>https://www.zzzwb.com/2024/03-03-sd-002.html</id>
     <published>2024-03-03T07:01:28.000Z</published>
-    <updated>2024-11-05T05:15:56.383Z</updated>
+    <updated>2024-11-05T11:09:15.280Z</updated>
     
     
     <summary type="html">AI炼丹，简而言之，指的是深度学习模型的训练与优化过程。这一过程类似于传统炼丹术，需要精心挑选和调整模型的参数，如同混合原料和掌控火候，以期达到最佳效果。炼丹师（AI研究者）需要借助强大的计算资源，经过反复的实验和迭代，才能“炼”出性能卓越的模型，使其在各种任务中表现出色。因此，AI炼丹不仅要求研究者具备深厚的理论基础，还需熟悉各种训练技巧和优化方法。</summary>
