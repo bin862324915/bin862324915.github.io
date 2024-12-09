@@ -8,7 +8,7 @@
     <link href="/2024/11-25-jiedian-sillydev.html"/>
     <url>/2024/11-25-jiedian-sillydev.html</url>
     
-    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>最近发现一个容器平台，<code>sillydev</code>，这个容器平台支持多种编程语言的部署，那我们就可以利用这一点，来搭建部署节点。测试了一下，油管速度最高上到<code>20w</code>，速度还是挺不错的</p><h3 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h3><p>首先免费注册一个账号<a href="https://panel.sillydev.co.uk/auth/register">Silly Development</a></p><p>注册好后需要登录你的账户然后在这个网站任意页面挂着赚取积分</p><p>因为，这个开启容器是需要一定的积分的</p><p>当你有一定的积分后就可以使用积分兑换各个地区的服务器</p><h3 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h3><p>当你的积分足够后，可以点击左侧的购物车按钮，然后选择第一个<code>Create a new server</code>，点击<code>Create</code>，进入创建容器的页面</p><p>自行填写页面上创建容器相关的信息</p><p><code>Deployment</code>信息的填写</p><p><code>Available Nodes</code>，点击下拉框，选择一个节点地区，目前提供美国、德国地区节点</p><p><code>Server Nest</code> 类型选择 <code>Coding Languages</code></p><p><code>Server Egg</code> 类型选择 <code>Python Custom Startup</code></p><p>最后点击<code>Create</code>，创建容器</p><p>创建好后需要等待几分钟，让平台给你部署好服务器</p><h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p><a href="https://file.zzzwb.nyc.mn/download/python-xray-argo/app.py">点击这里</a> 将python的部署代码下载到本地</p><p>打开<code>app.py</code>，根据代码注释自行修改好17-30行的变量信息保存备用</p><p>当你的容器创建好之后，点击左侧的<code>servers</code>菜单可以到你的服务器信息状态</p><p>点击服务器信息后会进入服务器的控制面板</p><p>进入控制面板后我们点击顶部的<code>files</code>菜单，进入文件管理器</p><p>然后将刚刚下载保存好的<code>app.py</code>文件上传</p><p>对<code>app.py</code>设置权限<code>777</code></p><p>在顶部菜单栏中切换到<code>startup</code>，在<code>Startup Script</code>，输入pip install Flask requests</p><p>在顶部菜单栏中切换到<code>console</code>，点击<code>start</code>，开启服务器</p><p>服务器开启后会执行刚刚设置的启动脚本安装依赖</p><p>当终端显示安装好依赖后，我们再次在顶部菜单栏中切换到<code>startup</code>，在<code>Startup Script</code>，输入python app.py</p><p>然后重启一下服务器，当机器重启后就会自动部署</p><p>部署好后会在终端打印出节点信息</p><p>复制节点信息到<code>v2ray</code>客户端就可以正常使用了</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>最近发现一个容器平台，<code>sillydev</code>，这个容器平台支持多种编程语言的部署，那我们就可以利用这一点，来搭建部署节点。测试了一下，油管速度最高上到<code>20w</code>，速度还是挺不错的</p><h3 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h3><p>首先免费注册一个账号<a href="https://panel.sillydev.co.uk/auth/register">Silly Development</a></p><p>注册好后需要登录你的账户然后在这个网站任意页面挂着赚取积分</p><p>因为，这个开启容器是需要一定的积分的</p><p>当你有一定的积分后就可以使用积分兑换各个地区的服务器</p><h3 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h3><p>当你的积分足够后，可以点击左侧的购物车按钮，然后选择第一个<code>Create a new server</code>，点击<code>Create</code>，进入创建容器的页面</p><p>自行填写页面上创建容器相关的信息</p><p><code>Deployment</code>信息的填写</p><p><code>Available Nodes</code>，点击下拉框，选择一个节点地区，目前提供美国、德国地区节点</p><p><code>Server Nest</code> 类型选择 <code>Coding Languages</code></p><p><code>Server Egg</code> 类型选择 <code>Python Custom Startup</code></p><p>最后点击<code>Create</code>，创建容器</p><p>创建好后需要等待几分钟，让平台给你部署好服务器</p><h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p><a href="https://file.zzzwb.nyc.mn/download/python-xray-argo/app.py">点击这里</a> 将python的部署代码下载到本地</p><p>打开<code>app.py</code>，根据代码注释自行修改好16-26行的变量信息保存备用</p><p>可以<a href="https://api.zzzwb.com/v1?get=uuid">点击这里</a>生成一个随机的<code>uuid</code></p><p>当你的容器创建好之后，点击左侧的<code>servers</code>菜单可以到你的服务器信息状态</p><p>点击服务器信息后会进入服务器的控制面板</p><p>进入控制面板后我们点击顶部的<code>files</code>菜单，进入文件管理器</p><p>然后将刚刚下载保存好的<code>app.py</code>文件上传</p><p>对<code>app.py</code>设置权限<code>777</code></p><p>在顶部菜单栏中切换到<code>startup</code>，在<code>Startup Script</code>，输入<code>pip install Flask requests</code></p><p>在顶部菜单栏中切换到<code>console</code>，点击<code>start</code>，开启服务器</p><p>服务器开启后会执行刚刚设置的启动脚本安装依赖</p><p>当终端显示安装好依赖后，我们再次在顶部菜单栏中切换到<code>startup</code>，在<code>Startup Script</code>，输入<code>python app.py</code></p><p>然后重启一下服务器，当机器重启后就会自动部署</p><p>部署好后会在终端打印出节点信息</p><p>复制节点信息到<code>v2ray</code>客户端就可以正常使用了</p><h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p>YouTube视频演示地址：<a href="https://youtu.be/0DTvvPzYXB8">https://youtu.be/0DTvvPzYXB8</a></p><p>加入我的tg群：<a href="https://t.me/zzzjsjl">https://t.me/zzzjsjl</a></p>]]></content>
     
     
     <categories>
@@ -1758,6 +1758,17 @@
   
   
   <entry>
+    <title>圈小猫</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[<div class="style1" align="center"><P>游戏《圈小猫》</P></div><script src="https://cdn.zzzwb.com/blog/js/zidingyi/cat/phaser.min.js"></script><script src="https://cdn.zzzwb.com/blog/js/zidingyi/cat/catch-the-cat.js"></script><div id="catch-the-cat" style=" text-align: center;"><script>window.game=new CatchTheCatGame({w:11,h:11,r:20,backgroundColor:16777215,parent:"catch-the-cat",statusBarAlign:"center",credit:"Wenbin's blog"})</script></div>]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>必应每日壁纸</title>
     <link href="/"/>
     <url>/</url>
@@ -1774,17 +1785,6 @@
     <url>/</url>
     
     <content type="html"><![CDATA[]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>圈小猫</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[<div class="style1" align="center"><P>游戏《圈小猫》</P></div><script src="https://cdn.zzzwb.com/blog/js/zidingyi/cat/phaser.min.js"></script><script src="https://cdn.zzzwb.com/blog/js/zidingyi/cat/catch-the-cat.js"></script><div id="catch-the-cat" style=" text-align: center;"><script>window.game=new CatchTheCatGame({w:11,h:11,r:20,backgroundColor:16777215,parent:"catch-the-cat",statusBarAlign:"center",credit:"Wenbin's blog"})</script></div>]]></content>
     
   </entry>
   

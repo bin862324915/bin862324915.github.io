@@ -6,7 +6,7 @@
   <link href="https://www.zzzwb.com/atom.xml" rel="self"/>
   
   <link href="https://www.zzzwb.com/"/>
-  <updated>2024-11-25T15:38:29.478Z</updated>
+  <updated>2024-12-09T17:39:02.152Z</updated>
   <id>https://www.zzzwb.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.zzzwb.com/2024/11-25-jiedian-sillydev.html"/>
     <id>https://www.zzzwb.com/2024/11-25-jiedian-sillydev.html</id>
     <published>2024-11-25T14:17:30.000Z</published>
-    <updated>2024-11-25T15:38:29.478Z</updated>
+    <updated>2024-12-09T17:39:02.152Z</updated>
     
     
     <summary type="html">最近发现一个容器平台，sillydev，这个容器平台支持多种编程语言的部署，那我们就可以利用这一点，来搭建部署节点。测试了一下，油管速度最高上到20w，速度还是挺不错的</summary>
