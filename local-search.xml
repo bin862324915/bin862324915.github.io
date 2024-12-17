@@ -4,6 +4,37 @@
   
   
   <entry>
+    <title>轻松搭建一个属于自己的AI智能微信机器人</title>
+    <link href="/2024/12-16-z-wechat-bot.html"/>
+    <url>/2024/12-16-z-wechat-bot.html</url>
+    
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>前段时间看到有网友设计了一个挪车通知服务，是通过公众号等其他渠道推送服务通知的。于是，我通过<code>z-wechat-bot</code>，实现自部署推送服务，同时利用<code>z-wechat-bot</code>的特性，实现通过微信即可与用户网页交互通信</p><h3 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h3><p>目前这个项目我已经在<code>win10</code>系统，以及<code>ubuntu</code>系统，使用<code>python3.11</code>版本，测试是可以正常运行的，其他系统、环境暂未测试，如果你的系统之前没有配置<code>python</code>环境，建议优先使用3.11的</p><p>这里不详细介绍怎么配置<code>python</code>环境了</p><p>如果你是使用的其他系统以及<code>python</code>版本，在使用中如有报错，欢迎反馈哈</p><p>以下为<code>windows</code>系统部署的示例，<code>Linux</code>系统部署参考这个步骤即可</p><h3 id="拉取代码"><a href="#拉取代码" class="headerlink" title="拉取代码"></a>拉取代码</h3><p>可以使用<code>git</code>命令直接拉取我的这个仓库</p><pre class="line-numbers language-git" data-language="git"><code class="language-git">git clone https://github.com/bin862324915/z-wechat-bot.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>或者，<a href="https://github.com/bin862324915/z-wechat-bot">点击这里</a>打开我的仓库， 点击右上角的<code>code</code>，选择<code>download zip</code>，打包下载</p><p>随便解压到一个文件夹中</p><h3 id="配置信息"><a href="#配置信息" class="headerlink" title="配置信息"></a>配置信息</h3><p>进入刚刚解压出来的文件夹，找到<code>config.json</code>文件，这个配置文件我已经配置好基本的信息了，可以根据自己的需求自行修改</p><pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>  <span class="token property">"channel_type"</span><span class="token operator">:</span> <span class="token string">"wx"</span><span class="token punctuation">,</span>  <span class="token property">"open_ai_api_base"</span><span class="token operator">:</span> <span class="token string">"https://api.siliconflow.cn"</span><span class="token punctuation">,</span>#这里是大模型api的接口网址  <span class="token property">"model"</span><span class="token operator">:</span> <span class="token string">"Qwen/Qwen2.5-72B-Instruct-128K"</span><span class="token punctuation">,</span>#这里是使用的模型名称  <span class="token property">"open_ai_api_key"</span><span class="token operator">:</span> <span class="token string">"sk-ccoilvzdsbaodqiqlbptorrfzzzltyzkjglkglhgddzscbkx"</span><span class="token punctuation">,</span>#这是你的key  <span class="token property">"text_to_image"</span><span class="token operator">:</span> <span class="token string">"stable-diffusion-3.5"</span><span class="token punctuation">,</span>  <span class="token property">"speech_recognition"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>  <span class="token property">"group_speech_recognition"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>  <span class="token property">"voice_reply_voice"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>  <span class="token property">"always_reply_voice"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>  <span class="token property">"voice_to_text"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>  <span class="token property">"text_to_voice"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>  <span class="token property">"proxy"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>  <span class="token property">"hot_reload"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>  <span class="token property">"single_chat_prefix"</span><span class="token operator">:</span> <span class="token punctuation">[</span>    <span class="token string">""</span>  <span class="token punctuation">]</span><span class="token punctuation">,</span>#这里是私聊机器人时，出发机器人回复的前缀指令，没有特殊需求，留空就可以了  <span class="token property">"single_chat_reply_prefix"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>#这里是机器人回复时的前缀，没有特殊需求，留空就可以了  <span class="token property">"group_chat_prefix"</span><span class="token operator">:</span> <span class="token punctuation">[</span>    <span class="token string">"小z助手"</span><span class="token punctuation">,</span>    <span class="token string">"@小z助手"</span>  <span class="token punctuation">]</span><span class="token punctuation">,</span>#这里是群聊时，出发机器人的前缀指令，比如，在群聊中需要发送：小z助手 你好呀，这样才能触发机器人回复  <span class="token property">"group_name_white_list"</span><span class="token operator">:</span> <span class="token punctuation">[</span>    <span class="token string">"ALL_GROUP"</span>  <span class="token punctuation">]</span><span class="token punctuation">,</span>#这里是开启机器人回复的群聊名称，没有特殊需求，默认全部群聊开启  <span class="token property">"image_create_prefix"</span><span class="token operator">:</span> <span class="token punctuation">[</span>    <span class="token string">"请画"</span><span class="token punctuation">,</span>    <span class="token string">"给我画"</span><span class="token punctuation">,</span>    <span class="token string">"生成图片"</span>  <span class="token punctuation">]</span><span class="token punctuation">,</span>#这里是设置机器人生成图片的前缀指令，比如：给我画 一只可爱的猫，这样才会触发生成图片  <span class="token property">"group_speech_recognition"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>  <span class="token property">"conversation_max_tokens"</span><span class="token operator">:</span> <span class="token number">2500</span><span class="token punctuation">,</span>  <span class="token property">"expires_in_seconds"</span><span class="token operator">:</span> <span class="token number">3600</span><span class="token punctuation">,</span>  <span class="token property">"group_chat_exit_group"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>  <span class="token property">"character_desc"</span><span class="token operator">:</span> <span class="token string">"你是基于大语言模型的AI智能助手，旨在回答并解决人们的任何问题，并且可以使用多种语言与人交流。"</span><span class="token punctuation">,</span>#这里是设置机器人的人格描述  <span class="token property">"clear_memory_commands"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"#清除记忆"</span><span class="token punctuation">]</span><span class="token punctuation">,</span># 这里是设置重置会话指令，发送指令后则清除对话记忆  <span class="token property">"temperature"</span><span class="token operator">:</span> <span class="token number">0.7</span><span class="token punctuation">,</span>  <span class="token property">"image_create_size"</span><span class="token operator">:</span> <span class="token string">"1024x1024"</span><span class="token punctuation">,</span>  <span class="token property">"max_media_send_count"</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>   <span class="token property">"media_send_interval"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>默认大模型是使用硅基流动的，我目前使用的也是这个，日常基本够用</p><p>如果你之前注册了的话，可以直接替换为自己的<code>key</code>就行了</p><p>如果你想要使用硅基流动，还没注册的话，可以<a href="https://cloud.siliconflow.cn/i/RpuHqDB9">点击这里</a>注册使用（这个链接包含我的邀请，通过这个链接注册，你我双方都可以获得价值14元的tokens）</p><p>修改好配置信息后保存</p><p>在当前项目文件夹内打开终端</p><p>执行以下指令安装核心依赖库</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">pip install <span class="token operator">-</span>r requirements<span class="token punctuation">.</span>txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>执行以下指令安装拓展依赖库</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">pip install <span class="token operator">-</span>r requirements<span class="token operator">-</span>optional<span class="token punctuation">.</span>txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="测试运行"><a href="#测试运行" class="headerlink" title="测试运行"></a>测试运行</h3><p>操作完前面的步骤后，在终端执行以下指令</p><pre class="line-numbers language-none"><code class="language-none">python app.py<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>运行后会显示一个二维码，用手机微信扫描这个二维码登录，当看到终端输出<code>&quot;Start auto replying&quot;</code>时表示自动回复程序已经成功运行了（注意：用于登录的账号需要在支付处已完成实名认证）。扫码登录后你的账号就成为机器人了</p><p>可以用其他微信给这个微信号发送条测试信息，如果可以触发并且正常回复，说明配置就是没有问题的</p><h3 id="挪车服务"><a href="#挪车服务" class="headerlink" title="挪车服务"></a>挪车服务</h3><p>挪车通知服务我已经内置到项目里面了，需要使用这个服务的，可以进入文件夹<code>/plugins/Car_push/</code>，找到<code>config.json</code>，修改配置信息</p><pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>  <span class="token property">"AUTH_TOKEN"</span><span class="token operator">:</span> <span class="token string">"zzzwb"</span><span class="token punctuation">,</span>#这里是鉴权验证的token  <span class="token property">"USER"</span><span class="token operator">:</span> <span class="token string">"岁月如歌"</span><span class="token punctuation">,</span>#这里是设置接收服务通知的微信昵称，必须是机器人的好友哈  <span class="token property">"PHONE"</span><span class="token operator">:</span> <span class="token string">"100001"</span><span class="token punctuation">,</span>#这里是车主电话号码  <span class="token property">"PORT"</span><span class="token operator">:</span> <span class="token number">33000</span><span class="token punctuation">,</span>#这里是设置服务的监听端口  <span class="token property">"RATE_LIMIT_INTERVAL"</span><span class="token operator">:</span> <span class="token number">1</span> #这里是设置用户发送信息的限制（单位：秒），默认<span class="token number">1</span>分钟只能发送<span class="token number">1</span>次通知<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>修改好后保存</p><p>找到对应系统的可执行文件，启动即可，启动服务后会有对应输出信息</p><p>windows：<code>car_push-win-x64.exe</code></p><p>Linux：<code>car_push-linux-x64</code></p><p>给微信机器人发送<code>$car start</code>，启动挪车通知服务，停止挪车通知服务则发送<code>$car stop</code></p><p>可以在内网浏览器访问<code>ip+端口</code>测试</p><p>如果需要将服务暴露在公网，需要设备有公网IP的哈，建议使用服务器部署</p><p>至此，一个智能微信机器人就部署完毕啦</p><p>微信机器人的功能远远不止于这些，有代码能力的朋友，可以自行加入更多功能</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>个人项目</category>
+      
+      <category>AI智能</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>个人项目</tag>
+      
+      <tag>AI智能</tag>
+      
+      <tag>智能bot</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>免费白嫖美国、德国等多个地区的高速节点</title>
     <link href="/2024/11-25-jiedian-sillydev.html"/>
     <url>/2024/11-25-jiedian-sillydev.html</url>
@@ -1506,9 +1537,9 @@
     
     <tags>
       
-      <tag>影音处理</tag>
-      
       <tag>FFmpeg</tag>
+      
+      <tag>影音处理</tag>
       
     </tags>
     
@@ -1758,28 +1789,6 @@
   
   
   <entry>
-    <title>留言板</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[<style>body, div, h1,h2, form, fieldset, footer,p {    margin: 0; padding: 0; border: 0; outline: none;}#wrap {width:530px; margin:20px auto 0; }h1 {margin-bottom:20px; text-align:center;font-size:48px; text-shadow:0 1px 0 #ede8d9; }    #form_wrap { overflow:hidden; height:446px; position:relative; top:0px;        -webkit-transition: all 1s ease-in-out .3s;        -moz-transition: all 1s ease-in-out .3s;        -o-transition: all 1s ease-in-out .3s;        transition: all 1s ease-in-out .3s;}    #form_wrap:before {content:"";        position:absolute;        bottom:128px;left:0px;        background:url('https://img.zzzwb.nyc.mn/i/zNUqdkgK.png?1110');        width:530px;height: 316px;}    #form_wrap:after {content:"";position:absolute;        bottom:0px;left:0;        background:url('https://img.zzzwb.nyc.mn/i/FqmAymEN.png?1110');        width:530px;height: 260px; }    #form_wrap.hide:after, #form_wrap.hide:before {display:none; }    #form_wrap:hover {height:806px;top:-30px;}    form {background:#f7f2ec url('/img/letter_bg.png');         position:relative;top:200px;overflow:hidden;        height:200px;width:400px;margin:0px auto;padding:20px;         border: 1px solid #fff;        color: #4d3b04;        border-radius: 3px;         -moz-border-radius: 3px; -webkit-border-radius: 3px;        box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;        -moz-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 14px #fff;        -webkit-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;        -webkit-transition: all 1s ease-in-out .3s;        -moz-transition: all 1s ease-in-out .3s;        -o-transition: all 1s ease-in-out .3s;        transition: all 1s ease-in-out .3s;}        #form_wrap:hover form {height:530px;}        label {            margin: 11px 20px 0 0;             font-size: 16px; color: #b3aba1;            text-transform: uppercase;             text-shadow: 0px 1px 0px #fff;        }        #form_wrap input[type=submit] {            position:relative;font-family: 'YanoneKaffeesatzRegular';             font-size:24px; color: #7c7873;text-shadow:0 1px 0 #fff;            width:100%; text-align:center;opacity:0;            background:none;            cursor: pointer;            -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;             -webkit-transition: opacity .6s ease-in-out 0s;            -moz-transition: opacity .6s ease-in-out 0s;            -o-transition: opacity .6s ease-in-out 0s;            transition: opacity .6s ease-in-out 0s;        }        #form_wrap:hover input[type=submit] {z-index:1;opacity:1;            -webkit-transition: opacity .5s ease-in-out 1.3s;            -moz-transition: opacity .5s ease-in-out 1.3s;            -o-transition: opacity .5s ease-in-out 1.3s;            transition: opacity .5s ease-in-out 1.3s;}            #form_wrap:hover input:hover[type=submit] {color:#435c70;}  .top-banner {    background-color: #555;  }</style><div style="margin-top: -10px">    <div id="wrap">        <div id='form_wrap'>            <form>                <img src='https://img.zzzwb.nyc.mn/i/k4as6CjB.jpg?1110' height=245px/>                <p >Hello ！</p>                <label for="email"> </label>        欢迎访问我的个人blog，如果您有任何想对我说的话，请随时留言。我将看到后第一时间进行回复，谢谢！！        </div>    </div></div><hr>]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>碎碎念</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>必应每日壁纸</title>
     <link href="/"/>
     <url>/</url>
@@ -1791,11 +1800,33 @@
   
   
   <entry>
+    <title>留言板</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[<style>body, div, h1,h2, form, fieldset, footer,p {    margin: 0; padding: 0; border: 0; outline: none;}#wrap {width:530px; margin:20px auto 0; }h1 {margin-bottom:20px; text-align:center;font-size:48px; text-shadow:0 1px 0 #ede8d9; }    #form_wrap { overflow:hidden; height:446px; position:relative; top:0px;        -webkit-transition: all 1s ease-in-out .3s;        -moz-transition: all 1s ease-in-out .3s;        -o-transition: all 1s ease-in-out .3s;        transition: all 1s ease-in-out .3s;}    #form_wrap:before {content:"";        position:absolute;        bottom:128px;left:0px;        background:url('https://img.zzzwb.nyc.mn/i/zNUqdkgK.png?1110');        width:530px;height: 316px;}    #form_wrap:after {content:"";position:absolute;        bottom:0px;left:0;        background:url('https://img.zzzwb.nyc.mn/i/FqmAymEN.png?1110');        width:530px;height: 260px; }    #form_wrap.hide:after, #form_wrap.hide:before {display:none; }    #form_wrap:hover {height:806px;top:-30px;}    form {background:#f7f2ec url('/img/letter_bg.png');         position:relative;top:200px;overflow:hidden;        height:200px;width:400px;margin:0px auto;padding:20px;         border: 1px solid #fff;        color: #4d3b04;        border-radius: 3px;         -moz-border-radius: 3px; -webkit-border-radius: 3px;        box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;        -moz-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 14px #fff;        -webkit-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;        -webkit-transition: all 1s ease-in-out .3s;        -moz-transition: all 1s ease-in-out .3s;        -o-transition: all 1s ease-in-out .3s;        transition: all 1s ease-in-out .3s;}        #form_wrap:hover form {height:530px;}        label {            margin: 11px 20px 0 0;             font-size: 16px; color: #b3aba1;            text-transform: uppercase;             text-shadow: 0px 1px 0px #fff;        }        #form_wrap input[type=submit] {            position:relative;font-family: 'YanoneKaffeesatzRegular';             font-size:24px; color: #7c7873;text-shadow:0 1px 0 #fff;            width:100%; text-align:center;opacity:0;            background:none;            cursor: pointer;            -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;             -webkit-transition: opacity .6s ease-in-out 0s;            -moz-transition: opacity .6s ease-in-out 0s;            -o-transition: opacity .6s ease-in-out 0s;            transition: opacity .6s ease-in-out 0s;        }        #form_wrap:hover input[type=submit] {z-index:1;opacity:1;            -webkit-transition: opacity .5s ease-in-out 1.3s;            -moz-transition: opacity .5s ease-in-out 1.3s;            -o-transition: opacity .5s ease-in-out 1.3s;            transition: opacity .5s ease-in-out 1.3s;}            #form_wrap:hover input:hover[type=submit] {color:#435c70;}  .top-banner {    background-color: #555;  }</style><div style="margin-top: -10px">    <div id="wrap">        <div id='form_wrap'>            <form>                <img src='https://img.zzzwb.nyc.mn/i/k4as6CjB.jpg?1110' height=245px/>                <p >Hello ！</p>                <label for="email"> </label>        欢迎访问我的个人blog，如果您有任何想对我说的话，请随时留言。我将看到后第一时间进行回复，谢谢！！        </div>    </div></div><hr>]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>圈小猫</title>
     <link href="/"/>
     <url>/</url>
     
     <content type="html"><![CDATA[<div class="style1" align="center"><P>游戏《圈小猫》</P></div><script src="https://cdn.zzzwb.com/blog/js/zidingyi/cat/phaser.min.js"></script><script src="https://cdn.zzzwb.com/blog/js/zidingyi/cat/catch-the-cat.js"></script><div id="catch-the-cat" style=" text-align: center;"><script>window.game=new CatchTheCatGame({w:11,h:11,r:20,backgroundColor:16777215,parent:"catch-the-cat",statusBarAlign:"center",credit:"Wenbin's blog"})</script></div>]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>碎碎念</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[]]></content>
     
   </entry>
   
