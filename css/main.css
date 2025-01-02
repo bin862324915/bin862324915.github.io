@@ -46,6 +46,7 @@ h6:hover > .anchorjs-link {
   margin-top: -2rem;
   padding: 3rem 0;
   background-color: var(--board-bg-color);
+  backdrop-filter: blur(5px);
   transition: background-color 0.2s ease-in-out;
   border-radius: 0.5rem;
   z-index: 3;
@@ -987,7 +988,7 @@ a:hover {
 :root {
   --color-mode: "light";
   --body-bg-color: #eee;
-  --board-bg-color: rgba(255, 255, 255, 1);
+  --board-bg-color: rgba(255, 255, 255, 0.5);
   --text-color: #3c4858;
   --sec-text-color: #718096;
   --post-text-color: #2c3e50;
@@ -1013,7 +1014,7 @@ a:hover {
   }
   :root:not([data-user-color-scheme]) {
     --body-bg-color: #181c27;
-    --board-bg-color: rgba(37, 45, 56, 1);
+    --board-bg-color: rgba(37, 45, 56, 0.5);
     --text-color: #c4c6c9;
     --sec-text-color: #a7a9ad;
     --post-text-color: #c4c6c9;
@@ -1050,7 +1051,7 @@ a:hover {
 @media not print {
   [data-user-color-scheme="dark"] {
     --body-bg-color: #181c27;
-    --board-bg-color: rgba(37, 45, 56, 1);
+    --board-bg-color: rgba(37, 45, 56, 0.5);
     --text-color: #c4c6c9;
     --sec-text-color: #a7a9ad;
     --post-text-color: #c4c6c9;
