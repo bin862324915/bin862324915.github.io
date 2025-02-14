@@ -1778,28 +1778,6 @@
   
   
   <entry>
-    <title>留言板</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[<style>body, div, h1,h2, form, fieldset, footer,p {    margin: 0; padding: 0; border: 0; outline: none;}#wrap {width:530px; margin:20px auto 0; }h1 {margin-bottom:20px; text-align:center;font-size:48px; text-shadow:0 1px 0 #ede8d9; }    #form_wrap { overflow:hidden; height:446px; position:relative; top:0px;        -webkit-transition: all 1s ease-in-out .3s;        -moz-transition: all 1s ease-in-out .3s;        -o-transition: all 1s ease-in-out .3s;        transition: all 1s ease-in-out .3s;}    #form_wrap:before {content:"";        position:absolute;        bottom:128px;left:0px;        background:url('https://img.zzzwb.nyc.mn/i/zNUqdkgK.png?1110');        width:530px;height: 316px;}    #form_wrap:after {content:"";position:absolute;        bottom:0px;left:0;        background:url('https://img.zzzwb.nyc.mn/i/FqmAymEN.png?1110');        width:530px;height: 260px; }    #form_wrap.hide:after, #form_wrap.hide:before {display:none; }    #form_wrap:hover {height:806px;top:-30px;}    form {background:#f7f2ec url('/img/letter_bg.png');         position:relative;top:200px;overflow:hidden;        height:200px;width:400px;margin:0px auto;padding:20px;         border: 1px solid #fff;        color: #4d3b04;        border-radius: 3px;         -moz-border-radius: 3px; -webkit-border-radius: 3px;        box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;        -moz-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 14px #fff;        -webkit-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;        -webkit-transition: all 1s ease-in-out .3s;        -moz-transition: all 1s ease-in-out .3s;        -o-transition: all 1s ease-in-out .3s;        transition: all 1s ease-in-out .3s;}        #form_wrap:hover form {height:530px;}        label {            margin: 11px 20px 0 0;             font-size: 16px; color: #b3aba1;            text-transform: uppercase;             text-shadow: 0px 1px 0px #fff;        }        #form_wrap input[type=submit] {            position:relative;font-family: 'YanoneKaffeesatzRegular';             font-size:24px; color: #7c7873;text-shadow:0 1px 0 #fff;            width:100%; text-align:center;opacity:0;            background:none;            cursor: pointer;            -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;             -webkit-transition: opacity .6s ease-in-out 0s;            -moz-transition: opacity .6s ease-in-out 0s;            -o-transition: opacity .6s ease-in-out 0s;            transition: opacity .6s ease-in-out 0s;        }        #form_wrap:hover input[type=submit] {z-index:1;opacity:1;            -webkit-transition: opacity .5s ease-in-out 1.3s;            -moz-transition: opacity .5s ease-in-out 1.3s;            -o-transition: opacity .5s ease-in-out 1.3s;            transition: opacity .5s ease-in-out 1.3s;}            #form_wrap:hover input:hover[type=submit] {color:#435c70;}  .top-banner {    background-color: #555;  }</style><div style="margin-top: -10px">    <div id="wrap">        <div id='form_wrap'>            <form>                <img src='https://img.zzzwb.nyc.mn/i/k4as6CjB.jpg?1110' height=245px/>                <p >Hello ！</p>                <label for="email"> </label>        欢迎访问我的个人blog，如果您有任何想对我说的话，请随时留言。我将看到后第一时间进行回复，谢谢！！        </div>    </div></div><hr>]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>必应每日壁纸</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[<style>@media (max-width: 1199.98px) {.bing-tk {    display: flex;    padding-top: 10px;    overflow: visible;    margin-right: -6em;    flex-wrap: wrap;    margin-left: 2em;}.bing {    width: calc(45% - 0px);    padding: 0px 8px 5px 0px;    margin-left: 0;}.shengming p {    font-size: larger;}}@media (max-width: 991.98px) {.bing {    width: calc(100% - 0px);    padding: 0px 8px 5px 0px;    margin-left: -4em;    text-align: center; }.bing p {    margin-left: 0;}.shengming p {    font-size: inherit;}}</style><div class="shengming"><p style="text-align: center;">以下图片均来自必应搜索当日背景壁纸，每日自动获取更新</p></div><div class="bing-tk"></div><div id="jiazaiButton" style="text-align: center; margin-top: 3rem; margin-bottom: 10rem;">  <button id="loadMoreButton" class="at_button">加载更多...</button><hr></div>  <script src="https://cdn.zzzwb.com/blog/js/zidingyi/av-min.js"></script>  <script src="/js/zidingyi/mrbz.js"></script><script>function imgloading(oImg) {    if (oImg && oImg.style) {        var n = 0;        var timer = setInterval(function () {            n++;            oImg.style.opacity = n * n / 50;            if (n * n >= 50) {                clearInterval(timer);            }        }, 100);    }}</script>]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>关于</title>
     <link href="/"/>
     <url>/</url>
@@ -1822,11 +1800,33 @@
   
   
   <entry>
+    <title>必应每日壁纸</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[<style>@media (max-width: 1199.98px) {.bing-tk {    display: flex;    padding-top: 10px;    overflow: visible;    margin-right: -6em;    flex-wrap: wrap;    margin-left: 2em;}.bing {    width: calc(45% - 0px);    padding: 0px 8px 5px 0px;    margin-left: 0;}.shengming p {    font-size: larger;}}@media (max-width: 991.98px) {.bing {    width: calc(100% - 0px);    padding: 0px 8px 5px 0px;    margin-left: -4em;    text-align: center; }.bing p {    margin-left: 0;}.shengming p {    font-size: inherit;}}</style><div class="shengming"><p style="text-align: center;">以下图片均来自必应搜索当日背景壁纸，每日自动获取更新</p></div><div class="bing-tk"></div><div id="jiazaiButton" style="text-align: center; margin-top: 3rem; margin-bottom: 10rem;">  <button id="loadMoreButton" class="at_button">加载更多...</button><hr></div>  <script src="https://cdn.zzzwb.com/blog/js/zidingyi/av-min.js"></script>  <script src="/js/zidingyi/mrbz.js"></script><script>function imgloading(oImg) {    if (oImg && oImg.style) {        var n = 0;        var timer = setInterval(function () {            n++;            oImg.style.opacity = n * n / 50;            if (n * n >= 50) {                clearInterval(timer);            }        }, 100);    }}</script>]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>碎碎念</title>
     <link href="/"/>
     <url>/</url>
     
     <content type="html"><![CDATA[]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>留言板</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[<style>body, div, h1,h2, form, fieldset, footer,p {    margin: 0; padding: 0; border: 0; outline: none;}#wrap {width:530px; margin:20px auto 0; }h1 {margin-bottom:20px; text-align:center;font-size:48px; text-shadow:0 1px 0 #ede8d9; }    #form_wrap { overflow:hidden; height:446px; position:relative; top:0px;        -webkit-transition: all 1s ease-in-out .3s;        -moz-transition: all 1s ease-in-out .3s;        -o-transition: all 1s ease-in-out .3s;        transition: all 1s ease-in-out .3s;}    #form_wrap:before {content:"";        position:absolute;        bottom:128px;left:0px;        background:url('https://img.zzzwb.nyc.mn/i/zNUqdkgK.png?1110');        width:530px;height: 316px;}    #form_wrap:after {content:"";position:absolute;        bottom:0px;left:0;        background:url('https://img.zzzwb.nyc.mn/i/FqmAymEN.png?1110');        width:530px;height: 260px; }    #form_wrap.hide:after, #form_wrap.hide:before {display:none; }    #form_wrap:hover {height:806px;top:-30px;}    form {background:#f7f2ec url('/img/letter_bg.png');         position:relative;top:200px;overflow:hidden;        height:200px;width:400px;margin:0px auto;padding:20px;         border: 1px solid #fff;        color: #4d3b04;        border-radius: 3px;         -moz-border-radius: 3px; -webkit-border-radius: 3px;        box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;        -moz-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 14px #fff;        -webkit-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;        -webkit-transition: all 1s ease-in-out .3s;        -moz-transition: all 1s ease-in-out .3s;        -o-transition: all 1s ease-in-out .3s;        transition: all 1s ease-in-out .3s;}        #form_wrap:hover form {height:530px;}        label {            margin: 11px 20px 0 0;             font-size: 16px; color: #b3aba1;            text-transform: uppercase;             text-shadow: 0px 1px 0px #fff;        }        #form_wrap input[type=submit] {            position:relative;font-family: 'YanoneKaffeesatzRegular';             font-size:24px; color: #7c7873;text-shadow:0 1px 0 #fff;            width:100%; text-align:center;opacity:0;            background:none;            cursor: pointer;            -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;             -webkit-transition: opacity .6s ease-in-out 0s;            -moz-transition: opacity .6s ease-in-out 0s;            -o-transition: opacity .6s ease-in-out 0s;            transition: opacity .6s ease-in-out 0s;        }        #form_wrap:hover input[type=submit] {z-index:1;opacity:1;            -webkit-transition: opacity .5s ease-in-out 1.3s;            -moz-transition: opacity .5s ease-in-out 1.3s;            -o-transition: opacity .5s ease-in-out 1.3s;            transition: opacity .5s ease-in-out 1.3s;}            #form_wrap:hover input:hover[type=submit] {color:#435c70;}  .top-banner {    background-color: #555;  }</style><div style="margin-top: -10px">    <div id="wrap">        <div id='form_wrap'>            <form>                <img src='https://img.zzzwb.nyc.mn/i/k4as6CjB.jpg?1110' height=245px/>                <p >Hello ！</p>                <label for="email"> </label>        欢迎访问我的个人blog，如果您有任何想对我说的话，请随时留言。我将看到后第一时间进行回复，谢谢！！        </div>    </div></div><hr>]]></content>
     
   </entry>
   
