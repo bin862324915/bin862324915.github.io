@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', getreadbook);
 /*read*/
 var toggleButton = document.getElementById('toggleButton');
 var jsFiles = [
-    '/js/aplayer/Meting.min.js',
+    '/js/zidingyi/aplayer/Meting.min.js',
     '/js/zidingyi/live2d/autoload.js',
     'https://lib.baomitu.com/aplayer/1.10.1/APlayer.min.js'
 ];
