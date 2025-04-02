@@ -83,17 +83,21 @@ function time() {
     t = setTimeout(time, 1000);
 }
 
-//获取天气
-fetch('https://api.oioweb.cn/api/weather/GetWeather')
+// 获取天气
+fetch('https://api.zzzwb.com/v1?get=tq')
     .then(response => response.json())
     .then(data => {
-        $('#weizhi').text(data.result.city.city_name)
-        $('#wea_text').text(data.result.condition.condition)
-        $('#tem1').text(data.result.condition.temp)
-        $('#tem2').text(data.result.condition.windDir)
-        $('#tem3').text(data.result.condition.windLevel + ' 级')
+        if (data && data.data && data.data.results && data.data.results.length > 0) {
+            const result = data.data.results[0];
+            $('#weizhi').text(result.location.name);
+            $('#tem1').text(result.now.temperature);
+            $('#tem3').text(result.now.text);
+        } else {
+            console.error('天气数据未找到');
+        }
     })
-    .catch(console.error)
+    .catch(console.error);
+
     
 //Tab书签页
 $(function () {
