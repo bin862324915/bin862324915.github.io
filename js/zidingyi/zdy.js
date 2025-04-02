@@ -43,9 +43,15 @@ function hitokoto(o) {
     }))
 }
 
+window.onload = function() {
+    const lrcIcon = document.querySelector('.aplayer-icon-lrc');
+        lrcIcon.classList.add('aplayer-icon-lrc-inactivity');
+};
+
 function getHitokoto() {
     var o = ["a", "b", "c", "d", "e", "i"];
     fetch("https://v1.hitokoto.cn/?encode=json&charset=utf-8&c=" + o[Math.floor(Math.random() * o.length)], {
+//      fetch("https://api.zzzwb.com/v1?get=hitokoto", {
         cache: "no-cache",
         method: "GET",
         mode: "cors"
@@ -81,7 +87,7 @@ __      _____ _ __ | |__  _ _ __   | |__ | | ___   __ _
 function snow() {
     var snowContainer = document.getElementById('snow_container');
     var snowButtonIcon = document.querySelector('#snowButton i');
-    var isSnowEnabled = localStorage.getItem('isSnowEnabled') !== 'false';
+    var isSnowEnabled = localStorage.getItem('isSnowEnabled') === 'true';
 
     if (isSnowEnabled) {
         activateSnow();
@@ -187,10 +193,9 @@ document.addEventListener('DOMContentLoaded', getreadbook);
 /*read*/
 var toggleButton = document.getElementById('toggleButton');
 var jsFiles = [
-    'https:////lib.baomitu.com/meting/2.0.1/Meting.min.js',
-    'https://cloud.zzzwb.com:60443/blog/js/zidingyi/live2d/autoload.js',
-    'https://lib.baomitu.com/aplayer/1.10.1/APlayer.min.js',
-    'https://cloud.zzzwb.com:60443/blog/js/zidingyi/xiantiao.js'
+    '/js/aplayer/Meting.min.js',
+    '/js/zidingyi/live2d/autoload.js',
+    'https://lib.baomitu.com/aplayer/1.10.1/APlayer.min.js'
 ];
 var loadJsFiles = localStorage.getItem('loadJsFiles') !== 'false';
 
@@ -288,3 +293,7 @@ updateJsFiles();
   update();
   setInterval(update, 1000);
 })();
+
+$(function(){
+    $("#Loadanimation").fadeOut(500);
+});

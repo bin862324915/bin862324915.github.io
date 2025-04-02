@@ -45,7 +45,7 @@ button[class] {
   cursor: url(/img/Hand2.cur),auto !important;
 }
 /* 补充按钮 */
-svg,span.vat,span.vnick {
+svg,span.vat,span.vnick,.tk-submit-action-icon {
 	cursor: url(/img/Hand2.cur),auto !important;
 }
 #pubShuo,#switchUser,#uploadSource,#hideuser,#tui {
@@ -192,7 +192,7 @@ body {
 */
 /*打字机*/
 .subtitle-ys {
-    background: linear-gradient(45deg, #00ffe7, #abff00, #ffe500, #00fdff, #e8ff00, #FF5722);
+    background: linear-gradient(45deg, #00ffe7, #abff00, #2196F3, #ffffff, #7ed7ff, #e8ff00, #FF5722);
     background-size: 200% 200%;
     -webkit-animation: gradientAnimation 5s ease infinite;
     -moz-animation: gradientAnimation 5s ease infinite;
@@ -246,11 +246,25 @@ body {
   -webkit-background-clip:text;
 }
 
+/*文章目录*/
+.tocbot-link {
+    color: #c4c6c9;
+}
+.toc-header {
+    color: #c4c6c9;
+}
 
-/*底部icon颜色*/
+/*底部*/
+footer {
+    color: #c4c6c9;
+}
+footer a {
+    color: #c4c6c9;
+}
+/*底部icon颜色
 footer .iconfont {
     color: pink;
-}
+}*/
 
 
 .reprint {
@@ -381,9 +395,50 @@ animation: slow-rotate 5s linear infinite;
 .tk-avatar.tk-has-avatar {
     background-color: rgba(144,147,153,0) !important;
 }
+.tk-admin {
+    z-index: 2;
+}
+#twikoo .tk-replies .tk-comment .tk-avatar.tk-has-avatar::before {
+    background: unset;
+}
+#twikoo .tk-submit .tk-row .tk-avatar.tk-has-avatar::before {
+    background: unset;
+}
+.tk-comment .tk-avatar.tk-has-avatar::before {
+    margin-left: -12px;
+    margin-top: -10px;
+    content: '';
+    position: absolute;
+    width: 3.7rem;
+    height: 3.7rem;
+    opacity: .9;
+    pointer-events: none;
+    z-index: 1;
+}
+.tk-comment:nth-child(7n+1) .tk-avatar.tk-has-avatar::before {
+    background: url(https://img.950220.xyz/i/zaFtYgSB.png) center/cover;
+}
+.tk-comment:nth-child(7n+2) .tk-avatar.tk-has-avatar::before {
+    background: url(https://img.950220.xyz/i/ZYrT5aAy.png) center/cover;
+}
+.tk-comment:nth-child(7n+3) .tk-avatar.tk-has-avatar::before {
+    background: url(https://img.950220.xyz/i/yzBny4Nm.png) center/cover;
+}
+.tk-comment:nth-child(7n+4) .tk-avatar.tk-has-avatar::before {
+    background: url(https://img.950220.xyz/i/KAPezCT8.gif) center/cover;
+}
+.tk-comment:nth-child(7n+5) .tk-avatar.tk-has-avatar::before {
+    background: url(https://img.950220.xyz/i/osWnm2z6.png) center/cover;
+}
+.tk-comment:nth-child(7n+6) .tk-avatar.tk-has-avatar::before {
+    background: url(https://img.950220.xyz/i/YBpbUuDe.png) center/cover;
+}
+.tk-comment:nth-child(7n) .tk-avatar.tk-has-avatar::before {
+    background: url(https://img.950220.xyz/i/mct2VWYG.png) center/cover;
+}
 
-.tk-avatar-img {
-    vertical-align: unset;
+#twikoo .tk-avatar-img {
+    vertical-align: top;
     border-radius: 50%;
 }
 
@@ -393,65 +448,13 @@ animation: slow-rotate 5s linear infinite;
 .tk-icon.__comment {
     margin-bottom: 0.3em;
 }
-
+.twikoo .el-textarea__inner {
+    transition: 1.5s ease-in-out 0s;
+}
 .twikoo .el-textarea__inner:focus {
-    background-position-y: -200px;
-    transition: all 1s ease-in-out 0s;
+    background-position-x: -500px;
+    transition: 0s;
 }
-
-
-/* 隐藏valine评论的系统信息 */
-.v[data-class=v] .txt-right {
-  text-align: right;
-  display: none;
-}
-.vsys{
-  display:none !important;
-}
-.v[data-class=v] .vcards .vcard .vh .vmeta .vat:hover {
-    color: #2bd9d3;
-    padding: 0px 0.8rem;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #2bd9d3;
-    border-image: initial;
-    border-radius: 5px;
-    transition: all 0.3s ease 0s;
-}
-/*提交评论按钮颜色*/
-.vsubmit.vbtn {
-    color: #2bd9d3!important;
-    border-color: #2bd9d3!important;
-    transition: all 0.3s ease 0s!important;
-}
-
-.vsubmit.vbtn:hover {
-    color: #007bff!important;
-    border-color: #007bff!important;
-    transition: all 0.3s ease 0s!important;
-}
-
-#veditor {
-    background-image: url(https://imgsrc.baidu.com/forum/pic/item/5243fbf2b2119313f5df108523380cd791238d63.gif);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-color: rgba(255, 255, 255, 0);
-    resize: vertical
-}
-/*头像*/
-img.vimg {
-     transition: all 1s
-}
-
-img.vimg:hover {
-     transform: rotate(360deg);
-     -webkit-transform: rotate(360deg);
-     -moz-transform: rotate(360deg);
-     -o-transform: rotate(360deg);
-     -ms-transform: rotate(360deg);
-}
-/* valine美化 */
 
 /* 碎碎念 */
 #artitalk_main .shuoshuo_text:focus {
@@ -553,6 +556,7 @@ img.vimg:hover {
     border-radius: 20px;
     font-size: 15px;
     padding: 8px 16px;
+    margin-bottom: 2rem;
 }
 #loadMoreButton:hover {
     background-image: linear-gradient(to right,#2ed8c0 0,#149a24 100%);
@@ -570,7 +574,7 @@ img.vimg:hover {
 
 /*侧边栏*/
 .sidebar-button {
-    top: 70%;
+    top: 50%;
     z-index: 10;
     opacity: 0.7;
 }
