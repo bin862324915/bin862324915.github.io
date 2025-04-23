@@ -1,5 +1,5 @@
 const siteId = window.location.hostname; 
-const wsUrl = 'wss://ws.zzzwb.nyc.mn/' + '?site-id=' + encodeURIComponent(siteId);
+const wsUrl = 'wss://ws.950220.xyz/ws' + '?site-id=' + encodeURIComponent(siteId);
 let socket;
 let retryAttempt = 0; 
 const liveuserElem = document.getElementById('online');
