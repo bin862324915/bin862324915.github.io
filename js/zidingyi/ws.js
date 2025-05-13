@@ -21,7 +21,7 @@ function connectWebSocket() {
 
       if (data.type === 'update' && 'liveuser' in data) {
         if (liveuserElem) { 
-          liveuserElem.innerHTML = `<span>当前在线人数：</span><span>${data.liveuser}</span>`;
+          liveuserElem.innerHTML = `<span>当前在线：</span><span>${data.liveuser} | </span><span>今天访问人数：</span><span>${data.uv}</span>`;
         }
       }
     } catch (error) {
