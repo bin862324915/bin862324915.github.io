@@ -50,8 +50,8 @@ window.onload = function() {
 
 function getHitokoto() {
     var o = ["a", "b", "c", "d", "e", "i"];
-    fetch("https://v1.hitokoto.cn/?encode=json&charset=utf-8&c=" + o[Math.floor(Math.random() * o.length)], {
-//      fetch("https://api.zzzwb.com/v1?get=hitokoto", {
+//    fetch("https://v1.hitokoto.cn/?encode=json&charset=utf-8&c=" + o[Math.floor(Math.random() * o.length)], {
+      fetch("https://tools.zwb.pp.ua/hitokoto", {
         cache: "no-cache",
         method: "GET",
         mode: "cors"
