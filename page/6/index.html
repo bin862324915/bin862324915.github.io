@@ -1418,13 +1418,13 @@ boardElement.classList.add('dhyc');
       
         jQuery.ajax({
           type: 'GET',
-          url: 'https://api.zzzwb.com/v1?get=hitokoto',
+          url: 'https://v1.hitokoto.cn/',
           headers: {},
           dataType: 'json',
           success: function(result) {
             var apiText;
             if (result) {
-              var keys = 'data,hitokoto'.split(',');
+              var keys = 'hitokoto'.split(',');
               if (result instanceof Array) {
                 result = result[0];
               }
@@ -1442,7 +1442,7 @@ boardElement.classList.add('dhyc');
           },
           error: function(xhr, status, error) {
             if (error) {
-              console.error('Failed to request https://api.zzzwb.com/v1?get=hitokoto:', error);
+              console.error('Failed to request https://v1.hitokoto.cn/:', error);
             }
             typing(text);
           }
