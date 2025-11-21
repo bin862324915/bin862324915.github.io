@@ -6,7 +6,7 @@
   <link href="https://www.zzzwb.com/atom.xml" rel="self"/>
   
   <link href="https://www.zzzwb.com/"/>
-  <updated>2025-11-16T08:19:04.978Z</updated>
+  <updated>2025-11-16T08:28:11.420Z</updated>
   <id>https://www.zzzwb.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.zzzwb.com/2025/11-16-doubaoai-remove.html"/>
     <id>https://www.zzzwb.com/2025/11-16-doubaoai-remove.html</id>
     <published>2025-11-16T08:04:49.000Z</published>
-    <updated>2025-11-16T08:19:04.978Z</updated>
+    <updated>2025-11-16T08:28:11.420Z</updated>
     
     
     <summary type="html">一个小问题引发的灵感。在使用豆包AI进行图片生成时，我发现生成的图像虽然质量不错，但都会被自动添加水印。这在很多情况下会造成困扰，于是，我决定写一个小工具</summary>
