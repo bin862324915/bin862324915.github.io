@@ -1,8 +1,13 @@
-  AV.init({
-      appId: '1Ao7imckprhj98luQK1xebPA-gzGzoHsz',
-      appKey: 'cY0YqjpaGxRvGE4o2Mf21Zbq',
-      serverURL: 'https://1ao7imck.lc-cn-n1-shared.com',
-});
+console.log(`
+                    _     _         _     _             
+                   | |   (_)       | |   | |            
+__      _____ _ __ | |__  _ _ __   | |__ | | ___   __ _ 
+\\ \\ /\\ / / _ \\ '_ \\| '_ \\| | '_ \\  | '_ \\| |/ _ \\ / _\` |
+ \\ V  V /  __/ | | | |_) | | | | | | |_) | | (_) | (_| |
+  \\_/\\_/ \\___|_| |_|_.__/|_|_| |_| |_.__/|_|\\___/ \\__, |
+                                                   __/ |
+                                                  |___/
+`);
 
 window.addEventListener('load', function() {
   var colaElement = document.getElementById('loading');
@@ -39,6 +44,7 @@ const rygDiv = document.querySelector('#ryg');
 const modal = document.querySelector('#modal');
 const modalText = document.querySelector('#modalText');
 const div2 = document.querySelector('.bg');
+const API_BASE = 'https://apps.950220.xyz/api';
 const newlz = document.getElementById('newlz');
 const mask3 = document.getElementById('mask3');
 const Input1 = document.getElementById('nameInput');
@@ -53,21 +59,26 @@ const Input2 = document.getElementById('zhengwenInput');
       Input2.value = Input2.value.substring(0, 260); 
     }
   });
+
 tjButton.addEventListener('click', () => {
-  const name = nameInput.value;
-  const data = zhengwenInput.value;
-  if (!name.trim() || !data.trim()) {
+  const name = nameInput.value.trim();
+  const data = zhengwenInput.value.trim();
+
+  if (!name || !data) {
     modalText.textContent = '昵称和内容都要填写哦';
     $("#modal").fadeIn("slow");
     return;
   }
-  const PLP = AV.Object.extend('plp');
-  const plp = new PLP();
-  plp.set('name', name);
-  plp.set('data', data);
-  plp.save().then(function(response) {
-    if (response && response.id) {
-      hideRyg()
+
+  fetch(`${API_BASE}/plp`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name, data })
+  })
+  .then(res => res.json())
+  .then(result => {
+    if (result.success) {
+      hideRyg();
       nameInput.value = '';
       zhengwenInput.value = '';
       div2.classList.add('animate');
@@ -76,21 +87,26 @@ tjButton.addEventListener('click', () => {
         div2.style.display = 'none';
         div2.classList.remove('animate');
       });
+    } else if (result.sensitive) {
+      modalText.textContent = result.message;
+      $("#modal").fadeIn("slow");
     } else {
-      modalText.textContent = '出错啦...';
-      modal.style.display = 'block';
+      modalText.textContent = '发送失败';
+      $("#modal").fadeIn("slow");
     }
-  }).catch(function(error) {
-    console.error('数据提交出错：', error);
-    modalText.textContent = '出错啦...';
-    modal.style.display = 'block';
+  })
+  .catch(() => {
+    modalText.textContent = '网络异常';
+    $("#modal").fadeIn("slow");
   });
 });
+
 qxButton.addEventListener('click', () => {
   nameInput.value = '';
   zhengwenInput.value = '';
-  modal.style.display = 'none';
+  hideRyg();
 });
+
 const closeModalButton = document.querySelector('#closeModal');
 closeModalButton.addEventListener('click', () => {
   modal.style.display = 'none';
@@ -100,65 +116,46 @@ modal.addEventListener('click', (event) => {
     modal.style.display = 'none';
   }
 });
+
 document.getElementById('a1').addEventListener('click', function() {
-        showRyg();
+  showRyg();
 });
 
-document.getElementById('qx').addEventListener('click', function() {
-  hideRyg();
+var buttonA2 = document.getElementById('a2');
+var buttonDiu = document.getElementById('diu');
+var newname = document.getElementById('newname');
+var newdata = document.getElementById('newdata');
+var lao = document.querySelector('.lao');
+
+buttonA2.addEventListener('click', function() {
+  fetch(`${API_BASE}/plp`)
+  .then(res => res.json())
+  .then(result => {
+    if (!result.success || result.data.length === 0) {
+      modalText.textContent = '海里空空如也~';
+      $("#modal").fadeIn("slow");
+      return;
+    }
+    const random = result.data[0];
+
+    mask3.style.display = 'block';
+    newlz.classList.remove('newlaozi');
+    newname.textContent = '你捡到了一个来自 ' + random.name + ' 的漂流瓶';
+    newdata.textContent = random.data;
+
+    setTimeout(() => {
+      mask3.style.display = 'none';
+      newlz.classList.add('newlaozi');
+      showLao();
+      lao.style.display = 'block';
+    }, 2000);
+  })
+  .catch(err => {
+    modalText.textContent = '出错啦，请稍后重试';
+    $("#modal").fadeIn("slow");
+  });
 });
-    var buttonA2 = document.getElementById('a2');
-    var buttonDiu = document.getElementById('diu');
 
-    var newname = document.getElementById('newname');
-    var newdata = document.getElementById('newdata');
-    var lao = document.querySelector('.lao');
-
-    buttonA2.addEventListener('click', function() {
-        var plpQuery = new AV.Query('plp');
-        plpQuery.count().then(function(count) {
-          if (count > 0) {
-            var randomIndex = Math.floor(Math.random() * count);
-
-            plpQuery.skip(randomIndex);
-            plpQuery.limit(1);
-
-            plpQuery.find().then(function(results) {
-              if (results.length > 0) {
-                var randomResult = results[0];
-                var name = randomResult.get('name');
-                var data = randomResult.get('data');
-                    mask3.style.display = 'block';
-                    newlz.classList.remove('newlaozi');
-
-
-                newname.textContent = '你捡到了一个来自 ' + name + ' 的漂流瓶';
-                newdata.textContent = data;
-	setTimeout(function() {
-                mask3.style.display = 'none';
-                newlz.classList.add('newlaozi');
-               showLao();
-               lao.style.display = 'block';
-                 }, 5000);
-              } else {
-                console.log('没有找到数据。');
-              }
-            });
-          } else {
-            console.log('没有找到数据。');
-          }
-        });
-    });
-  console.log(`
-                    _     _         _     _             
-                   | |   (_)       | |   | |            
-__      _____ _ __ | |__  _ _ __   | |__ | | ___   __ _ 
-\\ \\ /\\ / / _ \\ '_ \\| '_ \\| | '_ \\  | '_ \\| |/ _ \\ / _\` |
- \\ V  V /  __/ | | | |_) | | | | | | |_) | | (_) | (_| |
-  \\_/\\_/ \\___|_| |_|_.__/|_|_| |_| |_.__/|_|\\___/ \\__, |
-                                                   __/ |
-                                                  |___/
-`);
-    buttonDiu.addEventListener('click', function() {
-      hideLao();
+buttonDiu.addEventListener('click', function() {
+  hideLao();
 });

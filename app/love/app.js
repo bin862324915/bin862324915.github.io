@@ -1,150 +1,4 @@
-AV.init({
-  appId: '1Ao7imckprhj98luQK1xebPA-gzGzoHsz',
-  appKey: 'cY0YqjpaGxRvGE4o2Mf21Zbq',
-  serverURL: 'https://1ao7imck.lc-cn-n1-shared.com',
-});
-
-const colors = ["#c362c3", "#7070cf", "#57bdbd", "#70c370", "#c5c55e", "#c7a15b", "#b36868", "#d99edd", "#6388d3", "#468dad", "#aa6dc9", "#bb775e", "#a18299", "#07969a", "#d36a68", "#a2ad47", "#a467c9", "#c76259", "#cda562", "#8faddf"];
-let currentIndex = 0;
-/*颜色选项
-function getRandomBackgroundColor() {
-    const randomIndex = Math.floor(Math.random() * colors.length);
-    return colors[randomIndex];
-}
-*/
-function getRandomBackgroundColor() {
-    const currentColor = colors[currentIndex];
-    currentIndex = (currentIndex + 1) % colors.length;
-    return currentColor;
-}
-
-const mynameInput = document.getElementById('mynamein');
-const younameInput = document.getElementById('younamein');
-const zhengwenInput = document.getElementById('zhengwenin');
-const tjButton = document.getElementById('tj');
-const modal = document.querySelector('#modal');
-const modalText = document.querySelector('#modalText');
-const closeModalButton = document.querySelector('#closeModal');
-
-closeModalButton.addEventListener('click', () => {
-  modal.style.display = 'none';
-});
-modal.addEventListener('click', (event) => {
-  if (event.target === modal) {
-    modal.style.display = 'none';
-  }
-});
-tjButton.addEventListener('click', () => {
-  const myname = mynameInput.value;
-  const youname = younameInput.value;
-  const inputText = document.getElementById("zhengwenin").value;
-  const convertedText = inputText.replace(/\n/g, "<br>");
-  const zhengwen = convertedText;
-
-  if (myname && youname && zhengwen) {
-    const BBQ = AV.Object.extend('bbq');
-    const bbqRecord = new BBQ();
-    bbqRecord.set('from', myname);
-    bbqRecord.set('to', youname);
-    bbqRecord.set('data', zhengwen);
-    bbqRecord.save().then(() => {
-      bbknone();
-      mynameInput.value = '';
-      younameInput.value = '';
-      zhengwenInput.value = '';
-      modalText.textContent = '已发表，刷新网页查看哦(｡♥ᴗ♥｡) ';
-      $("#modal").fadeIn("slow");
-      return;
-    }).catch(() => {
-    modalText.textContent = '出错啦！请重试哦(✖人✖)';
-      $("#modal").fadeIn("slow");
-    return;
-    });
-  } else {
-    modalText.textContent = '信息都填写了嘛？( • ̀ω•́ )✧';
-      $("#modal").fadeIn("slow");
-    return;
-  }
-});
-const fbygBlock = document.getElementById('fbyg');
-const maskbiaoBlock = document.getElementById('maskbiao');
-const bbkBlock = document.getElementById('bbk');
-const qxan = document.getElementById('qx');
-
-
-
-fbygBlock.addEventListener('click', () => {
-  $("#maskbiao").fadeIn("slow");
-  $("#bbk").fadeIn("slow");
-});
-
-
-function bbknone() {
-  const input1 = document.getElementById('mynamein');
-  const input2 = document.getElementById('younamein');
-  const input3 = document.getElementById('zhengwenin');
-  input1.value = '';
-  input2.value = '';
-  input3.value = '';
-  $("#maskbiao").fadeOut("slow");
-}
-
-qxan.addEventListener('click', () => {
-  bbknone();
-  modal.style.display = 'none';
-});
-
-const parentBlock = document.querySelector('.zhuti');
-const query = new AV.Query('bbq');
-query.descending('createdAt');
-const processLeanCloudData = new Promise((resolve, reject) => {
-  query.find().then((bbqRecords) => {
-    bbqRecords.forEach((record) => {
-      const from = record.get('from');
-      const to = record.get('to');
-      const data = record.get('data');
-      const createdAt = record.get('createdAt');
-	const date = new Date(createdAt);
-	const year = date.getFullYear();
-	const month = (date.getMonth() + 1).toString().padStart(2, '0');
-	const day = date.getDate().toString().padStart(2, '0');
-	const hours = date.getHours().toString().padStart(2, '0');
-	const minutes = date.getMinutes().toString().padStart(2, '0');
-	const seconds = date.getSeconds().toString().padStart(2, '0');
-	const formattedDate = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
-	const zhutiBlock = document.querySelector('.zhuti');
-	const zhutiWidth = zhutiBlock.offsetWidth;
-	const zhutiHeight = zhutiBlock.offsetHeight;
-	const randomX = Math.floor(Math.random() * (zhutiWidth - 260)); 
-	const randomY = Math.floor(Math.random() * (zhutiHeight - 300));
-	const son = document.createElement('div');
-	son.className = 'son';
-
-  son.innerHTML = `
-  <p id="biaoti">${from} 想对 ${to} 说:</p>
-  <p id="neirong">${data}</p>
-  <p id="shijian">${formattedDate}</p>
-`;
-
-const randomColor = getRandomBackgroundColor();
-son.style.backgroundColor = randomColor;
-son.style.left = `${randomX}px`;
-son.style.top = `${randomY}px`;
-zhutiBlock.appendChild(son);
-
-    });
-    resolve();
-  });
-});
-const initializeDragFunction = new Promise((resolve, reject) => {
-  processLeanCloudData.then(() => {
-    dragFn('.son', '.zhuti');
-    resolve();
-  });
-});
-
-Promise.all([processLeanCloudData, initializeDragFunction]).then(() => {
-  console.log(`
+console.log(`
                     _     _         _     _             
                    | |   (_)       | |   | |            
 __      _____ _ __ | |__  _ _ __   | |__ | | ___   __ _ 
@@ -154,9 +8,128 @@ __      _____ _ __ | |__  _ _ __   | |__ | | ___   __ _
                                                    __/ |
                                                   |___/
 `);
+
+const colors = ["#c362c3","#7070cf","#57bdbd","#70c370","#c5c55e",
+  "#c7a15b","#b36868","#d99edd","#6388d3","#468dad","#aa6dc9",
+  "#bb775e","#a18299","#07969a","#d36a68","#a2ad47","#a467c9",
+  "#c76259","#cda562","#8faddf"];
+let currentIndex = 0;
+function getRandomBackgroundColor() {
+  const c = colors[currentIndex];
+  currentIndex = (currentIndex + 1) % colors.length;
+  return c;
+}
+
+const mynameInput  = document.getElementById('mynamein');
+const younameInput = document.getElementById('younamein');
+const zhengwenInput = document.getElementById('zhengwenin');
+const tjButton      = document.getElementById('tj');
+const modal         = document.querySelector('#modal');
+const modalText     = document.querySelector('#modalText');
+const closeModalButton = document.querySelector('#closeModal');
+const API_BASE = 'https://apps.950220.xyz/api';
+
+closeModalButton.addEventListener('click', () => { modal.style.display = 'none'; });
+modal.addEventListener('click', (e) => { if (e.target === modal) modal.style.display = 'none'; });
+
+
+tjButton.addEventListener('click', async () => {
+  const myname  = mynameInput.value.trim();
+  const youname = younameInput.value.trim();
+  const inputText = document.getElementById('zhengwenin').value;
+  const zhengwen = inputText.replace(/\n/g, '<br>');
+
+  if (!myname || !youname || !zhengwen) {
+    modalText.textContent = '信息都填写了嘛？( • ̀ω•́ )✧';
+    $('#modal').fadeIn('slow');
+    return;
+  }
+
+  try {
+    const res = await fetch(`${API_BASE}/bbq`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ from: myname, to: youname, data: zhengwen }),
+    });
+    const result = await res.json();
+
+    if (result.success) {
+      bbknone();
+      modalText.textContent = '已发表，刷新网页查看哦(｡♥ᴗ♥｡)';
+      $('#modal').fadeIn('slow');
+    } else if (result.sensitive) {
+      modalText.textContent = result.message;
+      $('#modal').fadeIn('slow');
+    } else {
+      throw new Error();
+    }
+  } catch {
+    modalText.textContent = '出错啦！请重试哦(✖人✖)';
+    $('#modal').fadeIn('slow');
+  }
 });
 
 
+document.getElementById('fbyg').addEventListener('click', () => {
+  $('#maskbiao').fadeIn('slow');
+  $('#bbk').fadeIn('slow');
+});
+
+function bbknone() {
+  mynameInput.value = '';
+  younameInput.value = '';
+  zhengwenInput.value = '';
+  $('#maskbiao').fadeOut('slow');
+}
+
+document.getElementById('qx').addEventListener('click', () => {
+  bbknone();
+  modal.style.display = 'none';
+});
+
+
+async function loadMessages() {
+  const zhutiBlock = document.querySelector('.zhuti');
+  const zhutiWidth  = zhutiBlock.offsetWidth;
+  const zhutiHeight = zhutiBlock.offsetHeight;
+
+  try {
+    const res = await fetch(`${API_BASE}/bbq`);
+    const result = await res.json();
+
+    result.data.forEach((record) => {
+      const { from, to, data, createdAt } = record;
+      const date = new Date(createdAt);
+      const formattedDate = `${date.getFullYear()}-`
+        + `${String(date.getMonth()+1).padStart(2,'0')}-`
+        + `${String(date.getDate()).padStart(2,'0')} `
+        + `${String(date.getHours()).padStart(2,'0')}:`
+        + `${String(date.getMinutes()).padStart(2,'0')}:`
+        + `${String(date.getSeconds()).padStart(2,'0')}`;
+
+      const randomX = Math.floor(Math.random() * (zhutiWidth - 260));
+      const randomY = Math.floor(Math.random() * (zhutiHeight - 300));
+
+      const son = document.createElement('div');
+      son.className = 'son';
+      son.innerHTML = `
+        <p id="biaoti">${from} 想对 ${to} 说:</p>
+        <p id="neirong">${data}</p>
+        <p id="shijian">${formattedDate}</p>
+      `;
+      son.style.backgroundColor = getRandomBackgroundColor();
+      son.style.left = `${randomX}px`;
+      son.style.top  = `${randomY}px`;
+      zhutiBlock.appendChild(son);
+    });
+
+    dragFn('.son', '.zhuti');
+  } catch (err) {
+    console.error('加载留言失败', err);
+  }
+}
+
+loadMessages();
 
 function dragFn(dragObj, parent) {
   $(dragObj).mousedown(function (e) {
@@ -167,56 +140,37 @@ function dragFn(dragObj, parent) {
     var drag_w = $(this)[0].offsetWidth;
     var dragX = e.clientX - $(this)[0].offsetLeft;
     var dragY = e.clientY - $(this)[0].offsetTop;
-
-    $(this).css('z-index', '9').siblings().css('z-index', '1');
-
+    $(this).css('z-index','9').siblings().css('z-index','1');
     $(document).mousemove(function (e) {
       var l = e.clientX - dragX;
       var t = e.clientY - dragY;
-      if (l < 0) {
-        l = 0;
-      } else if (l > parent_w - drag_w) {
-        l = parent_w - drag_w;
-      }
-      if (t < 0) {
-        t = 0;
-      } else if (t > parent_h - drag_h) {
-        t = parent_h - drag_h;
-      }
-      _this.css({
-        left: l + 'px',
-        top: t + 'px',
-      });
+      if (l < 0) l = 0;
+      else if (l > parent_w - drag_w) l = parent_w - drag_w;
+      if (t < 0) t = 0;
+      else if (t > parent_h - drag_h) t = parent_h - drag_h;
+      _this.css({ left: l+'px', top: t+'px' });
     });
   });
-  $(document).mouseup(function () {
-    $(this).off('mousemove');
-  });
+  $(document).mouseup(function () { $(this).off('mousemove'); });
 }
-
 
 function limitCharacters(textarea, maxCharacters) {
-  const text = textarea.value;
-  if (text.length > maxCharacters) {
-    textarea.value = text.substring(0, maxCharacters);
-  }
+  if (textarea.value.length > maxCharacters)
+    textarea.value = textarea.value.substring(0, maxCharacters);
 }
+
 document.onkeydown = function (event) {
   if (event.keyCode === 123) {
-    showMessage("别F12啦，关心一下身边的女孩子吧( • ̀ω•́ )✧");
+    showMessage('别F12啦，关心一下身边的女孩子吧( • ̀ω•́ )✧');
     event.preventDefault();
     event.stopPropagation();
   }
 };
 
 function showMessage(message) {
-  var messageBox = document.getElementById("messageBox");
-  var messageContent = document.getElementById("messageContent");
-  messageContent.innerHTML = message;
-    $("#messageBox").fadeIn("slow");
-  setTimeout(function() {
-    $("#messageBox").fadeOut("slow");
-  }, 2000);
+  document.getElementById('messageContent').innerHTML = message;
+  $('#messageBox').fadeIn('slow');
+  setTimeout(() => $('#messageBox').fadeOut('slow'), 2000);
 }
 
 
