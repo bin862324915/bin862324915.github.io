@@ -148,7 +148,7 @@ buttonA2.addEventListener('click', function() {
       newlz.classList.add('newlaozi');
       showLao();
       lao.style.display = 'block';
-    }, 2000);
+    }, 5000);
   })
   .catch(err => {
     modalText.textContent = '出错啦，请稍后重试';
