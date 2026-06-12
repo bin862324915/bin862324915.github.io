@@ -656,9 +656,7 @@ i.iconfont.icon-heart-01 {
 .navbar .nav-item .nav-link:hover {
     background-color: rgba(0,0,0,0.1);
 }
-.common-chip:hover {
-    border: 0px solid #36415100!important;
-}
+
 #plnum {
     margin-left: 0.4rem;
 }
