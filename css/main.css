@@ -1840,7 +1840,6 @@ mjx-container svg:focus,
 }
 .common-chip:hover {
   background: var(--link-hover-bg-color);
-  border: 1px solid var(--link-hover-bg-color);
   box-shadow: 0 5px 5px rgba(0,0,0,0.25);
 }
 .text-ellipsis {

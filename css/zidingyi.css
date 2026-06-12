@@ -657,7 +657,7 @@ i.iconfont.icon-heart-01 {
     background-color: rgba(0,0,0,0.1);
 }
 .common-chip:hover {
-    border: 0px solid var(--link-hover-bg-color)!important;
+    border: 0px solid #36415100!important;
 }
 #plnum {
     margin-left: 0.4rem;
